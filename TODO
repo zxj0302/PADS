@@ -1,0 +1,18 @@
+1. Results by changing theta
+2. Use labels that does not related to polarity
+3. The curve of f(S) values under each operation
+4. Explain the settings used in diffusion model, Flowless, and PADS
+
+
+TODO:
+1. 准确的最密子图找到的结果，以及时间
+2. 带负边的最密子图找到的结果，以及时间
+3. 实现算法和Greedy++以及准确的最密子图对比, peeling and gnn convolution combined
+
+Problems:
+1. By using opinion dynamics, the polarity variance is decreasing, which may not be the case in real world. I tried FJ
+    model, HK model, and other models, but the results are the same. Maybe they are too idealized and cannot reflect the
+    real world. In the real world, users post their opinions with different frequencies, and have different influence on
+    others, so the opinion dynamics should be more complex(Maybe we can publish a paper for this).
+2. If we add edges between users in ECCs, the result is worse than adding edges between high-degree users. So how can we
+    find the best way to demonstrate the usefulness of ECCs?

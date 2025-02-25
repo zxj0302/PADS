@@ -1,4 +1,3 @@
-import networkx as nx
 import torch
 import torch.nn as nn
 from torch_geometric.nn.models import GIN, MLP
@@ -68,7 +67,10 @@ class Model(pl.LightningModule):
         return self.save_para[0].tolist()
 
 
-def main_gnn(G_ori, device='cuda:0'):
+def node2vec_gin(G_ori, device='cuda:0', **kwargs):
+    logging.getLogger("pytorch_lightning").setLevel(logging.ERROR)
+    warnings.filterwarnings("ignore")  # Suppress all warnings
+
     torch.set_float32_matmul_precision('medium')
     torch.use_deterministic_algorithms(True)
     # draw_graph(model, (G.x, G.edge_index, G.edge_attr), expand_nested=True).visual_graph.view()
@@ -88,7 +90,7 @@ def main_gnn(G_ori, device='cuda:0'):
     for edge in G.edges():
         G.edges[edge]['edge_attr'] = torch.tensor([G.edges[edge]['edge_polarity']], dtype=torch.float32)
 
-    graph, upper_bound = from_networkx(G), max(dict(G.degree()).values())
+    graph, upper_bound = from_networkx(G), max(dict(G.degree()).values())/2
 
     #for positive
     model_pos = Model(upper_bound=upper_bound, theta=2, lr=5e-4, positive=True, device=device)
@@ -107,16 +109,4 @@ def main_gnn(G_ori, device='cuda:0'):
     data_neg = model_neg.output_saved()
 
     for node in G_ori.nodes:
-        G_ori.nodes[node]['gnn'] = (1 if data_pos[node] == 1 else 0) - (1 if data_neg[node] == 1 else 0)
-
-
-def my_gnn(G: nx.Graph) -> None:
-    """
-    Run the GNN-based community detection method.
-
-    Args:
-        G: Input networkx graph
-    """
-    logging.getLogger("pytorch_lightning").setLevel(logging.ERROR)
-    warnings.filterwarnings("ignore")  # Suppress all warnings
-    main_gnn(G, device='gpu')
+        G_ori.nodes[node]['node2vec_gin'] = (1 if data_pos[node] == 1 else 0) - (1 if data_neg[node] == 1 else 0)

@@ -160,11 +160,11 @@ def my_diffusion(graph_path, save_path,
     G = nx.read_gml(graph_path)
     # change node labels to integers
     G = nx.convert_node_labels_to_integers(G)
-    methods = ['maxflow', 'flowless', 'gnn', 'myg']
+    methods = ['maxflow_cpp_udsp', 'maxflow_cpp_wdsp', 'node2vec_gin', 'pads_cpp']
     for node in G.nodes:
         G.nodes[node]['pos_com'] = False
         G.nodes[node]['neg_com'] = False
-        for m in ['maxflow', 'flowless', 'gnn', 'myg']:
+        for m in methods:
             G.nodes[node]['pos_com'] = G.nodes[node]['pos_com'] or G.nodes[node][m] == 1
             G.nodes[node]['neg_com'] = G.nodes[node]['neg_com'] or G.nodes[node][m] == -1
 
@@ -185,11 +185,13 @@ def my_diffusion(graph_path, save_path,
     return pos_reach, neg_reach
 
 
-def mean_diffusion(graph_path, diffusion_path, method_name):
+def mean_diffusion(graph_path, diffusion_path, method_name, filter=False):
     G = nx.read_gml(graph_path)
     diffusion = json.load(open(diffusion_path))
-    pos_nodes = [node for node in G.nodes if G.nodes[node][method_name] == 1]
-    neg_nodes = [node for node in G.nodes if G.nodes[node][method_name] == -1]
+    pos_nodes = [node for node in G.nodes if ((G.nodes[node][method_name] == 1) and (not filter or G.nodes[node][
+        'polarity'] >= 0))]
+    neg_nodes = [node for node in G.nodes if ((G.nodes[node][method_name] == -1) and (not filter or G.nodes[node][
+        'polarity'] <= 0))]
     pos_reach = diffusion['pos']
     neg_reach = diffusion['neg']
     pos_reach_neg = {}

@@ -11,9 +11,9 @@ def get_random_sub_list(items: np.ndarray, k: int) -> list:
     return list(np.random.choice(items, k, replace=False))
 
 
-@numba.jit
+@numba.jit(nopython=True)
 def perform_random_walk(
-    adj_matrix: np.ndarray, starting_node, same_side_nodes, other_side_nodes
+    adj_matrix: np.ndarray, starting_node, same_side_nodes, other_side_nodes, steps=10000
 ):
     """
     Perform a random walk that start from a given `starting_node` and ends when it reaches a node from `same_side_nodes` or `other_side_nodes`.
@@ -25,18 +25,20 @@ def perform_random_walk(
 
     is_end_in_same = True
     keep_going = True
-
-    # step_count = 0
-
+    step_count = 0
     current_node = starting_node
-
     while keep_going:
+        step_count += 1
+        if step_count > steps:
+            return None
         # To speed up the process, we can use the adjacency matrix instead of the graph object
         neighbors = np.nonzero(adj_matrix[current_node])[0]
+        if len(neighbors) == 0:
+            is_end_in_same = True
+            break
         current_node = np.random.choice(neighbors)
 
         # step_count += 1 # If needed
-
         if current_node in same_side_nodes:
             is_end_in_same = True
             keep_going = False
@@ -48,7 +50,7 @@ def perform_random_walk(
     return is_end_in_same
 
 
-@numba.jit
+@numba.jit(nopython=True)
 def count_walks(
     adj_matrix: np.ndarray, starting_side_nodes: list, ending_side_nodes: list
 ):
@@ -57,22 +59,21 @@ def count_walks(
 
     for i in range(len(starting_side_nodes) - 1):
         node = starting_side_nodes[i]
-
         other_nodes = starting_side_nodes[:i] + starting_side_nodes[i + 1 :]
-
         is_same_side: bool = perform_random_walk(
             adj_matrix, node, other_nodes, ending_side_nodes
         )
-
-        if is_same_side:
-            count_walk_end_in_same_side += 1
-        else:
-            count_walk_end_in_other_side += 1
+        # if is_same_side is not None:
+        if is_same_side is not None:
+            if is_same_side:
+                count_walk_end_in_same_side += 1
+            else:
+                count_walk_end_in_other_side += 1
 
     return count_walk_end_in_same_side, count_walk_end_in_other_side
 
 
-@numba.jit
+@numba.jit(nopython=True)
 def RWC_JIT(
     adj_matrix: np.ndarray,
     left_nodes: np.ndarray,
@@ -85,8 +86,8 @@ def RWC_JIT(
 
     Input:
         G: NetworkX graph
-        left: list of users in the left side (1st community)
-        right: list of users in the right side (2nd community)
+        left: list of users on the left side (1st community)
+        right: list of users on the right side (2nd community)
         itr_num: number of iterations
         percent: percentage of users from each side to be used in each iteration
 
@@ -136,14 +137,13 @@ def RWC(
     adj_matrix = nx.to_numpy_array(G)
     left_nodes = np.array(left_nodes)
     right_nodes = np.array(right_nodes)
-
     return RWC_JIT(adj_matrix, left_nodes, right_nodes, itr_num, percent)
 
 
-def rwc(G, method):
+def rwc(G, method, ps=1, ns=-1):
     nodes_to_delete = [node for node in G.nodes() if G.nodes[node][method] == 0]
-    left_nodes = [node for node in G.nodes() if G.nodes[node][method] == -1]
-    right_nodes = [node for node in G.nodes() if G.nodes[node][method] == 1]
+    left_nodes = [node for node in G.nodes() if G.nodes[node][method] == ns]
+    right_nodes = [node for node in G.nodes() if G.nodes[node][method] == ps]
     G.remove_nodes_from(nodes_to_delete)
     left_nodes = [list(G.nodes()).index(node) for node in left_nodes]
     right_nodes = [list(G.nodes()).index(node) for node in right_nodes]

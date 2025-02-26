@@ -21,7 +21,7 @@ method_map = {
     'gnn': node2vec_gin
 }
 
-def run_exp(G: nx.Graph, method: str, **kwargs) -> None:
+def run_exp(G: nx.Graph, method: str, **kwargs):
     if method not in method_map:
         raise ValueError(f"Invalid method. Choose from {list(method_map.keys())}")
     try:

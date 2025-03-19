@@ -1,3 +1,21 @@
+TODO:
+1. Reachability within the same ECC or between different ECCs
+2. Draw one whole graph for adding connections and Reweighting alone and both
+3. Dynamic condition
+4. Change the number of labels
+5. Revise the paper(change 'polarity' to 'leaning')
+6. Collate the code repository
+
+TODO:
+
+1. Add connections alone
+2. Reweight alone
+3. At the same time
+
+4. Draw the distance-opinion graph
+
+5. Reachability within the same ECC or between different ECCs
+
 1. Results by changing theta
 2. Use labels that does not related to polarity
 3. The curve of f(S) values under each operation

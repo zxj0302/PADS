@@ -14,7 +14,9 @@ from .pads import pads_python
 from .utils import get_graph
 from matplotlib.lines import Line2D
 from . import run_exp
-from .opinion_dynamics import opinion_dynamics_reweight
+from .opinion_dynamics import opinion_dynamics_reweight, opinion_dynamics_connections
+import matplotlib.gridspec as gridspec
+from mpl_toolkits.axes_grid1.inset_locator import inset_axes
 
 
 def ec_ecc(source_path, crop_area):
@@ -600,98 +602,361 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4]):
     # Show the plot
     plt.show()
 
-def plot_opinion_dynamics(datasets=['Referendum_', 'Gun'], save_path=None):
-    fig, axs = plt.subplots(1, 2, figsize=(8, 4))
-    axs = axs.flatten()
+# Rename the existing function from plot_opinion_dynamics to plot_opinion_dynamics_reweight
+def plot_opinion_dynamics_reweight(datasets=['Referendum_', 'Gun'], save_path=None, ratio=0.3):
+    # Create a figure with 2 rows (variance and difference) and columns for each dataset
+    fig, axs = plt.subplots(2, len(datasets), figsize=(4*len(datasets), 8))
+    
+    # If there's only one dataset, ensure axs is still a 2D array
+    if len(datasets) == 1:
+        axs = axs.reshape(1, 1)
+    
     for i, d in enumerate(datasets):
-        opinion_dynamics_reweight(d, ax=axs[i])
-        axs[i].set_xlabel('Time Steps')
-        axs[i].set_ylabel('Polarity Variance')
-        axs[i].set_title(d.replace("_", ""))
-    axs[-1].legend(fontsize=9, loc='upper right')
+        # First row for variance, second row for difference
+        ax_var = axs[0, i]
+        ax_diff = axs[1, i]
+        
+        # Call the modified function with separate axes
+        opinion_dynamics_reweight(d, ax_var=ax_var, ax_diff=ax_diff, show_legend=True, ratio=ratio)
+        
+        # Set titles and labels
+        ax_var.set_title(f"{d.replace('_', '')} - Opinion Variance")
+        ax_diff.set_title(f"{d.replace('_', '')} - Opinion Gap")
+        
+        ax_diff.set_xlabel('Time Steps')
+        ax_var.set_xlabel('Time Steps')
+        
+        # Add grid for better readability
+        ax_var.grid(True, linestyle='--', alpha=0.3)
+        ax_diff.grid(True, linestyle='--', alpha=0.3)
+    
     plt.tight_layout()
     if save_path is not None:
         plt.savefig(save_path, format='pdf', bbox_inches='tight')
     plt.show()
 
 
-def polarity_distance(dataset, ax, color_pos='#ff7f0e', color_neg='#1f77b4'):
-    G = nx.read_gml(f'Output/{dataset}/graph.gml')
-
-    for i in [1, -1]:
-        label = 'Positive' if i==1 else 'Negative'
-        color = color_pos if i==1 else color_neg
-
-        # Find border nodes more efficiently
-        borders = [node for node in G.nodes
-            if G.nodes[node]['pads_cpp'] == i and
-               any(G.nodes[n]['pads_cpp'] == 0 for n in G.neighbors(node))]
-
-        if not borders:
-            continue
-
-        # Calculate distances once and store results
-        distance_data = defaultdict(list)
-
-        # Calculate distances from all border nodes at once
-        for node in G.nodes():
-            min_dist = float('inf')
-            for b in borders:
-                try:
-                    dist = nx.shortest_path_length(G, b, node)
-                    min_dist = min(min_dist, dist)
-                except nx.NetworkXNoPath:
-                    continue
-
-            if min_dist != float('inf'):
-                if G.nodes[node]['pads_cpp'] == i:
-                    min_dist *= -1
-                if min_dist != float('inf'):
-                    distance_data[min_dist].append(G.nodes[node]['polarity'])
-
-        # Process the collected data
-        distances = []
-        polarities = []
-        sizes = []
-
-        for dist in sorted(distance_data.keys()):
-            pol_values = distance_data[dist]
-            if pol_values:
-                distances.append(dist)
-                polarities.append(sum(pol_values) / len(pol_values))
-                sizes.append(len(pol_values))
-
-        if not distances:  # Skip if no valid data
-            continue
-
-        # Plot scatter points
-        sizes_normalized = [50 * s / max(sizes) for s in sizes]
-        ax.scatter(distances, polarities, s=sizes_normalized, alpha=0.5, color=color)
-
-        # Simple line plot instead of curve fitting
-        ax.plot(distances, polarities, color=color, label=f'{label} ECC', alpha=0.7)
-
-    ax.set_xlabel('Distance')
-    ax.set_ylabel('Average Polarity')
-    ax.grid(True, alpha=0.3)
-    ax.legend()
-
-# Create subplot grid
-def plot_polarity_distance(datasets):
-    n_datasets = len(datasets)
-    n_cols = 2
-    n_rows = (n_datasets + 1) // 2
-    fig, axs = plt.subplots(n_rows, n_cols, figsize=(15, 5*n_rows))
-    axs = axs.flatten() if n_datasets > 1 else [axs]
-
-    # Plot each dataset
-    for idx, d in enumerate(datasets):
-        # axs[idx].set_title(f'Dataset {d}')
-        polarity_distance(d, axs[idx])
-
-    # Remove empty subplots if odd number of datasets
-    if n_datasets > 1 and n_datasets % 2 == 1:
-        fig.delaxes(axs[-1])
-
+# Add the new function for opinion dynamics connections
+def plot_opinion_dynamics_connections(datasets=['Referendum_', 'Gun'], save_path=None, num_edges=2000, ratio=0.3, it=20):
+    # Create a figure with two columns (variance and opinion gap) and rows for each dataset
+    fig, axs = plt.subplots(len(datasets), 2, figsize=(10, 5*len(datasets)))
+    
+    # If there's only one dataset, ensure axs is still a 2D array
+    if len(datasets) == 1:
+        axs = axs.reshape(1, 2)
+    
+    for i, d in enumerate(datasets):
+        # First column for variance, second column for opinion gap
+        ax_var = axs[i, 0]
+        ax_diff = axs[i, 1]
+        
+        # Call the opinion dynamics connections function with both axes
+        opinion_dynamics_connections(d, num_edges=num_edges, ax_var=ax_var, ax_diff=ax_diff, ratio=ratio, it=it)
+        
+        # Set titles for the subplots
+        ax_var.set_title(f"{d.replace('_', '')} - Opinion Variance", fontsize=14)
+        ax_diff.set_title(f"{d.replace('_', '')} - Opinion Gap", fontsize=14)
+        
+        # Add grid for better readability
+        ax_var.grid(True, linestyle='--', alpha=0.3)
+        ax_diff.grid(True, linestyle='--', alpha=0.3)
+    
     plt.tight_layout()
+    if save_path is not None:
+        plt.savefig(save_path, format='pdf', bbox_inches='tight')
+    plt.show()
+
+
+def polarity_distance(dataset, ax, community_type=1, color=None, marker=None, label=None):
+    G = nx.read_gml(f'Output/{dataset}/graph.gml')
+    
+    # Set default label if not provided
+    if label is None:
+        label = dataset.replace('_', '')
+    
+    # Find border nodes more efficiently
+    borders = [node for node in G.nodes
+        if G.nodes[node]['pads_cpp'] == community_type and
+           any(G.nodes[n]['pads_cpp'] == 0 for n in G.neighbors(node))]
+
+    if not borders:
+        return
+
+    # Calculate distances once and store results
+    distance_data = defaultdict(list)
+
+    # Calculate distances from all border nodes at once
+    for node in G.nodes():
+        min_dist = float('inf')
+        for b in borders:
+            try:
+                dist = nx.shortest_path_length(G, b, node)
+                min_dist = min(min_dist, dist)
+            except nx.NetworkXNoPath:
+                continue
+
+        if min_dist != float('inf'):
+            if G.nodes[node]['pads_cpp'] == community_type:
+                min_dist *= -1
+            if min_dist != float('inf'):
+                distance_data[min_dist].append(G.nodes[node]['polarity'])
+
+    # Process the collected data
+    distances = []
+    polarities = []
+    sizes = []
+
+    for dist in sorted(distance_data.keys()):
+        pol_values = distance_data[dist]
+        if pol_values:
+            distances.append(dist)
+            polarities.append(sum(pol_values) / len(pol_values))
+            sizes.append(len(pol_values))
+
+    if not distances:  # Skip if no valid data
+        return
+
+    # Improved marker size scaling with better correlation to node count
+    # Use a minimum size and scale up based on node count
+    min_size = 5
+    max_size = 200
+    if len(sizes) > 1:
+        # Scale sizes between min_size and max_size
+        sizes_normalized = [min_size + (max_size - min_size) * (s / max(sizes)) for s in sizes]
+    else:
+        sizes_normalized = [max_size]  # If only one point, use max size
+    
+    scatter_kwargs = {'s': sizes_normalized, 'alpha': 0.7}
+    line_kwargs = {'alpha': 0.7, 'linewidth': 1.5}
+    
+    if color:
+        scatter_kwargs['color'] = color
+        line_kwargs['color'] = color
+    if marker:
+        scatter_kwargs['marker'] = marker
+    
+    # Plot scatter points with size proportional to number of nodes
+    ax.scatter(distances, polarities, **scatter_kwargs)
+    # Plot line connecting the points
+    ax.plot(distances, polarities, label=label, **line_kwargs)
+
+
+def plot_polarity_distance(datasets, save_path=None):
+    # Create a figure with 2 subfigures (positive and negative)
+    fig, axs = plt.subplots(1, 2, figsize=(10, 5))
+    
+    # Define a color cycle for different datasets
+    colors = plt.cm.tab10.colors
+    markers = ['o', 's', '^', 'D', 'v', '<', '>', 'p', '*', 'h']
+    
+    # Plot positive communities in the first subfigure
+    for idx, dataset in enumerate(datasets):
+        color = colors[idx % len(colors)]
+        marker = markers[idx % len(markers)]
+        polarity_distance(dataset, axs[0], community_type=1, 
+                          color=color, marker=marker)
+    
+    # Plot negative communities in the second subfigure
+    for idx, dataset in enumerate(datasets):
+        color = colors[idx % len(colors)]
+        marker = markers[idx % len(markers)]
+        polarity_distance(dataset, axs[1], community_type=-1, 
+                          color=color, marker=marker)
+    
+    # Set titles and labels
+    axs[0].set_title('ECC-P', fontsize=14)
+    axs[1].set_title('ECC-N', fontsize=14)
+    
+    # Set common properties for all axes but only add legend to the last one
+    for i, ax in enumerate(axs):
+        ax.set_xlabel('Distance', fontsize=12)
+        ax.set_ylabel('Average Polarity', fontsize=12)
+        ax.grid(True, alpha=0.3)
+        if i == len(axs) - 1:  # Only add legend to the last axis
+            ax.legend(loc='upper right')
+    
+    plt.tight_layout()
+    
+    if save_path:
+        plt.savefig(save_path, bbox_inches='tight')
+    
+    plt.show()
+
+
+def visualize_polarity_evolution(dataset='Brexit', num_edges=2000, timesteps=[0, 5, 10, 15, 20], save_path=None, ratio=0.3):
+    print(f"===Dataset {dataset}===")
+    # Read the original graph
+    G = nx.read_gml(f'Output/{dataset}/graph.gml')
+    
+    # Get original polarities
+    original_polarities = nx.get_node_attributes(G, 'polarity')
+    
+    # --- Create graph with weighted PADS connection strategy (Simulation 6) ---
+    nodes_pads_pos = [node for node in G.nodes if G.nodes[node]['pads_cpp'] == 1]
+    nodes_pads_neg = [node for node in G.nodes if G.nodes[node]['pads_cpp'] == -1]
+    
+    # Calculate weights for each node based on degree and polarity
+    pos_weights = {}
+    for node in nodes_pads_pos:
+        # Higher degree and lower polarity gets higher weight
+        pos_weights[node] = G.degree(node) * (1 / (G.nodes[node]['polarity'] + 0.1))
+    
+    neg_weights = {}
+    for node in nodes_pads_neg:
+        # Higher degree and lower absolute polarity gets higher weight
+        neg_weights[node] = G.degree(node) * (1 / (abs(G.nodes[node]['polarity']) + 0.1))
+    
+    # Normalize weights
+    pos_nodes_list = list(pos_weights.keys())
+    pos_weights_list = [pos_weights[node] for node in pos_nodes_list]
+    pos_weights_sum = sum(pos_weights_list)
+    pos_weights_normalized = [w/pos_weights_sum for w in pos_weights_list] if pos_weights_sum > 0 else None
+    
+    neg_nodes_list = list(neg_weights.keys())
+    neg_weights_list = [neg_weights[node] for node in neg_nodes_list]
+    neg_weights_sum = sum(neg_weights_list)
+    neg_weights_normalized = [w/neg_weights_sum for w in neg_weights_list] if neg_weights_sum > 0 else None
+    
+    # Create a copy of the graph
+    G_modified = G.copy()
+    
+    # Add edges by sampling pairs based on weights
+    added_edges = 0
+    attempts = 0
+    max_attempts = num_edges * 10
+    
+    # Check if we have nodes in both communities
+    if pos_weights_normalized and neg_weights_normalized and len(pos_nodes_list) > 0 and len(neg_nodes_list) > 0:
+        while added_edges < num_edges and attempts < max_attempts:
+            # Sample one node from each community based on weights
+            pos_node = np.random.choice(pos_nodes_list, p=pos_weights_normalized)
+            neg_node = np.random.choice(neg_nodes_list, p=neg_weights_normalized)
+            
+            # Check if edge already exists
+            if not G_modified.has_edge(pos_node, neg_node):
+                G_modified.add_edge(pos_node, neg_node)
+                added_edges += 1
+            
+            attempts += 1
+        
+        print(f"Added {added_edges} edges between PADS communities")
+    else:
+        print(f"Warning: Not enough nodes in PADS communities to add edges")
+    
+    # Get opinions at each timestep
+    all_opinions = []
+    opinions = nx.get_node_attributes(G_modified, 'polarity').copy()
+    all_opinions.append(opinions.copy())
+    
+    # Run the simulation manually to capture opinions at each step
+    initial_opinions = opinions.copy()
+    
+    for _ in range(max(timesteps)):
+        old_opinions = opinions.copy()
+        
+        # Update each node's opinion
+        for node in G_modified.nodes():
+            neighbors = list(G_modified.neighbors(node))
+            if not neighbors:
+                continue
+                
+            # Calculate similarities and degrees
+            degrees = [len(list(G_modified.neighbors(neigh))) for neigh in neighbors]
+            similarities = 2 - abs(np.array([old_opinions[neigh] for neigh in neighbors]) - old_opinions[node])
+            
+            # Calculate weighted influence
+            weights = [sim * deg for sim, deg in zip(similarities, degrees)]
+            if sum(weights) == 0:
+                continue
+                
+            neighbor_influence = sum([w * old_opinions[neigh] for w, neigh in zip(weights, neighbors)]) / sum(weights)
+            
+            # Update opinion with stubbornness based on absolute polarity
+            stubbornness = abs(old_opinions[node])
+            opinions[node] = stubbornness * initial_opinions[node] + (1 - stubbornness) * neighbor_influence
+        
+        # Store opinions at this timestep
+        all_opinions.append(opinions.copy())
+    
+    # Create visualization
+    fig, axs = plt.subplots(1, len(timesteps), figsize=(5*len(timesteps), 5))
+    
+    # Handle the case where there's only one timestep
+    if len(timesteps) == 1:
+        axs = np.array([axs])
+    
+    # Define colors for positive and negative communities
+    pos_color = '#d62728'  # Red
+    neg_color = '#1f77b4'  # Blue
+    
+    for i, t in enumerate(timesteps):
+        if t >= len(all_opinions):
+            print(f"Warning: Timestep {t} exceeds simulation length. Using last available timestep.")
+            t = len(all_opinions) - 1
+            
+        # Get opinions at this timestep
+        timestep_opinions = all_opinions[t]
+        
+        # Get all node opinions
+        all_node_opinions = [timestep_opinions[node] for node in G_modified.nodes()]
+        
+        # Main scatter plot
+        # Separate nodes by community for controlled plotting order
+        pos_nodes = [node for node in G_modified.nodes() if G_modified.nodes[node]['pads_cpp'] == 1]
+        neg_nodes = [node for node in G_modified.nodes() if G_modified.nodes[node]['pads_cpp'] == -1]
+        other_nodes = [node for node in G_modified.nodes() if G_modified.nodes[node]['pads_cpp'] not in [1, -1]]
+        
+        # Collect all original and current values for correlation calculation
+        original_values = [original_polarities[node] for node in G_modified.nodes()]
+        current_values = [timestep_opinions[node] for node in G_modified.nodes()]
+        
+        # Plot scatter on the main axis
+        if other_nodes:
+            other_original = [original_polarities[node] for node in other_nodes]
+            other_current = [timestep_opinions[node] for node in other_nodes]
+            axs[i].scatter(other_original, other_current, c='gray', alpha=0.5, s=6)
+        
+        if neg_nodes:
+            neg_original = [original_polarities[node] for node in neg_nodes]
+            neg_current = [timestep_opinions[node] for node in neg_nodes]
+            axs[i].scatter(neg_original, neg_current, c=neg_color, alpha=0.5, s=6)
+        
+        if pos_nodes:
+            pos_original = [original_polarities[node] for node in pos_nodes]
+            pos_current = [timestep_opinions[node] for node in pos_nodes]
+            axs[i].scatter(pos_original, pos_current, c=pos_color, alpha=0.5, s=6)
+        
+        axs[i].plot([-1, 1], [-1, 1], 'k--', alpha=0.5)  # Identity line
+        axs[i].set_xlim(-1.1, 1.1)
+        axs[i].set_ylim(-1.1, 1.1)
+        axs[i].set_xlabel('Original Opinion')
+        if i == 0:
+            axs[i].set_ylabel('Current Opinion')
+        else:
+            # set y-axis ticks invisible
+            axs[i].set_yticks([])
+
+        axs[i].set_title(f'Opinion Evolution at Timestep {t}')
+        axs[i].grid(True, linestyle='--', alpha=0.3)
+        
+        # Add correlation coefficient
+        corr = np.corrcoef(original_values, current_values)[0, 1]
+        axs[i].annotate(f'Correlation: {corr:.3f}', 
+                        xy=(0.15, 0.85),
+                        xycoords='axes fraction',
+                        fontsize=10,
+                        bbox=dict(facecolor='white', alpha=0.8))
+        
+        # Create an inset axes for the histogram
+        ax_inset = inset_axes(axs[i], bbox_to_anchor=(0.68, 0.04, 0.3, 0.3), width='100%', height='100%', bbox_transform=axs[i].transAxes, borderpad=0)
+        ax_inset.hist(all_node_opinions, bins=20, alpha=0.7, color='gray')
+        ax_inset.set_xlim(-1.1, 1.1)
+        ax_inset.set_title('Opinion Distribution', fontsize=6)
+        ax_inset.tick_params(axis='both', which='major', labelsize=4)
+
+    plt.subplots_adjust(wspace=0.05)    
+    
+    if save_path:
+        plt.savefig(save_path, bbox_inches='tight')
+    
     plt.show()

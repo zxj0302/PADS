@@ -187,8 +187,8 @@ def pads_python(G, attr_name='pads_python', **kwargs):
         G.nodes[edge[0]]['promising_value'] += similarity
         G.nodes[edge[1]]['promising_value'] += similarity
     if return_fs:
-        pos_fs = ecc_greedy(G.copy(), theta, True, return_fs=True, num_labels=num_labels)
-        neg_fs = ecc_greedy(G.copy(), theta, False, return_fs=True, num_labels=num_labels)
+        pos_fs = ecc_greedy(G.copy(), theta, True, return_fs=True, num_labels=num_labels, max_neg_count=max_neg)
+        neg_fs = ecc_greedy(G.copy(), theta, False, return_fs=True, num_labels=num_labels, max_neg_count=max_neg)
         return pos_fs, neg_fs
     myg_pos = set(ecc_greedy(G.copy(), theta, True, num_labels=num_labels, max_neg_count=max_neg))
     myg_neg = set(ecc_greedy(G.copy(), theta, False, num_labels=num_labels, max_neg_count=max_neg))

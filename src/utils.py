@@ -84,7 +84,10 @@ def statistics(G, dataset, save_path=None):
             #compute purity as variance of polarities
             purity = np.var(community_polarity)
             #compute conductance
-            conductance = out_edge_count/(out_edge_count+inner_edge_count)
+            if out_edge_count+inner_edge_count == 0:
+                conductance = 0
+            else:
+                conductance = out_edge_count/(out_edge_count+inner_edge_count)
             avg_node_polarity = np.mean(community_polarity)
             num_nodes = len(community_polarity)
             num_edges = inner_edge_count/2

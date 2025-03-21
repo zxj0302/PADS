@@ -14,7 +14,8 @@ import shutil
 #If we use ML, can we use self-learning? Don't set truth value of the max function(or randomly set a large one), just use ML to optimize
 # If we use GNN, can we get node embeddings and classify? Not only neighbours, they have to know the 'whole picture' of the graph
 class Model(pl.LightningModule):
-    def __init__(self, in_channels=17, hidden_channels=32, out_channels=8, num_layers=3, lr=0.01, upper_bound=200, theta=2, positive=False, device='mps'):
+    def __init__(self, in_channels=17, hidden_channels=32, out_channels=8, num_layers=3, lr=0.01, upper_bound=200, theta=2,
+                 positive=False, device='mps'):
         super().__init__()
         self.save_hyperparameters()
         self.gin = GIN(in_channels, hidden_channels, num_layers, out_channels, train_eps=True, norm='BatchNorm')
@@ -69,6 +70,7 @@ class Model(pl.LightningModule):
 
 
 def node2vec_gin(G_ori, device='cuda:0', **kwargs):
+    theta = kwargs.get('theta', 2)
     logging.getLogger("pytorch_lightning").setLevel(logging.ERROR)
     warnings.filterwarnings("ignore")  # Suppress all warnings
 
@@ -82,7 +84,7 @@ def node2vec_gin(G_ori, device='cuda:0', **kwargs):
         device = 'cuda' if torch.cuda.is_available() else 'cpu'
 
     G = G_ori.copy()
-    node2vec = Node2Vec(G, dimensions=16, walk_length=20, num_walks=10, p=0.5, q=2, workers=32)
+    node2vec = Node2Vec(G, dimensions=16, walk_length=16, num_walks=32, p=0.5, q=2, workers=32)
     model = node2vec.fit(window=10, min_count=1)
     for node in G.nodes():
         G.nodes[node]['x'] = model.wv[node]
@@ -94,18 +96,18 @@ def node2vec_gin(G_ori, device='cuda:0', **kwargs):
     graph, upper_bound = from_networkx(G), max(dict(G.degree()).values())/2
 
     #for positive
-    model_pos = Model(upper_bound=upper_bound, theta=2, lr=5e-4, positive=True, device=device)
+    model_pos = Model(upper_bound=upper_bound, theta=theta, lr=1e-2, positive=True, device=device)
     # logger_pos = loggers.TensorBoardLogger('./', version=0)
     logger_pos = None
-    trainer_pos = pl.Trainer(max_epochs=200, accelerator=device, logger=logger_pos, deterministic=True)
+    trainer_pos = pl.Trainer(max_epochs=300, accelerator=device, logger=logger_pos, deterministic=True)
     trainer_pos.fit(model_pos, DataLoader([graph], batch_size=1))
     data_pos = model_pos.output_saved()
 
     #for negative
-    model_neg = Model(upper_bound=upper_bound, theta=2, lr=5e-4, positive=False, device=device)
+    model_neg = Model(upper_bound=upper_bound, theta=theta, lr=1e-2, positive=False, device=device)
     # logger_neg = loggers.TensorBoardLogger('./', version=1)
     logger_neg = None
-    trainer_neg = pl.Trainer(max_epochs=200, accelerator=device, logger=logger_neg, deterministic=True)
+    trainer_neg = pl.Trainer(max_epochs=300, accelerator=device, logger=logger_neg, deterministic=True)
     trainer_neg.fit(model_neg, DataLoader([graph], batch_size=1))
     data_neg = model_neg.output_saved()
 

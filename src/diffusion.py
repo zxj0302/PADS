@@ -1,3 +1,5 @@
+import os
+
 import numpy as np
 import networkx as nx
 from numba import njit, prange
@@ -180,8 +182,12 @@ def my_diffusion(graph_path, save_path,
     )
 
     # save the results into a json file
-    with open(save_path, 'w') as f:
-        json.dump({'pos': pos_reach, 'neg': neg_reach}, f)
+    if save_path is not None:
+        directory = os.path.dirname(save_path)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
+        with open(save_path, 'w') as f:
+            json.dump({'pos': pos_reach, 'neg': neg_reach}, f)
     return pos_reach, neg_reach
 
 
@@ -194,13 +200,19 @@ def mean_diffusion(graph_path, diffusion_path, method_name, filter=False):
         'polarity'] <= 0))]
     pos_reach = diffusion['pos']
     neg_reach = diffusion['neg']
+    pos_reach_pos = {}
     pos_reach_neg = {}
     neg_reach_pos = {}
+    neg_reach_neg = {}
     for pos in pos_nodes:
-        pos_reach_neg[pos] = sum([pos_reach[pos][int(neg)] for neg in neg_nodes]) / len(neg_nodes)
+        pos_reach_pos[pos] = sum([pos_reach[pos][int(p)] for p in pos_nodes]) / len(pos_nodes)
+        pos_reach_neg[pos] = sum([pos_reach[pos][int(n)] for n in neg_nodes]) / len(neg_nodes)
     for neg in neg_nodes:
-        neg_reach_pos[neg] = sum([neg_reach[neg][int(pos)] for pos in pos_nodes]) / len(pos_nodes)
-    pos_reach_neg_mean = sum(pos_reach_neg.values()) / len(pos_reach_neg)
-    neg_reach_pos_mean = sum(neg_reach_pos.values()) / len(neg_reach_pos)
-    print(f'For {method_name}: pos_on_neg({pos_reach_neg_mean}, neg_on_pos({neg_reach_pos_mean})')
-    return pos_reach_neg, neg_reach_pos
+        neg_reach_pos[neg] = sum([neg_reach[neg][int(p)] for p in pos_nodes]) / len(pos_nodes)
+        neg_reach_neg[neg] = sum([neg_reach[neg][int(n)] for n in neg_nodes]) / len(neg_nodes)
+    popm = sum(pos_reach_pos.values()) / len(pos_reach_pos)
+    ponm = sum(pos_reach_neg.values()) / len(pos_reach_neg)
+    nopm = sum(neg_reach_pos.values()) / len(neg_reach_pos)
+    nonm = sum(neg_reach_neg.values()) / len(neg_reach_neg)
+    print(f'{method_name}: popm({popm}), ponm({ponm}), nonpm({nopm}), nonpm({nonm})')
+    return popm, ponm, nopm, nonm

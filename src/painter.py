@@ -183,6 +183,9 @@ def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
 
     # Save as PDF if save_path is provided
     if save_path is not None:
+        directory = os.path.dirname(save_path)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
         plt.savefig(save_path, bbox_inches='tight')
     plt.show()
 
@@ -221,8 +224,18 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
         # More efficient distance calculation
         pos_nodes = [n for n, d in G.nodes(data=True) if d[attribute] == value_pos]
         neg_nodes = [n for n, d in G.nodes(data=True) if d[attribute] == value_nag]
-        distances = [nx.shortest_path_length(G, s, t) for s in pos_nodes for t in neg_nodes]
-        avg_distance = sum(distances)/len(distances) if distances else 0
+        # Handle distance calculation with disconnected components
+        distances = []
+        for s in pos_nodes:
+            for t in neg_nodes:
+                try:
+                    dist = nx.shortest_path_length(G, s, t)
+                    distances.append(dist)
+                except nx.NetworkXNoPath:
+                    # Skip pairs that don't have a path between them
+                    continue
+
+        avg_distance = sum(distances)/len(distances) if distances else float('inf')
         rwc_score = 1 if not (border_pos and border_nag) else rwc(G.copy(), attribute)
 
         count_pos = len(pos_nodes)
@@ -238,20 +251,13 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
         }
 
     if save_path is not None:
+        directory = os.path.dirname(save_path)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
         df.to_csv(save_path, index=False)
 
 
-def radar_chart(file_path, save_path):
-    # Define the list of files and their corresponding titles
-    files = [
-        ("Abortion", "Abortion"),
-        ("Brexit", "Brexit"),
-        ("Election", "Election"),
-        ("Gun", "Gun"),
-        ("Partisanship", "Partisanship"),
-        ("Referendum_", "Referendum"),
-    ]
-
+def radar_chart(file_path, datasets):
     # Define the categories (metrics)
     categories = ['OIR', 'BR-P', 'BR-N', 'RWC', 'Avg. Distance']
     num_vars = len(categories)
@@ -269,17 +275,18 @@ def radar_chart(file_path, save_path):
     axes = axes.flatten()  # Flatten the 2D array for easy iteration
 
     # Iterate over each file and corresponding subplot
-    for idx, (file, title) in enumerate(files):
+    for idx, d in enumerate(datasets):
         ax = axes[idx]
+        title = d.replace('_', ' ')
 
         try:
             # Read the CSV file
-            df = pd.read_csv(os.path.join(file_path, file, 'border_stat.csv'))
+            df = pd.read_csv(os.path.join(file_path, f'{d}.csv'))
 
             # Ensure that the DataFrame has the methods in the specified order
             df = df.set_index('Method').loc[method_names].reset_index()
         except KeyError as e:
-            print(f"Error: {e}. Please ensure all methods are present in {file}.")
+            print(f"Error: {e}. Please ensure all methods are present in {d}.")
             # Display a placeholder text in the subplot
             ax.text(0.5, 0.5, 'Data Missing', horizontalalignment='center',
                 verticalalignment='center', fontsize=12, transform=ax.transAxes)
@@ -289,7 +296,7 @@ def radar_chart(file_path, save_path):
             ax.set_yticks([])
             continue  # Skip this file if there's an error
         except FileNotFoundError:
-            print(f"Error: {file} not found.")
+            print(f"Error: {d} not found.")
             ax.text(0.5, 0.5, 'File Not Found', horizontalalignment='center',
                 verticalalignment='center', fontsize=12, transform=ax.transAxes)
             # Set the title at the bottom
@@ -358,7 +365,7 @@ def radar_chart(file_path, save_path):
         ax.grid(True, linestyle='--', linewidth=2, c='k', alpha=0.5)
 
     # Handle any unused subplots (if any)
-    for j in range(len(files), len(axes)):
+    for j in range(len(datasets), len(axes)):
         fig.delaxes(axes[j])
 
     legend_elements = [Patch(facecolor=colors[i], label=method) for i, method in enumerate(method_names)]
@@ -373,8 +380,10 @@ def radar_chart(file_path, save_path):
     mpl.rcParams['figure.facecolor'] = 'white'
 
     # save the plot
-    if save_path is not None:
-        plt.savefig(os.path.join(save_path, 'radar.pdf'), bbox_inches='tight')
+    if file_path is not None:
+        if not os.path.exists(file_path):
+            os.makedirs(file_path)
+        plt.savefig(os.path.join(file_path, 'radar.pdf'), bbox_inches='tight')
 
     # Display the figure
     plt.show()
@@ -439,25 +448,19 @@ def create_heatmap(graph_path, diffusion_path, save_path=None, grid_size=10):
 
     # plt.tight_layout()
     if save_path:
-        # format pdf, no margin
+        directory = os.path.dirname(save_path)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
         plt.savefig(save_path, bbox_inches='tight', pad_inches=0, format='pdf')
 
 
-def fs_curve(save_path=None):
-    datasets = {
-                'Abortion': 'Abortion',
-                'Brexit': 'Brexit',
-                'Election': 'Election',
-                'Gun': 'Gun',
-                'Partisanship': 'Partisanship',
-                'Referendum_': 'Referendum'
-                }
+def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
     fig, axs = plt.subplots(2, 3, figsize=(8, 6))
     axs = axs.flatten()
 
-    for idx, d in enumerate(datasets.keys()):
+    for idx, d in enumerate(datasets):
         G = get_graph(d)
-        pos, neg = pads_python(G, return_fs=True)
+        pos, neg = pads_python(G, return_fs=True, theta=theta, max_neg=max_neg, num_labels=num_labels)
         pos_values = [p[0] for p in pos]
         neg_values = [n[0] for n in neg]
 
@@ -487,7 +490,7 @@ def fs_curve(save_path=None):
         axs[idx].hlines(y=neg_peak, xmin=0, xmax=neg_peak_idx,
             colors='r', linestyles='--', alpha=0.5)
 
-        axs[idx].set_xlabel(datasets[d], fontsize=10)
+        axs[idx].set_xlabel(d.replace('_', ''), fontsize=10)
         axs[idx].grid(True, linestyle='--', alpha=0.3)
         # set y ticks invisible
         axs[idx].tick_params(axis='y', which='both', left=False, right=False, labelleft=False)
@@ -496,11 +499,14 @@ def fs_curve(save_path=None):
 
     plt.tight_layout()
     if save_path:
+        directory = os.path.dirname(save_path)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
         plt.savefig(save_path, bbox_inches='tight', format='pdf')
     plt.show()
 
 
-def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4]):
+def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4], num_labels=5, max_neg=100):
     # Set Seaborn style for better aesthetics
     sns.set(style="whitegrid")
 
@@ -513,7 +519,7 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4]):
     # Run experiments for each theta
     for theta in thetas:
         # timer = {}
-        t, (pos_fs, neg_fs) = run_exp(G, 'pads_python', theta=theta, return_fs=True)
+        t, (pos_fs, neg_fs) = run_exp(G, 'pads_python', theta=theta, return_fs=True, num_labels=num_labels, max_neg=max_neg)
         times[theta] = t
         pos_fss[theta] = pos_fs
         neg_fss[theta] = neg_fs
@@ -597,6 +603,9 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4]):
 
     # Save the figure if save_path is provided
     if save_path:
+        directory = os.path.dirname(save_path)
+        if not os.path.exists(directory):
+            os.makedirs(directory)
         plt.savefig(save_path, bbox_inches='tight', format='pdf')
 
     # Show the plot

@@ -173,20 +173,6 @@ Graph read_graph(const string& filename) {
 }
 
 
-unsigned compute_label(double polarity, unsigned num_labels) {
-    if (num_labels == 0) return 0;
-
-    double step = 2.0 / num_labels;
-    for (unsigned i = 0; i < num_labels; ++i) {
-        double lower = -1.0 + i * step;
-        double upper = -1.0 + (i + 1) * step;
-        if (lower <= polarity && polarity <= upper) {
-            return i;
-        }
-    }
-    return num_labels - 1;
-}
-
 /*
  * =========================================================
  * Eccentricity-based Greedy Algorithm
@@ -522,16 +508,11 @@ int main(int argc, char* argv[]) {
     string filename = argv[1];
     double theta = strtod(argv[2], nullptr);
     unsigned max_neg = stoul(argv[3], nullptr);
-    unsigned num_labels = (argc == 5) ? stoul(argv[4], nullptr) : 3; // 默认为3个标签
+    unsigned num_labels = (argc == 5) ? stoul(argv[4], nullptr) : 5;
 
     try {
         // Read the graph from the edge list file
         Graph G = read_graph(filename);
-
-        // 重新计算标签
-        for (auto v_it = vertices(G); v_it.first != v_it.second; ++v_it.first) {
-            G[*v_it.first].polarity_label = compute_label(G[*v_it.first].polarity, num_labels);
-        }
 
         // Compute promising_value for each node by iterating over all edges once
         for (auto e_it = edges(G); e_it.first != e_it.second; ++e_it.first) {

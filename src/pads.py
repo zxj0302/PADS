@@ -3,7 +3,7 @@ from sortedcontainers import SortedSet
 import subprocess
 
 
-def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_labels=3):
+def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_labels=5):
     if not pos:
         for node in G.nodes():
             G.nodes[node]['polarity'] = -G.nodes[node]['polarity']
@@ -160,7 +160,8 @@ def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_label
 def pads_python(G, attr_name='pads_python', **kwargs):
     theta=kwargs.get('theta', 0.5)
     return_fs=kwargs.get('return_fs', False)
-    num_labels=kwargs.get('num_labels', 3)
+    num_labels=kwargs.get('num_labels', 5)
+    max_neg=kwargs.get('max_neg', 100)
 
     label_boundaries = []
     if num_labels > 1:
@@ -189,8 +190,8 @@ def pads_python(G, attr_name='pads_python', **kwargs):
         pos_fs = ecc_greedy(G.copy(), theta, True, return_fs=True, num_labels=num_labels)
         neg_fs = ecc_greedy(G.copy(), theta, False, return_fs=True, num_labels=num_labels)
         return pos_fs, neg_fs
-    myg_pos = set(ecc_greedy(G.copy(), theta, True, num_labels=num_labels))
-    myg_neg = set(ecc_greedy(G.copy(), theta, False, num_labels=num_labels))
+    myg_pos = set(ecc_greedy(G.copy(), theta, True, num_labels=num_labels, max_neg_count=max_neg))
+    myg_neg = set(ecc_greedy(G.copy(), theta, False, num_labels=num_labels, max_neg_count=max_neg))
     for node in G.nodes():
         G.nodes[node][attr_name] = (1 if node in myg_pos else 0) - (1 if node in myg_neg else 0)
     return list(myg_pos), list(myg_neg)
@@ -199,10 +200,10 @@ def pads_python(G, attr_name='pads_python', **kwargs):
 def pads_cpp(G, **kwargs):
     cpp_exe = kwargs.get('cpp_exe', 'Related_Reps\\pads_cpp\\cmake-build-release\\PADS.exe')
     dataset = kwargs.get('dataset', 'Abortion')
-    input_file = kwargs.get('input_file', f'Datasets\\Static\\{dataset}\\edgelist_pads')
+    input_file = kwargs.get('input_file', f'input\\datasets\\static\\{dataset}\\edgelist_pads')
     theta = kwargs.get('theta', 0.5)
     max_neg = kwargs.get('max_neg', 100)
-    num_labels = kwargs.get('num_labels', 3)
+    num_labels = kwargs.get('num_labels', 5)
 
     # run the cpp program and get the output program prints on the terminal
     command = f"{cpp_exe} {input_file} {theta} {max_neg} {num_labels}"

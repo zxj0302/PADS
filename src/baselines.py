@@ -30,7 +30,7 @@ def louvain_partition(G: nx.Graph, **kwargs) -> None:
 
 def eva_partition(G: nx.Graph, **kwargs) -> None:
     try:
-        eva_part, _ = eva_best_partition(G, weight='stance_label', alpha=0.5)
+        eva_part, _ = eva_best_partition(G, weight='polarity_label', alpha=0.5)
         for node in G.nodes():
             G.nodes[node]['eva'] = eva_part[node]
     except Exception as e:
@@ -61,7 +61,7 @@ def maxflow_cpp_udsp(G: nx.Graph, **kwargs) -> None:
     cpp_exe = kwargs.get('cpp_exe', 'Related_Reps\\Greedy++\\exact.exe')
     multiplier = kwargs.get('multiplier', 1000)
     dataset = kwargs.get('dataset', 'Abortion')
-    input_folder = kwargs.get('input_file', f'Datasets\\Static\\{dataset}')
+    input_folder = kwargs.get('input_file', f'input\\datasets\\static\\{dataset}')
     input_pos_path = os.path.join(input_folder, 'edgelist_pos_unweighted')
     node_map_pos_path = os.path.join(input_folder, 'node_map_pos')
     input_neg_path = os.path.join(input_folder, 'edgelist_neg_unweighted')
@@ -131,7 +131,7 @@ def maxflow_cpp_wdsp(G: nx.Graph, **kwargs) -> None:
     cpp_exe = kwargs.get('cpp_exe', 'Related_Reps\\Greedy++\\exactweighted.exe')
     multiplier = kwargs.get('multiplier', 1000)
     dataset = kwargs.get('dataset', 'Abortion')
-    input_folder = kwargs.get('input_file', f'Datasets\\Static\\{dataset}')
+    input_folder = kwargs.get('input_file', f'input\\datasets\\static\\{dataset}')
     input_pos_path = os.path.join(input_folder, 'edgelist_pos_weighted')
     node_map_pos_path = os.path.join(input_folder, 'node_map_pos')
     input_neg_path = os.path.join(input_folder, 'edgelist_neg_weighted')
@@ -232,7 +232,7 @@ def greedypp_cpp_wdsp(G: nx.Graph, **kwargs) -> None:
     cpp_exe = kwargs.get('cpp_exe', 'Related_Reps\\Greedy++\\ipnw.exe')
     iterations = kwargs.get('iterations', 1)
     dataset = kwargs.get('dataset', 'Abortion')
-    input_folder = kwargs.get('input_file', f'Datasets\\Static\\{dataset}')
+    input_folder = kwargs.get('input_file', f'input\\datasets\\static\\{dataset}')
     input_pos_path = os.path.join(input_folder, 'edgelist_pos_weighted')
     node_map_pos_path = os.path.join(input_folder, 'node_map_pos')
     input_neg_path = os.path.join(input_folder, 'edgelist_neg_weighted')

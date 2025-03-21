@@ -8,6 +8,7 @@ from node2vec import Node2Vec
 import platform
 import logging
 import warnings
+import shutil
 
 
 #If we use ML, can we use self-learning? Don't set truth value of the max function(or randomly set a large one), just use ML to optimize
@@ -110,3 +111,6 @@ def node2vec_gin(G_ori, device='cuda:0', **kwargs):
 
     for node in G_ori.nodes:
         G_ori.nodes[node]['node2vec_gin'] = (1 if data_pos[node] == 1 else 0) - (1 if data_neg[node] == 1 else 0)
+
+    # delete the lightning log
+    shutil.rmtree('./lightning_logs')

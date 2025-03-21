@@ -34,8 +34,8 @@ def run_exp(G: nx.Graph, method: str, **kwargs):
         raise RuntimeError(f"Method {method} failed: {str(e)}")
 
 
-# compute purity and purity
-def statistics(G, dataset):
+# compute purity and density
+def statistics(G, dataset, save_path=None):
     baseline_methods = ['cascade', 'metis', 'louvain', 'eva', 'maxflow_cpp_udsp', 'maxflow_cpp_wdsp', 'node2vec_gin',
         'pads_python', 'pads_cpp']
     baseline_methods = [method for method in baseline_methods if method in G.nodes[0].keys()]
@@ -101,7 +101,8 @@ def statistics(G, dataset):
             data['weighted_density'].append('%.5f' % weighted_density)
 
         df = pd.DataFrame(data)
-        df.to_csv(f'Output/{dataset}/{sign}.csv')
+        if save_path is not None:
+            df.to_csv(f'{save_path}/{sign}.csv')
         dfs.append(df)
     return dfs
 
@@ -149,20 +150,19 @@ def purity_comparison_table():
     print("Average Purity(var) Comparison Table:")
     print(purity_df)
 
-def get_graph(dataset):
-    if dataset == 'Brexit':
+def get_graph(dataset, num_labels=5):
+    if dataset in ['Brexit', 'Referendum_']:
         # construct retweet-network
-        with open('Datasets/Static/Brexit/retweet_edgelist.txt', 'r') as file:
+        with open(f'input/datasets/static/{dataset}/retweet_edgelist.txt', 'r') as file:
             edge_list = [tuple(map(int, line.strip().split()[:2])) for line in file]
         G = nx.Graph()
-        num_nodes = 7589
+        num_nodes = 7589 if dataset == 'Brexit' else 2894
         G.add_nodes_from(range(0, num_nodes))
         G.add_edges_from(edge_list)
         # don't remove self-loop edges to align with the cascade-based method
         # G.remove_edges_from(nx.selfloop_edges(G))
-
         # result get from the cascade-based method
-        with open('Datasets/Static/Brexit/comm_memberships.csv', 'r') as f:
+        with open('input/datasets/static/Brexit/comm_memberships.csv', 'r') as f:
             lines = f.readlines()
         cascade_return = [x.strip().split(',')[1] for x in lines]
         for i, node in enumerate(G.nodes()):
@@ -170,106 +170,40 @@ def get_graph(dataset):
 
         # read the propagations and polarities from file
         propagations_count = [(0, 0)]*num_nodes
-        propagations, polarities = pickle.load(open('Datasets/Static/Brexit/propagations_and_polarities.pkl', 'rb'))
+        propagations, polarities = pickle.load(open(f'input/datasets/static/{dataset}/propagations_and_polarities.pkl', 'rb'))
         for i, (propagation, polarity) in enumerate(zip(propagations, polarities)):
             for node in propagation:
                 propagations_count[node] = (propagations_count[node][0]+polarity, propagations_count[node][1]+1)
         node_polarities = [x[0]/x[1] if x[1] != 0 else 0 for x in propagations_count]
-        for node in G.nodes():
-            G.nodes[node]['stance_label'] = 'pro' if node_polarities[node] > 0.3 else 'anti' if node_polarities[node] < -0.3 else 'neutral'
-            G.nodes[node]['polarity'] = node_polarities[node]
-        for edge in G.edges():
-            G.edges[edge]['edge_polarity'] = (G.nodes[edge[0]]['polarity']+G.nodes[edge[1]]['polarity'])/2
-    elif dataset == 'Referendum_':
-        #construct retweet-network
-        with open('Datasets/static/Referendum_/retweet_edgelist.txt', 'r') as file:
-            edge_list = [tuple(map(int, line.strip().split()[:2])) for line in file]
-        G = nx.Graph()
-        num_nodes = 2894
-        G.add_nodes_from(range(0, num_nodes))
-        G.add_edges_from(edge_list)
-        #don't remove self-loop edges to align with the cascade-based method
-        # G.remove_edges_from(nx.selfloop_edges(G))
-
-        # result get from the cascade-based method
-        with open('Datasets/Static/Referendum_/comm_memberships.csv', 'r') as f:
-            lines = f.readlines()
-        cascade_return = [x.strip().split(',')[1] for x in lines]
-        for i, node in enumerate(G.nodes()):
-            G.nodes[node]['cascade'] = int(cascade_return[i])
-
-        # read the propagations and polarities from file
-        propagations_count = [(0, 0)]*num_nodes
-        propagations, polarities = pickle.load(open('Datasets/Static/Referendum_/propagations_and_polarities.pkl', 'rb'))
-        for i, (propagation, polarity) in enumerate(zip(propagations, polarities)):
-            for node in propagation:
-                propagations_count[node] = (propagations_count[node][0]+polarity, propagations_count[node][1]+1)
-        node_polarities = [x[0]/x[1] if x[1] != 0 else 0 for x in propagations_count]
-        for node in G.nodes():
-            G.nodes[node]['stance_label'] = 'pro' if node_polarities[node] > 0.3 else 'anti' if node_polarities[node] < -0.3 else 'neutral'
-            G.nodes[node]['polarity'] = node_polarities[node]
-        for edge in G.edges():
-            G.edges[edge]['edge_polarity'] = (G.nodes[edge[0]]['polarity']+G.nodes[edge[1]]['polarity'])/2
-    elif dataset == 'Gun':
+    elif dataset in ['Abortion', 'Election', 'Gun', 'Partisanship']:
         #read in the gml file
-        G = nx.read_gml('Datasets/Static/Gun/graph.gml')
+        G = nx.read_gml(f'input/datasets/static/{dataset}/graph.gml')
         #change node label from str to int
         mapping = {node: int(node) for node in G.nodes()}
         G = nx.relabel_nodes(G, mapping)
         # delete unrelated attrs
-        for edge in G.edges():
-            del G.edges[edge]['id']
-            del G.edges[edge]['tweet_id']
-
-        for node in G.nodes():
-            G.nodes[node]['polarity'] = G.nodes[node]['ideology']
-            del G.nodes[node]['ideology']
-            G.nodes[node]['stance_label'] = 'pro' if G.nodes[node]['polarity'] > 0.3 else 'anti' if G.nodes[node]['polarity'] < -0.3 else 'neu'
-        for edge in G.edges():
-            G.edges[edge]['edge_polarity'] = (G.nodes[edge[0]]['polarity']+G.nodes[edge[1]]['polarity'])/2
-    elif dataset == 'Abortion':
-        #read in the gml file
-        G = nx.read_gml('Datasets/Static/Abortion/graph.gml')
-        #change node label from str to int
-        mapping = {node: int(node) for node in G.nodes()}
-        G = nx.relabel_nodes(G, mapping)
-        # delete unrelated attrs
-        for edge in G.edges():
-            del G.edges[edge]['id']
-            del G.edges[edge]['tweet_id']
-
-        for node in G.nodes():
-            G.nodes[node]['polarity'] = G.nodes[node]['ideology']
-            del G.nodes[node]['ideology']
-            G.nodes[node]['stance_label'] = 'pro' if G.nodes[node]['polarity'] > 0.3 else 'anti' if G.nodes[node]['polarity'] < -0.3 else 'neu'
-        for edge in G.edges():
-            G.edges[edge]['edge_polarity'] = (G.nodes[edge[0]]['polarity']+G.nodes[edge[1]]['polarity'])/2
-    elif dataset == 'Election':
-        #read in the gml file
-        G = nx.read_gml('Datasets/Static/Election/graph.gml')
-        #change node label from str to int
-        mapping = {node: int(node) for node in G.nodes()}
-        G = nx.relabel_nodes(G, mapping)
-        for node in G.nodes():
-            G.nodes[node]['polarity'] = G.nodes[node]['valence']
-            del G.nodes[node]['valence']
-            G.nodes[node]['stance_label'] = 'pro' if G.nodes[node]['polarity'] > 0.3 else 'anti' if G.nodes[node]['polarity'] < -0.3 else 'neu'
-        for edge in G.edges():
-            G.edges[edge]['edge_polarity'] = (G.nodes[edge[0]]['polarity']+G.nodes[edge[1]]['polarity'])/2
-    elif dataset == 'Partisanship':
-        #read in the gml file
-        G = nx.read_gml('Datasets/Static/Partisanship/graph.gml')
-        #change node label from str to int
-        mapping = {node: int(node) for node in G.nodes()}
-        G = nx.relabel_nodes(G, mapping)
-        for node in G.nodes():
-            G.nodes[node]['polarity'] = G.nodes[node]['Partisanship']
-            del G.nodes[node]['Partisanship']
-            G.nodes[node]['stance_label'] = 'pro' if G.nodes[node]['polarity'] > 0.3 else 'anti' if G.nodes[node]['polarity'] < -0.3 else 'neu'
-        for edge in G.edges():
-            G.edges[edge]['edge_polarity'] = (G.nodes[edge[0]]['polarity']+G.nodes[edge[1]]['polarity'])/2
+        if dataset in ['Gun', 'Abortion']:
+            for edge in G.edges():
+                del G.edges[edge]['id']
+                del G.edges[edge]['tweet_id']
     else:
         raise ValueError('Invalid dataset')
+
+    attr_map = {
+        'Abortion': 'ideology',
+        'Election': 'valence',
+        'Gun': 'ideology',
+        'Partisanship': 'Partisanship'
+    }
+    for node in G.nodes():
+        if dataset in ['Brexit', 'Referendum_']:
+            G.nodes[node]['polarity'] = node_polarities[node] 
+        else:
+            G.nodes[node]['polarity'] = G.nodes[node][attr_map[dataset]]
+            del G.nodes[node][attr_map[dataset]]
+        G.nodes[node]['polarity_label'] = min(int((G.nodes[node]['polarity'] + 1) * num_labels / 2.0), num_labels - 1)
+    for edge in G.edges():
+        G.edges[edge]['edge_polarity'] = (G.nodes[edge[0]]['polarity']+G.nodes[edge[1]]['polarity'])/2
     return G
 
 
@@ -278,9 +212,9 @@ def split_pos_neg(G, save_path, accuracy=1000):
         f.write(f"{len(G.nodes())} {len(G.edges())}\n")
         for u, v, d in G.edges(data=True):
             f.write(f"{int(u)} {G.nodes[u]['polarity']} "
-                    f"{1 if G.nodes[u]['stance_label'] == 'pro' else 2 if G.nodes[u]['stance_label'] == 'anti' else 0} "
+                    f"{G.nodes[u]['polarity_label']} "
                     f"{int(v)} {G.nodes[v]['polarity']} "
-                    f"{1 if G.nodes[v]['stance_label'] == 'pro' else 2 if G.nodes[v]['stance_label'] == 'anti' else 0} "
+                    f"{G.nodes[v]['polarity_label']} "
                     f"{d['edge_polarity']}\n")
 
     G_pos, G_neg = G.copy(), G.copy()
@@ -369,7 +303,7 @@ def ec_ecc_statistics(datasets):
 
     for d in datasets:
         print(f"===Dataset {d}===")
-        G = nx.read_gml(f'Output/{d}/graph.gml')
+        G = nx.read_gml(f'output/results/{d}/graph.gml')
         EC_pos = G.copy()
         EC_neg = G.copy()
         ECC_pos = G.copy()

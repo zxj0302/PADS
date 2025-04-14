@@ -1,3 +1,21 @@
+1. Cite the mitigation part in the related papers
+2. Make the reweighted nodes the same number
+3. In connection addition, also show the related DSP algorithms
+4. Use the opinion dynamic model that considers the confirmation bias
+5. Research about the mitigation strategy in the related papers
+6. Scalibility
+7. Use peeling instead of adding
+8. Use heatmap to show the opinion changes after adding connections
+9. Change the loss function for GIN
+
+
+1. Hypothesis about the ECC existence
+2. Coreelation between the diffusion model and the mitigation
+3. ==Properties== of the ECCs
+4. Scalability of the algorithm
+
+
+
 TODO:
 1. Reachability within the same ECC or between different ECCs
 2. Draw one whole graph for adding connections and Reweighting alone and both

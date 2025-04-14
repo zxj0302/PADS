@@ -27,7 +27,7 @@ def run_exp(G: nx.Graph, method: str, **kwargs):
     try:
         start = time.time()
         rst = method_map[method](G, **kwargs)
-        if method in ['maxflow_cpp_unweighted', 'maxflow_cpp_weighted', 'greedypp_cpp', 'pads_cpp']:
+        if method in ['maxflow_cpp_unweighted', 'maxflow_cpp_weighted', 'greedypp_cpp_weighted', 'pads_cpp']:
             return rst[0], rst[1]
         return round(time.time() - start, 3), rst
     except Exception as e:
@@ -35,7 +35,7 @@ def run_exp(G: nx.Graph, method: str, **kwargs):
 
 
 # compute purity and density
-def statistics(G, dataset, save_path=None):
+def statistics(G, save_path=None):
     baseline_methods = ['cascade', 'metis', 'louvain', 'eva', 'maxflow_cpp_udsp', 'maxflow_cpp_wdsp', 'node2vec_gin',
         'pads_python', 'pads_cpp']
     baseline_methods = [method for method in baseline_methods if method in G.nodes[0].keys()]

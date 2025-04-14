@@ -3,10 +3,12 @@ import networkx as nx
 import numpy as np
 from typing import Dict
 import random
+import seaborn as sns
+from matplotlib.lines import Line2D
 
 
 class OpinionDynamics:
-    def __init__(self, G: nx.Graph, attri_name: str, ratio: float):
+    def __init__(self, G: nx.Graph, attri_name: str, ratio: float = 0.1):
         self.G = G
         self.s = attri_name
         self.ratio = ratio
@@ -72,6 +74,86 @@ class OpinionDynamics:
             # caluculate variance for nodes that are non-core
             # vars.append(np.var(list([opinions[node] for node in self.non_core])))
             vars.append(np.var(list(opinions.values())))
+        return vars, avg_pos, avg_neg
+    
+    def friedkin_johnsen_cb(self, eta=10, max_iter: int = 100, reweight=[]):
+        # Get initial opinions
+        opinions = nx.get_node_attributes(self.G, self.s)
+        initial_opinions = opinions.copy()
+        
+        # Initialize tracking metrics
+        vars = [np.var(list(opinions.values()))]
+        pos_opinions = [op for op in opinions.values() if op > 0]
+        neg_opinions = [op for op in opinions.values() if op < 0]
+        avg_pos = [np.mean(pos_opinions) if pos_opinions else 0]
+        avg_neg = [np.mean(neg_opinions) if neg_opinions else 0]
+        max_deg = max([len(list(self.G.neighbors(node))) for node in self.G.nodes()])
+        
+        # Initialize weights
+        weights = {}
+        for node in self.G.nodes():
+            neighbors = list(self.G.neighbors(node))
+            if not neighbors:
+                continue
+                
+            # Calculate weights based on opinion multiplication
+            incoming_weights = {}
+            for neighbor in neighbors:
+                # weight = max(0, initial_opinions[node] * initial_opinions[neighbor])
+                weight = (2 - abs(initial_opinions[node] - initial_opinions[neighbor])) * len(list(self.G.neighbors(neighbor)))
+                if neighbor in reweight:
+                    weight *= self.ratio
+                incoming_weights[neighbor] = weight
+            
+            # Normalize weights
+            total_weight = sum(incoming_weights.values())
+            if total_weight != 0:
+                for neighbor, weight in incoming_weights.items():
+                    weights[(neighbor, node)] = weight / total_weight
+            else:
+                equal_weight = 1.0 / len(neighbors)
+                for neighbor in neighbors:
+                    weights[(neighbor, node)] = equal_weight
+
+        # Simulation loop
+        for _ in range(max_iter):
+            old_opinions = opinions.copy()
+            
+            # Update opinions
+            for node in self.G.nodes():
+                neighbors = list(self.G.neighbors(node))
+                if not neighbors:
+                    continue
+                    
+                neighbor_influence = sum(weights[(neighbor, node)] * old_opinions[neighbor] for neighbor in neighbors)
+                # stubbornness = abs(old_opinions[node])
+                stubbornness = (len(neighbors) / max_deg) ** 4
+                opinions[node] = stubbornness * initial_opinions[node] + (1 - stubbornness) * neighbor_influence
+            
+            # Update weights based on new opinions
+            for node in self.G.nodes():
+                neighbors = list(self.G.neighbors(node))
+                if not neighbors:
+                    continue
+                
+                # Apply weight update rule and gather for normalization
+                incoming_weights = {neighbor: max(0, weights.get((neighbor, node), 0) + 
+                                               eta * opinions[neighbor] * opinions[node])
+                                  for neighbor in neighbors}
+                
+                # Normalize updated weights
+                total_weight = sum(incoming_weights.values())
+                if total_weight > 0:
+                    for neighbor, weight in incoming_weights.items():
+                        weights[(neighbor, node)] = weight / total_weight
+            
+            # Track metrics for this iteration
+            pos_opinions = [op for op in opinions.values() if op > 0]
+            neg_opinions = [op for op in opinions.values() if op < 0]
+            avg_pos.append(np.mean(pos_opinions) if pos_opinions else 0)
+            avg_neg.append(np.mean(neg_opinions) if neg_opinions else 0)
+            vars.append(np.var(list(opinions.values())))
+            
         return vars, avg_pos, avg_neg
         
     def altafini(self, alpha: float = 0.1, max_iter: int = 100, tol: float = 1e-6) -> Dict:
@@ -143,417 +225,285 @@ class OpinionDynamics:
         return opinions
 
 
-def opinion_dynamics_connections(d='Brexit', num_edges=2000, ax_var=None, ax_diff=None, ratio=0.3, it=20):
-    print(f"===Dataset {d}===")
-    # Read the original graph
-    G = nx.read_gml(f'Output/{d}/graph.gml')
-
-    # --- Simulation 1: Original Graph ---
-    od1 = OpinionDynamics(G, 'polarity', ratio)
-    vars1, avg_pos1, avg_neg1 = od1.friedkin_johnsen(max_iter=it)
-
-    # --- Simulation 2: Add random edges between positive and negative nodes ---
-    pos_nodes = [node for node in G.nodes if G.nodes[node]['polarity'] > 0]
-    neg_nodes = [node for node in G.nodes if G.nodes[node]['polarity'] < 0]
+def opinion_dynamics_connections(G, num_edges=2000, ax_var=None, ax_diff=None, it=20, show_legend=False, show_ylabel=False):
+    # Extract node groups
+    pos_nodes = [n for n in G.nodes if G.nodes[n]['polarity'] > 0]
+    neg_nodes = [n for n in G.nodes if G.nodes[n]['polarity'] < 0]
+    nodes_pads_pos = [n for n in G.nodes if G.nodes[n]['pads_cpp'] == 1]
+    nodes_pads_neg = [n for n in G.nodes if G.nodes[n]['pads_cpp'] == -1]
+    non_pads_pos = [n for n in pos_nodes if G.nodes[n]['pads_cpp'] != 1]
+    non_pads_neg = [n for n in neg_nodes if G.nodes[n]['pads_cpp'] != -1]
+    nodes_wdsp_pos = [n for n in G.nodes if G.nodes[n]['maxflow_cpp_wdsp'] == 1]
+    nodes_wdsp_neg = [n for n in G.nodes if G.nodes[n]['maxflow_cpp_wdsp'] == -1]
+    nodes_udsp_pos = [n for n in G.nodes if G.nodes[n]['maxflow_cpp_udsp'] == 1]
+    nodes_udsp_neg = [n for n in G.nodes if G.nodes[n]['maxflow_cpp_udsp'] == -1]
+    nodes_gin_pos = [n for n in G.nodes if G.nodes[n]['node2vec_gin'] == 1]
+    nodes_gin_neg = [n for n in G.nodes if G.nodes[n]['node2vec_gin'] == -1]
     
-    G2 = G.copy()
-    # Prevent adding repeated edges
-    added_edges = 0
-    attempts = 0
-    max_attempts = num_edges * 10  # Limit attempts to avoid infinite loop
+    # Get high degree nodes matching PADS counts
+    high_degree_pos = sorted(pos_nodes, key=lambda x: G.degree(x), reverse=True)[:len(nodes_pads_pos)]
+    high_degree_neg = sorted(neg_nodes, key=lambda x: G.degree(x), reverse=True)[:len(nodes_pads_neg)]
     
-    while added_edges < num_edges and attempts < max_attempts:
-        pos_node = random.choice(pos_nodes)
-        neg_node = random.choice(neg_nodes)
+    # Helper function to add edges between node groups
+    def add_edges_between(source_nodes, target_nodes, weighted=False):
+        G_new = G.copy()
+        added, attempts = 0, 0
+        max_attempts = num_edges * 10
         
-        # Check if edge already exists
-        if not G2.has_edge(pos_node, neg_node):
-            G2.add_edge(pos_node, neg_node)
-            added_edges += 1
+        # Setup for weighted selection if needed
+        if weighted:
+            src_weights, tgt_weights = {}, {}
+            for n in source_nodes:
+                src_weights[n] = G.degree(n) * (1 / (abs(G.nodes[n]['polarity']) + 0.1))
+            for n in target_nodes:
+                tgt_weights[n] = G.degree(n) * (1 / (abs(G.nodes[n]['polarity']) + 0.1))
+            
+            # Normalize weights
+            src_nodes = list(src_weights.keys())
+            src_w = [src_weights[n] for n in src_nodes]
+            src_norm = [w/sum(src_w) for w in src_w] if sum(src_w) > 0 else None
+            
+            tgt_nodes = list(tgt_weights.keys())
+            tgt_w = [tgt_weights[n] for n in tgt_nodes]
+            tgt_norm = [w/sum(tgt_w) for w in tgt_w] if sum(tgt_w) > 0 else None
+            
+            # Add weighted edges
+            while added < num_edges and attempts < max_attempts:
+                s = np.random.choice(src_nodes, p=src_norm)
+                t = np.random.choice(tgt_nodes, p=tgt_norm)
+                if not G_new.has_edge(s, t):
+                    G_new.add_edge(s, t)
+                    added += 1
+                attempts += 1
+        else:
+            # Add random edges
+            while added < num_edges and attempts < max_attempts:
+                s = random.choice(source_nodes)
+                t = random.choice(target_nodes)
+                if not G_new.has_edge(s, t):
+                    G_new.add_edge(s, t)
+                    added += 1
+                attempts += 1
         
-        attempts += 1
+        # Run simulation
+        od = OpinionDynamics(G_new, 'polarity')
+        return od.friedkin_johnsen(max_iter=it)
     
-    od2 = OpinionDynamics(G2, 'polarity', ratio)
-    vars2, avg_pos2, avg_neg2 = od2.friedkin_johnsen(max_iter=it)
-
-    # --- Simulation 3: Add edges between high degree positive and negative nodes ---
-    # Get the counts of positive and negative nodes in PADS
-    num_pads_pos = len([node for node in G.nodes if G.nodes[node]['pads_cpp'] == 1])
-    num_pads_neg = len([node for node in G.nodes if G.nodes[node]['pads_cpp'] == -1])
+    # Define simulation configurations
+    simulations = [
+        ("Original", None, None, False),  # Original graph, no edges added
+        ("Random", pos_nodes, neg_nodes, False),  # Random edges
+        ("High Degree", high_degree_pos, high_degree_neg, False),  # High degree
+        ("PADS", nodes_pads_pos, nodes_pads_neg, False),  # PADS communities
+        ("Non-PADS", non_pads_pos, non_pads_neg, False),  # Non-PADS nodes
+        ("W. All", pos_nodes, neg_nodes, True),  # Weighted selection from all nodes
+        ("W. PADS", nodes_pads_pos, nodes_pads_neg, True),  # Weighted selection from PADS
+        ("W. MaxFlow-U", nodes_udsp_pos, nodes_udsp_neg, True),  # Weighted selection from MaxFlow-U
+        ("W. MaxFlow-W", nodes_wdsp_pos, nodes_wdsp_neg, True),  # Weighted selection from MaxFlow-W
+        ("W. GIN", nodes_gin_pos, nodes_gin_neg, True)  # Weighted selection from GIN
+    ]
     
-    # Sort nodes by degree
-    pos_nodes_sorted = sorted(pos_nodes, key=lambda x: G.degree(x), reverse=True)
-    neg_nodes_sorted = sorted(neg_nodes, key=lambda x: G.degree(x), reverse=True)
+    # Run simulations
+    results = []
+    for name, src, tgt, weighted in simulations:
+        if name == "Original":
+            od = OpinionDynamics(G, 'polarity')
+            results.append((name, *od.friedkin_johnsen(max_iter=it)))
+        else:
+            results.append((name, *add_edges_between(src, tgt, weighted)))
     
-    # Truncate to match PADS counts
-    high_degree_pos = pos_nodes_sorted[:num_pads_pos]
-    high_degree_neg = neg_nodes_sorted[:num_pads_neg]
-    
-    G3 = G.copy()
-    # Prevent adding repeated edges
-    added_edges = 0
-    attempts = 0
-    
-    while added_edges < num_edges and attempts < max_attempts:
-        pos_node = random.choice(high_degree_pos)
-        neg_node = random.choice(high_degree_neg)
-        
-        # Check if edge already exists
-        if not G3.has_edge(pos_node, neg_node):
-            G3.add_edge(pos_node, neg_node)
-            added_edges += 1
-        
-        attempts += 1
-    
-    od3 = OpinionDynamics(G3, 'polarity', ratio)
-    vars3, avg_pos3, avg_neg3 = od3.friedkin_johnsen(max_iter=it)
-
-    # --- Simulation 4: Add edges within PADS communities ---
-    nodes_pads_pos = [node for node in G.nodes if G.nodes[node]['pads_cpp'] == 1]
-    nodes_pads_neg = [node for node in G.nodes if G.nodes[node]['pads_cpp'] == -1]
-    
-    G4 = G.copy()
-    # Prevent adding repeated edges
-    added_edges = 0
-    attempts = 0
-    
-    while added_edges < num_edges and attempts < max_attempts:
-        pos_node = random.choice(nodes_pads_pos)
-        neg_node = random.choice(nodes_pads_neg)
-        
-        # Check if edge already exists
-        if not G4.has_edge(pos_node, neg_node):
-            G4.add_edge(pos_node, neg_node)
-            added_edges += 1
-        
-        attempts += 1
-    
-    od4 = OpinionDynamics(G4, 'polarity', ratio)
-    vars4, avg_pos4, avg_neg4 = od4.friedkin_johnsen(max_iter=it)
-
-    # --- Simulation 5: Add edges between (positive but not in PADS) and (negative but not in PADS) nodes ---
-    non_pads_pos = [node for node in pos_nodes if G.nodes[node]['pads_cpp'] != 1]
-    non_pads_neg = [node for node in neg_nodes if G.nodes[node]['pads_cpp'] != -1]
-    
-    G5 = G.copy()
-    # Prevent adding repeated edges
-    added_edges = 0
-    attempts = 0
-    
-    while added_edges < num_edges and attempts < max_attempts:
-        pos_node = random.choice(non_pads_pos)
-        neg_node = random.choice(non_pads_neg)
-        
-        # Check if edge already exists
-        if not G5.has_edge(pos_node, neg_node):
-            G5.add_edge(pos_node, neg_node)
-            added_edges += 1
-        
-        attempts += 1
-    
-    od5 = OpinionDynamics(G5, 'polarity', ratio)
-    vars5, avg_pos5, avg_neg5 = od5.friedkin_johnsen(max_iter=it)
-
-    # --- Simulation 6: Add edges between PADS nodes with higher degree and lower polarity ---
-    # Calculate weights for each node based on degree and polarity
-    pos_weights = {}
-    for node in nodes_pads_pos:
-        # Higher degree and lower polarity gets higher weight
-        pos_weights[node] = G.degree(node) * (1 / (G.nodes[node]['polarity'] + 0.1))  # Add 0.1 to avoid division by zero
-    
-    neg_weights = {}
-    for node in nodes_pads_neg:
-        # Higher degree and lower absolute polarity gets higher weight
-        neg_weights[node] = G.degree(node) * (1 / (abs(G.nodes[node]['polarity']) + 0.1))
-    
-    # Normalize weights
-    pos_nodes_list = list(pos_weights.keys())
-    pos_weights_list = [pos_weights[node] for node in pos_nodes_list]
-    pos_weights_sum = sum(pos_weights_list)
-    pos_weights_normalized = [w/pos_weights_sum for w in pos_weights_list]
-    
-    neg_nodes_list = list(neg_weights.keys())
-    neg_weights_list = [neg_weights[node] for node in neg_nodes_list]
-    neg_weights_sum = sum(neg_weights_list)
-    neg_weights_normalized = [w/neg_weights_sum for w in neg_weights_list]
-    
-    # Create a copy of the graph
-    G6 = G.copy()
-    
-    # Add edges by sampling pairs based on weights
-    added_edges = 0
-    attempts = 0
-    max_attempts = num_edges * 10  # Limit attempts to avoid infinite loop
-    
-    while added_edges < num_edges and attempts < max_attempts:
-        # Sample one node from each community based on weights
-        pos_node = np.random.choice(pos_nodes_list, p=pos_weights_normalized)
-        neg_node = np.random.choice(neg_nodes_list, p=neg_weights_normalized)
-        
-        # Check if edge already exists
-        if not G6.has_edge(pos_node, neg_node):
-            G6.add_edge(pos_node, neg_node)
-            added_edges += 1
-        
-        attempts += 1
-    
-    od6 = OpinionDynamics(G6, 'polarity', ratio)
-    vars6, avg_pos6, avg_neg6 = od6.friedkin_johnsen(max_iter=it)
-
-    # --- Simulation 7: Add edges between all positive and negative nodes with higher degree and lower polarity ---
-    # Calculate weights for all positive and negative nodes
-    all_pos_weights = {}
-    for node in pos_nodes:  # Using all positive nodes, not just PADS
-        # Higher degree and lower polarity gets higher weight
-        all_pos_weights[node] = G.degree(node) * (1 / (G.nodes[node]['polarity'] + 0.1))
-    
-    all_neg_weights = {}
-    for node in neg_nodes:  # Using all negative nodes, not just PADS
-        # Higher degree and lower absolute polarity gets higher weight
-        all_neg_weights[node] = G.degree(node) * (1 / (abs(G.nodes[node]['polarity']) + 0.1))
-    
-    # Normalize weights
-    all_pos_nodes_list = list(all_pos_weights.keys())
-    all_pos_weights_list = [all_pos_weights[node] for node in all_pos_nodes_list]
-    all_pos_weights_sum = sum(all_pos_weights_list)
-    all_pos_weights_normalized = [w/all_pos_weights_sum for w in all_pos_weights_list]
-    
-    all_neg_nodes_list = list(all_neg_weights.keys())
-    all_neg_weights_list = [all_neg_weights[node] for node in all_neg_nodes_list]
-    all_neg_weights_sum = sum(all_neg_weights_list)
-    all_neg_weights_normalized = [w/all_neg_weights_sum for w in all_neg_weights_list]
-    
-    # Create a copy of the graph
-    G7 = G.copy()
-    
-    # Add edges by sampling pairs based on weights
-    added_edges = 0
-    attempts = 0
-    max_attempts = num_edges * 10  # Limit attempts to avoid infinite loop
-    
-    while added_edges < num_edges and attempts < max_attempts:
-        # Sample one node from each community based on weights
-        pos_node = np.random.choice(all_pos_nodes_list, p=all_pos_weights_normalized)
-        neg_node = np.random.choice(all_neg_nodes_list, p=all_neg_weights_normalized)
-        
-        # Check if edge already exists
-        if not G7.has_edge(pos_node, neg_node):
-            G7.add_edge(pos_node, neg_node)
-            added_edges += 1
-        
-        attempts += 1
-    
-    od7 = OpinionDynamics(G7, 'polarity', ratio)
-    vars7, avg_pos7, avg_neg7 = od7.friedkin_johnsen(max_iter=it)
-
-    # --- Plot the curves ---
-    time_steps = range(len(vars1))
-    
-    # Define colors for better visualization - using muted, low contrast palette like in reweight
+    # Colors and markers for plotting
     colors = {
-        'Original': '#8da0cb',     # Muted blue
-        'Random': '#66c2a5',       # Soft teal
-        'High Degree': '#e5c494',  # Soft yellow/gold
-        'PADS': '#a6d854',         # Soft green
-        'Non-PADS': '#fc8d62',     # Muted orange
-        'Weighted PADS': '#e78ac3', # Soft purple/pink
-        'Weighted All': '#b3b3b3'   # Soft gray
+        "Original": "#EA8379",
+        "Random": "#7DAEE0",
+        "High Degree": "#B395BD",
+        "PADS": "#299D8F",
+        "Non-PADS": "#E9C46A",
+        "W. All": "#7D9E72",
+        "W. PADS": "#B08970",
+        "W. MaxFlow-U": "#F2A900",
+        "W. MaxFlow-W": "#D00000",
+        "W. GIN": "#8E44AD"
     }
     
-    # Define markers for each simulation
     markers = {
-        'Original': 'o',
-        'Random': 's',
-        'High Degree': '*',
-        'PADS': 'D',
-        'Non-PADS': '^',
-        'Weighted PADS': 'v',
-        'Weighted All': 'p'
-    }
-
-    # Plot variance with consistent style
-    if ax_var is not None:
-        ax_var.plot(time_steps, vars1, marker=markers['Original'], linewidth=1, 
-                   label='Original Graph', ms=3, color=colors['Original'])
-        ax_var.plot(time_steps, vars2, marker=markers['Random'], linewidth=1, 
-                   label='Random Edges', ms=3, color=colors['Random'])
-        ax_var.plot(time_steps, vars3, marker=markers['High Degree'], linewidth=1, 
-                   label='High Degree', ms=3, color=colors['High Degree'])
-        ax_var.plot(time_steps, vars4, marker=markers['PADS'], linewidth=1, 
-                   label='PADS', ms=3, color=colors['PADS'])
-        ax_var.plot(time_steps, vars5, marker=markers['Non-PADS'], linewidth=1, 
-                   label='Non-PADS', ms=3, color=colors['Non-PADS'])
-        ax_var.plot(time_steps, vars6, marker=markers['Weighted PADS'], linewidth=1, 
-                   label='Weighted PADS', ms=3, color=colors['Weighted PADS'])
-        ax_var.plot(time_steps, vars7, marker=markers['Weighted All'], linewidth=1, 
-                   label='Weighted All', ms=3, color=colors['Weighted All'])
-        
-        ax_var.set_xlabel('Time Steps')
-        ax_var.set_ylabel('Opinion Variance')
-        ax_var.grid(True, linestyle='--', alpha=0.3)
-        ax_var.legend(loc='best', fontsize=9)
-    
-    # Plot opinion gap with consistent style
-    if ax_diff is not None:
-        # Calculate opinion gaps
-        diff1 = [p - n for p, n in zip(avg_pos1, avg_neg1)]
-        diff2 = [p - n for p, n in zip(avg_pos2, avg_neg2)]
-        diff3 = [p - n for p, n in zip(avg_pos3, avg_neg3)]
-        diff4 = [p - n for p, n in zip(avg_pos4, avg_neg4)]
-        diff5 = [p - n for p, n in zip(avg_pos5, avg_neg5)]
-        diff6 = [p - n for p, n in zip(avg_pos6, avg_neg6)]
-        diff7 = [p - n for p, n in zip(avg_pos7, avg_neg7)]
-        
-        ax_diff.plot(time_steps, diff1, marker=markers['Original'], linewidth=1, 
-                    label='Original Graph', ms=3, color=colors['Original'])
-        ax_diff.plot(time_steps, diff2, marker=markers['Random'], linewidth=1, 
-                    label='Random Edges', ms=3, color=colors['Random'])
-        ax_diff.plot(time_steps, diff3, marker=markers['High Degree'], linewidth=1, 
-                    label='High Degree', ms=3, color=colors['High Degree'])
-        ax_diff.plot(time_steps, diff4, marker=markers['PADS'], linewidth=1, 
-                    label='PADS', ms=3, color=colors['PADS'])
-        ax_diff.plot(time_steps, diff5, marker=markers['Non-PADS'], linewidth=1, 
-                    label='Non-PADS', ms=3, color=colors['Non-PADS'])
-        ax_diff.plot(time_steps, diff6, marker=markers['Weighted PADS'], linewidth=1, 
-                    label='Weighted PADS', ms=3, color=colors['Weighted PADS'])
-        ax_diff.plot(time_steps, diff7, marker=markers['Weighted All'], linewidth=1, 
-                    label='Weighted All', ms=3, color=colors['Weighted All'])
-        
-        ax_diff.set_xlabel('Time Steps')
-        ax_diff.set_ylabel('Opinion Gap (Avg Pos - Avg Neg)')
-        ax_diff.grid(True, linestyle='--', alpha=0.3)
-        ax_diff.legend(loc='best', fontsize=9)
-    
-    # Return the data for further analysis if needed
-    # return {
-    #     'Variance': {
-    #         'Original': vars1,
-    #         'Random': vars2,
-    #         'High Degree': vars3,
-    #         'PADS': vars4,
-    #         'Non-PADS': vars5,
-    #         'Weighted PADS': vars6,
-    #         'Weighted All': vars7
-    #     },
-    #     'Opinion Gap': {
-    #         'Original': [p - n for p, n in zip(avg_pos1, avg_neg1)],
-    #         'Random': [p - n for p, n in zip(avg_pos2, avg_neg2)],
-    #         'High Degree': [p - n for p, n in zip(avg_pos3, avg_neg3)],
-    #         'PADS': [p - n for p, n in zip(avg_pos4, avg_neg4)],
-    #         'Non-PADS': [p - n for p, n in zip(avg_pos5, avg_neg5)],
-    #         'Weighted PADS': [p - n for p, n in zip(avg_pos6, avg_neg6)],
-    #         'Weighted All': [p - n for p, n in zip(avg_pos7, avg_neg7)]
-    #     }
-    # }
-
-def opinion_dynamics_reweight(d='Brexit', ax_var=None, ax_diff=None, show_legend=False, ratio=0.3):
-    print(f"===Dataset {d}===")
-    G = nx.read_gml(f'Output/{d}/graph.gml')
-    od = OpinionDynamics(G, 'polarity', ratio)
-    
-    # Define colors for each algorithm - muted, low contrast palette
-    colors = {
-        'No reweight': '#8da0cb',  # Muted blue
-        'Random': '#66c2a5',       # Soft teal
-        'MaxFlow-U': '#fc8d62',    # Muted orange
-        'MaxFlow-W': '#e78ac3',    # Soft purple/pink
-        'PADS': '#a6d854'          # Soft green
+        "Original": 'o',
+        "Random": '*',
+        "High Degree": 'D',
+        "PADS": '^',
+        "Non-PADS": 'X',
+        "W. All": 's',
+        "W. PADS": 'v',
+        "W. MaxFlow-U": 'P',
+        "W. MaxFlow-W": 'h',
+        "W. GIN": 'd'
     }
     
-    # No reweight
-    vars, avg_pos, avg_neg = od.friedkin_johnsen()
-    time_steps = range(len(vars))
+    time_steps = range(len(results[0][1]))  # Time steps from first simulation    
     
     # Plot variance
-    if ax_var is not None:
-        ax_var.plot(time_steps, vars, marker='o', linewidth=1, label='No reweight', 
-                ms=3, color=colors['No reweight'])
+    if ax_var:
+        legend_handles = []
+        legend_labels = []
+        
+        for name, vars_data, avg_pos, avg_neg in results:
+            label = f'{name}'
+            color = colors[name]
+            marker = markers[name]
+            
+            # Plot line with alpha=0.9
+            ax_var.plot(time_steps, vars_data, linestyle='-', 
+                      color=color, alpha=0.9, linewidth=1)
+            
+            # Plot scatter with alpha=0.7
+            ax_var.scatter(time_steps, vars_data, marker=marker,
+                         color=color, alpha=0.7, s=9)
+            
+            # Create a custom handle for the legend that combines line and marker
+            legend_handle = Line2D([0], [0], color=color, marker=marker, 
+                                  linestyle='-', markersize=5, label=label)
+            legend_handles.append(legend_handle)
+            legend_labels.append(label)
+        
+        if show_ylabel:
+            ax_var.set_ylabel('Leaning Variance', fontsize=10)
+        
+        if show_legend:
+            ax_var.legend(handles=legend_handles, labels=legend_labels,
+                        loc='best', fontsize=8, frameon=True, edgecolor='grey', 
+                        framealpha=0.7, title='Add Edges', title_fontsize=8)
     
-    # Plot difference
-    if ax_diff is not None:
-        diff = [p - n for p, n in zip(avg_pos, avg_neg)]
-        ax_diff.plot(time_steps, diff, marker='o', linewidth=1, label='No reweight', 
-                    ms=3, color=colors['No reweight'])
+    # Plot opinion gap
+    if ax_diff:
+        legend_handles = []
+        legend_labels = []
+        
+        for name, vars_data, avg_pos, avg_neg in results:
+            # Calculate opinion gap
+            diff = [p - n for p, n in zip(avg_pos, avg_neg)]
+            
+            label = f'{name}'
+            color = colors[name]
+            marker = markers[name]
+            
+            # Plot line with alpha=0.9
+            ax_diff.plot(time_steps, diff, linestyle='-', 
+                       color=color, alpha=0.9, linewidth=1)
+            
+            # Plot scatter with alpha=0.7
+            ax_diff.scatter(time_steps, diff, marker=marker,
+                          color=color, alpha=0.7, s=9)
+            
+            # Create a custom handle for the legend that combines line and marker
+            legend_handle = Line2D([0], [0], color=color, marker=marker, 
+                                  linestyle='-', markersize=5, label=label)
+            legend_handles.append(legend_handle)
+            legend_labels.append(label)
+        
+        ax_diff.set_ylabel('Opinion Gap (Avg Pos - Avg Neg)', fontsize=8)
+        
+        if show_legend:
+            ax_diff.legend(handles=legend_handles, labels=legend_labels,
+                         loc='best', fontsize=8, frameon=True, edgecolor='grey',
+                         framealpha=0.7, title='Add Edges', title_fontsize=8)
 
-    # Random reweight
-    border_nodes_pads = [node for node in G.nodes if G.nodes[node]['pads_cpp'] != 0 and any([G.nodes[neigh]['pads_cpp'] == 0 for neigh in G.neighbors(node)])]
-    vars, avg_pos, avg_neg = od.friedkin_johnsen(reweight=random.sample(list(G.nodes), len(border_nodes_pads)))
-    
-    if ax_var is not None:
-        ax_var.plot(time_steps, vars, marker='s', linewidth=1, label='Random', 
-                ms=3, color=colors['Random'])
-    
-    if ax_diff is not None:
-        diff = [p - n for p, n in zip(avg_pos, avg_neg)]
-        ax_diff.plot(time_steps, diff, marker='s', linewidth=1, label='Random', 
-                    ms=3, color=colors['Random'])
 
-    # Highest degree reweight
-    # Count positive and negative border nodes
-    pos_border_count = len([node for node in border_nodes_pads if G.nodes[node]['pads_cpp'] > 0])
-    neg_border_count = len([node for node in border_nodes_pads if G.nodes[node]['pads_cpp'] < 0])
+def opinion_dynamics_reweight(G, ax_var=None, ax_diff=None, show_legend=False, ratio=0.3, show_ylabel=False):
+    od = OpinionDynamics(G, 'polarity', ratio)
     
-    # Select high degree nodes with matching polarity counts
+    # Define colors and methods
+    methods = {
+        'No Reweight': {'color': "#EA8379", 'marker': 'o', 'nodes': []},
+        'Random': {'color': "#7DAEE0", 'marker': '*', 'nodes': None},  
+        'High Degree': {'color': "#B395BD", 'marker': 'D', 'nodes': None},  
+        'MaxFlow-U': {'color': "#299D8F", 'marker': '^', 'nodes': None},  
+        'MaxFlow-W': {'color': "#E9C46A", 'marker': 'X', 'nodes': None},  
+        'GIN': {'color': "#7D9E72", 'marker': 's', 'nodes': None},  
+        'PADS': {'color': "#B08970", 'marker': 'v', 'nodes': None}  
+    }
+    
+    # Find border nodes for different methods
+    border_nodes_pads = [node for node in G.nodes if G.nodes[node]['pads_cpp'] != 0 and 
+                         any(G.nodes[neigh]['pads_cpp'] == 0 for neigh in G.neighbors(node))]
+    methods['PADS']['nodes'] = border_nodes_pads
+    
+    # Random nodes for comparison (same count as border_nodes_pads)
+    methods['Random']['nodes'] = random.sample(list(G.nodes), len(border_nodes_pads))
+    
+    # High degree nodes
+    pos_border_count = len([n for n in border_nodes_pads if G.nodes[n]['pads_cpp'] > 0])
+    neg_border_count = len([n for n in border_nodes_pads if G.nodes[n]['pads_cpp'] < 0])
     pos_nodes = [node for node in G.nodes if G.nodes[node]['polarity'] > 0]
     neg_nodes = [node for node in G.nodes if G.nodes[node]['polarity'] < 0]
     pos_nodes_sorted = sorted(pos_nodes, key=lambda x: G.degree(x), reverse=True)[:pos_border_count]
     neg_nodes_sorted = sorted(neg_nodes, key=lambda x: G.degree(x), reverse=True)[:neg_border_count]
-    high_degree_nodes = pos_nodes_sorted + neg_nodes_sorted
+    methods['High Degree']['nodes'] = pos_nodes_sorted + neg_nodes_sorted
     
-    vars, avg_pos, avg_neg = od.friedkin_johnsen(reweight=high_degree_nodes)
+    # Get border nodes for other methods
+    methods['MaxFlow-U']['nodes'] = [n for n in G.nodes if G.nodes[n]['maxflow_cpp_udsp'] != 0 and any(G.nodes[neigh]['maxflow_cpp_udsp'] == 0 for neigh in G.neighbors(n))]
     
-    if ax_var is not None:
-        ax_var.plot(time_steps, vars, marker='*', linewidth=1, label='High Degree', 
-                ms=3, color='#e5c494')  # Soft yellow/gold
+    methods['MaxFlow-W']['nodes'] = [n for n in G.nodes if G.nodes[n]['maxflow_cpp_wdsp'] != 0 and any(G.nodes[neigh]['maxflow_cpp_wdsp'] == 0 for neigh in G.neighbors(n))]
+    
+    methods['GIN']['nodes'] = [n for n in G.nodes if G.nodes[n]['node2vec_gin'] != 0 and any(G.nodes[neigh]['node2vec_gin'] == 0 for neigh in G.neighbors(n))]
+    
+    # Create legend handles
+    legend_handles = []
+    legend_labels = []
+    
+    # Run simulations for each method
+    time_steps = None  # Will be set during the first simulation
+    
+    for method_name, method_info in methods.items():
+        vars_data, avg_pos, avg_neg = od.friedkin_johnsen_cb(reweight=method_info['nodes'])
+        
+        if time_steps is None:
+            time_steps = range(len(vars_data))
+        
+        # Plot variance data
+        if ax_var is not None:
+            # Plot line with higher alpha (0.9)
+            ax_var.plot(time_steps, vars_data, linestyle='-', linewidth=1, 
+                      color=method_info['color'], alpha=0.9, label=method_name)
+            
+            # Plot scatter with lower alpha (0.7)
+            ax_var.scatter(time_steps, vars_data, marker=method_info['marker'], 
+                         s=9, color=method_info['color'], alpha=0.7)
+            
+            # Create a custom legend handle that combines line and marker
+            legend_handle = Line2D([0], [0], color=method_info['color'], marker=method_info['marker'], 
+                                  linestyle='-', markersize=5, label=method_name)
+            legend_handles.append(legend_handle)
+            legend_labels.append(method_name)
+        
+        # Plot opinion gap data
+        if ax_diff is not None:
+            diff = [p - n for p, n in zip(avg_pos, avg_neg)]
+            
+            # Plot line with higher alpha (0.9)
+            ax_diff.plot(time_steps, diff, linestyle='-', linewidth=1, 
+                       color=method_info['color'], alpha=0.9, label=method_name)
+            
+            # Plot scatter with lower alpha (0.7)
+            ax_diff.scatter(time_steps, diff, marker=method_info['marker'], 
+                          s=9, color=method_info['color'], alpha=0.7)
+    
+    # Add labels and legend
+    if ax_var is not None and show_ylabel:
+        ax_var.set_ylabel('Leaning Variance', fontsize=10)
     
     if ax_diff is not None:
-        diff = [p - n for p, n in zip(avg_pos, avg_neg)]
-        ax_diff.plot(time_steps, diff, marker='*', linewidth=1, label='High Degree', 
-                    ms=3, color='#e5c494')  # Soft yellow/gold
-
-    # MaxFlow-U border
-    border_nodes_maxflow_u = [node for node in G.nodes if G.nodes[node]['maxflow_cpp_udsp'] != 0 and any([G.nodes[neigh]['maxflow_cpp_udsp'] == 0 for neigh in G.neighbors(node)])]
-    vars, avg_pos, avg_neg = od.friedkin_johnsen(reweight=border_nodes_maxflow_u)
+        ax_diff.set_ylabel('Opinion Gap (Avg Pos - Avg Neg)', fontsize=8)
     
-    if ax_var is not None:
-        ax_var.plot(time_steps, vars, marker='^', linewidth=1, label='MaxFlow-U', 
-                ms=3, color=colors['MaxFlow-U'])
-    
-    if ax_diff is not None:
-        diff = [p - n for p, n in zip(avg_pos, avg_neg)]
-        ax_diff.plot(time_steps, diff, marker='^', linewidth=1, label='MaxFlow-U', 
-                    ms=3, color=colors['MaxFlow-U'])
-
-    # MaxFlow-W border
-    border_nodes_maxflow_w = [node for node in G.nodes if G.nodes[node]['maxflow_cpp_wdsp'] != 0 and any([G.nodes[neigh]['maxflow_cpp_wdsp'] == 0 for neigh in G.neighbors(node)])]
-    vars, avg_pos, avg_neg = od.friedkin_johnsen(reweight=border_nodes_maxflow_w)
-    
-    if ax_var is not None:
-        ax_var.plot(time_steps, vars, marker='v', linewidth=1, label='MaxFlow-W', 
-                ms=3, color=colors['MaxFlow-W'])
-    
-    if ax_diff is not None:
-        diff = [p - n for p, n in zip(avg_pos, avg_neg)]
-        ax_diff.plot(time_steps, diff, marker='v', linewidth=1, label='MaxFlow-W', 
-                    ms=3, color=colors['MaxFlow-W'])
-    
-    # PADS border
-    vars, avg_pos, avg_neg = od.friedkin_johnsen(reweight=border_nodes_pads)
-    
-    if ax_var is not None:
-        ax_var.plot(time_steps, vars, marker='D', linewidth=1, label='PADS', 
-                ms=3, color=colors['PADS'])
-        ax_var.set_ylabel('Variance')
-    
-    if ax_diff is not None:
-        diff = [p - n for p, n in zip(avg_pos, avg_neg)]
-        ax_diff.plot(time_steps, diff, marker='D', linewidth=1, label='PADS', 
-                    ms=3, color=colors['PADS'])
-        ax_diff.set_ylabel('Opinion Gap (Avg Pos - Avg Neg)')
-    
-    # Only show legends in the last subfigure
     if show_legend:
         if ax_var is not None:
-            ax_var.legend(loc='upper right', fontsize=9)
+            ax_var.legend(handles=legend_handles, labels=legend_labels,
+                        loc='upper right', fontsize=8, frameon=True, edgecolor='grey', 
+                        framealpha=0.7, title='Reweight', title_fontsize=8)
         if ax_diff is not None:
-            ax_diff.legend(loc='upper right', fontsize=9)
+            ax_diff.legend(handles=legend_handles, labels=legend_labels,
+                         loc='upper right', fontsize=8, frameon=True, edgecolor='grey', 
+                         framealpha=0.7, title='Reweight', title_fontsize=8)
+            
+    # print number of nodes in each method
+    for method_name, method_info in methods.items():
+        print(f"{method_name}: {len(method_info['nodes'])} nodes")

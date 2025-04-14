@@ -183,9 +183,7 @@ def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
 
     # Save as PDF if save_path is provided
     if save_path is not None:
-        directory = os.path.dirname(save_path)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, bbox_inches='tight')
     plt.show()
 
@@ -251,9 +249,7 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
         }
 
     if save_path is not None:
-        directory = os.path.dirname(save_path)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
         df.to_csv(save_path, index=False)
 
 
@@ -389,6 +385,103 @@ def radar_chart(file_path, datasets):
     plt.show()
 
 
+def reachability(ponm_values=None, nopm_values=None, save_path=None):
+    colors = [
+        "#EA8379",  # Coral pink (RGB: 234,131,121)
+        "#7DAEE0",  # Sky blue (RGB: 125,174,224)
+        "#B395BD",  # Lavender/mauve (RGB: 179,149,189)
+        "#299D8F",  # Teal/turquoise (RGB: 41,157,143)
+    ]
+
+    # Hardcoded values from the provided data
+    if ponm_values is None:
+        ponm_values = {
+            'Abortion': [3.1306222291578143e-03, 7.355344291415214e-04, 3.652624809607343e-04, 9.908733396373992e-05],
+            'Brexit': [2.1568415777632874e-01, 1.0608044567334755e-01, 1.2265019056133887e-01, 1.0032859320766924e-01],
+            'Election': [3.188574696527112e-02, 2.508003951784663e-02, 3.478978937743239e-02, 2.126801318022229e-02],
+            'Gun': [2.4996177191862097e-05, 2.368058554690927e-05, 6.4065983409330865e-06, 1.0191940266976302e-05],
+            'Partisanship': [7.010808683471135e-01, 6.450244875498262e-01, 7.037397951280474e-01, 6.148148854204405e-01],
+            'Referendum': [3.825555798217307e-04, 3.567249013388318e-04, 6.077089907434289e-05, 3.5008254224279725e-04]
+        }
+
+    if nopm_values is None:
+        nopm_values = {
+            'Abortion': [1.049491246843379e-03, 1.331744661177722e-04, 8.465855720329452e-05, 1.9203350701542586e-04],
+            'Brexit': [7.542675096955539e-03, 5.587796056558485e-03, 5.909526342824758e-03, 4.515747282149806e-03],
+            'Election': [2.243162710595891e-02, 2.205936357020653e-02, 2.545409382839395e-02, 1.999452840282523e-02],
+            'Gun': [5.01787206556477e-05, 5.014950033669915e-05, 7.21378987957875e-04, 2.547808220384872e-04],
+            'Partisanship': [5.94130504714057e-01, 5.660895345013728e-01, 6.331504468606142e-01, 5.602868855954513e-01],
+            'Referendum': [1.258567485028311e-02, 9.87345690507651e-03, 3.205203624468688e-01, 8.19995531234322e-03]
+        }
+
+    # Create dataframes for plotting
+    ponm_data = []
+    nopm_data = []
+    datasets = list(ponm_values.keys())
+    methods = ['MaxFlow-U', 'MaxFlow-W', 'GIN', 'PADS']
+
+    for dataset in datasets:
+        for i, method in enumerate(methods):
+            ponm_data.append({
+                'Dataset': dataset,
+                'Method': method,
+                'Value': ponm_values[dataset][i],
+                'Metric': 'ponm'
+            })
+            nopm_data.append({
+                'Dataset': dataset,
+                'Method': method,
+                'Value': nopm_values[dataset][i],
+                'Metric': 'nopm'
+            })
+
+    ponm_df = pd.DataFrame(ponm_data)
+    nopm_df = pd.DataFrame(nopm_data)
+
+    # Create 1x2 side-by-side bar plots
+    _, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
+
+    # First plot - ponm values
+    sns.barplot(x='Dataset', y='Value', hue='Method', data=ponm_df, 
+            palette=colors, ax=ax1, alpha=0.6)
+    ax1.set_yscale('log')
+    # ax1.set_title('ponm Values by Dataset and Method', fontsize=14)
+    ax1.set_ylabel('$r_{+\\to-}$', fontsize=12)
+
+    # Fix x-tick labels without rotation
+    plt.sca(ax1)
+    plt.xticks(range(len(datasets)), datasets, fontsize=8)
+    # ax1.grid(True, which="both", ls="--", linewidth=0.5, alpha=0.3, axis='y')
+
+    # Remove legend from first plot
+    ax1.get_legend().remove()
+
+    # Second plot - nopm values
+    sns.barplot(x='Dataset', y='Value', hue='Method', data=nopm_df, 
+            palette=colors, ax=ax2, alpha=0.6)
+    ax2.set_yscale('log')
+    # ax2.set_title('nopm Values by Dataset and Method', fontsize=14)
+    ax2.set_ylabel('$r_{-\\to+}$', fontsize=12)
+
+    # Fix x-tick labels without rotation
+    plt.sca(ax2)
+    plt.xticks(range(len(datasets)), datasets, fontsize=8)
+    # ax2.grid(True, which="both", ls="--", linewidth=0.5, alpha=0.3, axis='y')
+
+    # Add legend to the second subfigure
+    handles, labels = ax2.get_legend_handles_labels()
+    legend = ax2.legend(handles, labels, title='Method', loc='upper left', fontsize=10)
+    legend.get_title().set_fontsize(10)
+
+    # Adjust layout
+    plt.tight_layout()
+    if save_path:
+        # Save the figure
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        plt.savefig(save_path, dpi=300, bbox_inches='tight')
+    plt.show()
+
+
 def create_heatmap(graph_path, diffusion_path, save_path=None, grid_size=10):
     methods = {'maxflow_cpp_udsp': 'MaxFlow-U', 'maxflow_cpp_wdsp': 'MaxFlow-W', 'node2vec_gin': 'GIN', 'pads_cpp': 'PADS'}
     fig, axs = plt.subplots(1, 4, figsize=(24, 6))
@@ -448,14 +541,13 @@ def create_heatmap(graph_path, diffusion_path, save_path=None, grid_size=10):
 
     # plt.tight_layout()
     if save_path:
-        directory = os.path.dirname(save_path)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, bbox_inches='tight', pad_inches=0, format='pdf')
 
 
 def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
-    fig, axs = plt.subplots(2, 3, figsize=(8, 6))
+    sns.set_theme(style="white")
+    _, axs = plt.subplots(2, 3, figsize=(8, 6))
     axs = axs.flatten()
 
     for idx, d in enumerate(datasets):
@@ -465,8 +557,8 @@ def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
         neg_values = [n[0] for n in neg]
 
         # Plot curves
-        axs[idx].plot(pos_values)
-        axs[idx].plot(neg_values)
+        axs[idx].plot(pos_values, label='ECC-P')
+        axs[idx].plot(neg_values, label='ECC-N')
 
         # Find peaks
         pos_peak = max(pos_values)
@@ -496,19 +588,24 @@ def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
         axs[idx].tick_params(axis='y', which='both', left=False, right=False, labelleft=False)
         # set x ticks smaller
         axs[idx].tick_params(axis='x', labelsize=8)
+        # set x ticks visible
+        axs[idx].tick_params(axis='x', which='both', bottom=True, top=False, labelbottom=True)
+
+        # set legend for the last subplot only, one the lower right corner
+        if idx == len(datasets) - 1:
+            axs[idx].legend(loc='lower right', fontsize=10, frameon=True,
+                framealpha=0.9)
 
     plt.tight_layout()
     if save_path:
-        directory = os.path.dirname(save_path)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, bbox_inches='tight', format='pdf')
     plt.show()
 
 
-def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4], num_labels=5, max_neg=100):
+def theta_influence(dataset, save_path=None, thetas=[0, 0.2, 0.5, 1, 3, 5], num_labels=5, max_neg=100):
     # Set Seaborn style for better aesthetics
-    sns.set(style="whitegrid")
+    sns.set_theme(style="white")
 
     G = get_graph(dataset)
     y_labels = ['f(S)', 'Weight Sum', '# Nodes', 'Entropy', 'Density']
@@ -518,8 +615,7 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4], num
 
     # Run experiments for each theta
     for theta in thetas:
-        # timer = {}
-        t, (pos_fs, neg_fs) = run_exp(G, 'pads_python', theta=theta, return_fs=True, num_labels=num_labels, max_neg=max_neg)
+        t, (pos_fs, neg_fs) = run_exp(G, 'pads_cpp', theta=theta, return_fs=True, num_labels=num_labels, max_neg=max_neg, dataset=dataset)
         times[theta] = t
         pos_fss[theta] = pos_fs
         neg_fss[theta] = neg_fs
@@ -527,21 +623,44 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4], num
     # Print time consumption and results
     print(f"=== Time Consumption ===\n{times}")
     print(f"=== Results ===")
-    # print(f"Positive Influence: {pos_fss}")
-    # print(f"Negative Influence: {neg_fss}")
 
-    # Prepare color palette
-    palette = sns.color_palette("viridis", n_colors=len(thetas))
+    # Create a custom palette from Paired but skip the red colors (5th and 6th)
+    # full_paired = sns.color_palette("tab20c", 12)  # Get all 12 colors
+    # filtered_palette = full_paired[:3] + full_paired[8:]  # Skip indices 4 and 5
+    # palette = filtered_palette[:len(thetas)]  # Get only as many colors as needed
+    # palette = sns.color_palette("viridis", len(thetas))  # Get a palette of 10 colors and reverse it
+    # palette =  [
+    #     # "#C1282D",  # Red (R:193, G:40, B:45)
+    #     "#D75728",  # Orange-red (R:215, G:87, B:40)
+    #     "#ED8622",  # Orange (R:237, G:134, B:34)
+    #     "#F6B66B",  # Light orange (R:246, G:182, B:107)
+    #     # "#FCE7CE",  # Cream (R:252, G:231, B:206)
+    #     # "#C9DFEF",  # Light blue (R:201, G:223, B:239)
+    #     "#5CA0CF",  # Medium blue (R:92, G:160, B:207)
+    #     "#0D67A6",  # Blue (R:13, G:103, B:166)
+    #     "#174263",  # Navy blue (R:23, G:66, B:99)
+    #     # "#21191F"   # Black (R:33, G:29, B:31)
+    # ]
+    palette = [
+        "#EA8379",  # Coral pink (RGB: 234,131,121)
+        "#7DAEE0",  # Sky blue (RGB: 125,174,224)
+        "#B395BD",  # Lavender/mauve (RGB: 179,149,189)
+        "#299D8F",  # Teal/turquoise (RGB: 41,157,143)
+        "#E9C46A",  # Golden yellow (RGB: 233,196,106)
+        "#D87659"   # Terra cotta/coral (RGB: 216,118,89)
+    ]
 
     # Create subplots with constrained layout
-    fig, axs = plt.subplots(2, 5, figsize=(15, 5.5), constrained_layout=True, sharex=True)
+    fig, axs = plt.subplots(2, 5, figsize=(16, 6), constrained_layout=True)
     axs = axs.flatten()
 
     # Initialize lists for custom legend
     legend_elements = []
 
-    # Define line styles for better distinction (optional)
-    line_styles = ['-', '--', '-.', ':', '-', '--']
+    # Define line styles for better distinc (optional)
+    # line_styles = ['-', '--', '-.', ':', '-', '--']tion (optional)
+    # line_styles = ['-', '--', '-.', ':', '-', '--']
+    line_styles = ['-', '--', '-', '--', '-', '--']
 
     for i in range(5):
         ax_pos = axs[i]
@@ -558,28 +677,53 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4], num
                 pos_values = [v[i] for v in pos_fss[theta]]
                 neg_values = [v[i] for v in neg_fss[theta]]
 
+            # Plot the main curves
             ax_pos.plot(pos_values, label=f"θ={theta}", color=color, linestyle=line_style, linewidth=2)
             ax_neg.plot(neg_values, label=f"θ={theta}", color=color, linestyle=line_style, linewidth=2)
+            
+            # Add markers
+            pos_length = len(pos_values)
+            neg_length = len(neg_values)
+            
+            if pos_length > max_neg:
+                marker_idx_pos = pos_length - max_neg - 1
+                # Use zorder parameter to ensure the marker is on top
+                ax_pos.plot(marker_idx_pos, pos_values[marker_idx_pos], 'r*', markersize=8, zorder=10)
+                
+            if neg_length > max_neg:
+                marker_idx_neg = neg_length - max_neg - 1
+                # Use zorder parameter to ensure the marker is on top
+                ax_neg.plot(marker_idx_neg, neg_values[marker_idx_neg], 'r*', markersize=8, zorder=10)
 
         # Add grid with subtle styling
         ax_pos.grid(True, linestyle='--', alpha=0.3)
         ax_neg.grid(True, linestyle='--', alpha=0.3)
-
-        # Set y labels
-        ax_pos.set_ylabel(y_labels[i], fontsize=12)#, fontweight='bold')
-        ax_neg.set_ylabel(y_labels[i], fontsize=12)#, fontweight='bold')
-
-        # Set x labels on the bottom row
-        # ax_neg.set_xlabel('#Addition/Removal', fontsize=12, fontweight='bold')
-
-        # Add titles for the first subplot in each row
-        # if i == 0:
-        #     ax_pos.set_title('Positive Influence', fontsize=14, fontweight='bold')
-        #     ax_neg.set_title('Negative Influence', fontsize=14, fontweight='bold')
-
+        # ax_pos.grid(False)
+        # ax_neg.grid(False)
+        
+        # Enable y-axis ticks and labels on left side
+        ax_pos.tick_params(axis='y', direction='out', right=False, left=True, 
+                          labelright=False, labelleft=True, length=3)
+        ax_neg.tick_params(axis='y', direction='out', right=False, left=True, 
+                          labelright=False, labelleft=True, length=3)
+        
+        # Enable x-axis ticks and labels on bottom
+        ax_pos.tick_params(axis='x', direction='out', bottom=True, top=False,
+                          labelbottom=True, length=3)
+        ax_neg.tick_params(axis='x', direction='out', bottom=True, top=False, 
+                          labelbottom=True, length=3)
+        
+        # Set y-axis labels using the metric names
+        ax_pos.set_ylabel(y_labels[i], fontsize=10)
+        ax_neg.set_ylabel(y_labels[i], fontsize=10)
+        
+        # Set x-axis label only for bottom plots
+        # ax_pos.set_xlabel('Iterations', fontsize=10)
+        # ax_neg.set_xlabel('Iterations', fontsize=10)
+        
         # Adjust tick parameters for clarity
-        ax_pos.tick_params(axis='both', which='major', labelsize=10)
-        ax_neg.tick_params(axis='both', which='major', labelsize=10)
+        ax_pos.tick_params(axis='both', which='major', labelsize=8)
+        ax_neg.tick_params(axis='both', which='major', labelsize=8)
 
         # Dynamic axis scaling to fit data tightly
         ax_pos.relim()
@@ -587,102 +731,127 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.25, 0.5, 1, 2, 4], num
         ax_neg.relim()
         ax_neg.autoscale_view()
 
-        # Reduce margins to make data occupy more space
-        # ax_pos.margins(x=0.02, y=0.05)
-        # ax_neg.margins(x=0.02, y=0.05)
-
     # Create a single legend for all subplots
     for idx, theta in enumerate(thetas):
         legend_elements.append(Line2D([0], [0], color=palette[idx], linestyle=line_styles[idx % len(line_styles)], lw=2, label=f'θ={theta}'))
 
     # Place legend centrally below all subplots
-    fig.legend(handles=legend_elements, loc='lower center', ncol=len(thetas), bbox_to_anchor=(0.5, 1), fontsize=12)
-
-    # Add a main title
-    # fig.suptitle('Theta Influence on Positive and Negative Metrics', fontsize=18, fontweight='bold', y=0.98)
+    fig.legend(handles=legend_elements, loc='lower center', ncol=len(thetas), bbox_to_anchor=(0.5, 1), 
+              fontsize=14, frameon=True, framealpha=0.9, edgecolor='grey')
+    
+    # Add row labels on the left
+    # fig.text(0.01, 0.75, 'Positive Community', va='center', rotation='vertical', fontsize=14)
+    # fig.text(0.01, 0.25, 'Negative Community', va='center', rotation='vertical', fontsize=14)
 
     # Save the figure if save_path is provided
     if save_path:
-        directory = os.path.dirname(save_path)
-        if not os.path.exists(directory):
-            os.makedirs(directory)
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, bbox_inches='tight', format='pdf')
 
     # Show the plot
     plt.show()
 
+
 # Rename the existing function from plot_opinion_dynamics to plot_opinion_dynamics_reweight
-def plot_opinion_dynamics_reweight(datasets=['Referendum_', 'Gun'], save_path=None, ratio=0.3):
-    # Create a figure with 2 rows (variance and difference) and columns for each dataset
-    fig, axs = plt.subplots(2, len(datasets), figsize=(4*len(datasets), 8))
+def plot_opinion_dynamics_reweight(datasets, file_path, save_path=None, ratio=0.3, plot_type='both'):
+    # Figure configuration based on plot_type
+    is_both = plot_type == 'both'
+    rows = 2 if is_both else 1    
+    # Create figure and axes
+    _, axs = plt.subplots(rows, len(datasets), figsize=(4*len(datasets), 4*rows))
     
-    # If there's only one dataset, ensure axs is still a 2D array
+    # Ensure axs is properly shaped for iteration
     if len(datasets) == 1:
-        axs = axs.reshape(1, 1)
+        axs = axs.reshape(rows, 1) if is_both else np.array([axs])
     
-    for i, d in enumerate(datasets):
-        # First row for variance, second row for difference
-        ax_var = axs[0, i]
-        ax_diff = axs[1, i]
+    # Function to configure ax properties
+    def configure_ax(ax, title=None):
+        if title:
+            ax.set_title(title.replace('_', ''), fontsize=12)
+        ax.set_xlabel('Time Steps', fontsize=10)
+        ax.grid(False)
+        ax.tick_params(
+            axis='both', which='major', labelsize=8, length=2, width=0.8, 
+            pad=2, direction='out', colors='black', bottom=True, top=False, 
+            left=True, right=False
+        )
+        # Reduce number of ticks for cleaner look
+        ax.xaxis.set_major_locator(plt.MaxNLocator(6))
+        ax.yaxis.set_major_locator(plt.MaxNLocator(6))
+    
+    # Process each dataset
+    for i, dataset in enumerate(datasets):
+        G = nx.read_gml(os.path.join(file_path, dataset, 'graph.gml'))
         
-        # Call the modified function with separate axes
-        opinion_dynamics_reweight(d, ax_var=ax_var, ax_diff=ax_diff, show_legend=True, ratio=ratio)
-        
-        # Set titles and labels
-        ax_var.set_title(f"{d.replace('_', '')} - Opinion Variance")
-        ax_diff.set_title(f"{d.replace('_', '')} - Opinion Gap")
-        
-        ax_diff.set_xlabel('Time Steps')
-        ax_var.set_xlabel('Time Steps')
-        
-        # Add grid for better readability
-        ax_var.grid(True, linestyle='--', alpha=0.3)
-        ax_diff.grid(True, linestyle='--', alpha=0.3)
+        if is_both:
+            opinion_dynamics_reweight(G, ax_var=axs[0, i], ax_diff=axs[1, i], 
+                show_legend=(i==len(datasets)-1), ratio=ratio, show_ylabel=(i==0)
+            )
+            configure_ax(axs[0, i], dataset)
+            configure_ax(axs[1, i], dataset)
+        else:
+            opinion_dynamics_reweight(G, ax_var=axs[i] if plot_type == 'variance' else None, ax_diff=axs[i] if plot_type == 'gap' else None, show_legend=(i==len(datasets)-1), ratio=ratio, show_ylabel=(i==0)
+            )
+            configure_ax(axs[i], dataset)
     
     plt.tight_layout()
-    if save_path is not None:
+    if save_path:
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, format='pdf', bbox_inches='tight')
     plt.show()
 
 
 # Add the new function for opinion dynamics connections
-def plot_opinion_dynamics_connections(datasets=['Referendum_', 'Gun'], save_path=None, num_edges=2000, ratio=0.3, it=20):
-    # Create a figure with two columns (variance and opinion gap) and rows for each dataset
-    fig, axs = plt.subplots(len(datasets), 2, figsize=(10, 5*len(datasets)))
+def plot_opinion_dynamics_connections(datasets, file_path, save_path=None, num_edges=2000, it=20, plot_type='both'):
+    # Determine plot configuration based on plot_type
+    is_both = plot_type == 'both'
+    rows = 2 if is_both else 1
+    _, axs = plt.subplots(rows, len(datasets), figsize=(4*len(datasets), 4 * rows))
     
-    # If there's only one dataset, ensure axs is still a 2D array
+    # Ensure axs is correctly shaped
     if len(datasets) == 1:
-        axs = axs.reshape(1, 2)
+        axs = axs.reshape(rows, 1) if is_both else np.array([axs])
     
-    for i, d in enumerate(datasets):
-        # First column for variance, second column for opinion gap
-        ax_var = axs[i, 0]
-        ax_diff = axs[i, 1]
-        
-        # Call the opinion dynamics connections function with both axes
-        opinion_dynamics_connections(d, num_edges=num_edges, ax_var=ax_var, ax_diff=ax_diff, ratio=ratio, it=it)
-        
-        # Set titles for the subplots
-        ax_var.set_title(f"{d.replace('_', '')} - Opinion Variance", fontsize=14)
-        ax_diff.set_title(f"{d.replace('_', '')} - Opinion Gap", fontsize=14)
-        
-        # Add grid for better readability
-        ax_var.grid(True, linestyle='--', alpha=0.3)
-        ax_diff.grid(True, linestyle='--', alpha=0.3)
+    # Common ax configuration function
+    def configure_ax(ax, title=None):
+        if title:
+            ax.set_title(title.replace('_', ''), fontsize=12)
+        ax.set_xlabel('Time Steps', fontsize=10)
+        ax.grid(False)
+        ax.tick_params(
+            axis='both', which='major', labelsize=8, length=2, width=0.8,
+            pad=2, direction='out', colors='black', bottom=True, top=False, 
+            left=True, right=False
+        )
+        ax.xaxis.set_major_locator(plt.MaxNLocator(6))
+        ax.yaxis.set_major_locator(plt.MaxNLocator(6))
     
+    # Process each dataset
+    for i, dataset in enumerate(datasets):
+        G = nx.read_gml(os.path.join(file_path, dataset, 'graph.gml'))
+        if is_both:
+            opinion_dynamics_connections(
+                G, num_edges=num_edges, ax_var= axs[0, i], ax_diff=axs[1, i],
+                it=it, show_legend=(i==0), show_ylabel=(i==0)
+            )
+            configure_ax(axs[0, i], dataset)
+            configure_ax(axs[1, i], dataset)
+        else:
+            opinion_dynamics_connections(
+                G, num_edges=num_edges, ax_var=axs[i] if plot_type == 'variance' else None, ax_diff=axs[i] if plot_type == 'gap' else None,
+                it=it, show_legend=(i==0), show_ylabel=(i==0)
+            )
+            configure_ax(axs[i], dataset)
+    
+    # Save and show plot
     plt.tight_layout()
-    if save_path is not None:
+    if save_path:
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, format='pdf', bbox_inches='tight')
     plt.show()
 
 
-def polarity_distance(dataset, ax, community_type=1, color=None, marker=None, label=None):
-    G = nx.read_gml(f'Output/{dataset}/graph.gml')
-    
-    # Set default label if not provided
-    if label is None:
-        label = dataset.replace('_', '')
-    
+def polarity_distance(G, label, ax, community_type=1, color=None, marker=None):
     # Find border nodes more efficiently
     borders = [node for node in G.nodes
         if G.nodes[node]['pads_cpp'] == community_type and
@@ -691,24 +860,33 @@ def polarity_distance(dataset, ax, community_type=1, color=None, marker=None, la
     if not borders:
         return
 
+    # Pre-calculate distances from each border node to all other nodes
+    all_min_distances = {}  # Will store the minimum distance from any border to each node
+    
+    # For each border node, calculate distances to all other nodes
+    for border in borders:
+        try:
+            # This efficiently calculates distances from border to all reachable nodes at once
+            distances = nx.single_source_shortest_path_length(G, border)
+            
+            # Update the minimum distances for each node
+            for node, dist in distances.items():
+                if node not in all_min_distances or dist < all_min_distances[node]:
+                    all_min_distances[node] = dist
+        except nx.NetworkXError:
+            continue  # Skip if there's an issue with this border node
+    
     # Calculate distances once and store results
     distance_data = defaultdict(list)
 
-    # Calculate distances from all border nodes at once
-    for node in G.nodes():
-        min_dist = float('inf')
-        for b in borders:
-            try:
-                dist = nx.shortest_path_length(G, b, node)
-                min_dist = min(min_dist, dist)
-            except nx.NetworkXNoPath:
-                continue
-
-        if min_dist != float('inf'):
-            if G.nodes[node]['pads_cpp'] == community_type:
-                min_dist *= -1
-            if min_dist != float('inf'):
-                distance_data[min_dist].append(G.nodes[node]['polarity'])
+    # Process the pre-calculated distances
+    for node, min_dist in all_min_distances.items():
+        # Adjust distance sign for nodes in the same community
+        if G.nodes[node]['pads_cpp'] == community_type:
+            min_dist *= -1
+        
+        # Store the polarity for this distance
+        distance_data[min_dist].append(G.nodes[node]['polarity'])
 
     # Process the collected data
     distances = []
@@ -728,7 +906,7 @@ def polarity_distance(dataset, ax, community_type=1, color=None, marker=None, la
     # Improved marker size scaling with better correlation to node count
     # Use a minimum size and scale up based on node count
     min_size = 5
-    max_size = 200
+    max_size = 150
     if len(sizes) > 1:
         # Scale sizes between min_size and max_size
         sizes_normalized = [min_size + (max_size - min_size) * (s / max(sizes)) for s in sizes]
@@ -736,7 +914,7 @@ def polarity_distance(dataset, ax, community_type=1, color=None, marker=None, la
         sizes_normalized = [max_size]  # If only one point, use max size
     
     scatter_kwargs = {'s': sizes_normalized, 'alpha': 0.7}
-    line_kwargs = {'alpha': 0.7, 'linewidth': 1.5}
+    line_kwargs = {'alpha': 0.9, 'linewidth': 1.5}
     
     if color:
         scatter_kwargs['color'] = color
@@ -750,52 +928,88 @@ def polarity_distance(dataset, ax, community_type=1, color=None, marker=None, la
     ax.plot(distances, polarities, label=label, **line_kwargs)
 
 
-def plot_polarity_distance(datasets, save_path=None):
+def plot_polarity_distance(datasets, file_path, save_path=None):
     # Create a figure with 2 subfigures (positive and negative)
-    fig, axs = plt.subplots(1, 2, figsize=(10, 5))
+    # sns.set_theme(style="whitegrid")
+    _, axs = plt.subplots(1, 2, figsize=(9, 4.5))
     
     # Define a color cycle for different datasets
-    colors = plt.cm.tab10.colors
-    markers = ['o', 's', '^', 'D', 'v', '<', '>', 'p', '*', 'h']
+    # colors = plt.cm.tab10.colors
+    # palette_colors = sns.color_palette('tab20', n_colors=len(datasets)+1).as_hex()
+    # colors = palette_colors[:6] + palette_colors[7:]
+    colors = [
+        "#EA8379",  # Coral pink (RGB: 234,131,121)
+        "#7DAEE0",  # Sky blue (RGB: 125,174,224)
+        "#B395BD",  # Lavender/mauve (RGB: 179,149,189)
+        "#299D8F",  # Teal/turquoise (RGB: 41,157,143)
+        "#E9C46A",  # Golden yellow (RGB: 233,196,106)
+        "#7D9E72",  # Sage green (RGB: 125,158,114)
+        "#8B6D8A"   # Dusty plum (RGB: 139,109,138)
+    ][:6]
+    # Updated markers with better distinguishability for 6 datasets
+    markers = ['o', '*', 'D', '^', 'X', 's']  # More visually distinct shapes
+    
+    # Create empty lists to collect legend handles and labels
+    legend_handles = []
+    legend_labels = []
     
     # Plot positive communities in the first subfigure
     for idx, dataset in enumerate(datasets):
         color = colors[idx % len(colors)]
         marker = markers[idx % len(markers)]
-        polarity_distance(dataset, axs[0], community_type=1, 
+        G = nx.read_gml(f'{file_path}/{dataset}/graph.gml')
+        label = dataset.replace('_', '')
+        polarity_distance(G, label, axs[0], community_type=1, 
                           color=color, marker=marker)
+        
+        # Create a custom legend handle that shows both line and marker
+        legend_handles.append(Line2D([0], [0], color=color, marker=marker, 
+                                    markersize=6, label=label, linewidth=2))
+        legend_labels.append(label)
     
     # Plot negative communities in the second subfigure
     for idx, dataset in enumerate(datasets):
         color = colors[idx % len(colors)]
         marker = markers[idx % len(markers)]
-        polarity_distance(dataset, axs[1], community_type=-1, 
+        G = nx.read_gml(os.path.join(file_path, dataset, 'graph.gml'))
+        label = dataset.replace('_', '')
+        polarity_distance(G, label, axs[1], community_type=-1, 
                           color=color, marker=marker)
     
     # Set titles and labels
-    axs[0].set_title('ECC-P', fontsize=14)
-    axs[1].set_title('ECC-N', fontsize=14)
+    axs[0].set_title('ECC-P', fontsize=12)
+    axs[1].set_title('ECC-N', fontsize=12)
     
     # Set common properties for all axes but only add legend to the last one
     for i, ax in enumerate(axs):
-        ax.set_xlabel('Distance', fontsize=12)
-        ax.set_ylabel('Average Polarity', fontsize=12)
+        ax.set_xlabel('Distance', fontsize=10)
+        if i == 0:
+            ax.set_ylabel('Average Leaning', fontsize=10)
         ax.grid(True, alpha=0.3)
+        
+        # Make tick labels smaller
+        ax.tick_params(axis='both', which='major', labelsize=8, pad=0)
+        
         if i == len(axs) - 1:  # Only add legend to the last axis
-            ax.legend(loc='upper right')
+            # Create custom legend with both line and marker
+            # Changed to 2 rows x 3 columns layout
+            ax.legend(handles=legend_handles, labels=legend_labels, 
+                     loc='lower right', fontsize=9, frameon=True,
+                     framealpha=0.7, ncol=2)
     
     plt.tight_layout()
     
     if save_path:
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, bbox_inches='tight')
     
     plt.show()
 
 
-def visualize_polarity_evolution(dataset='Brexit', num_edges=2000, timesteps=[0, 5, 10, 15, 20], save_path=None, ratio=0.3):
-    print(f"===Dataset {dataset}===")
+def visualize_polarity_evolution(dataset, file_path, num_edges=2000, timesteps=[0, 5, 10, 15, 20], save_path=None, ratio=0.3):
+    sns.set_style("whitegrid")
     # Read the original graph
-    G = nx.read_gml(f'Output/{dataset}/graph.gml')
+    G = nx.read_gml(os.path.join(file_path, dataset, 'graph.gml'))
     
     # Get original polarities
     original_polarities = nx.get_node_attributes(G, 'polarity')
@@ -888,15 +1102,15 @@ def visualize_polarity_evolution(dataset='Brexit', num_edges=2000, timesteps=[0,
         all_opinions.append(opinions.copy())
     
     # Create visualization
-    fig, axs = plt.subplots(1, len(timesteps), figsize=(5*len(timesteps), 5))
+    _, axs = plt.subplots(1, len(timesteps), figsize=(5*len(timesteps), 5))
     
     # Handle the case where there's only one timestep
     if len(timesteps) == 1:
         axs = np.array([axs])
     
-    # Define colors for positive and negative communities
-    pos_color = '#d62728'  # Red
-    neg_color = '#1f77b4'  # Blue
+    # Define colors for positive and negative communities as darkred and darkblue respectively
+    pos_color = 'darkred'  # Tomato color for positive community
+    neg_color = 'darkblue'  # SteelBlue color for negative community
     
     for i, t in enumerate(timesteps):
         if t >= len(all_opinions):
@@ -923,30 +1137,35 @@ def visualize_polarity_evolution(dataset='Brexit', num_edges=2000, timesteps=[0,
         if other_nodes:
             other_original = [original_polarities[node] for node in other_nodes]
             other_current = [timestep_opinions[node] for node in other_nodes]
-            axs[i].scatter(other_original, other_current, c='gray', alpha=0.5, s=6)
+            axs[i].scatter(other_original, other_current, c='gray', alpha=0.4, s=6, edgecolor='none', rasterized=True)
         
         if neg_nodes:
             neg_original = [original_polarities[node] for node in neg_nodes]
             neg_current = [timestep_opinions[node] for node in neg_nodes]
-            axs[i].scatter(neg_original, neg_current, c=neg_color, alpha=0.5, s=6)
+            axs[i].scatter(neg_original, neg_current, c=neg_color, alpha=0.4, s=6, edgecolor='none', rasterized=True)
         
         if pos_nodes:
             pos_original = [original_polarities[node] for node in pos_nodes]
             pos_current = [timestep_opinions[node] for node in pos_nodes]
-            axs[i].scatter(pos_original, pos_current, c=pos_color, alpha=0.5, s=6)
+            axs[i].scatter(pos_original, pos_current, c=pos_color, alpha=0.4, s=6, edgecolor='none', rasterized=True)
         
         axs[i].plot([-1, 1], [-1, 1], 'k--', alpha=0.5)  # Identity line
         axs[i].set_xlim(-1.1, 1.1)
         axs[i].set_ylim(-1.1, 1.1)
-        axs[i].set_xlabel('Original Opinion')
+        axs[i].set_xlabel('Original Leaning')
         if i == 0:
-            axs[i].set_ylabel('Current Opinion')
+            axs[i].set_ylabel('Current Leaning')
         else:
-            # set y-axis ticks invisible
-            axs[i].set_yticks([])
+            # Hide y-axis tick labels but keep the ticks and grid
+            axs[i].set_yticklabels([])
+        
+        # Show tick lines for main axes
+        axs[i].tick_params(axis='both', which='both', length=0, pad=3)
+        axs[i].tick_params(axis='x', bottom=False, top=False)
+        axs[i].tick_params(axis='y', left=False, right=False)
 
         axs[i].set_title(f'Opinion Evolution at Timestep {t}')
-        axs[i].grid(True, linestyle='--', alpha=0.3)
+        axs[i].grid(True, which='both', axis='both', linestyle='--', alpha=0.3, linewidth=0.5)
         
         # Add correlation coefficient
         corr = np.corrcoef(original_values, current_values)[0, 1]
@@ -960,12 +1179,78 @@ def visualize_polarity_evolution(dataset='Brexit', num_edges=2000, timesteps=[0,
         ax_inset = inset_axes(axs[i], bbox_to_anchor=(0.68, 0.04, 0.3, 0.3), width='100%', height='100%', bbox_transform=axs[i].transAxes, borderpad=0)
         ax_inset.hist(all_node_opinions, bins=20, alpha=0.7, color='gray')
         ax_inset.set_xlim(-1.1, 1.1)
-        ax_inset.set_title('Opinion Distribution', fontsize=6)
-        ax_inset.tick_params(axis='both', which='major', labelsize=4)
+        ax_inset.set_title('Leaning Distribution', fontsize=6)
+        
+        # Configure inset axis ticks to be closer to axes and visible
+        ax_inset.tick_params(axis='both', which='major', labelsize=3, length=0, pad=3)
+        ax_inset.tick_params(axis='x', bottom=False, top=False)
+        ax_inset.tick_params(axis='y', left=False, right=False)
+
+        # Set the ax_inset no grid
+        ax_inset.grid(False)
 
     plt.subplots_adjust(wspace=0.05)    
-    
     if save_path:
-        plt.savefig(save_path, bbox_inches='tight')
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        # compress the figure to save space
+        plt.savefig(save_path, bbox_inches='tight', dpi=72)
+    plt.show()
+
+
+def scalibility(run=False, theta=0, vf_path=f'input\\datasets\\static\\Voter_Fraud\\accumulated', 
+time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10):
+    dates = [p for p in os.listdir(vf_path) if os.path.isdir(os.path.join(vf_path, p))]
+    if run:
+        for date in dates:
+            root = os.path.join(vf_path, date)
+            # G = nx.read_gml(os.path.join(root, f'Voter_Fraud_{date}.gml'))
+            # mapping = {node: int(node) for node in G.nodes()}
+            # G = nx.relabel_nodes(G, mapping)
+            G = nx.Graph()
+            timer = {}
+            for method in ['greedypp_cpp_weighted', 'pads_cpp']:
+                # Run the method num_runs times and calculate average runtime
+                method_times = []
+                for _ in range(num_runs):
+                    t, _ = run_exp(G, method, theta=theta, input_file=root)
+                    method_times.append(t)
+                avg_time = sum(method_times) / len(method_times)
+                timer[method] = avg_time
+            
+            os.makedirs(os.path.join(time_path, date), exist_ok=True)
+            # nx.write_gml(G, os.path.join(output_path, 'graph.gml'))
+
+            avg_times_df = pd.DataFrame(timer.items(), columns=['method', 'avg_time'])
+            avg_times_df.to_csv(os.path.join(os.path.join(time_path, date), 'time.csv'), index=False)
+
+    graph_stats = []
+    runtime_gpp = []
+    runtime_pads = []
+    for date in dates:
+        root = os.path.join(vf_path, date)
+        with open(os.path.join(root, 'edgelist_pads'), 'r') as f:
+            line = f.readline()
+            n, m = map(int, line.split())
+        graph_stats.append((n, m))
+        # print(f"Graph {date}: {n} nodes, {m} edges")
+        time_data = pd.read_csv(os.path.join(time_path, date, 'time.csv'))
+        # Update column name if the data was generated with the new version
+        time_col = 'avg_time' if 'avg_time' in time_data.columns else 'time'
+        runtime_gpp.append(time_data[time_data['method'] == 'greedypp_cpp_weighted'][time_col].values[0])
+        runtime_pads.append(time_data[time_data['method'] == 'pads_cpp'][time_col].values[0])
     
+    # Extract number of edges for x-axis
+    edges = [stats[1] for stats in graph_stats]
+
+    plt.figure(figsize=(6, 4))
+    plt.plot(edges, runtime_gpp, marker='o', linestyle='-', label='GreedyPP', ms=2.5)
+    plt.plot(edges, runtime_pads, marker='s', linestyle='-', label='PADS', ms=2.5)
+    plt.xlabel('Number of Edges', fontsize=10)
+    plt.ylabel('Runtime (seconds)', fontsize=10)
+    plt.grid(True, linestyle='--', alpha=0.7)
+    plt.legend(fontsize=8, loc='upper left')
+    plt.tight_layout()
+    if save_path:
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        plt.savefig(save_path, bbox_inches='tight', format='pdf')
     plt.show()

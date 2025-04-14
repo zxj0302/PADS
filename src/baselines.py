@@ -262,8 +262,8 @@ def greedypp_cpp_wdsp(G: nx.Graph, **kwargs) -> None:
         # Parse the solution time
         solution_time = None
         for line in output.split('\n'):
-            if "Total time:" in line:
-                solution_time = int(line.split(':')[1].strip().split()[0])
+            if "Avg time per iteration:" in line:
+                solution_time = int(line.split(':')[1].strip().split()[0]) * iterations
                 break
 
         # Read output file (assuming it's created in the current directory)

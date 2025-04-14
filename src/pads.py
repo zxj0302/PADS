@@ -1,4 +1,5 @@
 import math
+import os
 from sortedcontainers import SortedSet
 import subprocess
 
@@ -158,6 +159,10 @@ def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_label
 
 
 def pads_python(G, attr_name='pads_python', **kwargs):
+    # return empty list if the graph is empty
+    if G.number_of_nodes() == 0:
+        return [], []
+
     theta=kwargs.get('theta', 0.5)
     return_fs=kwargs.get('return_fs', False)
     num_labels=kwargs.get('num_labels', 5)
@@ -200,7 +205,8 @@ def pads_python(G, attr_name='pads_python', **kwargs):
 def pads_cpp(G, **kwargs):
     cpp_exe = kwargs.get('cpp_exe', 'Related_Reps\\pads_cpp\\cmake-build-release\\PADS.exe')
     dataset = kwargs.get('dataset', 'Abortion')
-    input_file = kwargs.get('input_file', f'input\\datasets\\static\\{dataset}\\edgelist_pads')
+    input_folder = kwargs.get('input_file', f'input\\datasets\\static\\{dataset}')
+    input_file = os.path.join(input_folder, 'edgelist_pads')
     theta = kwargs.get('theta', 0.5)
     max_neg = kwargs.get('max_neg', 100)
     num_labels = kwargs.get('num_labels', 5)

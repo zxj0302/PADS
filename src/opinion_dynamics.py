@@ -8,7 +8,7 @@ from matplotlib.lines import Line2D
 
 
 class OpinionDynamics:
-    def __init__(self, G: nx.Graph, attri_name: str, ratio: float = 0.1):
+    def __init__(self, G: nx.Graph, attri_name: str, ratio: float = 0.05):
         self.G = G
         self.s = attri_name
         self.ratio = ratio
@@ -76,7 +76,7 @@ class OpinionDynamics:
             vars.append(np.var(list(opinions.values())))
         return vars, avg_pos, avg_neg
     
-    def friedkin_johnsen_cb(self, eta=10, max_iter: int = 100, reweight=[]):
+    def friedkin_johnsen_cb(self, eta=100, max_iter: int = 30, reweight=[]):
         # Get initial opinions
         opinions = nx.get_node_attributes(self.G, self.s)
         initial_opinions = opinions.copy()
@@ -127,7 +127,7 @@ class OpinionDynamics:
                     
                 neighbor_influence = sum(weights[(neighbor, node)] * old_opinions[neighbor] for neighbor in neighbors)
                 # stubbornness = abs(old_opinions[node])
-                stubbornness = (len(neighbors) / max_deg) ** 4
+                stubbornness = (len(neighbors) / max_deg) ** 2
                 opinions[node] = stubbornness * initial_opinions[node] + (1 - stubbornness) * neighbor_influence
             
             # Update weights based on new opinions

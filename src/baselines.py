@@ -3,7 +3,13 @@ import networkx as nx
 import pymetis
 import numpy as np
 from community import community_louvain
-from eva import eva_best_partition
+try:
+    from Eva import eva_best_partition
+except ImportError:
+    try:
+        from eva import eva_best_partition
+    except ImportError:
+        raise ImportError("Neither 'Eva' nor 'eva' module could be imported")
 from dsd import exact_densest, flowless
 import subprocess
 

@@ -13,6 +13,20 @@ class OpinionDynamics:
         self.s = attri_name
         self.ratio = ratio
         self.non_core = [node for node in self.G.nodes if self.G.nodes[node]['pads_cpp'] == 0]
+    
+    def run(self, model: str='friedkin_johnsen_cb', **kwargs):
+        if model == 'friedkin_johnsen':
+            return self.friedkin_johnsen(**kwargs)
+        elif model == 'friedkin_johnsen_cb':
+            return self.friedkin_johnsen_cb(**kwargs)
+        elif model == 'altafini':
+            return self.altafini(**kwargs)
+        elif model == 'hegselmann_krause':
+            return self.hegselmann_krause(**kwargs)
+        elif model == 'deffuant':
+            return self.deffuant(**kwargs)
+        else:
+            raise ValueError(f"Unknown model: {model}")
 
     def friedkin_johnsen(self, opt=3, lb=0.5, ub: float = 0.9, max_iter: int = 20, reweight=[]):
         # Get initial opinions
@@ -254,9 +268,9 @@ def opinion_dynamics_connections(G, num_edges=2000, ax_var=None, ax_diff=None, i
         if weighted:
             src_weights, tgt_weights = {}, {}
             for n in source_nodes:
-                src_weights[n] = G.degree(n) * (1 / (abs(G.nodes[n]['polarity']) + 0.1))
+                src_weights[n] = G.degree(n) * (1 / (abs(G.nodes[n]['polarity']) + 0.01))
             for n in target_nodes:
-                tgt_weights[n] = G.degree(n) * (1 / (abs(G.nodes[n]['polarity']) + 0.1))
+                tgt_weights[n] = G.degree(n) * (1 / (abs(G.nodes[n]['polarity']) + 0.01))
             
             # Normalize weights
             src_nodes = list(src_weights.keys())
@@ -287,7 +301,7 @@ def opinion_dynamics_connections(G, num_edges=2000, ax_var=None, ax_diff=None, i
         
         # Run simulation
         od = OpinionDynamics(G_new, 'polarity')
-        return od.friedkin_johnsen(max_iter=it)
+        return od.run(max_iter=it)
     
     # Define simulation configurations
     simulations = [
@@ -298,9 +312,9 @@ def opinion_dynamics_connections(G, num_edges=2000, ax_var=None, ax_diff=None, i
         ("Non-PADS", non_pads_pos, non_pads_neg, False),  # Non-PADS nodes
         ("W. All", pos_nodes, neg_nodes, True),  # Weighted selection from all nodes
         ("W. PADS", nodes_pads_pos, nodes_pads_neg, True),  # Weighted selection from PADS
-        ("W. MaxFlow-U", nodes_udsp_pos, nodes_udsp_neg, True),  # Weighted selection from MaxFlow-U
-        ("W. MaxFlow-W", nodes_wdsp_pos, nodes_wdsp_neg, True),  # Weighted selection from MaxFlow-W
-        ("W. GIN", nodes_gin_pos, nodes_gin_neg, True)  # Weighted selection from GIN
+        # ("W. MaxFlow-U", nodes_udsp_pos, nodes_udsp_neg, True),  # Weighted selection from MaxFlow-U
+        # ("W. MaxFlow-W", nodes_wdsp_pos, nodes_wdsp_neg, True),  # Weighted selection from MaxFlow-W
+        # ("W. GIN", nodes_gin_pos, nodes_gin_neg, True)  # Weighted selection from GIN
     ]
     
     # Run simulations
@@ -308,7 +322,7 @@ def opinion_dynamics_connections(G, num_edges=2000, ax_var=None, ax_diff=None, i
     for name, src, tgt, weighted in simulations:
         if name == "Original":
             od = OpinionDynamics(G, 'polarity')
-            results.append((name, *od.friedkin_johnsen(max_iter=it)))
+            results.append((name, *od.run(max_iter=it)))
         else:
             results.append((name, *add_edges_between(src, tgt, weighted)))
     
@@ -454,7 +468,7 @@ def opinion_dynamics_reweight(G, ax_var=None, ax_diff=None, show_legend=False, r
     time_steps = None  # Will be set during the first simulation
     
     for method_name, method_info in methods.items():
-        vars_data, avg_pos, avg_neg = od.friedkin_johnsen_cb(reweight=method_info['nodes'])
+        vars_data, avg_pos, avg_neg = od.run(reweight=method_info['nodes'])
         
         if time_steps is None:
             time_steps = range(len(vars_data))

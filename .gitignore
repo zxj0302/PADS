@@ -9,3 +9,5 @@ src/__pycache__
 .virtual_documents
 lightning_logs
 input/datasets/static/Voter_Fraud
+TODO
+*.md

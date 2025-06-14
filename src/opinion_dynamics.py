@@ -3,19 +3,22 @@ import networkx as nx
 import numpy as np
 from typing import Dict
 import random
-import seaborn as sns
 from matplotlib.lines import Line2D
 
 
 class OpinionDynamics:
-    def __init__(self, G: nx.Graph, attri_name: str, ratio: float = 0.05):
+    def __init__(self, G: nx.Graph, attri_name: str = 'polarity', ratio: float = 0.05):
         self.G = G
         self.s = attri_name
         self.ratio = ratio
-        self.non_core = [node for node in self.G.nodes if self.G.nodes[node]['pads_cpp'] == 0]
+        # self.non_core = [node for node in self.G.nodes if self.G.nodes[node]['pads_cpp'] == 0]
     
     def run(self, model: str='friedkin_johnsen_cb', **kwargs):
-        if model == 'friedkin_johnsen':
+        if model == 'friedkin_johnsen_simplified_matrix':
+            return self.friedkin_johnsen_simplified_matrix(**kwargs)
+        elif model == 'friedkin_johnsen_simplified':
+            return self.friedkin_johnsen_simplified(**kwargs)
+        elif model == 'friedkin_johnsen':
             return self.friedkin_johnsen(**kwargs)
         elif model == 'friedkin_johnsen_cb':
             return self.friedkin_johnsen_cb(**kwargs)
@@ -27,6 +30,81 @@ class OpinionDynamics:
             return self.deffuant(**kwargs)
         else:
             raise ValueError(f"Unknown model: {model}")
+        
+    def friedkin_johnsen_simplified_matrix(self, reweight={}, add_connections=[]):
+        # Work on a copy if add_connections is provided
+        if add_connections:
+            G = self.G.copy()
+            G.add_edges_from(add_connections)
+        else:
+            G = self.G
+        nodes = list(G.nodes())
+        n = len(nodes)
+        # Internal opinions vector (s)
+        s_vec = np.array([G.nodes[node][self.s] for node in nodes])
+        # Build weighted adjacency matrix W
+        W = np.zeros((n, n))
+        for i, u in enumerate(nodes):
+            for j, v in enumerate(nodes):
+                if G.has_edge(u, v) or G.has_edge(v, u):
+                    edge = (u, v)
+                    edge_rev = (v, u)
+                    if reweight and edge in reweight:
+                        weight = reweight[edge]
+                    elif reweight and edge_rev in reweight:
+                        weight = reweight[edge_rev]
+                    else:
+                        weight = (2 - abs(G.nodes[u][self.s] - G.nodes[v][self.s])) / 2
+                    W[i, j] = weight
+        # Degree matrix D
+        D = np.diag(W.sum(axis=1))
+        # Laplacian L = D - W
+        L = D - W
+        # Identity matrix
+        I = np.eye(n)
+        # Solve for z
+        L_plus_I = L + I
+        z_vec = np.linalg.solve(L_plus_I, s_vec)
+        # Prepare output: initial and final
+        initial_dict = {node: s for node, s in zip(nodes, s_vec)}
+        final_dict = {node: z for node, z in zip(nodes, z_vec)}
+        return [initial_dict, final_dict]
+        
+    def friedkin_johnsen_simplified(self, max_iter: int = 100, reweight=[], add_connections=[]):
+        # Work on a copy of the graph if add_connections is provided
+        if add_connections:
+            G = self.G.copy()
+            G.add_edges_from(add_connections)
+        else:
+            G = self.G
+
+        opinions = nx.get_node_attributes(G, self.s)
+        initial_opinions = opinions.copy()
+        opinions_over_time = [opinions.copy()]
+
+        for _ in range(max_iter):
+            old_opinions = opinions.copy()
+            for node in G.nodes():
+                neighbors = list(G.neighbors(node))
+                weights = []
+                for neigh in neighbors:
+                    # Use reweight if provided, otherwise use |s_i - s_j|
+                    edge = (node, neigh)
+                    edge_rev = (neigh, node)
+                    if reweight and (edge in reweight):
+                        w = reweight[edge]
+                    elif reweight and (edge_rev in reweight):
+                        w = reweight[edge_rev]
+                    else:
+                        w = (2 - abs(initial_opinions[node] - initial_opinions[neigh])) / 2
+                    weights.append(w)
+                sum_weighted_neighbor_opinions = sum(w * old_opinions[neigh] for w, neigh in zip(weights, neighbors))
+                sum_weights = sum(weights)
+                numerator = initial_opinions[node] * 1 + sum_weighted_neighbor_opinions
+                denominator = 1 + sum_weights
+                opinions[node] = numerator / denominator if denominator != 0 else initial_opinions[node]
+            opinions_over_time.append(opinions.copy())
+        return opinions_over_time
 
     def friedkin_johnsen(self, opt=3, lb=0.5, ub: float = 0.9, max_iter: int = 20, reweight=[]):
         # Get initial opinions
@@ -91,6 +169,7 @@ class OpinionDynamics:
         return vars, avg_pos, avg_neg
     
     def friedkin_johnsen_cb(self, eta=100, max_iter: int = 30, reweight=[]):
+        # Thsi is the FJ model with confirmation bias
         # Get initial opinions
         opinions = nx.get_node_attributes(self.G, self.s)
         initial_opinions = opinions.copy()

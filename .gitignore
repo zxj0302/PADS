@@ -13,3 +13,4 @@ input/datasets/static/Voter_Fraud
 TODO*
 *.md
 .DS_Store
+GraphOutput

@@ -4,7 +4,7 @@ from sortedcontainers import SortedSet
 import subprocess
 
 
-def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_labels=5):
+def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_labels=5, size_ub=None):
     if not pos:
         for node in G.nodes():
             G.nodes[node]['polarity'] = -G.nodes[node]['polarity']
@@ -34,7 +34,7 @@ def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_label
     if return_fs:
         fs = []
     step = 0
-    while next_node is not None and neg_count < max_neg_count:
+    while next_node is not None and (sum(num_selected_by_label) < size_ub if size_ub else neg_count < max_neg_count):
         step += 1
         # FIXME: consider the self-loop edges
         polarity_label = G.nodes[next_node]['polarity_label']
@@ -46,6 +46,8 @@ def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_label
             num_selected_by_label[polarity_label] += 1
             # update the status of its neighbors
             for neighbor in G.neighbors(next_node):
+                # if neighbor == next_node:
+                    # continue
                 G.nodes[neighbor]['in_neighbor_count'] += 1
                 neighbor_polarity_label = G.nodes[neighbor]['polarity_label']
                 if G.nodes[neighbor]['status'] == 'out':
@@ -71,6 +73,8 @@ def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_label
             num_selected_by_label[polarity_label] -= 1
             # update the status of its neighbors
             for neighbor in G.neighbors(next_node):
+                # if neighbor == next_node:
+                    # continue
                 G.nodes[neighbor]['in_neighbor_count'] -= 1
                 neighbor_polarity_label = G.nodes[neighbor]['polarity_label']
                 if G.nodes[neighbor]['status'] == 'fringe':
@@ -153,12 +157,16 @@ def ecc_greedy(G, theta, pos=True, max_neg_count=200, return_fs=False, num_label
         return fs
     selected = []
     for i in range(num_labels):
-        for item in best_selected[i].__iter__():
-            selected.append(item[2])
+        if size_ub:
+            for item in selected_by_label[i].__iter__():
+                selected.append(item[2])
+        else:
+            for item in best_selected[i].__iter__():
+                selected.append(item[2])
     return selected
 
 
-def pads_python(G, attr_name='pads_python', **kwargs):
+def pads_python(G, **kwargs):
     # return empty list if the graph is empty
     if G.number_of_nodes() == 0:
         return [], []
@@ -167,6 +175,8 @@ def pads_python(G, attr_name='pads_python', **kwargs):
     return_fs=kwargs.get('return_fs', False)
     num_labels=kwargs.get('num_labels', 5)
     max_neg=kwargs.get('max_neg', 100)
+    size_ub=kwargs.get('size_ub', None)
+    attr_name = kwargs.get('attr_name', 'pads_python')
 
     label_boundaries = []
     if num_labels > 1:
@@ -192,11 +202,11 @@ def pads_python(G, attr_name='pads_python', **kwargs):
         G.nodes[edge[0]]['promising_value'] += similarity
         G.nodes[edge[1]]['promising_value'] += similarity
     if return_fs:
-        pos_fs = ecc_greedy(G.copy(), theta, True, return_fs=True, num_labels=num_labels, max_neg_count=max_neg)
-        neg_fs = ecc_greedy(G.copy(), theta, False, return_fs=True, num_labels=num_labels, max_neg_count=max_neg)
+        pos_fs = ecc_greedy(G.copy(), theta, True, return_fs=True, num_labels=num_labels, max_neg_count=max_neg, size_ub=size_ub[0] if size_ub else None)
+        neg_fs = ecc_greedy(G.copy(), theta, False, return_fs=True, num_labels=num_labels, max_neg_count=max_neg, size_ub=size_ub[1] if size_ub else None)
         return pos_fs, neg_fs
-    myg_pos = set(ecc_greedy(G.copy(), theta, True, num_labels=num_labels, max_neg_count=max_neg))
-    myg_neg = set(ecc_greedy(G.copy(), theta, False, num_labels=num_labels, max_neg_count=max_neg))
+    myg_pos = set(ecc_greedy(G.copy(), theta, True, num_labels=num_labels, max_neg_count=max_neg, size_ub=size_ub[0] if size_ub else None))
+    myg_neg = set(ecc_greedy(G.copy(), theta, False, num_labels=num_labels, max_neg_count=max_neg, size_ub=size_ub[1] if size_ub else None))
     for node in G.nodes():
         G.nodes[node][attr_name] = (1 if node in myg_pos else 0) - (1 if node in myg_neg else 0)
     return list(myg_pos), list(myg_neg)
@@ -209,10 +219,12 @@ def pads_cpp(G, **kwargs):
     input_file = os.path.join(input_folder, 'edgelist_pads')
     theta = kwargs.get('theta', 0.5)
     max_neg = kwargs.get('max_neg', 100)
+    deg_thresh = kwargs.get('deg_thresh', 0)
     num_labels = kwargs.get('num_labels', 5)
+    attr_name = kwargs.get('attr_name', 'pads_cpp')
 
     # run the cpp program and get the output program prints on the terminal
-    command = f"{cpp_exe} {input_file} {theta} {max_neg} {num_labels}"
+    command = f"{cpp_exe} {input_file} {theta} {max_neg} {deg_thresh} {num_labels}"
 
     # Function to run command and process output
     def run_command_and_process(command):
@@ -220,15 +232,58 @@ def pads_cpp(G, **kwargs):
         process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
         output, _ = process.communicate()
 
-        # Parse the solution time
+        # Parse the solution time, pos_nodes, neg_nodes
         solution_time = None
+        pos_nodes = []
+        neg_nodes = []
         for line in output.split('\n'):
-            if "Total Elapsed Time:" in line:
-                solution_time = float(line.split(':')[1].strip().split()[0])
-                break
-        return solution_time
+            if line.startswith("Total Elapsed Time:"):
+                solution_time = float(line.split(":")[1].split()[0])
+            elif line.startswith("Nodes_Pos"):
+                pos_nodes = [int(x) for x in line.split(":")[1].strip().split()]
+            elif line.startswith("Nodes_Neg"):
+                neg_nodes = [int(x) for x in line.split(":")[1].strip().split()]
+        return solution_time, pos_nodes, neg_nodes
 
-    total_time = run_command_and_process(command)
-    pos_nodes, neg_nodes = pads_python(G, 'pads_cpp', **kwargs)
+    total_time, pos_nodes, neg_nodes = run_command_and_process(command)
+    for node in G.nodes():
+        G.nodes[node][attr_name] = (1 if node in pos_nodes else 0) - (1 if node in neg_nodes else 0)
 
     return total_time, (pos_nodes, neg_nodes)
+
+
+def label_propagation(G, **kwargs):
+    print("Label Propagation Started!")
+    attr_name = kwargs.get('attr_name', 'pads_cpp')
+    new_attr = kwargs.get('new_attr', 'pads_cpp_lp')
+    threshold = kwargs.get('threshold', 0.7)
+    # Initialize new_attr values once before the loop
+    for node in G.nodes():
+        G.nodes[node][new_attr] = G.nodes[node][attr_name]
+    changed = 1
+    while changed > 0:
+        changed = 0
+        for node in G.nodes():
+            if G.nodes[node][attr_name] == 0:
+                # count how many neighbors have new_attr == 1 and how many have new_attr == -1
+                pos_count = 0
+                neg_count = 0
+                for neighbor in G.neighbors(node):
+                    if G.nodes[neighbor][new_attr] == 1:
+                        pos_count += 1
+                    elif G.nodes[neighbor][new_attr] == -1:
+                        neg_count += 1
+                if pos_count > (pos_count + neg_count) * threshold and G.nodes[node]['polarity'] > 0:
+                    if G.nodes[node][new_attr] != 1:
+                        changed += 1
+                        G.nodes[node][new_attr] = 1
+                elif neg_count > (pos_count + neg_count) * threshold and G.nodes[node]['polarity'] < 0:
+                    if G.nodes[node][new_attr] != -1:
+                        changed += 1
+                        G.nodes[node][new_attr] = -1
+                else:
+                    if G.nodes[node][new_attr] != 0:
+                        changed += 1
+                        G.nodes[node][new_attr] = 0
+    return G
+

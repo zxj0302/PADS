@@ -131,8 +131,6 @@ def maxflow_cpp_udsp(G: nx.Graph, **kwargs) -> None:
     return (pos_time+neg_time)/1000.0, (pos_nodes, neg_nodes)
 
 
-
-
 def maxflow_cpp_wdsp(G: nx.Graph, **kwargs) -> None:
     cpp_exe = kwargs.get('cpp_exe', 'Related_Reps\\Greedy++\\exactweighted.exe')
     multiplier = kwargs.get('multiplier', 1000)
@@ -300,3 +298,103 @@ def greedypp_cpp_wdsp(G: nx.Graph, **kwargs) -> None:
 
     # Return both times and node sets
     return (pos_time+neg_time)/1000, (pos_nodes, neg_nodes)
+
+
+def neg_dsd(G, **kwargs):
+    cpp_exe = kwargs.get('cpp_exe', 'Related_Reps\\Neg-DSD\\build\\peeling-opt.exe')
+    dataset = kwargs.get('dataset', 'Abortion')
+    input_folder = kwargs.get('input_file', f'input\\datasets\\static\\{dataset}')
+    input_file = os.path.join(input_folder, 'edgelist_pads')
+    C = kwargs.get('C', 1)
+
+    # run the cpp program and get the output program prints on the terminal
+    command_pos = f"{cpp_exe} {input_file} {C} 0"
+    command_neg = f"{cpp_exe} {input_file} {C} 1"
+
+    # Function to run command and process output
+    def run_command_and_process(command):
+        # Run the command and capture output
+        process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        output, _ = process.communicate()
+
+        # Parse the solution time, the first line is the time, the second line is the nodes, there is no text or : before lines
+        solution_time = float(output.split('\n')[0].strip().split()[0])
+        nodes = [int(node) for node in output.split('\n')[1].strip().split()]
+        return solution_time, nodes
+
+    pos_time, pos_nodes = run_command_and_process(command_pos)
+    neg_time, neg_nodes = run_command_and_process(command_neg)
+
+    for node in G.nodes():
+        G.nodes[node]['neg_dsd'] = (1 if node in pos_nodes else 0) - (1 if node in neg_nodes else 0)
+
+    return pos_time+neg_time, (pos_nodes, neg_nodes)
+
+
+def dith(G, **kwargs):
+    cpp_exe = kwargs.get('cpp_exe', 'Related_Reps\\DITH\\build\\dith.exe')
+    dataset = kwargs.get('dataset', 'Abortion')
+    input_folder = kwargs.get('input_file', f'input\\datasets\\static\\{dataset}')
+    input_file = os.path.join(input_folder, 'edgelist_dith')
+
+    command = f"{cpp_exe} {input_file} --lambda1 5 --lambda2 5"
+
+    # Function to run command and process output
+    def run_command_and_process(command):
+        # Run the command and capture output
+        process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        output, _ = process.communicate()
+
+        # Parse the solution time, the first line is the time, the second line is the nodes, there is no text or : before lines
+        solution_time = float(output.split('\n')[0].strip().split()[0])
+        pos_nodes = [int(node) for node in output.split('\n')[1].strip().split()]
+        neg_nodes = [int(node) for node in output.split('\n')[2].strip().split()]
+        return solution_time, pos_nodes, neg_nodes
+
+    time_dith, pos_nodes, neg_nodes = run_command_and_process(command)
+
+    for node in G.nodes():
+        G.nodes[node]['dith'] = (1 if node in pos_nodes else 0) - (1 if node in neg_nodes else 0)
+
+    return time_dith, (pos_nodes, neg_nodes)
+
+
+def eigensign(G, **kwargs):
+    cpp_exe = kwargs.get('cpp_exe', 'Related_Reps\\polarized_communities\\build\\bin\\eigensign.exe')
+    dataset = kwargs.get('dataset', 'Abortion')
+    input_folder = kwargs.get('input_file', f'input\\datasets\\static\\{dataset}')
+    input_file = os.path.join(input_folder, 'edgelist_eigensign')
+
+    command = f"{cpp_exe} {input_file}"
+
+    # Function to run command and process output
+    def run_command_and_process(command):
+        # Run the command and capture output
+        process = subprocess.Popen(command, shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True)
+        output, _ = process.communicate()
+
+        # Parse the solution time, the first line is the time, the second line is the nodes, there is no text or : before lines
+        lines = output.split('\n')
+        solution_time = None
+        pos_nodes = []
+        neg_nodes = []
+        i = 0
+        while i < len(lines):
+            line = lines[i].strip()
+            if line.startswith('Runtime:'):
+                solution_time = float(line.split(':')[1].split()[0])
+            elif line.startswith('Community 1') and i+1 < len(lines):
+                if lines[i+1].strip():
+                    pos_nodes = [int(node) for node in lines[i+1].strip().split()]
+            elif line.startswith('Community 2') and i+1 < len(lines):
+                if lines[i+1].strip():
+                    neg_nodes = [int(node) for node in lines[i+1].strip().split()]
+            i += 1
+        return solution_time, pos_nodes, neg_nodes
+
+    time_eigensign, pos_nodes, neg_nodes = run_command_and_process(command)
+
+    for node in G.nodes():
+        G.nodes[node]['eigensign'] = (1 if node in pos_nodes else 0) - (1 if node in neg_nodes else 0)
+
+    return time_eigensign, (pos_nodes, neg_nodes)

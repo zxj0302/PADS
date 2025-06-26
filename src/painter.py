@@ -11,12 +11,14 @@ import json
 from collections import defaultdict
 from .rwc_jit import rwc
 from .pads import pads_python
-from .utils import get_graph
+from .utils import get_graph, statistics
 from matplotlib.lines import Line2D
 from . import run_exp
 from .opinion_dynamics import opinion_dynamics_reweight, opinion_dynamics_connections
 import matplotlib.gridspec as gridspec
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+from tqdm import tqdm
+from .mitigation import MitigationMeasurement
 
 
 def ec_ecc(source_path, crop_area):
@@ -91,9 +93,8 @@ def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
         'font.size': 16,
     })
 
-    method_names = {'maxflow_cpp_udsp': 'MaxFlow-U', 'maxflow_cpp_wdsp': 'MaxFlow-W', 'node2vec_gin': 'GIN', 'pads_cpp':
-        'PADS'}
-    fig, axs = plt.subplots(1, 4, figsize=(20, 5))  # Increased figsize for better readability
+    method_names = {'maxflow_cpp_wdsp': 'MaxFlow', 'neg_dsd': 'Neg-DSD', 'node2vec_gin': 'GIN', 'pads_cpp': 'PADS'}
+    _, axs = plt.subplots(1, 4, figsize=(20, 5))  # Increased figsize for better readability
 
     for ax, method_name in zip(axs, method_names.keys()):
         pos_corr = []
@@ -192,11 +193,12 @@ def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
 def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
     G = nx.read_gml(graph_path)
     method_names = {
-        'maxflow_cpp_udsp': 'MaxFlow-U',
-        'maxflow_cpp_wdsp': 'MaxFlow-W',
+        # 'maxflow_cpp_udsp': 'MaxFlow-U',
+        'maxflow_cpp_wdsp': 'MaxFlow',
+        'neg_dsd': 'Neg-DSD',
         'node2vec_gin': 'GIN',
         'pads_cpp': 'PADS'}
-    df = pd.DataFrame(columns=['Method', 'OIR', 'BR-P', 'BR-N', 'Avg. Distance', 'RWC'])
+    df = pd.DataFrame(columns=['Method', 'E-I', 'BSI', 'Avg. Distance', 'RWC', 'OPG', 'GED'])
 
     for attribute in method_names.keys():
         out = 0
@@ -235,17 +237,33 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
 
         avg_distance = sum(distances)/len(distances) if distances else float('inf')
         rwc_score = 1 if not (border_pos and border_nag) else rwc(G.copy(), attribute)
+        avg_pos_opinion = np.mean([G.nodes[n]['polarity'] for n in pos_nodes])
+        avg_neg_opinion = np.mean([G.nodes[n]['polarity'] for n in neg_nodes])
+        opg = avg_pos_opinion - avg_neg_opinion
+        G_sub = G.subgraph([n for n, d in G.nodes(data=True) if d[attribute] != 0]).copy()
+        G_sub.remove_edges_from(nx.selfloop_edges(G_sub))
+        # print(f'Number of connected components: {nx.number_connected_components(G_sub)}')
+        if nx.number_connected_components(G_sub) > 1:
+            # get the largest connected component
+            largest_cc = max(nx.connected_components(G_sub), key=len)
+            G_sub = G_sub.subgraph(largest_cc)
+        # convert the node labels from string to int
+        G_sub = nx.convert_node_labels_to_integers(G_sub)
+
+        ged = MitigationMeasurement(G_sub).ged()
+        # print(f'ged: {ged}')
 
         count_pos = len(pos_nodes)
-        count_nag = len(neg_nodes)
+        count_neg = len(neg_nodes)
 
         df.loc[len(df)] = {
             'Method': method_names[attribute],
-            'OIR': out/(in_pos + in_nag) if (in_pos + in_nag) > 0 else 0,
-            'BR-P': len(border_pos)/count_pos if count_pos > 0 else 0,
-            'BR-N': len(border_nag)/count_nag if count_nag > 0 else 0,
+            'E-I': (in_pos + in_nag - out)/(in_pos + in_nag + out) if (in_pos + in_nag + out) > 0 else 0,
+            'BSI': (((count_pos - len(border_pos))/count_pos) * ((count_neg - len(border_nag))/count_neg)) if (count_pos > 0 and count_neg > 0) else 0,
             'Avg. Distance': avg_distance,
-            'RWC': rwc_score
+            'RWC': rwc_score,
+            'OPG': opg,
+            'GED': ged/(count_pos + count_neg)
         }
 
     if save_path is not None:
@@ -255,11 +273,11 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
 
 def radar_chart(file_path, datasets):
     # Define the categories (metrics)
-    categories = ['OIR', 'BR-P', 'BR-N', 'RWC', 'Avg. Distance']
+    categories = ['E-I', 'BSI', 'Avg. Distance', 'RWC', 'OPG', 'GED']
     num_vars = len(categories)
 
     # Define the order of methods for consistency
-    method_names = ['MaxFlow-U', 'MaxFlow-W', 'GIN', 'PADS']
+    method_names = ['MaxFlow', 'Neg-DSD', 'GIN', 'PADS']
 
     # Define a more appealing color palette using matplotlib's tab10 via plt.get_cmap
     color_palette = plt.get_cmap('tab10')  # Updated to fix deprecation warning
@@ -267,7 +285,7 @@ def radar_chart(file_path, datasets):
     # colors = ['g', 'c', 'y', 'm']  # Blue, Red, Green, Magenta
 
     # Create a figure with 2 rows and 3 columns of subplots, each polar
-    fig, axes = plt.subplots(2, 3, figsize=(16, 11), subplot_kw=dict(polar=True))
+    fig, axes = plt.subplots(2, 3, figsize=(15, 8), subplot_kw=dict(polar=True))
     axes = axes.flatten()  # Flatten the 2D array for easy iteration
 
     # Iterate over each file and corresponding subplot
@@ -305,18 +323,18 @@ def radar_chart(file_path, datasets):
         scaled_df = df.copy()
 
         # Scaling the first three columns where smaller is better using min_val / x or 1 - x
-        for col in ['OIR', 'BR-P', 'BR-N']:
-            min_val = df[col].min()
-            if min_val != 0:
-                # Avoid division by zero
-                scaled_df[col] = df[col].apply(lambda x: min_val / x if x != 0 else 1)
-            else:
-                # When min_val is 0
-                # 0/0 = 1, and 0/x = 1 - x for x != 0
-                scaled_df[col] = df[col].apply(lambda x: 1 if x == 0 else 1 - x)
+        # for col in ['OIR', 'BR-P', 'BR-N']:
+        #     min_val = df[col].min()
+        #     if min_val != 0:
+        #         # Avoid division by zero
+        #         scaled_df[col] = df[col].apply(lambda x: min_val / x if x != 0 else 1)
+        #     else:
+        #         # When min_val is 0
+        #         # 0/0 = 1, and 0/x = 1 - x for x != 0
+        #         scaled_df[col] = df[col].apply(lambda x: 1 if x == 0 else 1 - x)
 
         # Scaling the last column where larger is better using value / max_val
-        for col in ['Avg. Distance', 'RWC']:
+        for col in ['E-I', 'BSI', 'Avg. Distance', 'RWC', 'OPG', 'GED']:
             max_val = df[col].max()
             if max_val != 0:
                 scaled_df[col] = df[col].apply(lambda x: x / max_val)
@@ -339,7 +357,7 @@ def radar_chart(file_path, datasets):
             values = row[categories].tolist()
             values += values[:1]  # Complete the loop
             ax.plot(angles, values, color=colors[i], label=method, linewidth=2, linestyle='solid')
-            ax.fill(angles, values, color=colors[i], alpha=0.2)
+            ax.fill(angles, values, color=colors[i], alpha=0.1 if method != 'PADS' else 0.2)
 
         # Configure the axes
         ax.set_xticks(angles[:-1])
@@ -383,6 +401,202 @@ def radar_chart(file_path, datasets):
 
     # Display the figure
     plt.show()
+
+
+# def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
+#     G = nx.read_gml(graph_path)
+#     method_names = {
+#         # 'maxflow_cpp_udsp': 'MaxFlow-U',
+#         'maxflow_cpp_wdsp': 'MaxFlow',
+#         'neg_dsd': 'Neg-DSD',
+#         'node2vec_gin': 'GIN',
+#         'pads_cpp': 'PADS'}
+#     df = pd.DataFrame(columns=['Method', 'OIR', 'BR-P', 'BR-N', 'Avg. Distance', 'RWC'])
+
+#     for attribute in method_names.keys():
+#         out = 0
+#         in_pos = 0
+#         in_nag = 0
+#         border_pos = set()
+#         border_nag = set()
+
+#         for edge in G.edges:
+#             if G.nodes[edge[0]][attribute] == value_pos and G.nodes[edge[1]][attribute] == value_nag:
+#                 out += 1
+#                 border_pos.add(edge[0])
+#                 border_nag.add(edge[1])
+#             elif G.nodes[edge[0]][attribute] == value_nag and G.nodes[edge[1]][attribute] == value_pos:
+#                 out += 1
+#                 border_pos.add(edge[1])
+#                 border_nag.add(edge[0])
+#             elif G.nodes[edge[0]][attribute] == value_pos and G.nodes[edge[1]][attribute] == value_pos:
+#                 in_pos += 1
+#             elif G.nodes[edge[0]][attribute] == value_nag and G.nodes[edge[1]][attribute] == value_nag:
+#                 in_nag += 1
+
+#         # More efficient distance calculation
+#         pos_nodes = [n for n, d in G.nodes(data=True) if d[attribute] == value_pos]
+#         neg_nodes = [n for n, d in G.nodes(data=True) if d[attribute] == value_nag]
+#         # Handle distance calculation with disconnected components
+#         distances = []
+#         for s in pos_nodes:
+#             for t in neg_nodes:
+#                 try:
+#                     dist = nx.shortest_path_length(G, s, t)
+#                     distances.append(dist)
+#                 except nx.NetworkXNoPath:
+#                     # Skip pairs that don't have a path between them
+#                     continue
+
+#         avg_distance = sum(distances)/len(distances) if distances else float('inf')
+#         rwc_score = 1 if not (border_pos and border_nag) else rwc(G.copy(), attribute)
+
+#         count_pos = len(pos_nodes)
+#         count_nag = len(neg_nodes)
+
+#         df.loc[len(df)] = {
+#             'Method': method_names[attribute],
+#             'OIR': out/(in_pos + in_nag) if (in_pos + in_nag) > 0 else 0,
+#             'BR-P': len(border_pos)/count_pos if count_pos > 0 else 0,
+#             'BR-N': len(border_nag)/count_nag if count_nag > 0 else 0,
+#             'Avg. Distance': avg_distance,
+#             'RWC': rwc_score
+#         }
+
+#     if save_path is not None:
+#         os.makedirs(os.path.dirname(save_path), exist_ok=True)
+#         df.to_csv(save_path, index=False)
+
+# def radar_chart(file_path, datasets):
+#     # Define the categories (metrics)
+#     categories = ['OIR', 'BR-P', 'BR-N', 'RWC', 'Avg. Distance']
+#     num_vars = len(categories)
+
+#     # Define the order of methods for consistency
+#     method_names = ['MaxFlow', 'Neg-DSD', 'GIN', 'PADS']
+
+#     # Define a more appealing color palette using matplotlib's tab10 via plt.get_cmap
+#     color_palette = plt.get_cmap('tab10')  # Updated to fix deprecation warning
+#     colors = color_palette.colors[:len(method_names)]  # Assign distinct colors
+#     # colors = ['g', 'c', 'y', 'm']  # Blue, Red, Green, Magenta
+
+#     # Create a figure with 2 rows and 3 columns of subplots, each polar
+#     fig, axes = plt.subplots(1, 2, figsize=(15, 8), subplot_kw=dict(polar=True))
+#     axes = axes.flatten()  # Flatten the 2D array for easy iteration
+
+#     # Iterate over each file and corresponding subplot
+#     for idx, d in enumerate(datasets):
+#         ax = axes[idx]
+#         title = d.replace('_', ' ')
+
+#         try:
+#             # Read the CSV file
+#             df = pd.read_csv(os.path.join(file_path, f'{d}.csv'))
+
+#             # Ensure that the DataFrame has the methods in the specified order
+#             df = df.set_index('Method').loc[method_names].reset_index()
+#         except KeyError as e:
+#             print(f"Error: {e}. Please ensure all methods are present in {d}.")
+#             # Display a placeholder text in the subplot
+#             ax.text(0.5, 0.5, 'Data Missing', horizontalalignment='center',
+#                 verticalalignment='center', fontsize=12, transform=ax.transAxes)
+#             # Set the title at the bottom
+#             ax.set_title(title, size=16, y=-0.15, fontsize=14, fontweight='bold')
+#             ax.set_xticks([])
+#             ax.set_yticks([])
+#             continue  # Skip this file if there's an error
+#         except FileNotFoundError:
+#             print(f"Error: {d} not found.")
+#             ax.text(0.5, 0.5, 'File Not Found', horizontalalignment='center',
+#                 verticalalignment='center', fontsize=12, transform=ax.transAxes)
+#             # Set the title at the bottom
+#             ax.set_title(title, size=16, y=-0.15, fontsize=14, fontweight='bold')
+#             ax.set_xticks([])
+#             ax.set_yticks([])
+#             continue  # Skip this file if it's not found
+
+#         # Create a copy of the DataFrame for scaling
+#         scaled_df = df.copy()
+
+#         # Scaling the first three columns where smaller is better using min_val / x or 1 - x
+#         for col in ['OIR', 'BR-P', 'BR-N']:
+#             min_val = df[col].min()
+#             if min_val != 0:
+#                 # Avoid division by zero
+#                 scaled_df[col] = df[col].apply(lambda x: min_val / x if x != 0 else 1)
+#             else:
+#                 # When min_val is 0
+#                 # 0/0 = 1, and 0/x = 1 - x for x != 0
+#                 scaled_df[col] = df[col].apply(lambda x: 1 if x == 0 else 1 - x)
+
+#         # Scaling the last column where larger is better using value / max_val
+#         for col in ['Avg. Distance', 'RWC']:
+#             max_val = df[col].max()
+#             if max_val != 0:
+#                 scaled_df[col] = df[col].apply(lambda x: x / max_val)
+#             else:
+#                 scaled_df[col] = 1  # Assign 1 if max_val is 0 to avoid NaN
+
+#         # Replace any infinite values resulted from division by zero with 1
+#         scaled_df.replace([np.inf, -np.inf], 1, inplace=True)
+
+#         # Replace NaN values with 1 as per your specification
+#         scaled_df.fillna(1, inplace=True)
+
+#         # Prepare the angles for the radar chart
+#         angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
+#         angles += angles[:1]  # Complete the loop
+
+#         # Plot each method
+#         for i, row in scaled_df.iterrows():
+#             method = row['Method']
+#             values = row[categories].tolist()
+#             values += values[:1]  # Complete the loop
+#             ax.plot(angles, values, color=colors[i], label=method, linewidth=2, linestyle='solid')
+#             ax.fill(angles, values, color=colors[i], alpha=0.1 if method != 'PADS' else 0.2)
+
+#         # Configure the axes
+#         ax.set_xticks(angles[:-1])
+#         ax.set_xticklabels(categories, fontsize=12)
+
+#         # Set the radial limit to slightly above the maximum scaled value for better visualization
+#         max_scaled = scaled_df[categories].max().max()
+#         ax.set_ylim(0, max_scaled)  # Add a 20% margin
+
+#         # Configure the radial labels
+#         ax.set_rlabel_position(30)
+#         ax.set_yticks(np.linspace(0, max_scaled, 5))
+#         ax.set_yticklabels([f"{tick:.2f}" for tick in np.linspace(0, max_scaled, 5)], fontsize=10)
+
+#         # Add a title to the subplot at the bottom
+#         ax.set_title(title, size=16, y=-0.16, fontsize=14)#, fontweight='bold')
+
+#         # Optional: Add grid lines for better readability
+#         ax.grid(True, linestyle='--', linewidth=2, c='k', alpha=0.5)
+
+#     # Handle any unused subplots (if any)
+#     for j in range(len(datasets), len(axes)):
+#         fig.delaxes(axes[j])
+
+#     legend_elements = [Patch(facecolor=colors[i], label=method) for i, method in enumerate(method_names)]
+#     fig.legend(handles=legend_elements, loc='upper center', ncol=len(method_names),
+#         fontsize=14, frameon=False, bbox_to_anchor=(0.5, 0.95))
+
+#     # Adjust layout to prevent overlap and ensure titles and legends fit well
+#     # plt.tight_layout(rect=[0, 0, 1, 0.90], pad=2)
+
+#     # Enhance overall aesthetics
+#     mpl.rcParams['axes.facecolor'] = 'white'
+#     mpl.rcParams['figure.facecolor'] = 'white'
+
+#     # save the plot
+#     if file_path is not None:
+#         if not os.path.exists(file_path):
+#             os.makedirs(file_path)
+#         plt.savefig(os.path.join(file_path, 'radar.pdf'), bbox_inches='tight')
+
+#     # Display the figure
+#     plt.show()
 
 
 def reachability(ponm_values=None, nopm_values=None, save_path=None):
@@ -546,57 +760,120 @@ def create_heatmap(graph_path, diffusion_path, save_path=None, grid_size=10):
 
 
 def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
-    sns.set_theme(style="white")
-    _, axs = plt.subplots(2, 3, figsize=(8, 6))
-    axs = axs.flatten()
+    """Plot f(S) curves returned by PADS for all datasets.
 
+    This new version groups all positive-community curves (ECC-P) in the
+    left subplot and all negative-community curves (ECC-N) in the right
+    subplot so that cross-dataset differences can be easily compared.
+    """
+
+    # Unified aesthetic
+    sns.set_theme(style="white")
+
+    # Prepare figure: two columns – ECC-P and ECC-N
+    fig, axs = plt.subplots(1, 2, figsize=(8, 4))
+
+    # A pleasant, high-contrast colour list (see list used elsewhere)
+    colors = [
+        "#EA8379",  # Coral pink
+        "#7DAEE0",  # Sky blue
+        "#B395BD",  # Lavender/mauve
+        "#299D8F",  # Teal/turquoise
+        "#E9C46A",  # Golden yellow
+        "#7D9E72",  # Sage green
+        "#8B6D8A"   # Dusty plum
+    ][:len(datasets)]
+
+    # Iterate over datasets, compute fs, and plot
     for idx, d in enumerate(datasets):
         G = get_graph(d)
-        pos, neg = pads_python(G, return_fs=True, theta=theta, max_neg=max_neg, num_labels=num_labels)
-        pos_values = [p[0] for p in pos]
-        neg_values = [n[0] for n in neg]
 
-        # Plot curves
-        axs[idx].plot(pos_values, label='ECC-P')
-        axs[idx].plot(neg_values, label='ECC-N')
+        pos_fs, neg_fs = pads_python(
+            G,
+            return_fs=True,
+            theta=theta,
+            max_neg=max_neg,
+            num_labels=num_labels
+        )
 
-        # Find peaks
-        pos_peak = max(pos_values)
-        pos_peak_idx = pos_values.index(pos_peak)
-        neg_peak = max(neg_values)
-        neg_peak_idx = neg_values.index(neg_peak)
+        # Extract the f(S) values only (index 0 in tuple)
+        pos_values = [p[0] for p in pos_fs]
+        neg_values = [n[0] for n in neg_fs]
 
-        # Add red stars at peaks
-        axs[idx].plot(pos_peak_idx, pos_peak, 'r*', markersize=6)
-        axs[idx].plot(neg_peak_idx, neg_peak, 'r*', markersize=6)
+        # Normalize each curve by its own maximum to make peaks comparable
+        if pos_values:
+            pos_max = max(pos_values)
+            pos_values_norm = [v / pos_max for v in pos_values] if pos_max > 0 else pos_values
+            # Normalize iterations (x-axis) to span [0, 1]
+            pos_x_norm = [i / (len(pos_values) - 1) for i in range(len(pos_values))] if len(pos_values) > 1 else [0]
+        else:
+            pos_values_norm = []
+            pos_x_norm = []
 
-        # Add vertical and horizontal lines for positive peak
-        axs[idx].vlines(x=pos_peak_idx, ymin=0, ymax=pos_peak,
-            colors='r', linestyles='--', alpha=0.5)
-        axs[idx].hlines(y=pos_peak, xmin=0, xmax=pos_peak_idx,
-            colors='r', linestyles='--', alpha=0.5)
+        if neg_values:
+            neg_max = max(neg_values)
+            neg_values_norm = [v / neg_max for v in neg_values] if neg_max > 0 else neg_values
+            # Normalize iterations (x-axis) to span [0, 1]
+            neg_x_norm = [i / (len(neg_values) - 1) for i in range(len(neg_values))] if len(neg_values) > 1 else [0]
+        else:
+            neg_values_norm = []
+            neg_x_norm = []
 
-        # Add vertical and horizontal lines for negative peak
-        axs[idx].vlines(x=neg_peak_idx, ymin=0, ymax=neg_peak,
-            colors='r', linestyles='--', alpha=0.5)
-        axs[idx].hlines(y=neg_peak, xmin=0, xmax=neg_peak_idx,
-            colors='r', linestyles='--', alpha=0.5)
+        color = colors[idx % len(colors)]
+        label = d.replace('_', '')
 
-        axs[idx].set_xlabel(d.replace('_', ''), fontsize=10)
-        axs[idx].grid(True, linestyle='--', alpha=0.3)
-        # set y ticks invisible
-        axs[idx].tick_params(axis='y', which='both', left=False, right=False, labelleft=False)
-        # set x ticks smaller
-        axs[idx].tick_params(axis='x', labelsize=8)
-        # set x ticks visible
-        axs[idx].tick_params(axis='x', which='both', bottom=True, top=False, labelbottom=True)
+        # Plot normalized curves with normalized x-axis
+        if pos_values_norm:
+            axs[0].plot(pos_x_norm, pos_values_norm, label=label, color=color, linewidth=1.8)
+        if neg_values_norm:
+            axs[1].plot(neg_x_norm, neg_values_norm, label=label, color=color, linewidth=1.8)
 
-        # set legend for the last subplot only, one the lower right corner
-        if idx == len(datasets) - 1:
-            axs[idx].legend(loc='lower right', fontsize=10, frameon=True,
-                framealpha=0.9)
+        # Mark peak values with a star and add vertical line from peak to bottom
+        if pos_values_norm:
+            pos_peak_idx = int(np.argmax(pos_values_norm))
+            pos_peak_x = pos_x_norm[pos_peak_idx]
+            pos_peak_y = pos_values_norm[pos_peak_idx]
+            axs[0].plot(pos_peak_x, pos_peak_y, '*', color=color, markersize=6)
+            axs[0].vlines(x=pos_peak_x, ymin=0, ymax=pos_peak_y, colors=color, linestyles='--', alpha=0.5)
+            
+        if neg_values_norm:
+            neg_peak_idx = int(np.argmax(neg_values_norm))
+            neg_peak_x = neg_x_norm[neg_peak_idx]
+            neg_peak_y = neg_values_norm[neg_peak_idx]
+            axs[1].plot(neg_peak_x, neg_peak_y, '*', color=color, markersize=6)
+            axs[1].vlines(x=neg_peak_x, ymin=0, ymax=neg_peak_y, colors=color, linestyles='--', alpha=0.5)
+
+    # Styling for both subplots
+    titles = ["ECC-P", "ECC-N"]
+    for i, ax in enumerate(axs):
+        ax.set_xlabel(titles[i], fontsize=10)
+        # ax.set_title(titles[i], fontsize=10)
+        # ax.set_xlabel("Normalized Iterations", fontsize=10)
+        # if i == 0:
+            # ax.set_ylabel("Normalized f(S)", fontsize=10)
+        # else:
+            # Hide y-tick labels on second subplot
+        ax.tick_params(axis='x', labelbottom=False)
+        ax.tick_params(axis='y', labelleft=False)
+        
+        # Set axis limits to show normalized values nicely
+        ax.set_xlim(0, 1.0)
+        ax.set_ylim(0, 1.05)
+        ax.grid(True, linestyle='--', alpha=0.3)
+        ax.tick_params(axis='both', labelsize=8)
+
+    # Put legend inside the first subfigure
+    handles, labels = axs[0].get_legend_handles_labels()
+    # Option 1: Predefined locations
+    # axs[0].legend(handles, labels, loc='lower left', fontsize=9, frameon=True, framealpha=0.8)
+    
+    # Option 2: Exact positioning with bbox_to_anchor
+    # bbox_to_anchor=(x, y) where (0,0) is bottom-left, (1,1) is top-right of the axes
+    axs[0].legend(handles, labels, loc='lower left', bbox_to_anchor=(0.13, 0.02), 
+                  fontsize=9, frameon=True, framealpha=0.8)
 
     plt.tight_layout()
+    # plt.tight_layout()
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, bbox_inches='tight', format='pdf')
@@ -658,7 +935,7 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.2, 0.5, 1, 3, 5], num_
     legend_elements = []
 
     # Define line styles for better distinc (optional)
-    # line_styles = ['-', '--', '-.', ':', '-', '--']tion (optional)
+    # line_styles = ['-', '--', '-.', ':', '-', '--']
     # line_styles = ['-', '--', '-.', ':', '-', '--']
     line_styles = ['-', '--', '-', '--', '-', '--']
 
@@ -1198,33 +1475,34 @@ def visualize_polarity_evolution(dataset, file_path, num_edges=2000, timesteps=[
 
 
 def scalibility(run=False, theta=0, vf_path=f'input\\datasets\\static\\Voter_Fraud\\accumulated', 
-time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10):
-    dates = [p for p in os.listdir(vf_path) if os.path.isdir(os.path.join(vf_path, p))]
+time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=3):
+    dates = [p for p in os.listdir(vf_path) if os.path.isdir(os.path.join(vf_path, p))][20:]
     if run:
-        for date in dates:
+        for date in tqdm(dates, desc='Running scalibility experiments'):
             root = os.path.join(vf_path, date)
-            # G = nx.read_gml(os.path.join(root, f'Voter_Fraud_{date}.gml'))
-            # mapping = {node: int(node) for node in G.nodes()}
-            # G = nx.relabel_nodes(G, mapping)
-            G = nx.Graph()
+            G = nx.read_gml(os.path.join(root, f'Voter_Fraud_{date}.gml'))
+            mapping = {node: int(node) for node in G.nodes()}
+            G = nx.relabel_nodes(G, mapping)
+            # G = nx.Graph()
             timer = {}
-            for method in ['greedypp_cpp_weighted', 'pads_cpp']:
-                # Run the method num_runs times and calculate average runtime
+            for method in ['neg_dsd_cpp', 'pads_cpp']:
                 method_times = []
-                for _ in range(num_runs):
-                    t, _ = run_exp(G, method, theta=theta, input_file=root)
+                runs = num_runs if method != 'maxflow_cpp_weighted' else 2
+                for _ in range(runs):
+                    t, _ = run_exp(G, method, theta=theta, input_file=root, deg_thresh=1)
                     method_times.append(t)
                 avg_time = sum(method_times) / len(method_times)
                 timer[method] = avg_time
             
             os.makedirs(os.path.join(time_path, date), exist_ok=True)
-            # nx.write_gml(G, os.path.join(output_path, 'graph.gml'))
-
+            nx.write_gml(G, os.path.join(time_path, date, 'graph.gml'))
+            statistics(G, os.path.join(time_path, date))
             avg_times_df = pd.DataFrame(timer.items(), columns=['method', 'avg_time'])
             avg_times_df.to_csv(os.path.join(os.path.join(time_path, date), 'time.csv'), index=False)
 
     graph_stats = []
-    runtime_gpp = []
+    runtime_maxflow = []
+    runtime_neg_dsd = []
     runtime_pads = []
     for date in dates:
         root = os.path.join(vf_path, date)
@@ -1236,19 +1514,38 @@ time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10
         time_data = pd.read_csv(os.path.join(time_path, date, 'time.csv'))
         # Update column name if the data was generated with the new version
         time_col = 'avg_time' if 'avg_time' in time_data.columns else 'time'
-        runtime_gpp.append(time_data[time_data['method'] == 'greedypp_cpp_weighted'][time_col].values[0])
+        # runtime_gpp.append(time_data[time_data['method'] == 'greedypp_cpp_weighted'][time_col].values[0])
+        runtime_maxflow.append(time_data[time_data['method'] == 'maxflow_cpp_weighted'][time_col].values[0])
+        runtime_neg_dsd.append(time_data[time_data['method'] == 'neg_dsd_cpp'][time_col].values[0])
         runtime_pads.append(time_data[time_data['method'] == 'pads_cpp'][time_col].values[0])
     
-    # Extract number of edges for x-axis
+    # Extract number of nodes and edges for x-axis
+    nodes = [stats[0] for stats in graph_stats]
     edges = [stats[1] for stats in graph_stats]
 
-    plt.figure(figsize=(6, 4))
-    plt.plot(edges, runtime_gpp, marker='o', linestyle='-', label='GreedyPP', ms=2.5)
-    plt.plot(edges, runtime_pads, marker='s', linestyle='-', label='PADS', ms=2.5)
-    plt.xlabel('Number of Edges', fontsize=10)
-    plt.ylabel('Runtime (seconds)', fontsize=10)
-    plt.grid(True, linestyle='--', alpha=0.7)
-    plt.legend(fontsize=8, loc='upper left')
+    # Create figure with 2 subfigures
+    _, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
+    
+    # First subfigure: Runtime vs Edges
+    # ax1.plot(edges, runtime_gpp, marker='o', linestyle='-', label='GreedyPP', ms=2.5)
+    ax1.plot(edges, runtime_maxflow, marker='o', linestyle='-', label='MaxFlow', ms=2.5)
+    ax1.plot(edges, runtime_neg_dsd, marker='s', linestyle='-', label='Neg-DSD', ms=2.5)
+    ax1.plot(edges, runtime_pads, marker='^', linestyle='-', label='PADS', ms=2.5)
+    ax1.set_xlabel('Number of Edges', fontsize=10)
+    ax1.set_ylabel('Runtime (seconds)', fontsize=10)
+    ax1.grid(True, linestyle='--', alpha=0.7)
+    ax1.legend(fontsize=8, loc='upper left')
+    
+    # Second subfigure: Runtime vs Nodes
+    # ax2.plot(nodes, runtime_gpp, marker='o', linestyle='-', label='GreedyPP', ms=2.5)
+    ax2.plot(nodes, runtime_maxflow, marker='o', linestyle='-', label='MaxFlow', ms=2.5)
+    ax2.plot(nodes, runtime_neg_dsd, marker='s', linestyle='-', label='Neg-DSD', ms=2.5)
+    ax2.plot(nodes, runtime_pads, marker='^', linestyle='-', label='PADS', ms=2.5)
+    ax2.set_xlabel('Number of Nodes', fontsize=10)
+    ax2.set_ylabel('Runtime (seconds)', fontsize=10)
+    ax2.grid(True, linestyle='--', alpha=0.7)
+    ax2.legend(fontsize=8, loc='upper left')
+    
     plt.tight_layout()
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)

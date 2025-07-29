@@ -21,7 +21,11 @@ method_map = {
     'gnn': node2vec_gin,
     'neg_dsd_cpp': neg_dsd,
     'dith_cpp': dith,
-    'eigensign_cpp': eigensign
+    'eigensign_cpp': eigensign,
+    'km_config': km_config,
+    'surprise_python': surprise_python,
+    'high_degree': high_degree,
+    'k_core': k_core
 }
 
 def run_exp(G: nx.Graph, method: str, **kwargs):
@@ -30,7 +34,7 @@ def run_exp(G: nx.Graph, method: str, **kwargs):
     try:
         start = time.time()
         rst = method_map[method](G, **kwargs)
-        if method in ['maxflow_cpp_unweighted', 'maxflow_cpp_weighted', 'greedypp_cpp_weighted', 'pads_cpp', 'neg_dsd_cpp', 'dith_cpp', 'eigensign_cpp']:
+        if method in ['maxflow_cpp_unweighted', 'maxflow_cpp_weighted', 'greedypp_cpp_weighted', 'pads_cpp', 'neg_dsd_cpp', 'dith_cpp', 'eigensign_cpp', 'high_degree', 'k_core']:
             return rst[0], rst[1]
         return round(time.time() - start, 3), rst
     except Exception as e:
@@ -40,13 +44,13 @@ def run_exp(G: nx.Graph, method: str, **kwargs):
 # compute purity and density
 def statistics(G, save_path=None):
     baseline_methods = ['cascade', 'metis', 'louvain', 'eva', 'maxflow_cpp_udsp', 'maxflow_cpp_wdsp', 'node2vec_gin',
-        'pads_python', 'pads_cpp', 'pads_cpp_lp', 'neg_dsd', 'dith', 'eigensign']
+        'pads_python', 'pads_cpp', 'pads_cpp_lp', 'neg_dsd', 'dith', 'eigensign', 'km_config', 'surprise_python', 'high_degree', 'k_core']
     baseline_methods = [method for method in G.nodes[0].keys() if (method in baseline_methods or method.startswith('pads_python_'))]
     
     # First, identify pos and neg communities for each method
     method_communities = {}
     for attr in baseline_methods:
-        if attr in ['maxflow_cpp_udsp', 'maxflow_cpp_wdsp', 'node2vec_gin', 'pads_python', 'pads_cpp', 'pads_cpp_lp', 'neg_dsd', 'dith', 'eigensign'] or attr.startswith('pads_python_'):
+        if attr in ['maxflow_cpp_udsp', 'maxflow_cpp_wdsp', 'node2vec_gin', 'pads_python', 'pads_cpp', 'pads_cpp_lp', 'neg_dsd', 'dith', 'eigensign', 'km_config', 'surprise_python', 'high_degree', 'k_core'] or attr.startswith('pads_python_'):
             method_communities[attr] = {'pos': 1, 'neg': -1}
         else:
             label_count = {}
@@ -259,6 +263,13 @@ def split_pos_neg(G, save_path, accuracy=1000):
     with open(os.path.join(save_path, 'edgelist_eigensign'), 'w') as f:
         for u, v, d in G.edges(data=True):
             f.write(f"{int(u)} {int(v)} {1 if G.nodes[u]['polarity']*G.nodes[v]['polarity'] > 0 else -1}\n")
+
+    with open(os.path.join(save_path, 'edgelist_km_config_binary'), 'w') as f:
+        for u, v, d in G.edges(data=True):
+            f.write(f"{int(u)} {int(v)} {1}\n")
+    with open(os.path.join(save_path, 'edgelist_km_config_weighted'), 'w') as f:
+        for u, v, d in G.edges(data=True):
+            f.write(f"{int(u)} {int(v)} {(d['edge_polarity'] + 1) / 2}\n")
 
     G_pos, G_neg = G.copy(), G.copy()
 

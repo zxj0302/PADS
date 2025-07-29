@@ -222,9 +222,12 @@ def pads_cpp(G, **kwargs):
     deg_thresh = kwargs.get('deg_thresh', 0)
     num_labels = kwargs.get('num_labels', 5)
     attr_name = kwargs.get('attr_name', 'pads_cpp')
+    prom_skip = kwargs.get('prom_skip', 0)
+    num_runs = kwargs.get('num_runs', 1)
+    sim_aug = kwargs.get('sim_aug', 0)
 
     # run the cpp program and get the output program prints on the terminal
-    command = f"{cpp_exe} {input_file} {theta} {max_neg} {deg_thresh} {num_labels}"
+    command = f"{cpp_exe} {input_file} {theta} {max_neg} {deg_thresh} {num_labels} {prom_skip} {num_runs} {sim_aug}"
 
     # Function to run command and process output
     def run_command_and_process(command):
@@ -238,7 +241,7 @@ def pads_cpp(G, **kwargs):
         neg_nodes = []
         for line in output.split('\n'):
             if line.startswith("Total Elapsed Time:"):
-                solution_time = float(line.split(":")[1].split()[0])
+                solution_time = float(line.split(":")[1].strip().split()[0])
             elif line.startswith("Nodes_Pos"):
                 pos_nodes = [int(x) for x in line.split(":")[1].strip().split()]
             elif line.startswith("Nodes_Neg"):

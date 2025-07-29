@@ -17,6 +17,7 @@ from . import run_exp
 from .opinion_dynamics import opinion_dynamics_reweight, opinion_dynamics_connections
 import matplotlib.gridspec as gridspec
 from mpl_toolkits.axes_grid1.inset_locator import inset_axes
+from matplotlib.ticker import MaxNLocator
 from tqdm import tqdm
 from .mitigation import MitigationMeasurement
 
@@ -148,8 +149,8 @@ def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
         ax.set_ylim([-1.1, 1.1])
 
         # Reduce grid density by setting fewer ticks
-        ax.xaxis.set_major_locator(plt.MaxNLocator(5))
-        ax.yaxis.set_major_locator(plt.MaxNLocator(5))
+        ax.xaxis.set_major_locator(MaxNLocator(5))
+        ax.yaxis.set_major_locator(MaxNLocator(5))
         ax.grid(True, linestyle='--', alpha=0.5)
 
         ax.set_xlabel(method_names[method_name])
@@ -198,24 +199,24 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
         'neg_dsd': 'Neg-DSD',
         'node2vec_gin': 'GIN',
         'pads_cpp': 'PADS'}
-    df = pd.DataFrame(columns=['Method', 'E-I', 'BSI', 'Avg. Distance', 'RWC', 'OPG', 'GED'])
+    df = pd.DataFrame(columns=['Method', 'E-I', 'BR-P', 'BR-N', 'A.D.', 'RWC', 'OPG'])
 
     for attribute in method_names.keys():
         out = 0
         in_pos = 0
         in_nag = 0
         border_pos = set()
-        border_nag = set()
+        border_neg = set()
 
         for edge in G.edges:
             if G.nodes[edge[0]][attribute] == value_pos and G.nodes[edge[1]][attribute] == value_nag:
                 out += 1
                 border_pos.add(edge[0])
-                border_nag.add(edge[1])
+                border_neg.add(edge[1])
             elif G.nodes[edge[0]][attribute] == value_nag and G.nodes[edge[1]][attribute] == value_pos:
                 out += 1
                 border_pos.add(edge[1])
-                border_nag.add(edge[0])
+                border_neg.add(edge[0])
             elif G.nodes[edge[0]][attribute] == value_pos and G.nodes[edge[1]][attribute] == value_pos:
                 in_pos += 1
             elif G.nodes[edge[0]][attribute] == value_nag and G.nodes[edge[1]][attribute] == value_nag:
@@ -236,22 +237,22 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
                     continue
 
         avg_distance = sum(distances)/len(distances) if distances else float('inf')
-        rwc_score = 1 if not (border_pos and border_nag) else rwc(G.copy(), attribute)
+        rwc_score = 1 if not (border_pos and border_neg) else rwc(G.copy(), attribute)
         avg_pos_opinion = np.mean([G.nodes[n]['polarity'] for n in pos_nodes])
         avg_neg_opinion = np.mean([G.nodes[n]['polarity'] for n in neg_nodes])
         opg = avg_pos_opinion - avg_neg_opinion
-        G_sub = G.subgraph([n for n, d in G.nodes(data=True) if d[attribute] != 0]).copy()
-        G_sub.remove_edges_from(nx.selfloop_edges(G_sub))
-        # print(f'Number of connected components: {nx.number_connected_components(G_sub)}')
-        if nx.number_connected_components(G_sub) > 1:
-            # get the largest connected component
-            largest_cc = max(nx.connected_components(G_sub), key=len)
-            G_sub = G_sub.subgraph(largest_cc)
-        # convert the node labels from string to int
-        G_sub = nx.convert_node_labels_to_integers(G_sub)
+        # G_sub = G.subgraph([n for n, d in G.nodes(data=True) if d[attribute] != 0]).copy()
+        # G_sub.remove_edges_from(nx.selfloop_edges(G_sub))
+        # # print(f'Number of connected components: {nx.number_connected_components(G_sub)}')
+        # if nx.number_connected_components(G_sub) > 1:
+        #     # get the largest connected component
+        #     largest_cc = max(nx.connected_components(G_sub), key=len)
+        #     G_sub = G_sub.subgraph(largest_cc)
+        # # convert the node labels from string to int
+        # G_sub = nx.convert_node_labels_to_integers(G_sub)
 
-        ged = MitigationMeasurement(G_sub).ged()
-        # print(f'ged: {ged}')
+        # ged = MitigationMeasurement(G_sub).ged()
+        # # print(f'ged: {ged}')
 
         count_pos = len(pos_nodes)
         count_neg = len(neg_nodes)
@@ -259,11 +260,12 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
         df.loc[len(df)] = {
             'Method': method_names[attribute],
             'E-I': (in_pos + in_nag - out)/(in_pos + in_nag + out) if (in_pos + in_nag + out) > 0 else 0,
-            'BSI': (((count_pos - len(border_pos))/count_pos) * ((count_neg - len(border_nag))/count_neg)) if (count_pos > 0 and count_neg > 0) else 0,
-            'Avg. Distance': avg_distance,
+            'BR-P': len(border_pos)/count_pos if count_pos > 0 else 0,
+            'BR-N': len(border_neg)/count_neg if count_neg > 0 else 0,
+            'A.D.': avg_distance,
             'RWC': rwc_score,
-            'OPG': opg,
-            'GED': ged/(count_pos + count_neg)
+            'OPG': opg
+            # 'GED': ged/(count_pos + count_neg)
         }
 
     if save_path is not None:
@@ -273,7 +275,7 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
 
 def radar_chart(file_path, datasets):
     # Define the categories (metrics)
-    categories = ['E-I', 'BSI', 'Avg. Distance', 'RWC', 'OPG', 'GED']
+    categories = ['E-I', 'BR-P', 'BR-N', 'A.D.', 'RWC', 'OPG']
     num_vars = len(categories)
 
     # Define the order of methods for consistency
@@ -285,7 +287,7 @@ def radar_chart(file_path, datasets):
     # colors = ['g', 'c', 'y', 'm']  # Blue, Red, Green, Magenta
 
     # Create a figure with 2 rows and 3 columns of subplots, each polar
-    fig, axes = plt.subplots(2, 3, figsize=(15, 8), subplot_kw=dict(polar=True))
+    fig, axes = plt.subplots(1, 2, figsize=(12, 6), subplot_kw=dict(polar=True))
     axes = axes.flatten()  # Flatten the 2D array for easy iteration
 
     # Iterate over each file and corresponding subplot
@@ -323,18 +325,18 @@ def radar_chart(file_path, datasets):
         scaled_df = df.copy()
 
         # Scaling the first three columns where smaller is better using min_val / x or 1 - x
-        # for col in ['OIR', 'BR-P', 'BR-N']:
-        #     min_val = df[col].min()
-        #     if min_val != 0:
-        #         # Avoid division by zero
-        #         scaled_df[col] = df[col].apply(lambda x: min_val / x if x != 0 else 1)
-        #     else:
-        #         # When min_val is 0
-        #         # 0/0 = 1, and 0/x = 1 - x for x != 0
-        #         scaled_df[col] = df[col].apply(lambda x: 1 if x == 0 else 1 - x)
+        for col in ['E-I', 'BR-P', 'BR-N']:
+            min_val = df[col].min()
+            if min_val != 0:
+                # Avoid division by zero
+                scaled_df[col] = df[col].apply(lambda x: min_val / x if x != 0 else 1)
+            else:
+                # When min_val is 0
+                # 0/0 = 1, and 0/x = 1 - x for x != 0
+                scaled_df[col] = df[col].apply(lambda x: 1 if x == 0 else 1 - x)
 
         # Scaling the last column where larger is better using value / max_val
-        for col in ['E-I', 'BSI', 'Avg. Distance', 'RWC', 'OPG', 'GED']:
+        for col in ['A.D.', 'RWC', 'OPG']:
             max_val = df[col].max()
             if max_val != 0:
                 scaled_df[col] = df[col].apply(lambda x: x / max_val)
@@ -363,14 +365,13 @@ def radar_chart(file_path, datasets):
         ax.set_xticks(angles[:-1])
         ax.set_xticklabels(categories, fontsize=12)
 
-        # Set the radial limit to slightly above the maximum scaled value for better visualization
-        max_scaled = scaled_df[categories].max().max()
-        ax.set_ylim(0, max_scaled)  # Add a 20% margin
+        # Set the radial limit from 0.5 to 1
+        ax.set_ylim(0.5, 1.0)
 
         # Configure the radial labels
         ax.set_rlabel_position(30)
-        ax.set_yticks(np.linspace(0, max_scaled, 5))
-        ax.set_yticklabels([f"{tick:.2f}" for tick in np.linspace(0, max_scaled, 5)], fontsize=10)
+        ax.set_yticks(np.linspace(0.5, 1.0, 6))
+        ax.set_yticklabels([f"{tick:.2f}" for tick in np.linspace(0.5, 1.0, 6)], fontsize=10)
 
         # Add a title to the subplot at the bottom
         ax.set_title(title, size=16, y=-0.16, fontsize=14)#, fontweight='bold')
@@ -738,7 +739,7 @@ def create_heatmap(graph_path, diffusion_path, save_path=None, grid_size=10):
         # Calculate average, handling division by zero
         with np.errstate(divide='ignore', invalid='ignore'):
             heatmap = np.power(grid_sum / grid_count, 0.5)
-        heatmap = np.nan_to_num(heatmap, 0)    # Replace NaN with 0
+        heatmap = np.nan_to_num(heatmap, nan=0)    # Replace NaN with 0
 
         # Apply Gaussian smoothing
         # heatmap = gaussian_filter(heatmap, sigma=0.1)
@@ -771,7 +772,7 @@ def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
     sns.set_theme(style="white")
 
     # Prepare figure: two columns – ECC-P and ECC-N
-    fig, axs = plt.subplots(1, 2, figsize=(8, 4))
+    _, axs = plt.subplots(1, 2, figsize=(7, 3.5))
 
     # A pleasant, high-contrast colour list (see list used elsewhere)
     colors = [
@@ -846,8 +847,8 @@ def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
     # Styling for both subplots
     titles = ["ECC-P", "ECC-N"]
     for i, ax in enumerate(axs):
-        ax.set_xlabel(titles[i], fontsize=10)
-        # ax.set_title(titles[i], fontsize=10)
+        # ax.set_xlabel(titles[i], fontsize=12)
+        ax.set_title(titles[i], fontsize=12)
         # ax.set_xlabel("Normalized Iterations", fontsize=10)
         # if i == 0:
             # ax.set_ylabel("Normalized f(S)", fontsize=10)
@@ -1053,8 +1054,8 @@ def plot_opinion_dynamics_reweight(datasets, file_path, save_path=None, ratio=0.
             left=True, right=False
         )
         # Reduce number of ticks for cleaner look
-        ax.xaxis.set_major_locator(plt.MaxNLocator(6))
-        ax.yaxis.set_major_locator(plt.MaxNLocator(6))
+        ax.xaxis.set_major_locator(MaxNLocator(6))
+        ax.yaxis.set_major_locator(MaxNLocator(6))
     
     # Process each dataset
     for i, dataset in enumerate(datasets):
@@ -1100,8 +1101,8 @@ def plot_opinion_dynamics_connections(datasets, file_path, save_path=None, num_e
             pad=2, direction='out', colors='black', bottom=True, top=False, 
             left=True, right=False
         )
-        ax.xaxis.set_major_locator(plt.MaxNLocator(6))
-        ax.yaxis.set_major_locator(plt.MaxNLocator(6))
+        ax.xaxis.set_major_locator(MaxNLocator(6))
+        ax.yaxis.set_major_locator(MaxNLocator(6))
     
     # Process each dataset
     for i, dataset in enumerate(datasets):
@@ -1475,8 +1476,9 @@ def visualize_polarity_evolution(dataset, file_path, num_edges=2000, timesteps=[
 
 
 def scalibility(run=False, theta=0, vf_path=f'input\\datasets\\static\\Voter_Fraud\\accumulated', 
-time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=3):
-    dates = [p for p in os.listdir(vf_path) if os.path.isdir(os.path.join(vf_path, p))][20:]
+time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10):
+    dates = [p for p in os.listdir(vf_path) if os.path.isdir(os.path.join(vf_path, p))]
+    # dates = ['201115', '201121', '201201']
     if run:
         for date in tqdm(dates, desc='Running scalibility experiments'):
             root = os.path.join(vf_path, date)
@@ -1486,14 +1488,8 @@ time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=3)
             # G = nx.Graph()
             timer = {}
             for method in ['neg_dsd_cpp', 'pads_cpp']:
-                method_times = []
-                runs = num_runs if method != 'maxflow_cpp_weighted' else 2
-                for _ in range(runs):
-                    t, _ = run_exp(G, method, theta=theta, input_file=root, deg_thresh=1)
-                    method_times.append(t)
-                avg_time = sum(method_times) / len(method_times)
-                timer[method] = avg_time
-            
+                t, _ = run_exp(G, method, theta=theta, input_file=root, deg_thresh=4, num_runs=num_runs, prom_skip=0, sim_aug=1)
+                timer[method] = t
             os.makedirs(os.path.join(time_path, date), exist_ok=True)
             nx.write_gml(G, os.path.join(time_path, date, 'graph.gml'))
             statistics(G, os.path.join(time_path, date))
@@ -1501,51 +1497,184 @@ time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=3)
             avg_times_df.to_csv(os.path.join(os.path.join(time_path, date), 'time.csv'), index=False)
 
     graph_stats = []
-    runtime_maxflow = []
     runtime_neg_dsd = []
     runtime_pads = []
+    density_pos_neg_dsd = []
+    density_pos_pads = []
+    density_neg_neg_dsd = []
+    density_neg_pads = []
+    
     for date in dates:
         root = os.path.join(vf_path, date)
         with open(os.path.join(root, 'edgelist_pads'), 'r') as f:
             line = f.readline()
             n, m = map(int, line.split())
         graph_stats.append((n, m))
-        # print(f"Graph {date}: {n} nodes, {m} edges")
+        
+        # Read runtime data
         time_data = pd.read_csv(os.path.join(time_path, date, 'time.csv'))
-        # Update column name if the data was generated with the new version
         time_col = 'avg_time' if 'avg_time' in time_data.columns else 'time'
-        # runtime_gpp.append(time_data[time_data['method'] == 'greedypp_cpp_weighted'][time_col].values[0])
-        runtime_maxflow.append(time_data[time_data['method'] == 'maxflow_cpp_weighted'][time_col].values[0])
         runtime_neg_dsd.append(time_data[time_data['method'] == 'neg_dsd_cpp'][time_col].values[0])
         runtime_pads.append(time_data[time_data['method'] == 'pads_cpp'][time_col].values[0])
-    
+        
+                # Read density data for ECC-P (positive communities)
+        pos_csv_path = os.path.join(time_path, date, 'pos.csv')
+        if os.path.exists(pos_csv_path):
+            pos_data = pd.read_csv(pos_csv_path)
+            # Extract weighted_density for neg_dsd and pads_cpp methods
+            neg_dsd_pos_density = pos_data[pos_data['method'] == 'neg_dsd']['weighted_density'].values
+            pads_pos_density = pos_data[pos_data['method'] == 'pads_cpp']['weighted_density'].values
+            
+            # Use absolute values
+            neg_dsd_val = abs(neg_dsd_pos_density[0]) if len(neg_dsd_pos_density) > 0 else 0
+            pads_val = abs(pads_pos_density[0]) if len(pads_pos_density) > 0 else 0
+            
+            density_pos_neg_dsd.append(neg_dsd_val)
+            density_pos_pads.append(pads_val)
+        else:
+            density_pos_neg_dsd.append(0)
+            density_pos_pads.append(0)
+        
+        # Read density data for ECC-N (negative communities)
+        neg_csv_path = os.path.join(time_path, date, 'neg.csv')
+        if os.path.exists(neg_csv_path):
+            neg_data = pd.read_csv(neg_csv_path)
+            # Extract weighted_density for neg_dsd and pads_cpp methods
+            neg_dsd_neg_density = neg_data[neg_data['method'] == 'neg_dsd']['weighted_density'].values
+            pads_neg_density = neg_data[neg_data['method'] == 'pads_cpp']['weighted_density'].values
+            
+            # Use absolute values
+            neg_dsd_val = abs(neg_dsd_neg_density[0]) if len(neg_dsd_neg_density) > 0 else 0
+            pads_val = abs(pads_neg_density[0]) if len(pads_neg_density) > 0 else 0
+            
+            density_neg_neg_dsd.append(neg_dsd_val)
+            density_neg_pads.append(pads_val)
+        else:
+            density_neg_neg_dsd.append(0)
+            density_neg_pads.append(0)
+
     # Extract number of nodes and edges for x-axis
     nodes = [stats[0] for stats in graph_stats]
     edges = [stats[1] for stats in graph_stats]
 
+    # exchange the elements of density_pos_neg_dsd and density_neg_neg_dsd, larger ones should be in the front
+    for i in range(len(density_pos_neg_dsd)):
+        if density_pos_neg_dsd[i] < density_neg_neg_dsd[i]:
+            density_pos_neg_dsd[i], density_neg_neg_dsd[i] = density_neg_neg_dsd[i], density_pos_neg_dsd[i]
+            density_pos_pads[i], density_neg_pads[i] = density_neg_pads[i], density_pos_pads[i]
+
+    # Define beautiful color palette consistent with other functions
+    runtime_colors = ["#7D9E72", "#8B6D8A"]  # Teal and Sky blue for runtime
+    density_colors = ["#EA8379", "#EA8379", "#7DAEE0", "#7DAEE0"]  # Coral, Lavender, Golden, Sage for density
+
     # Create figure with 2 subfigures
-    _, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
+    _, (ax1, ax2) = plt.subplots(1, 2, figsize=(8, 4))
     
-    # First subfigure: Runtime vs Edges
-    # ax1.plot(edges, runtime_gpp, marker='o', linestyle='-', label='GreedyPP', ms=2.5)
-    ax1.plot(edges, runtime_maxflow, marker='o', linestyle='-', label='MaxFlow', ms=2.5)
-    ax1.plot(edges, runtime_neg_dsd, marker='s', linestyle='-', label='Neg-DSD', ms=2.5)
-    ax1.plot(edges, runtime_pads, marker='^', linestyle='-', label='PADS', ms=2.5)
+    # First subfigure: Runtime vs Edges (left axis) + Density vs Edges (right axis)
+    # Runtime on left axis
+    ax1.plot(edges, runtime_neg_dsd, marker='d', linestyle=':', label='Runtime: Neg-DSD', ms=1.5, color=runtime_colors[0], linewidth=0.5)
+    ax1.plot(edges, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS', ms=1.5, color=runtime_colors[1], linewidth=0.5)
     ax1.set_xlabel('Number of Edges', fontsize=10)
-    ax1.set_ylabel('Runtime (seconds)', fontsize=10)
-    ax1.grid(True, linestyle='--', alpha=0.7)
-    ax1.legend(fontsize=8, loc='upper left')
+    ax1.set_ylabel('Runtime (s)', fontsize=10)
+    ax1.tick_params(axis='y', labelcolor='black')
+    ax1.xaxis.set_major_locator(MaxNLocator(nbins=5))  # Creates 6 ticks (5 intervals) = 5 vertical grid lines
+    ax1.grid(True, linestyle='--', alpha=0.8, linewidth=0.5)
     
-    # Second subfigure: Runtime vs Nodes
-    # ax2.plot(nodes, runtime_gpp, marker='o', linestyle='-', label='GreedyPP', ms=2.5)
-    ax2.plot(nodes, runtime_maxflow, marker='o', linestyle='-', label='MaxFlow', ms=2.5)
-    ax2.plot(nodes, runtime_neg_dsd, marker='s', linestyle='-', label='Neg-DSD', ms=2.5)
-    ax2.plot(nodes, runtime_pads, marker='^', linestyle='-', label='PADS', ms=2.5)
+    # Density on right axis with more distinct styles
+    ax1_right = ax1.twinx()
+    ax1_right.plot(edges, density_pos_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[0], linestyle=':', label='ECC-P Density: Neg-DSD', ms=1, color=density_colors[0], linewidth=0.5, alpha=0.8)
+    ax1_right.plot(edges, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS', ms=2, color=density_colors[1], linewidth=0.5, alpha=0.8)
+    ax1_right.plot(edges, density_neg_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[2], linestyle=':', label='ECC-N Density: Neg-DSD', ms=1, color=density_colors[2], linewidth=0.5, alpha=0.8)
+    ax1_right.plot(edges, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS', ms=2, color=density_colors[3], linewidth=0.5, alpha=0.8)
+    # ax1_right.set_ylabel('Weighted Density', fontsize=9)
+    # Hide left y-axis labels for ax2 but keep the ticks for grid lines
+    ax1_right.set_yticklabels([])
+    ax1_right.tick_params(axis='y', right=False)  # Hide tick marks on both sides
+    
+    # Combined legend for first subfigure
+    # lines1, labels1 = ax1.get_legend_handles_labels()
+    # lines2, labels2 = ax1_right.get_legend_handles_labels()
+    # l1 = ax1.legend(lines1 + lines2, labels1 + labels2, fontsize=7, loc='upper left', 
+    #            markerscale=2.5, handlelength=3, handleheight=2)
+    # # Set line width for all legend lines
+    # for line in l1.get_lines():
+    #     line.set_linewidth(1.5)  # Adjust thickness as needed
+    
+    # Second subfigure: Runtime vs Nodes (left axis) + Density vs Nodes (right axis)
+    # Runtime on left axis
+    ax2.plot(nodes, runtime_neg_dsd, marker='d', linestyle=':', label='Runtime: Neg-DSD', ms=1.5, color=runtime_colors[0], linewidth=0.5)
+    ax2.plot(nodes, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS', ms=1.5, color=runtime_colors[1], linewidth=0.5)
     ax2.set_xlabel('Number of Nodes', fontsize=10)
-    ax2.set_ylabel('Runtime (seconds)', fontsize=10)
-    ax2.grid(True, linestyle='--', alpha=0.7)
-    ax2.legend(fontsize=8, loc='upper left')
+    ax2.tick_params(axis='y', labelcolor='black')
+    ax2.xaxis.set_major_locator(MaxNLocator(nbins=5))  # Creates 6 ticks (5 intervals) = 5 vertical grid lines
+    # Ensure both horizontal and vertical grid lines are shown for ax2
+    ax2.grid(True, linestyle='--', alpha=0.8, linewidth=0.5)
     
+    # Density on right axis with more distinct styles
+    ax2_right = ax2.twinx()
+    ax2_right.plot(nodes, density_pos_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[0], linestyle=':', label='ECC-P Density: Neg-DSD', ms=1, color=density_colors[0], linewidth=0.5, alpha=0.8)
+    ax2_right.plot(nodes, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS', ms=2, color=density_colors[1], linewidth=0.5, alpha=0.8)
+    ax2_right.plot(nodes, density_neg_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[2], linestyle=':', label='ECC-N Density: Neg-DSD', ms=1, color=density_colors[2], linewidth=0.5, alpha=0.8)
+    ax2_right.plot(nodes, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS', ms=2, color=density_colors[3], linewidth=0.5, alpha=0.8)
+    ax2_right.set_ylabel('Density', fontsize=10)
+    ax2_right.tick_params(axis='y')
+    # Hide left y-axis labels for ax2 but keep the ticks for grid lines
+    ax2.set_yticklabels([])
+    ax2.tick_params(axis='y', left=False)  # Hide tick marks but keep grid
+    
+    # Combined legend for second subfigure
+    lines3, labels3 = ax2.get_legend_handles_labels()
+    lines4, labels4 = ax2_right.get_legend_handles_labels()
+    l2 = ax2.legend(lines3 + lines4, labels3 + labels4, fontsize=7, loc=(0.07, 0.58),
+               markerscale=2.5, handlelength=3, handleheight=2)
+    # Set line width for all legend lines
+    for line in l2.get_lines():
+        line.set_linewidth(1.5)  # Adjust thickness as needed
+
+    # Count wins for ECC-P (pos) and ECC-N (neg) for Neg-DSD and PADS
+    dsd_large_than_pads_pos = 0
+    pads_large_than_dsd_pos = 0
+    dsd_large_than_pads_neg = 0
+    pads_large_than_dsd_neg = 0
+    for i in range(len(density_pos_neg_dsd)):
+        if abs(density_pos_neg_dsd[i]) > abs(density_pos_pads[i]):
+            dsd_large_than_pads_pos += 1
+        if abs(density_pos_pads[i]) > abs(density_pos_neg_dsd[i]):
+            pads_large_than_dsd_pos += 1
+    for i in range(len(density_neg_neg_dsd)):
+        if abs(density_neg_neg_dsd[i]) > abs(density_neg_pads[i]):
+            dsd_large_than_pads_neg += 1
+        if abs(density_neg_pads[i]) > abs(density_neg_neg_dsd[i]):
+            pads_large_than_dsd_neg += 1
+
+    # Create table data for matplotlib
+    table_data = [
+        ['#win', 'Neg-DSD', 'PADS'],
+        ['ECC-P', str(dsd_large_than_pads_pos), str(pads_large_than_dsd_pos)],
+        ['ECC-N', str(dsd_large_than_pads_neg), str(pads_large_than_dsd_neg)]
+    ]
+
+    # Add table to the upper left corner of ax1
+    table = ax1.table(cellText=table_data,
+                      cellLoc='center',
+                      loc='upper left',
+                      bbox=[0.05, 0.68, 0.56, 0.26])  # [x, y, width, height] in axes coordinates
+
+    # Style the table
+    table.auto_set_font_size(False)
+    table.set_fontsize(8)
+    table.scale(1, 1.5)
+
+    # Style header row
+    for i in range(3):
+        table[(0, i)].set_facecolor('#E8E8E8')
+        table[(0, i)].set_text_props(weight='bold')
+
+    # Style the table borders
+    for key, cell in table.get_celld().items():
+        cell.set_linewidth(0.5)
+        cell.set_edgecolor('black')
+
     plt.tight_layout()
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)

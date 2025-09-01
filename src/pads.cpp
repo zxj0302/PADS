@@ -67,7 +67,7 @@ struct PriorityTuple {
         return
             (priority_key < other.priority_key) ||
             (priority_key == other.priority_key && promising_value < other.promising_value) ||
-            (priority_key == other.priority_key && promising_value == other.promising_value && vertex > other.vertex);
+            (priority_key == other.priority_key && promising_value == other.promising_value && vertex < other.vertex);
     }
 };
 
@@ -183,11 +183,11 @@ Graph read_graph(const string& filename) {
  * max_neg_count is a cap on how many times we fail to improve the best found
  * objective before exiting.
  */
-vector<Vertex> ecc_greedy(Graph& G, double theta, bool pos = true, unsigned max_neg_count = 100, unsigned num_labels = 3) {
+vector<Vertex> ecc_greedy(Graph& G, double theta, bool pos = true, unsigned max_neg_count = 100, unsigned num_labels = 5) {
     // Define null vertex
     Vertex null_v = Traits::null_vertex();
 
-    // Find the node_promising among highest label
+    // Find the node_promising among the highest label
     Vertex node_promising = null_v;
     double max_promising = -numeric_limits<double>::infinity();
     for (auto v_it = vertices(G); v_it.first != v_it.second; ++v_it.first) {
@@ -501,83 +501,130 @@ vector<Vertex> ecc_greedy(Graph& G, double theta, bool pos = true, unsigned max_
  * =========================================================
  */
 int main(int argc, char* argv[]) {
-    if (argc < 4 || argc > 5) {
-        cerr << "Usage: " << argv[0] << " <filename> <theta> <max number of negative steps> [num_labels]" << endl;
+    if (argc < 4 || argc > 9) {
+        cerr << "Usage: " << argv[0] << " <filename> <theta> <max number of negative steps> [deg_threshold] "
+                                        "[num_labels] [prom_skip] [num_its] [sim_aug]" << endl;
         return EXIT_FAILURE;
     }
     string filename = argv[1];
     double theta = strtod(argv[2], nullptr);
     unsigned max_neg = stoul(argv[3], nullptr);
-    unsigned num_labels = (argc == 5) ? stoul(argv[4], nullptr) : 5;
+    unsigned deg_threshold = (argc >= 5) ? stoul(argv[4], nullptr) : 0;
+    unsigned num_labels = (argc >= 6) ? stoul(argv[5], nullptr) : 5;
+    bool prom_skip = (argc >= 7) ? static_cast<bool>(stoul(argv[6]), nullptr) : false;
+    unsigned num_its = (argc >= 8) ? stoul(argv[7], nullptr) : 1;
+    bool sim_aug = (argc >= 9) ? static_cast<bool>(stoul(argv[8], nullptr)) : false;
 
     try {
-        // Read the graph from the edge list file
+        // Read the graph from the edge list file (only once)
         Graph G = read_graph(filename);
 
-        // Compute promising_value for each node by iterating over all edges once
-        for (auto e_it = edges(G); e_it.first != e_it.second; ++e_it.first) {
-            Vertex s = source(*e_it.first, G);
-            Vertex t = target(*e_it.first, G);
+        // Variables to store results from first iteration (for output consistency)
+        vector<Vertex> first_selected_pos, first_selected_neg;
 
-            // If it's not a self-loop, compute similarity
-            if (s != t) {
-                double sim = (2.0 - fabs(G[s].polarity - G[t].polarity)) / 2.0;
-                G[s].promising_value += sim;
-                G[t].promising_value += sim;
+        // Variables to accumulate timing results
+        double total_elapsed_promising = 0.0;
+        double total_elapsed_pos = 0.0;
+        double total_elapsed_neg = 0.0;
+
+        for (unsigned iteration = 0; iteration < num_its; ++iteration) {
+            // Create fresh copies of the graph for this iteration
+            auto G_iteration = G;  // Deep copy - original G is not affected
+
+            auto start_promising = chrono::high_resolution_clock::now();
+            // Compute promising_value for each node by iterating over all edges once
+            for (auto e_it = edges(G_iteration); e_it.first != e_it.second; ++e_it.first) {
+                Vertex s = source(*e_it.first, G_iteration);
+                Vertex t = target(*e_it.first, G_iteration);
+
+                // If it's not a self-loop, compute similarity
+                if (s != t) {
+                    double sim = (2.0 - (sim_aug ? 2 : 1) * fabs(G_iteration[s].polarity - G_iteration[t].polarity)) / 2.0;
+                    // if the nodes have opposite opinions, skip them
+                    if (prom_skip && G_iteration[s].polarity * G_iteration[t].polarity < 0) {
+                        continue;
+                    }
+                    // add sim only when the other node has degree > deg_threshold
+                    if (out_degree(t, G_iteration) > deg_threshold) {
+                        G_iteration[s].promising_value += sim;
+                    }
+                    if (out_degree(s, G_iteration) > deg_threshold) {
+                        G_iteration[t].promising_value += sim;
+                    }
+                }
+            }
+
+            // If a node has a self-loop, add self-loop polarity to promising_value
+            for (auto v_it = vertices(G_iteration); v_it.first != v_it.second; ++v_it.first) {
+                if (G_iteration[*v_it.first].has_self_loop) {
+                    G_iteration[*v_it.first].promising_value += 1;//G_iteration[*v_it.first].self_loop_polarity;
+                }
+            }
+            auto end_promising = chrono::high_resolution_clock::now();
+            double elapsed_promising = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end_promising - start_promising).count()) / 1e6;
+            total_elapsed_promising += elapsed_promising;
+
+            auto G_pos = G_iteration;  // Another deep copy
+            auto G_neg = G_iteration;  // Another deep copy
+
+            // Invert node polarities and labels for negative case
+            for (auto v_it = vertices(G_neg); v_it.first != v_it.second; ++v_it.first) {
+                G_neg[*v_it.first].polarity = -G_neg[*v_it.first].polarity;
+                G_neg[*v_it.first].polarity_label = (num_labels - 1) - G_neg[*v_it.first].polarity_label;
+            }
+            // Invert edge polarities
+            for (auto e_it = edges(G_neg); e_it.first != e_it.second; ++e_it.first) {
+                G_neg[*e_it.first].edge_polarity = -G_neg[*e_it.first].edge_polarity;
+            }
+            // Invert stored self-loop polarities
+            for (auto v_it = vertices(G_neg); v_it.first != v_it.second; ++v_it.first) {
+                if (G_neg[*v_it.first].has_self_loop) {
+                    G_neg[*v_it.first].self_loop_polarity = -G_neg[*v_it.first].self_loop_polarity;
+                }
+            }
+
+            // Time positive case
+            auto start_pos = chrono::high_resolution_clock::now();
+            vector<Vertex> selected_pos = ecc_greedy(G_pos, theta, true, max_neg, num_labels);
+            auto end_pos = chrono::high_resolution_clock::now();
+            double elapsed_pos = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end_pos - start_pos).count()) / 1e6;
+            total_elapsed_pos += elapsed_pos;
+
+            // Time negative case
+            auto start_neg = chrono::high_resolution_clock::now();
+            vector<Vertex> selected_neg = ecc_greedy(G_neg, theta, true, max_neg, num_labels);
+            auto end_neg = chrono::high_resolution_clock::now();
+            double elapsed_neg = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end_neg - start_neg).count()) / 1e6;
+            total_elapsed_neg += elapsed_neg;
+
+            // Store first iteration results for output
+            if (iteration == 0) {
+                first_selected_pos = selected_pos;
+                first_selected_neg = selected_neg;
             }
         }
 
-        // If a node has a self-loop, you may decide how to treat that in promising_value
-        // For example, add half the loop polarity or some function:
-        for (auto v_it = vertices(G); v_it.first != v_it.second; ++v_it.first) {
-            if (G[*v_it.first].has_self_loop) {
-                // Example: add self-loop polarity to promising_value
-                G[*v_it.first].promising_value += G[*v_it.first].self_loop_polarity;
-            }
+        // Calculate and output averages
+        double avg_elapsed_promising = total_elapsed_promising / num_its;
+        double avg_elapsed_pos = total_elapsed_pos / num_its;
+        double avg_elapsed_neg = total_elapsed_neg / num_its;
+
+        cout << "Time_Pos: " << avg_elapsed_pos << " seconds (averaged over " << num_its << " iterations)" << endl;
+        cout << "Nodes_Pos(" << first_selected_pos.size() << "):";
+        for (auto n : first_selected_pos) {
+            cout << " " << n;
         }
+        cout << endl;
 
-        auto G_pos = G;
-        auto G_neg = G;
-
-        // Invert node polarities and labels
-        for (auto v_it = vertices(G_neg); v_it.first != v_it.second; ++v_it.first) {
-            G_neg[*v_it.first].polarity = -G_neg[*v_it.first].polarity;
-            G_neg[*v_it.first].polarity_label = (num_labels - 1) - G_neg[*v_it.first].polarity_label;
+        cout << "Time_Neg: " << avg_elapsed_neg << " seconds (averaged over " << num_its << " iterations)" << endl;
+        cout << "Nodes_Neg(" << first_selected_neg.size() << "):";
+        for (auto n : first_selected_neg) {
+            cout << " " << n;
         }
-        // Invert edge polarities
-        for (auto e_it = edges(G_neg); e_it.first != e_it.second; ++e_it.first) {
-            G_neg[*e_it.first].edge_polarity = -G_neg[*e_it.first].edge_polarity;
-        }
-        // Invert stored self-loop polarities
-        for (auto v_it = vertices(G_neg); v_it.first != v_it.second; ++v_it.first) {
-            if (G_neg[*v_it.first].has_self_loop) {
-                G_neg[*v_it.first].self_loop_polarity = -G_neg[*v_it.first].self_loop_polarity;
-            }
-        }
+        cout << endl;
 
-        // Start timing
-        auto start_pos = chrono::high_resolution_clock::now();
-        // Execute the eccentricity greedy algorithm
-        vector<Vertex> selected_pos = ecc_greedy(G_pos, theta, true, max_neg, num_labels);
-        // End timing
-        auto end_pos = chrono::high_resolution_clock::now();
-        double elapsed_pos = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end_pos - start_pos).count()) / 1e6;
-        // Output
-        cout << "For Positive: Selected Nodes Count: " << selected_pos.size()
-             << " | Elapsed Time: " << elapsed_pos << " seconds" << endl;
-
-        // Start timing
-        auto start_neg = chrono::high_resolution_clock::now();
-        // Execute the eccentricity greedy algorithm
-        vector<Vertex> selected_neg = ecc_greedy(G_neg, theta, true, max_neg, num_labels);
-        // End timing
-        auto end_neg = chrono::high_resolution_clock::now();
-        double elapsed_neg = static_cast<double>(chrono::duration_cast<chrono::microseconds>(end_neg - start_neg).count()) / 1e6;
-        // Output
-        cout << "For Negative: Selected Nodes Count: " << selected_neg.size()
-             << " | Elapsed Time: " << elapsed_neg << " seconds" << endl;
-
-        cout << "Total Elapsed Time: " << elapsed_pos + elapsed_neg << " seconds" << endl;
+        cout << "Total Elapsed Time: " << avg_elapsed_promising + avg_elapsed_pos + avg_elapsed_neg
+             << " seconds (averaged over " << num_its << " iterations)" << endl;
 
     } catch (const std::exception& ex) {
         cerr << "Error: " << ex.what() << "\n";

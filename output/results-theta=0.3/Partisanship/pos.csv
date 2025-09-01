@@ -1,0 +1,3 @@
+,method,num_nodes,num_edges,purity(var),conductance,avg_node_polarity,unweighted_density,weighted_density,EI-Index
+0,pads_cpp,513,8843.0,0.01206,0.65956,0.29060,17.23782,5.06532,-0.99785
+1,high_degree,513,7804.0,0.02276,0.72302,0.27830,15.21248,4.13341,-0.98323

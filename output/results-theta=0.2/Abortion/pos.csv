@@ -1,0 +1,5 @@
+,method,num_nodes,num_edges,purity(var),conductance,avg_node_polarity,unweighted_density,weighted_density,EI-Index
+0,maxflow_cpp_wdsp,234,658.0,0.01880,0.64794,0.70749,2.81197,2.04337,-0.99394
+1,neg_dsd,306,830.5,0.01613,0.63694,0.72213,2.71405,2.00790,-0.99520
+2,node2vec_gin,309,858.0,0.02225,0.61714,0.69079,2.77670,1.99245,-0.99187
+3,pads_cpp,146,369.5,0.01229,0.70381,0.75893,2.53082,1.95003,-0.99730

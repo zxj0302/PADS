@@ -1,0 +1,5 @@
+,method,time
+0,maxflow_cpp_weighted,0.425
+1,neg_dsd_cpp,0.010956
+2,gnn,227.293
+3,pads_cpp,0.005315

@@ -1,3 +1,7 @@
 ,method,time
-0,pads_cpp,0.007728
-1,high_degree,0.20699405670166016
+0,pads_cpp,0.006654
+1,dith_cpp,0.079816
+2,eigensign_cpp,0.012826
+3,maxflow_cpp_unweighted,0.343
+4,surprise_python,1005.929
+5,km_config,0.189

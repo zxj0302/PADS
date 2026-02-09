@@ -884,6 +884,270 @@ def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
 def theta_influence(dataset, save_path=None, thetas=[0, 0.2, 0.5, 1, 3, 5], num_labels=5, max_neg=100):
     # Set Seaborn style for better aesthetics
     sns.set_theme(style="white")
+    # get each 0.1 step from 0 to 5 as thetas
+    thetas = np.arange(0, 5.1, 0.2).tolist()
+
+    G = get_graph(dataset)
+    metrics_to_plot = ['f (S)', 'Entropy', 'Density']
+    metric_indices = [0, 3, 4]  # Indices for f(S), Entropy, and Density
+    times = {}
+    pos_fss = {}
+    neg_fss = {}
+
+    # Run experiments for each theta
+    for theta in thetas:
+        t, (pos_fs, neg_fs) = run_exp(G, 'pads_python', theta=theta, return_fs=True, num_labels=num_labels, max_neg=max_neg)
+        times[theta] = t
+        pos_fss[theta] = pos_fs
+        neg_fss[theta] = neg_fs
+
+    # Print time consumption and results
+    print(f"=== Time Consumption ===\n{times}")
+    print(f"=== Results ===")
+
+    # Color palette for the three metrics
+    palette = [
+        "#EA8379",  # Coral pink for f(S)
+        "#7DAEE0",  # Sky blue for Entropy
+        "#B395BD",  # Lavender/mauve for Density
+    ]
+
+    # Create subplots with constrained layout
+    fig, axs = plt.subplots(1, 2, figsize=(8, 4), constrained_layout=True)
+
+    # Prepare data for plotting
+    pos_final_values = {metric: [] for metric in metrics_to_plot}
+    neg_final_values = {metric: [] for metric in metrics_to_plot}
+
+    for theta in thetas:
+        # Get final values for positive
+        pos_final = pos_fss[theta][-1]
+        neg_final = neg_fss[theta][-1]
+        # f (S)
+        pos_final_values['f (S)'].append(pos_final[0])
+        neg_final_values['f (S)'].append(neg_final[0])
+
+        # Entropy
+        pos_final_values['Entropy'].append(pos_final[3])
+        neg_final_values['Entropy'].append(neg_final[3])
+        
+        # Density (Weight Sum / # Nodes)
+        pos_final_values['Density'].append(pos_final[1] / pos_final[2])
+        neg_final_values['Density'].append(neg_final[1] / neg_final[2])
+
+    # Line styles
+    line_styles = ['-', '--', '-']
+
+    # Plot positive side
+    ax_pos = axs[0]
+    for idx, metric in enumerate(metrics_to_plot):
+        ax_pos.plot(thetas, pos_final_values[metric], label=metric, 
+                   color=palette[idx], linestyle=line_styles[idx], 
+                   linewidth=1.5, marker='o', markersize=3.5)
+    
+    ax_pos.set_xlabel('θ', fontsize=11)
+    ax_pos.set_ylabel('Values', fontsize=11)
+    ax_pos.set_title('ECC-P', fontsize=12)
+    ax_pos.grid(True, linestyle='--', alpha=0.3)
+    ax_pos.tick_params(axis='both', which='major', labelsize=10)
+    # ax_pos.legend(fontsize=11, frameon=True, framealpha=0.9, edgecolor='grey')
+
+    # Plot negative side
+    ax_neg = axs[1]
+    for idx, metric in enumerate(metrics_to_plot):
+        ax_neg.plot(thetas, neg_final_values[metric], label=metric, 
+                   color=palette[idx], linestyle=line_styles[idx], 
+                   linewidth=1.5, marker='o', markersize=3.5)
+    
+    ax_neg.set_xlabel('θ', fontsize=11)
+    ax_neg.set_ylabel('Values', fontsize=11)
+    ax_neg.set_title('ECC-N', fontsize=12)
+    ax_neg.grid(True, linestyle='--', alpha=0.3)
+    ax_neg.tick_params(axis='both', which='major', labelsize=10)
+    ax_neg.legend(fontsize=11, frameon=True, framealpha=0.9, edgecolor='grey')
+
+    # Save the figure if save_path is provided
+    if save_path:
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        plt.savefig(save_path, bbox_inches='tight', format='pdf')
+
+    # Show the plot
+    plt.show()
+
+
+def num_labels_influence(dataset, save_path=None, theta=0.5, num_labels_list=[2, 3, 5, 7, 10, 15], max_neg=100):
+    """Study the influence of number of labels on f(S), Variance, and Density.
+    
+    Parameters:
+    -----------
+    dataset : str
+        Dataset name
+    save_path : str, optional
+        Path to save the figure
+    theta : float
+        Theta value to use (default: 0.5)
+    num_labels_list : list
+        List of number of labels to test
+    max_neg : int
+        Maximum negative count for PADS algorithm
+    
+    Returns:
+    --------
+    pd.DataFrame
+        DataFrame with results showing how metrics vary with number of labels
+    """
+    # Set Seaborn style for better aesthetics
+    sns.set_theme(style="white")
+    
+    times = {}
+    pos_fss = {}
+    neg_fss = {}
+    graphs = {}
+    
+    # Run experiments for each num_labels value
+    for num_labels in tqdm(num_labels_list, desc=f"Testing num_labels for {dataset}"):
+        G = get_graph(dataset, num_labels=num_labels)
+        # First call to get fs values
+        t, (pos_fs, neg_fs) = run_exp(G, 'pads_python', theta=theta, return_fs=True, num_labels=num_labels, max_neg=max_neg)
+        # Second call to set node attributes (this modifies G)
+        run_exp(G, 'pads_python', theta=theta, return_fs=False, num_labels=num_labels, max_neg=max_neg)
+        times[num_labels] = t
+        pos_fss[num_labels] = pos_fs
+        neg_fss[num_labels] = neg_fs
+        graphs[num_labels] = G
+    
+    # Print time consumption
+    print(f"\n=== Time Consumption for θ={theta} ===")
+    for num_labels, t in times.items():
+        print(f"num_labels={num_labels}: {t:.4f}s")
+    
+    # Prepare data for table
+    table_data = []
+    
+    for num_labels in num_labels_list:
+        # Get final values for positive and negative communities
+        pos_final = pos_fss[num_labels][-1]
+        neg_final = neg_fss[num_labels][-1]
+        G = graphs[num_labels]
+        
+        # Extract metrics: f(S), Variance, Density
+        pos_fs = pos_final[0]
+        pos_density = pos_final[1] / pos_final[2] if pos_final[2] > 0 else 0
+        
+        neg_fs = neg_final[0]
+        neg_density = neg_final[1] / neg_final[2] if neg_final[2] > 0 else 0
+        
+        # Calculate variance of polarity for each community
+        # Try different possible attribute names
+        attr_name = None
+        for possible_attr in ['pads_python', 'pads_cpp', 'pads']:
+            if any(possible_attr in G.nodes[node] for node in G.nodes):
+                attr_name = possible_attr
+                break
+        
+        if attr_name is None:
+            print(f"Warning: Could not find PADS attribute in graph. Available attributes: {list(G.nodes[list(G.nodes)[0]].keys())}")
+            pos_variance = 0
+            neg_variance = 0
+        else:
+            pos_nodes = [node for node in G.nodes if G.nodes[node].get(attr_name) == 1]
+            neg_nodes = [node for node in G.nodes if G.nodes[node].get(attr_name) == -1]
+            
+            if pos_nodes:
+                pos_polarities = [G.nodes[node]['polarity'] for node in pos_nodes]
+                pos_variance = np.var(pos_polarities)
+            else:
+                pos_variance = 0
+                
+            if neg_nodes:
+                neg_polarities = [G.nodes[node]['polarity'] for node in neg_nodes]
+                neg_variance = np.var(neg_polarities)
+            else:
+                neg_variance = 0
+        
+        table_data.append({
+            'num_labels': num_labels,
+            'pos_f(S)': pos_fs,
+            'pos_Variance': pos_variance,
+            'pos_Density': pos_density,
+            'neg_f(S)': neg_fs,
+            'neg_Variance': neg_variance,
+            'neg_Density': neg_density,
+            'time': times[num_labels]
+        })
+    
+    # Create DataFrame
+    df = pd.DataFrame(table_data)
+    
+    # Print the table
+    print(f"\n=== Results for θ={theta} ===")
+    print(df.to_string(index=False))
+    
+    # Create visualization
+    metrics_to_plot = ['f(S)', 'Variance', 'Density']
+    palette = [
+        "#EA8379",  # Coral pink for f(S)
+        "#7DAEE0",  # Sky blue for Variance
+        "#B395BD",  # Lavender/mauve for Density
+    ]
+    line_styles = ['-', '--', '-']
+    
+    fig, axs = plt.subplots(1, 2, figsize=(10, 4), constrained_layout=True)
+    
+    # Plot positive side (ECC-P)
+    ax_pos = axs[0]
+    for idx, metric in enumerate(metrics_to_plot):
+        if metric == 'f(S)':
+            values = df['pos_f(S)'].tolist()
+        elif metric == 'Variance':
+            values = df['pos_Variance'].tolist()
+        else:
+            values = df['pos_Density'].tolist()
+        
+        ax_pos.plot(num_labels_list, values, label=metric, 
+                   color=palette[idx], linestyle=line_styles[idx], 
+                   linewidth=1.5, marker='o', markersize=4)
+    
+    ax_pos.set_xlabel('Number of Labels', fontsize=11)
+    ax_pos.set_ylabel('Values', fontsize=11)
+    ax_pos.set_title(f'ECC-P (θ={theta})', fontsize=12)
+    ax_pos.grid(True, linestyle='--', alpha=0.3)
+    ax_pos.tick_params(axis='both', which='major', labelsize=10)
+    
+    # Plot negative side (ECC-N)
+    ax_neg = axs[1]
+    for idx, metric in enumerate(metrics_to_plot):
+        if metric == 'f(S)':
+            values = df['neg_f(S)'].tolist()
+        elif metric == 'Variance':
+            values = df['neg_Variance'].tolist()
+        else:
+            values = df['neg_Density'].tolist()
+        
+        ax_neg.plot(num_labels_list, values, label=metric, 
+                   color=palette[idx], linestyle=line_styles[idx], 
+                   linewidth=1.5, marker='o', markersize=4)
+    
+    ax_neg.set_xlabel('Number of Labels', fontsize=11)
+    ax_neg.set_ylabel('Values', fontsize=11)
+    ax_neg.set_title(f'ECC-N (θ={theta})', fontsize=12)
+    ax_neg.grid(True, linestyle='--', alpha=0.3)
+    ax_neg.tick_params(axis='both', which='major', labelsize=10)
+    ax_neg.legend(fontsize=11, frameon=True, framealpha=0.9, edgecolor='grey')
+    
+    # Save the figure if save_path is provided
+    if save_path:
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        plt.savefig(save_path, bbox_inches='tight', format='pdf')
+    
+    plt.show()
+    
+    return df
+
+
+def theta_influence_old(dataset, save_path=None, thetas=[0, 0.2, 0.5, 1, 3, 5], num_labels=5, max_neg=100):
+    # Set Seaborn style for better aesthetics
+    sns.set_theme(style="white")
 
     G = get_graph(dataset)
     y_labels = ['f(S)', 'Weight Sum', '# Nodes', 'Entropy', 'Density']
@@ -893,7 +1157,7 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.2, 0.5, 1, 3, 5], num_
 
     # Run experiments for each theta
     for theta in thetas:
-        t, (pos_fs, neg_fs) = run_exp(G, 'pads_cpp', theta=theta, return_fs=True, num_labels=num_labels, max_neg=max_neg, dataset=dataset)
+        t, (pos_fs, neg_fs) = run_exp(G, 'pads_python', theta=theta, return_fs=True, num_labels=num_labels, max_neg=max_neg, dataset=dataset)
         times[theta] = t
         pos_fss[theta] = pos_fs
         neg_fss[theta] = neg_fs
@@ -1476,7 +1740,7 @@ def visualize_polarity_evolution(dataset, file_path, num_edges=2000, timesteps=[
 
 
 def scalibility(run=False, theta=0, vf_path=f'input\\datasets\\static\\Voter_Fraud\\accumulated', 
-time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10):
+time_path=f'output\\results-theta=0\\Voter_Fraud_backup\\', save_path=None, num_runs=10):
     dates = [p for p in os.listdir(vf_path) if os.path.isdir(os.path.join(vf_path, p))]
     # dates = ['201115', '201121', '201201']
     if run:
@@ -1573,7 +1837,7 @@ time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10
     # First subfigure: Runtime vs Edges (left axis) + Density vs Edges (right axis)
     # Runtime on left axis
     ax1.plot(edges, runtime_neg_dsd, marker='d', linestyle=':', label='Runtime: Neg-DSD', ms=1.5, color=runtime_colors[0], linewidth=0.5)
-    ax1.plot(edges, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS', ms=1.5, color=runtime_colors[1], linewidth=0.5)
+    ax1.plot(edges, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS-H', ms=1.5, color=runtime_colors[1], linewidth=0.5)
     ax1.set_xlabel('Number of Edges', fontsize=10)
     ax1.set_ylabel('Runtime (s)', fontsize=10)
     ax1.tick_params(axis='y', labelcolor='black')
@@ -1583,9 +1847,9 @@ time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10
     # Density on right axis with more distinct styles
     ax1_right = ax1.twinx()
     ax1_right.plot(edges, density_pos_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[0], linestyle=':', label='ECC-P Density: Neg-DSD', ms=1, color=density_colors[0], linewidth=0.5, alpha=0.8)
-    ax1_right.plot(edges, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS', ms=2, color=density_colors[1], linewidth=0.5, alpha=0.8)
+    ax1_right.plot(edges, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS-H', ms=2, color=density_colors[1], linewidth=0.5, alpha=0.8)
     ax1_right.plot(edges, density_neg_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[2], linestyle=':', label='ECC-N Density: Neg-DSD', ms=1, color=density_colors[2], linewidth=0.5, alpha=0.8)
-    ax1_right.plot(edges, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS', ms=2, color=density_colors[3], linewidth=0.5, alpha=0.8)
+    ax1_right.plot(edges, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS-H', ms=2, color=density_colors[3], linewidth=0.5, alpha=0.8)
     # ax1_right.set_ylabel('Weighted Density', fontsize=9)
     # Hide left y-axis labels for ax2 but keep the ticks for grid lines
     ax1_right.set_yticklabels([])
@@ -1603,7 +1867,7 @@ time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10
     # Second subfigure: Runtime vs Nodes (left axis) + Density vs Nodes (right axis)
     # Runtime on left axis
     ax2.plot(nodes, runtime_neg_dsd, marker='d', linestyle=':', label='Runtime: Neg-DSD', ms=1.5, color=runtime_colors[0], linewidth=0.5)
-    ax2.plot(nodes, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS', ms=1.5, color=runtime_colors[1], linewidth=0.5)
+    ax2.plot(nodes, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS-H', ms=1.5, color=runtime_colors[1], linewidth=0.5)
     ax2.set_xlabel('Number of Nodes', fontsize=10)
     ax2.tick_params(axis='y', labelcolor='black')
     ax2.xaxis.set_major_locator(MaxNLocator(nbins=5))  # Creates 6 ticks (5 intervals) = 5 vertical grid lines
@@ -1613,9 +1877,9 @@ time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10
     # Density on right axis with more distinct styles
     ax2_right = ax2.twinx()
     ax2_right.plot(nodes, density_pos_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[0], linestyle=':', label='ECC-P Density: Neg-DSD', ms=1, color=density_colors[0], linewidth=0.5, alpha=0.8)
-    ax2_right.plot(nodes, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS', ms=2, color=density_colors[1], linewidth=0.5, alpha=0.8)
+    ax2_right.plot(nodes, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS-H', ms=2, color=density_colors[1], linewidth=0.5, alpha=0.8)
     ax2_right.plot(nodes, density_neg_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[2], linestyle=':', label='ECC-N Density: Neg-DSD', ms=1, color=density_colors[2], linewidth=0.5, alpha=0.8)
-    ax2_right.plot(nodes, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS', ms=2, color=density_colors[3], linewidth=0.5, alpha=0.8)
+    ax2_right.plot(nodes, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS-H', ms=2, color=density_colors[3], linewidth=0.5, alpha=0.8)
     ax2_right.set_ylabel('Density', fontsize=10)
     ax2_right.tick_params(axis='y')
     # Hide left y-axis labels for ax2 but keep the ticks for grid lines
@@ -1649,7 +1913,7 @@ time_path=f'output\\results-theta=0\\Voter_Fraud\\', save_path=None, num_runs=10
 
     # Create table data for matplotlib
     table_data = [
-        ['#win', 'Neg-DSD', 'PADS'],
+        ['#win', 'Neg-DSD', 'PADS-H'],
         ['ECC-P', str(dsd_large_than_pads_pos), str(pads_large_than_dsd_pos)],
         ['ECC-N', str(dsd_large_than_pads_neg), str(pads_large_than_dsd_neg)]
     ]

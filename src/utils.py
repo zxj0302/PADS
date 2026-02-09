@@ -81,6 +81,7 @@ def statistics(G, save_path=None):
             'num_nodes': [],
             'num_edges': [],
             'purity(var)': [],
+            'entropy': [],
             'conductance': [],
             'avg_node_polarity': [],
             'unweighted_density': [],
@@ -103,11 +104,32 @@ def statistics(G, save_path=None):
                             if G.nodes[neighbor][attribute] == (method_communities[attribute]['pos'] if sign == 'neg' else method_communities[attribute]['neg']):
                                 cross_edge_count += 1
                         else:
-                            inner_edge_count += 1
-                            edge_polarity_sum += G.edges[(node, neighbor)]['edge_polarity']
+                            if node != neighbor:
+                                inner_edge_count += 1
+                                edge_polarity_sum += G.edges[(node, neighbor)]['edge_polarity']
+                            else:
+                                inner_edge_count += 2
+                                edge_polarity_sum += 2 * G.edges[(node, neighbor)]['edge_polarity']
             
             #compute purity as variance of polarities
             purity = np.var(community_polarity)
+            
+            #compute entropy with base 2 using polarity_label
+            community_labels = []
+            for node in G.nodes():
+                if G.nodes[node][attribute] == value:
+                    community_labels.append(G.nodes[node]['polarity_label'])
+            
+            if len(community_labels) == 0:
+                entropy = 0
+            else:
+                # Count occurrences of each label
+                unique_labels, counts = np.unique(community_labels, return_counts=True)
+                # Calculate probabilities
+                probs = counts / len(community_labels)
+                # Compute entropy: H = -sum(p * log2(p))
+                entropy = -np.sum(probs * np.log2(probs))
+            
             #compute conductance
             if out_edge_count+inner_edge_count == 0:
                 conductance = 0
@@ -124,6 +146,7 @@ def statistics(G, save_path=None):
             data['num_nodes'].append(num_nodes)
             data['num_edges'].append(num_edges)
             data['purity(var)'].append('%.5f' % purity)
+            data['entropy'].append('%.5f' % entropy)
             data['conductance'].append('%.5f' % conductance)
             data['avg_node_polarity'].append('%.5f' % avg_node_polarity)
             data['unweighted_density'].append('%.5f' % unweighted_density)

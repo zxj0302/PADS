@@ -177,6 +177,7 @@ def pads_python(G, **kwargs):
     max_neg=kwargs.get('max_neg', 100)
     size_ub=kwargs.get('size_ub', None)
     attr_name = kwargs.get('attr_name', 'pads_python')
+    theta = theta / math.log2(num_labels)
 
     label_boundaries = []
     if num_labels > 1:

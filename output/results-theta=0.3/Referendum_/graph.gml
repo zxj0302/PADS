@@ -6,7 +6,11 @@ graph [
     polarity 0.8164251207729468
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1
@@ -15,7 +19,11 @@ graph [
     polarity -0.4936708860759494
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2
@@ -24,7 +32,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 3
@@ -33,7 +45,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 4
@@ -42,7 +58,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 5
@@ -51,7 +71,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 6
@@ -60,7 +84,11 @@ graph [
     polarity 0.8285714285714286
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 7
@@ -69,7 +97,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 8
@@ -78,7 +110,11 @@ graph [
     polarity 0.7686746987951807
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 9
@@ -87,7 +123,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 10
@@ -96,7 +136,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 11
@@ -105,7 +149,11 @@ graph [
     polarity -0.9809523809523809
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 12
@@ -114,7 +162,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 13
@@ -123,7 +175,11 @@ graph [
     polarity 0.9047619047619048
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 14
@@ -132,7 +188,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 15
@@ -141,7 +201,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 16
@@ -150,7 +214,11 @@ graph [
     polarity -0.6
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 17
@@ -159,7 +227,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 18
@@ -168,7 +240,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 19
@@ -177,7 +253,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 20
@@ -186,7 +266,11 @@ graph [
     polarity -0.9622641509433962
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 21
@@ -195,7 +279,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 22
@@ -204,7 +292,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 23
@@ -213,7 +305,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 24
@@ -222,7 +318,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 25
@@ -231,7 +331,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 26
@@ -240,7 +344,11 @@ graph [
     polarity 0.696969696969697
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 27
@@ -249,7 +357,11 @@ graph [
     polarity 0.5053763440860215
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 28
@@ -258,7 +370,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 29
@@ -267,7 +383,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 30
@@ -276,7 +396,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 31
@@ -285,7 +409,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 32
@@ -294,7 +422,11 @@ graph [
     polarity -0.48314606741573035
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 33
@@ -303,7 +435,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 34
@@ -312,7 +448,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 35
@@ -321,7 +461,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 36
@@ -330,7 +474,11 @@ graph [
     polarity 0.5714285714285714
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 37
@@ -339,7 +487,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 38
@@ -348,7 +500,11 @@ graph [
     polarity -0.9807692307692307
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 39
@@ -357,7 +513,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 40
@@ -366,7 +526,11 @@ graph [
     polarity -0.8888888888888888
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 41
@@ -375,7 +539,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 42
@@ -384,7 +552,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 43
@@ -393,7 +565,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 44
@@ -402,7 +578,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 45
@@ -411,7 +591,11 @@ graph [
     polarity 0.6071428571428571
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 46
@@ -420,7 +604,11 @@ graph [
     polarity 0.7727272727272727
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 47
@@ -429,7 +617,11 @@ graph [
     polarity -0.5
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 48
@@ -438,7 +630,11 @@ graph [
     polarity -0.953125
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 49
@@ -447,7 +643,11 @@ graph [
     polarity 0.625
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 50
@@ -456,7 +656,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 51
@@ -465,7 +669,11 @@ graph [
     polarity -0.9818181818181818
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 52
@@ -474,7 +682,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 53
@@ -483,7 +695,11 @@ graph [
     polarity -0.9733333333333334
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 54
@@ -492,7 +708,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 55
@@ -501,7 +721,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 56
@@ -510,7 +734,11 @@ graph [
     polarity -0.9815668202764977
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 57
@@ -519,7 +747,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 58
@@ -528,7 +760,11 @@ graph [
     polarity 0.36
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 59
@@ -537,7 +773,11 @@ graph [
     polarity 0.41818181818181815
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 60
@@ -546,7 +786,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 61
@@ -555,7 +799,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 62
@@ -564,7 +812,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 63
@@ -573,7 +825,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 64
@@ -582,7 +838,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 65
@@ -591,7 +851,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 66
@@ -600,7 +864,11 @@ graph [
     polarity -0.9952941176470588
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 67
@@ -609,7 +877,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 68
@@ -618,7 +890,11 @@ graph [
     polarity 0.45454545454545453
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 69
@@ -627,7 +903,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 70
@@ -636,7 +916,11 @@ graph [
     polarity -0.8947368421052632
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 71
@@ -645,7 +929,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 72
@@ -654,7 +942,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 73
@@ -663,7 +955,11 @@ graph [
     polarity 0.8
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 74
@@ -672,7 +968,11 @@ graph [
     polarity -0.9950248756218906
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 75
@@ -681,7 +981,11 @@ graph [
     polarity 0.6111111111111112
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 76
@@ -690,7 +994,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 77
@@ -699,7 +1007,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 78
@@ -708,7 +1020,11 @@ graph [
     polarity -0.991701244813278
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 79
@@ -717,7 +1033,11 @@ graph [
     polarity -0.9714285714285714
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 80
@@ -726,7 +1046,11 @@ graph [
     polarity -0.8823529411764706
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 81
@@ -735,7 +1059,11 @@ graph [
     polarity -0.9493670886075949
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 82
@@ -744,7 +1072,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 83
@@ -753,7 +1085,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 84
@@ -762,7 +1098,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 85
@@ -771,7 +1111,11 @@ graph [
     polarity 0.6736196319018405
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 86
@@ -780,7 +1124,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 87
@@ -789,7 +1137,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 88
@@ -798,7 +1150,11 @@ graph [
     polarity 0.6976744186046512
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 89
@@ -807,7 +1163,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 90
@@ -816,7 +1176,11 @@ graph [
     polarity -0.9914163090128756
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 91
@@ -825,7 +1189,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 92
@@ -834,7 +1202,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 93
@@ -843,7 +1215,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 94
@@ -852,7 +1228,11 @@ graph [
     polarity -0.9473684210526315
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 95
@@ -861,7 +1241,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 96
@@ -870,7 +1254,11 @@ graph [
     polarity -0.9754299754299754
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 97
@@ -879,7 +1267,11 @@ graph [
     polarity -0.9428571428571428
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 98
@@ -888,7 +1280,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 99
@@ -897,7 +1293,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 100
@@ -906,7 +1306,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 101
@@ -915,7 +1319,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 102
@@ -924,7 +1332,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 103
@@ -933,7 +1345,11 @@ graph [
     polarity -0.9347826086956522
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 104
@@ -942,7 +1358,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 105
@@ -951,7 +1371,11 @@ graph [
     polarity 0.10344827586206896
     polarity_label 2
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 106
@@ -960,7 +1384,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 107
@@ -969,7 +1397,11 @@ graph [
     polarity -0.9791666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 108
@@ -978,7 +1410,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 109
@@ -987,7 +1423,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 110
@@ -996,7 +1436,11 @@ graph [
     polarity 0.21008403361344538
     polarity_label 3
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 111
@@ -1005,7 +1449,11 @@ graph [
     polarity -0.8666666666666667
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 112
@@ -1014,7 +1462,11 @@ graph [
     polarity -0.9666666666666667
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 113
@@ -1023,7 +1475,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 114
@@ -1032,7 +1488,11 @@ graph [
     polarity -0.2
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 115
@@ -1041,7 +1501,11 @@ graph [
     polarity -0.9642857142857143
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 116
@@ -1050,7 +1514,11 @@ graph [
     polarity 0.5315315315315315
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 117
@@ -1059,7 +1527,11 @@ graph [
     polarity 0.5357142857142857
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 118
@@ -1068,7 +1540,11 @@ graph [
     polarity -0.9512195121951219
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 119
@@ -1077,7 +1553,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 120
@@ -1086,7 +1566,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 121
@@ -1095,7 +1579,11 @@ graph [
     polarity -0.96
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 122
@@ -1104,7 +1592,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 123
@@ -1113,7 +1605,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 124
@@ -1122,7 +1618,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 125
@@ -1131,7 +1631,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 126
@@ -1140,7 +1644,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 127
@@ -1149,7 +1657,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 128
@@ -1158,7 +1670,11 @@ graph [
     polarity 0.5918367346938775
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 129
@@ -1167,7 +1683,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 130
@@ -1176,7 +1696,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 131
@@ -1185,7 +1709,11 @@ graph [
     polarity -0.9615384615384616
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 132
@@ -1194,7 +1722,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 133
@@ -1203,7 +1735,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 134
@@ -1212,7 +1748,11 @@ graph [
     polarity 0.47368421052631576
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 135
@@ -1221,7 +1761,11 @@ graph [
     polarity -0.979381443298969
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 136
@@ -1230,7 +1774,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 137
@@ -1239,7 +1787,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 138
@@ -1248,7 +1800,11 @@ graph [
     polarity -0.9796954314720813
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 139
@@ -1257,7 +1813,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 140
@@ -1266,7 +1826,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 141
@@ -1275,7 +1839,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 142
@@ -1284,7 +1852,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 143
@@ -1293,7 +1865,11 @@ graph [
     polarity -0.9436619718309859
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 144
@@ -1302,7 +1878,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 145
@@ -1311,7 +1891,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 146
@@ -1320,7 +1904,11 @@ graph [
     polarity -0.9411764705882353
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 147
@@ -1329,7 +1917,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 148
@@ -1338,7 +1930,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 149
@@ -1347,7 +1943,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 150
@@ -1356,7 +1956,11 @@ graph [
     polarity 0.2571428571428571
     polarity_label 3
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 151
@@ -1365,7 +1969,11 @@ graph [
     polarity 0.8461538461538461
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 152
@@ -1374,7 +1982,11 @@ graph [
     polarity -0.875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 153
@@ -1383,7 +1995,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 154
@@ -1392,7 +2008,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 155
@@ -1401,7 +2021,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 156
@@ -1410,7 +2034,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 157
@@ -1419,7 +2047,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 158
@@ -1428,7 +2060,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 159
@@ -1437,7 +2073,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 160
@@ -1446,7 +2086,11 @@ graph [
     polarity 0.3548387096774194
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 161
@@ -1455,7 +2099,11 @@ graph [
     polarity -0.9876543209876543
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 162
@@ -1464,7 +2112,11 @@ graph [
     polarity -0.9864864864864865
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 163
@@ -1473,7 +2125,11 @@ graph [
     polarity -0.9574468085106383
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith -1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 164
@@ -1482,7 +2138,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 165
@@ -1491,7 +2151,11 @@ graph [
     polarity -0.978021978021978
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 166
@@ -1500,7 +2164,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 167
@@ -1509,7 +2177,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 168
@@ -1518,7 +2190,11 @@ graph [
     polarity -0.9534883720930233
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 169
@@ -1527,7 +2203,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 170
@@ -1536,7 +2216,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 171
@@ -1545,7 +2229,11 @@ graph [
     polarity 0.8823529411764706
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 172
@@ -1554,7 +2242,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 173
@@ -1563,7 +2255,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 174
@@ -1572,7 +2268,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 175
@@ -1581,7 +2281,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 176
@@ -1590,7 +2294,11 @@ graph [
     polarity -0.9692307692307692
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 177
@@ -1599,7 +2307,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 178
@@ -1608,7 +2320,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 179
@@ -1617,7 +2333,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 180
@@ -1626,7 +2346,11 @@ graph [
     polarity -0.8947368421052632
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 181
@@ -1635,7 +2359,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 182
@@ -1644,7 +2372,11 @@ graph [
     polarity 0.07692307692307693
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 183
@@ -1653,7 +2385,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 184
@@ -1662,7 +2398,11 @@ graph [
     polarity -0.8461538461538461
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 185
@@ -1671,7 +2411,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 186
@@ -1680,7 +2424,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 187
@@ -1689,7 +2437,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 188
@@ -1698,7 +2450,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 189
@@ -1707,7 +2463,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 190
@@ -1716,7 +2476,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 191
@@ -1725,7 +2489,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 192
@@ -1734,7 +2502,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 193
@@ -1743,7 +2515,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 194
@@ -1752,7 +2528,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 195
@@ -1761,7 +2541,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 196
@@ -1770,7 +2554,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 197
@@ -1779,7 +2567,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 198
@@ -1788,7 +2580,11 @@ graph [
     polarity -0.9636363636363636
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 199
@@ -1797,7 +2593,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 200
@@ -1806,7 +2606,11 @@ graph [
     polarity -0.6470588235294118
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 201
@@ -1815,7 +2619,11 @@ graph [
     polarity -0.9166666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 202
@@ -1824,7 +2632,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 203
@@ -1833,7 +2645,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 204
@@ -1842,7 +2658,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 205
@@ -1851,7 +2671,11 @@ graph [
     polarity 0.3181818181818182
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 206
@@ -1860,7 +2684,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 207
@@ -1869,7 +2697,11 @@ graph [
     polarity -0.9924812030075187
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 208
@@ -1878,7 +2710,11 @@ graph [
     polarity -0.9523809523809523
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 209
@@ -1887,7 +2723,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 210
@@ -1896,7 +2736,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 211
@@ -1905,7 +2749,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 212
@@ -1914,7 +2762,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 213
@@ -1923,7 +2775,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 214
@@ -1932,7 +2788,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 215
@@ -1941,7 +2801,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 216
@@ -1950,7 +2814,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 217
@@ -1959,7 +2827,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 218
@@ -1968,7 +2840,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 219
@@ -1977,7 +2853,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 220
@@ -1986,7 +2866,11 @@ graph [
     polarity -0.9966442953020134
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 221
@@ -1995,7 +2879,11 @@ graph [
     polarity -0.9897435897435898
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 222
@@ -2004,7 +2892,11 @@ graph [
     polarity 0.7484276729559748
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 223
@@ -2013,7 +2905,11 @@ graph [
     polarity -0.9545454545454546
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 224
@@ -2022,7 +2918,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 225
@@ -2031,7 +2931,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 226
@@ -2040,7 +2944,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 227
@@ -2049,7 +2957,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 228
@@ -2058,7 +2970,11 @@ graph [
     polarity -0.9047619047619048
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 229
@@ -2067,7 +2983,11 @@ graph [
     polarity -0.9375
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 230
@@ -2076,7 +2996,11 @@ graph [
     polarity -0.9945652173913043
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 231
@@ -2085,7 +3009,11 @@ graph [
     polarity -0.9823008849557522
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 232
@@ -2094,7 +3022,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 233
@@ -2103,7 +3035,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 234
@@ -2112,7 +3048,11 @@ graph [
     polarity -0.9631901840490797
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 235
@@ -2121,7 +3061,11 @@ graph [
     polarity 0.2222222222222222
     polarity_label 3
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 236
@@ -2130,7 +3074,11 @@ graph [
     polarity 0.8571428571428571
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 237
@@ -2139,7 +3087,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 238
@@ -2148,7 +3100,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 239
@@ -2157,7 +3113,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 240
@@ -2166,7 +3126,11 @@ graph [
     polarity -0.9887323943661972
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 241
@@ -2175,7 +3139,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 242
@@ -2184,7 +3152,11 @@ graph [
     polarity 0.35714285714285715
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 243
@@ -2193,7 +3165,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 244
@@ -2202,7 +3178,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 245
@@ -2211,7 +3191,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 246
@@ -2220,7 +3204,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 247
@@ -2229,7 +3217,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 248
@@ -2238,7 +3230,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 249
@@ -2247,7 +3243,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 250
@@ -2256,7 +3256,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 251
@@ -2265,7 +3269,11 @@ graph [
     polarity 0.6818181818181818
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 252
@@ -2274,7 +3282,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 253
@@ -2283,7 +3295,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 254
@@ -2292,7 +3308,11 @@ graph [
     polarity -0.9743589743589743
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 255
@@ -2301,7 +3321,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith -1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 256
@@ -2310,7 +3334,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 257
@@ -2319,7 +3347,11 @@ graph [
     polarity -0.9818181818181818
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 258
@@ -2328,7 +3360,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 259
@@ -2337,7 +3373,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 260
@@ -2346,7 +3386,11 @@ graph [
     polarity 0.7647058823529411
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 261
@@ -2355,7 +3399,11 @@ graph [
     polarity -0.9354838709677419
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 262
@@ -2364,7 +3412,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 263
@@ -2373,7 +3425,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 264
@@ -2382,7 +3438,11 @@ graph [
     polarity 0.8181818181818182
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 265
@@ -2391,7 +3451,11 @@ graph [
     polarity 0.7313432835820896
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 266
@@ -2400,7 +3464,11 @@ graph [
     polarity 0.1111111111111111
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 267
@@ -2409,7 +3477,11 @@ graph [
     polarity -0.977961432506887
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 268
@@ -2418,7 +3490,11 @@ graph [
     polarity 0.5813953488372093
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 269
@@ -2427,7 +3503,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 270
@@ -2436,7 +3516,11 @@ graph [
     polarity 0.6774193548387096
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 271
@@ -2445,7 +3529,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 272
@@ -2454,7 +3542,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 273
@@ -2463,7 +3555,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 274
@@ -2472,7 +3568,11 @@ graph [
     polarity -0.9834710743801653
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 275
@@ -2481,7 +3581,11 @@ graph [
     polarity -0.9885386819484241
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 276
@@ -2490,7 +3594,11 @@ graph [
     polarity -0.963855421686747
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 277
@@ -2499,7 +3607,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 278
@@ -2508,7 +3620,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 279
@@ -2517,7 +3633,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 280
@@ -2526,7 +3646,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 281
@@ -2535,7 +3659,11 @@ graph [
     polarity -0.9830508474576272
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 282
@@ -2544,7 +3672,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 283
@@ -2553,7 +3685,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 284
@@ -2562,7 +3698,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 285
@@ -2571,7 +3711,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 286
@@ -2580,7 +3724,11 @@ graph [
     polarity 0.7333333333333333
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 287
@@ -2589,7 +3737,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 288
@@ -2598,7 +3750,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 289
@@ -2607,7 +3763,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 290
@@ -2616,7 +3776,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 291
@@ -2625,7 +3789,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 292
@@ -2634,7 +3802,11 @@ graph [
     polarity -0.8181818181818182
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 293
@@ -2643,7 +3815,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 294
@@ -2652,7 +3828,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 295
@@ -2661,7 +3841,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 296
@@ -2670,7 +3854,11 @@ graph [
     polarity -0.9354838709677419
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 297
@@ -2679,7 +3867,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 298
@@ -2688,7 +3880,11 @@ graph [
     polarity -0.9629629629629629
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 299
@@ -2697,7 +3893,11 @@ graph [
     polarity -0.9629629629629629
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 300
@@ -2706,7 +3906,11 @@ graph [
     polarity 0.5609756097560976
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 301
@@ -2715,7 +3919,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 302
@@ -2724,7 +3932,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 303
@@ -2733,7 +3945,11 @@ graph [
     polarity -0.8333333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 304
@@ -2742,7 +3958,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 305
@@ -2751,7 +3971,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 306
@@ -2760,7 +3984,11 @@ graph [
     polarity -0.9428571428571428
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 307
@@ -2769,7 +3997,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 308
@@ -2778,7 +4010,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 309
@@ -2787,7 +4023,11 @@ graph [
     polarity -0.9259259259259259
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 310
@@ -2796,7 +4036,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 311
@@ -2805,7 +4049,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 312
@@ -2814,7 +4062,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 313
@@ -2823,7 +4075,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 314
@@ -2832,7 +4088,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 315
@@ -2841,7 +4101,11 @@ graph [
     polarity 0.5217391304347826
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 316
@@ -2850,7 +4114,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 317
@@ -2859,7 +4127,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 318
@@ -2868,7 +4140,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 319
@@ -2877,7 +4153,11 @@ graph [
     polarity 0.3
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 320
@@ -2886,7 +4166,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 321
@@ -2895,7 +4179,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 322
@@ -2904,7 +4192,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 323
@@ -2913,7 +4205,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 324
@@ -2922,7 +4218,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 325
@@ -2931,7 +4231,11 @@ graph [
     polarity -0.9965457685664939
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 326
@@ -2940,7 +4244,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 327
@@ -2949,7 +4257,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 328
@@ -2958,7 +4270,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 329
@@ -2967,7 +4283,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 330
@@ -2976,7 +4296,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 331
@@ -2985,7 +4309,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 332
@@ -2994,7 +4322,11 @@ graph [
     polarity -0.8947368421052632
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 333
@@ -3003,7 +4335,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 334
@@ -3012,7 +4348,11 @@ graph [
     polarity -0.956989247311828
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 335
@@ -3021,7 +4361,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 336
@@ -3030,7 +4374,11 @@ graph [
     polarity 0.5384615384615384
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 337
@@ -3039,7 +4387,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 338
@@ -3048,7 +4400,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 339
@@ -3057,7 +4413,11 @@ graph [
     polarity -0.979381443298969
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 340
@@ -3066,7 +4426,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 341
@@ -3075,7 +4439,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 342
@@ -3084,7 +4452,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 343
@@ -3093,7 +4465,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 344
@@ -3102,7 +4478,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 345
@@ -3111,7 +4491,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 346
@@ -3120,7 +4504,11 @@ graph [
     polarity 0.9629629629629629
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 347
@@ -3129,7 +4517,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 348
@@ -3138,7 +4530,11 @@ graph [
     polarity 0.8367346938775511
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 349
@@ -3147,7 +4543,11 @@ graph [
     polarity -0.9
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 350
@@ -3156,7 +4556,11 @@ graph [
     polarity -0.4594594594594595
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 351
@@ -3165,7 +4569,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 352
@@ -3174,7 +4582,11 @@ graph [
     polarity -0.6
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 353
@@ -3183,7 +4595,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 354
@@ -3192,7 +4608,11 @@ graph [
     polarity -0.6923076923076923
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 355
@@ -3201,7 +4621,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 356
@@ -3210,7 +4634,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 357
@@ -3219,7 +4647,11 @@ graph [
     polarity 0.45454545454545453
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 358
@@ -3228,7 +4660,11 @@ graph [
     polarity -0.9941262848751835
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 359
@@ -3237,7 +4673,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 360
@@ -3246,7 +4686,11 @@ graph [
     polarity -0.7777777777777778
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 361
@@ -3255,7 +4699,11 @@ graph [
     polarity 0.1111111111111111
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 362
@@ -3264,7 +4712,11 @@ graph [
     polarity 0.8787878787878788
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 363
@@ -3273,7 +4725,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 364
@@ -3282,7 +4738,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 365
@@ -3291,7 +4751,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 366
@@ -3300,7 +4764,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 367
@@ -3309,7 +4777,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 368
@@ -3318,7 +4790,11 @@ graph [
     polarity -0.9696969696969697
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 369
@@ -3327,7 +4803,11 @@ graph [
     polarity -0.875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 370
@@ -3336,7 +4816,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 371
@@ -3345,7 +4829,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 372
@@ -3354,7 +4842,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 373
@@ -3363,7 +4855,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 374
@@ -3372,7 +4868,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 375
@@ -3381,7 +4881,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 376
@@ -3390,7 +4894,11 @@ graph [
     polarity 0.47368421052631576
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 377
@@ -3399,7 +4907,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 378
@@ -3408,7 +4920,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 379
@@ -3417,7 +4933,11 @@ graph [
     polarity -0.9428571428571428
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 380
@@ -3426,7 +4946,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 381
@@ -3435,7 +4959,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 382
@@ -3444,7 +4972,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 383
@@ -3453,7 +4985,11 @@ graph [
     polarity -0.8095238095238095
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 384
@@ -3462,7 +4998,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 385
@@ -3471,7 +5011,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 386
@@ -3480,7 +5024,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 387
@@ -3489,7 +5037,11 @@ graph [
     polarity -0.9824561403508771
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 388
@@ -3498,7 +5050,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 389
@@ -3507,7 +5063,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 390
@@ -3516,7 +5076,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 391
@@ -3525,7 +5089,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 392
@@ -3534,7 +5102,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 393
@@ -3543,7 +5115,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 394
@@ -3552,7 +5128,11 @@ graph [
     polarity -0.84
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 395
@@ -3561,7 +5141,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 396
@@ -3570,7 +5154,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 397
@@ -3579,7 +5167,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 398
@@ -3588,7 +5180,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 399
@@ -3597,7 +5193,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 400
@@ -3606,7 +5206,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 401
@@ -3615,7 +5219,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 402
@@ -3624,7 +5232,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 403
@@ -3633,7 +5245,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 404
@@ -3642,7 +5258,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 405
@@ -3651,7 +5271,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 406
@@ -3660,7 +5284,11 @@ graph [
     polarity 0.7419354838709677
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 407
@@ -3669,7 +5297,11 @@ graph [
     polarity 0.7241379310344828
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 408
@@ -3678,7 +5310,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 409
@@ -3687,7 +5323,11 @@ graph [
     polarity -0.92
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 410
@@ -3696,7 +5336,11 @@ graph [
     polarity -0.9642857142857143
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 411
@@ -3705,7 +5349,11 @@ graph [
     polarity 0.7258426966292135
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 412
@@ -3714,7 +5362,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 413
@@ -3723,7 +5375,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 414
@@ -3732,7 +5388,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 415
@@ -3741,7 +5401,11 @@ graph [
     polarity -0.1111111111111111
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 416
@@ -3750,7 +5414,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 417
@@ -3759,7 +5427,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 418
@@ -3768,7 +5440,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 419
@@ -3777,7 +5453,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 420
@@ -3786,7 +5466,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 421
@@ -3795,7 +5479,11 @@ graph [
     polarity 0.7657657657657657
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 422
@@ -3804,7 +5492,11 @@ graph [
     polarity -0.8666666666666667
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 423
@@ -3813,7 +5505,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 424
@@ -3822,7 +5518,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 425
@@ -3831,7 +5531,11 @@ graph [
     polarity -0.9876543209876543
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 426
@@ -3840,7 +5544,11 @@ graph [
     polarity 0.9428571428571428
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 427
@@ -3849,7 +5557,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 428
@@ -3858,7 +5570,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 429
@@ -3867,7 +5583,11 @@ graph [
     polarity -0.9882697947214076
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 430
@@ -3876,7 +5596,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 431
@@ -3885,7 +5609,11 @@ graph [
     polarity 0.7419354838709677
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 432
@@ -3894,7 +5622,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 433
@@ -3903,7 +5635,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 434
@@ -3912,7 +5648,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 435
@@ -3921,7 +5661,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 436
@@ -3930,7 +5674,11 @@ graph [
     polarity -0.9555555555555556
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 437
@@ -3939,7 +5687,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 438
@@ -3948,7 +5700,11 @@ graph [
     polarity -0.9945130315500685
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 439
@@ -3957,7 +5713,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 440
@@ -3966,7 +5726,11 @@ graph [
     polarity -0.9772727272727273
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 441
@@ -3975,7 +5739,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 442
@@ -3984,7 +5752,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 443
@@ -3993,7 +5765,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 444
@@ -4002,7 +5778,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 445
@@ -4011,7 +5791,11 @@ graph [
     polarity -0.6923076923076923
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 446
@@ -4020,7 +5804,11 @@ graph [
     polarity -0.92
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 447
@@ -4029,7 +5817,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 448
@@ -4038,7 +5830,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 449
@@ -4047,7 +5843,11 @@ graph [
     polarity -0.9770114942528736
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 450
@@ -4056,7 +5856,11 @@ graph [
     polarity -0.8888888888888888
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 451
@@ -4065,7 +5869,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 452
@@ -4074,7 +5882,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 453
@@ -4083,7 +5895,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 454
@@ -4092,7 +5908,11 @@ graph [
     polarity 0.07692307692307693
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 455
@@ -4101,7 +5921,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 456
@@ -4110,7 +5934,11 @@ graph [
     polarity 0.75
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 457
@@ -4119,7 +5947,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 458
@@ -4128,7 +5960,11 @@ graph [
     polarity -0.5
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 459
@@ -4137,7 +5973,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 460
@@ -4146,7 +5986,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 461
@@ -4155,7 +5999,11 @@ graph [
     polarity 0.3953488372093023
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 462
@@ -4164,7 +6012,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 463
@@ -4173,7 +6025,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 464
@@ -4182,7 +6038,11 @@ graph [
     polarity 0.8333333333333334
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 465
@@ -4191,7 +6051,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 466
@@ -4200,7 +6064,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 467
@@ -4209,7 +6077,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 468
@@ -4218,7 +6090,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 469
@@ -4227,7 +6103,11 @@ graph [
     polarity -0.9838709677419355
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 470
@@ -4236,7 +6116,11 @@ graph [
     polarity -0.5555555555555556
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 471
@@ -4245,7 +6129,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 472
@@ -4254,7 +6142,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 473
@@ -4263,7 +6155,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 474
@@ -4272,7 +6168,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 475
@@ -4281,7 +6181,11 @@ graph [
     polarity -0.75
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 476
@@ -4290,7 +6194,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 477
@@ -4299,7 +6207,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 478
@@ -4308,7 +6220,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 479
@@ -4317,7 +6233,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 480
@@ -4326,7 +6246,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 481
@@ -4335,7 +6259,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 482
@@ -4344,7 +6272,11 @@ graph [
     polarity -0.875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 483
@@ -4353,7 +6285,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 484
@@ -4362,7 +6298,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 485
@@ -4371,7 +6311,11 @@ graph [
     polarity 0.8387096774193549
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 486
@@ -4380,7 +6324,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 487
@@ -4389,7 +6337,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 488
@@ -4398,7 +6350,11 @@ graph [
     polarity 0.4
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 489
@@ -4407,7 +6363,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 490
@@ -4416,7 +6376,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 491
@@ -4425,7 +6389,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 492
@@ -4434,7 +6402,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 493
@@ -4443,7 +6415,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 494
@@ -4452,7 +6428,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 495
@@ -4461,7 +6441,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 496
@@ -4470,7 +6454,11 @@ graph [
     polarity -0.9935064935064936
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 497
@@ -4479,7 +6467,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 498
@@ -4488,7 +6480,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 499
@@ -4497,7 +6493,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 500
@@ -4506,7 +6506,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 501
@@ -4515,7 +6519,11 @@ graph [
     polarity -0.9857142857142858
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 502
@@ -4524,7 +6532,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 503
@@ -4533,7 +6545,11 @@ graph [
     polarity -0.9459459459459459
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 504
@@ -4542,7 +6558,11 @@ graph [
     polarity -0.9736842105263158
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 505
@@ -4551,7 +6571,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 506
@@ -4560,7 +6584,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 507
@@ -4569,7 +6597,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 508
@@ -4578,7 +6610,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 509
@@ -4587,7 +6623,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 510
@@ -4596,7 +6636,11 @@ graph [
     polarity -0.9955898566703418
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 511
@@ -4605,7 +6649,11 @@ graph [
     polarity 0.8666666666666667
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 512
@@ -4614,7 +6662,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 513
@@ -4623,7 +6675,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 514
@@ -4632,7 +6688,11 @@ graph [
     polarity -0.9344262295081968
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 515
@@ -4641,7 +6701,11 @@ graph [
     polarity 0.6345177664974619
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 516
@@ -4650,7 +6714,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 517
@@ -4659,7 +6727,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 518
@@ -4668,7 +6740,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 519
@@ -4677,7 +6753,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 520
@@ -4686,7 +6766,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 521
@@ -4695,7 +6779,11 @@ graph [
     polarity -0.5
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 522
@@ -4704,7 +6792,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 523
@@ -4713,7 +6805,11 @@ graph [
     polarity 0.5420289855072464
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 524
@@ -4722,7 +6818,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 525
@@ -4731,7 +6831,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 526
@@ -4740,7 +6844,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 527
@@ -4749,7 +6857,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 528
@@ -4758,7 +6870,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 529
@@ -4767,7 +6883,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 530
@@ -4776,7 +6896,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 531
@@ -4785,7 +6909,11 @@ graph [
     polarity -0.9828080229226361
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 532
@@ -4794,7 +6922,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 533
@@ -4803,7 +6935,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 534
@@ -4812,7 +6948,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 535
@@ -4821,7 +6961,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 536
@@ -4830,7 +6974,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 537
@@ -4839,7 +6987,11 @@ graph [
     polarity -0.9947089947089947
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 538
@@ -4848,7 +7000,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 539
@@ -4857,7 +7013,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 540
@@ -4866,7 +7026,11 @@ graph [
     polarity -0.9411764705882353
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 541
@@ -4875,7 +7039,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 542
@@ -4884,7 +7052,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 543
@@ -4893,7 +7065,11 @@ graph [
     polarity 0.45454545454545453
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 544
@@ -4902,7 +7078,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 545
@@ -4911,7 +7091,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 546
@@ -4920,7 +7104,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 547
@@ -4929,7 +7117,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 548
@@ -4938,7 +7130,11 @@ graph [
     polarity -0.7142857142857143
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 549
@@ -4947,7 +7143,11 @@ graph [
     polarity -0.9838709677419355
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 550
@@ -4956,7 +7156,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 551
@@ -4965,7 +7169,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 552
@@ -4974,7 +7182,11 @@ graph [
     polarity -0.9696969696969697
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 553
@@ -4983,7 +7195,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 554
@@ -4992,7 +7208,11 @@ graph [
     polarity -0.9753086419753086
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 555
@@ -5001,7 +7221,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 556
@@ -5010,7 +7234,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 557
@@ -5019,7 +7247,11 @@ graph [
     polarity -0.9809160305343512
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 558
@@ -5028,7 +7260,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 559
@@ -5037,7 +7273,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 560
@@ -5046,7 +7286,11 @@ graph [
     polarity 0.6115702479338843
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 561
@@ -5055,7 +7299,11 @@ graph [
     polarity -0.25
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 562
@@ -5064,7 +7312,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 563
@@ -5073,7 +7325,11 @@ graph [
     polarity -0.971830985915493
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 564
@@ -5082,7 +7338,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 565
@@ -5091,7 +7351,11 @@ graph [
     polarity -0.9701492537313433
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 566
@@ -5100,7 +7364,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 567
@@ -5109,7 +7377,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 568
@@ -5118,7 +7390,11 @@ graph [
     polarity -0.9898819561551433
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 569
@@ -5127,7 +7403,11 @@ graph [
     polarity -0.9473684210526315
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 570
@@ -5136,7 +7416,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 571
@@ -5145,7 +7429,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 572
@@ -5154,7 +7442,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 573
@@ -5163,7 +7455,11 @@ graph [
     polarity 0.4074074074074074
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 574
@@ -5172,7 +7468,11 @@ graph [
     polarity 0.7702702702702703
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 575
@@ -5181,7 +7481,11 @@ graph [
     polarity 0.8032786885245902
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 576
@@ -5190,7 +7494,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 577
@@ -5199,7 +7507,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 578
@@ -5208,7 +7520,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 579
@@ -5217,7 +7533,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 580
@@ -5226,7 +7546,11 @@ graph [
     polarity 0.813953488372093
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 581
@@ -5235,7 +7559,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 582
@@ -5244,7 +7572,11 @@ graph [
     polarity 0.5882352941176471
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 583
@@ -5253,7 +7585,11 @@ graph [
     polarity -0.985239852398524
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 584
@@ -5262,7 +7598,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 585
@@ -5271,7 +7611,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 586
@@ -5280,7 +7624,11 @@ graph [
     polarity -0.9956709956709957
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 587
@@ -5289,7 +7637,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 588
@@ -5298,7 +7650,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 589
@@ -5307,7 +7663,11 @@ graph [
     polarity -0.9959839357429718
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 590
@@ -5316,7 +7676,11 @@ graph [
     polarity -0.9166666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 591
@@ -5325,7 +7689,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 592
@@ -5334,7 +7702,11 @@ graph [
     polarity 0.3103448275862069
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 593
@@ -5343,7 +7715,11 @@ graph [
     polarity -0.9411764705882353
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 594
@@ -5352,7 +7728,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 595
@@ -5361,7 +7741,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 596
@@ -5370,7 +7754,11 @@ graph [
     polarity -0.9878234398782344
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 597
@@ -5379,7 +7767,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 598
@@ -5388,7 +7780,11 @@ graph [
     polarity -0.6842105263157895
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 599
@@ -5397,7 +7793,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 600
@@ -5406,7 +7806,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 601
@@ -5415,7 +7819,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 602
@@ -5424,7 +7832,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 603
@@ -5433,7 +7845,11 @@ graph [
     polarity -0.9
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 604
@@ -5442,7 +7858,11 @@ graph [
     polarity -0.9090909090909091
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 605
@@ -5451,7 +7871,11 @@ graph [
     polarity 0.4838709677419355
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 606
@@ -5460,7 +7884,11 @@ graph [
     polarity -0.9968
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 607
@@ -5469,7 +7897,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 608
@@ -5478,7 +7910,11 @@ graph [
     polarity -0.9655172413793104
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 609
@@ -5487,7 +7923,11 @@ graph [
     polarity -0.9888579387186629
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 610
@@ -5496,7 +7936,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 611
@@ -5505,7 +7949,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 612
@@ -5514,7 +7962,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 613
@@ -5523,7 +7975,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 614
@@ -5532,7 +7988,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 615
@@ -5541,7 +8001,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 616
@@ -5550,7 +8014,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 617
@@ -5559,7 +8027,11 @@ graph [
     polarity 0.42857142857142855
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 618
@@ -5568,7 +8040,11 @@ graph [
     polarity -0.989247311827957
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 619
@@ -5577,7 +8053,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 620
@@ -5586,7 +8066,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 621
@@ -5595,7 +8079,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 622
@@ -5604,7 +8092,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 623
@@ -5613,7 +8105,11 @@ graph [
     polarity -0.18181818181818182
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 624
@@ -5622,7 +8118,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 625
@@ -5631,7 +8131,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 626
@@ -5640,7 +8144,11 @@ graph [
     polarity 0.52
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 627
@@ -5649,7 +8157,11 @@ graph [
     polarity -0.9644970414201184
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 628
@@ -5658,7 +8170,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 629
@@ -5667,7 +8183,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 630
@@ -5676,7 +8196,11 @@ graph [
     polarity -0.9884393063583815
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 631
@@ -5685,7 +8209,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 632
@@ -5694,7 +8222,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 633
@@ -5703,7 +8235,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 634
@@ -5712,7 +8248,11 @@ graph [
     polarity 0.68
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 635
@@ -5721,7 +8261,11 @@ graph [
     polarity -0.8333333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 636
@@ -5730,7 +8274,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 637
@@ -5739,7 +8287,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 638
@@ -5748,7 +8300,11 @@ graph [
     polarity 0.7272727272727273
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 639
@@ -5757,7 +8313,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 640
@@ -5766,7 +8326,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 641
@@ -5775,7 +8339,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 642
@@ -5784,7 +8352,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 643
@@ -5793,7 +8365,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 644
@@ -5802,7 +8378,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 645
@@ -5811,7 +8391,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 646
@@ -5820,7 +8404,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 647
@@ -5829,7 +8417,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 648
@@ -5838,7 +8430,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 649
@@ -5847,7 +8443,11 @@ graph [
     polarity -0.9487179487179487
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 650
@@ -5856,7 +8456,11 @@ graph [
     polarity -0.9923954372623575
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 651
@@ -5865,7 +8469,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 652
@@ -5874,7 +8482,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 653
@@ -5883,7 +8495,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 654
@@ -5892,7 +8508,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 655
@@ -5901,7 +8521,11 @@ graph [
     polarity 0.9
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 656
@@ -5910,7 +8534,11 @@ graph [
     polarity -0.9696969696969697
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 657
@@ -5919,7 +8547,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 658
@@ -5928,7 +8560,11 @@ graph [
     polarity -0.9770114942528736
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 659
@@ -5937,7 +8573,11 @@ graph [
     polarity -0.92
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 660
@@ -5946,7 +8586,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 661
@@ -5955,7 +8599,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 662
@@ -5964,7 +8612,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 663
@@ -5973,7 +8625,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 664
@@ -5982,7 +8638,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 665
@@ -5991,7 +8651,11 @@ graph [
     polarity -0.9891500904159132
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 666
@@ -6000,7 +8664,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 667
@@ -6009,7 +8677,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 668
@@ -6018,7 +8690,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 669
@@ -6027,7 +8703,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 670
@@ -6036,7 +8716,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 671
@@ -6045,7 +8729,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 672
@@ -6054,7 +8742,11 @@ graph [
     polarity -0.9885714285714285
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 673
@@ -6063,7 +8755,11 @@ graph [
     polarity 0.7333333333333333
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 674
@@ -6072,7 +8768,11 @@ graph [
     polarity 0.5490196078431373
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 675
@@ -6081,7 +8781,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 676
@@ -6090,7 +8794,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 677
@@ -6099,7 +8807,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 678
@@ -6108,7 +8820,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 679
@@ -6117,7 +8833,11 @@ graph [
     polarity -0.9397590361445783
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 680
@@ -6126,7 +8846,11 @@ graph [
     polarity 0.42857142857142855
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 681
@@ -6135,7 +8859,11 @@ graph [
     polarity -0.9615384615384616
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 682
@@ -6144,7 +8872,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 683
@@ -6153,7 +8885,11 @@ graph [
     polarity -0.9988655700510494
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 684
@@ -6162,7 +8898,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 685
@@ -6171,7 +8911,11 @@ graph [
     polarity -0.9916405433646813
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 686
@@ -6180,7 +8924,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 687
@@ -6189,7 +8937,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 688
@@ -6198,7 +8950,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 689
@@ -6207,7 +8963,11 @@ graph [
     polarity 0.625
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 690
@@ -6216,7 +8976,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 691
@@ -6225,7 +8989,11 @@ graph [
     polarity -0.9655172413793104
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 692
@@ -6234,7 +9002,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 693
@@ -6243,7 +9015,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 694
@@ -6252,7 +9028,11 @@ graph [
     polarity -0.9919678714859438
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 695
@@ -6261,7 +9041,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 696
@@ -6270,7 +9054,11 @@ graph [
     polarity -0.9310344827586207
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 697
@@ -6279,7 +9067,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 698
@@ -6288,7 +9080,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 699
@@ -6297,7 +9093,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 700
@@ -6306,7 +9106,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 701
@@ -6315,7 +9119,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 702
@@ -6324,7 +9132,11 @@ graph [
     polarity -0.9466666666666667
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 703
@@ -6333,7 +9145,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 704
@@ -6342,7 +9158,11 @@ graph [
     polarity -0.9925650557620818
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 705
@@ -6351,7 +9171,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 706
@@ -6360,7 +9184,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 707
@@ -6369,7 +9197,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 708
@@ -6378,7 +9210,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 709
@@ -6387,7 +9223,11 @@ graph [
     polarity -0.9921976592977894
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 710
@@ -6396,7 +9236,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 711
@@ -6405,7 +9249,11 @@ graph [
     polarity 0.26666666666666666
     polarity_label 3
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 712
@@ -6414,7 +9262,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 713
@@ -6423,7 +9275,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 714
@@ -6432,7 +9288,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 715
@@ -6441,7 +9301,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 716
@@ -6450,7 +9314,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 717
@@ -6459,7 +9327,11 @@ graph [
     polarity -0.9855072463768116
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 718
@@ -6468,7 +9340,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 719
@@ -6477,7 +9353,11 @@ graph [
     polarity 0.8762886597938144
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 720
@@ -6486,7 +9366,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 721
@@ -6495,7 +9379,11 @@ graph [
     polarity -0.7777777777777778
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 722
@@ -6504,7 +9392,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 723
@@ -6513,7 +9405,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 724
@@ -6522,7 +9418,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 725
@@ -6531,7 +9431,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 726
@@ -6540,7 +9444,11 @@ graph [
     polarity -0.4
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 727
@@ -6549,7 +9457,11 @@ graph [
     polarity -0.9880043620501636
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 728
@@ -6558,7 +9470,11 @@ graph [
     polarity 0.2903225806451613
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 729
@@ -6567,7 +9483,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 730
@@ -6576,7 +9496,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 731
@@ -6585,7 +9509,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 732
@@ -6594,7 +9522,11 @@ graph [
     polarity -0.9789473684210527
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 733
@@ -6603,7 +9535,11 @@ graph [
     polarity -0.875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 734
@@ -6612,7 +9548,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 735
@@ -6621,7 +9561,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 736
@@ -6630,7 +9574,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 737
@@ -6639,7 +9587,11 @@ graph [
     polarity 0.4444444444444444
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 738
@@ -6648,7 +9600,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 739
@@ -6657,7 +9613,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 740
@@ -6666,7 +9626,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 741
@@ -6675,7 +9639,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 742
@@ -6684,7 +9652,11 @@ graph [
     polarity -0.9943342776203966
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 743
@@ -6693,7 +9665,11 @@ graph [
     polarity -0.9436619718309859
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 744
@@ -6702,7 +9678,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 745
@@ -6711,7 +9691,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 746
@@ -6720,7 +9704,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 747
@@ -6729,7 +9717,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 748
@@ -6738,7 +9730,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 749
@@ -6747,7 +9743,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 750
@@ -6756,7 +9756,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 751
@@ -6765,7 +9769,11 @@ graph [
     polarity -0.9245283018867925
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 752
@@ -6774,7 +9782,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 753
@@ -6783,7 +9795,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 754
@@ -6792,7 +9808,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 755
@@ -6801,7 +9821,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 756
@@ -6810,7 +9834,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 757
@@ -6819,7 +9847,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 758
@@ -6828,7 +9860,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 759
@@ -6837,7 +9873,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 760
@@ -6846,7 +9886,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 761
@@ -6855,7 +9899,11 @@ graph [
     polarity -0.9826086956521739
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 762
@@ -6864,7 +9912,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 763
@@ -6873,7 +9925,11 @@ graph [
     polarity -0.9733333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 764
@@ -6882,7 +9938,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 765
@@ -6891,7 +9951,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 766
@@ -6900,7 +9964,11 @@ graph [
     polarity -0.9787798408488063
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 767
@@ -6909,7 +9977,11 @@ graph [
     polarity -0.9902439024390244
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 768
@@ -6918,7 +9990,11 @@ graph [
     polarity -0.9655172413793104
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 769
@@ -6927,7 +10003,11 @@ graph [
     polarity -0.8947368421052632
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 770
@@ -6936,7 +10016,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 771
@@ -6945,7 +10029,11 @@ graph [
     polarity -0.9688385269121813
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 772
@@ -6954,7 +10042,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 773
@@ -6963,7 +10055,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 774
@@ -6972,7 +10068,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 775
@@ -6981,7 +10081,11 @@ graph [
     polarity -0.8260869565217391
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 776
@@ -6990,7 +10094,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 777
@@ -6999,7 +10107,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 778
@@ -7008,7 +10120,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 779
@@ -7017,7 +10133,11 @@ graph [
     polarity 0.6825396825396826
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 780
@@ -7026,7 +10146,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 781
@@ -7035,7 +10159,11 @@ graph [
     polarity -0.8666666666666667
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 782
@@ -7044,7 +10172,11 @@ graph [
     polarity -0.993006993006993
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 783
@@ -7053,7 +10185,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 784
@@ -7062,7 +10198,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 785
@@ -7071,7 +10211,11 @@ graph [
     polarity -0.8571428571428571
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 786
@@ -7080,7 +10224,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 787
@@ -7089,7 +10237,11 @@ graph [
     polarity -0.987012987012987
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 788
@@ -7098,7 +10250,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 789
@@ -7107,7 +10263,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 790
@@ -7116,7 +10276,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 791
@@ -7125,7 +10289,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 792
@@ -7134,7 +10302,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 793
@@ -7143,7 +10315,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 794
@@ -7152,7 +10328,11 @@ graph [
     polarity -0.9444444444444444
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 795
@@ -7161,7 +10341,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 796
@@ -7170,7 +10354,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 797
@@ -7179,7 +10367,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 798
@@ -7188,7 +10380,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 799
@@ -7197,7 +10393,11 @@ graph [
     polarity -0.9966887417218543
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 800
@@ -7206,7 +10406,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 801
@@ -7215,7 +10419,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 802
@@ -7224,7 +10432,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 803
@@ -7233,7 +10445,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 804
@@ -7242,7 +10458,11 @@ graph [
     polarity -0.9726027397260274
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 805
@@ -7251,7 +10471,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 806
@@ -7260,7 +10484,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 807
@@ -7269,7 +10497,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 808
@@ -7278,7 +10510,11 @@ graph [
     polarity 0.8947368421052632
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 809
@@ -7287,7 +10523,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 810
@@ -7296,7 +10536,11 @@ graph [
     polarity -0.9817351598173516
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 811
@@ -7305,7 +10549,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 812
@@ -7314,7 +10562,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 813
@@ -7323,7 +10575,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 814
@@ -7332,7 +10588,11 @@ graph [
     polarity -0.9841269841269841
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 815
@@ -7341,7 +10601,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 816
@@ -7350,7 +10614,11 @@ graph [
     polarity -0.8666666666666667
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 817
@@ -7359,7 +10627,11 @@ graph [
     polarity 0.6538461538461539
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 818
@@ -7368,7 +10640,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 819
@@ -7377,7 +10653,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 820
@@ -7386,7 +10666,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 821
@@ -7395,7 +10679,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 822
@@ -7404,7 +10692,11 @@ graph [
     polarity 0.375
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 823
@@ -7413,7 +10705,11 @@ graph [
     polarity -0.9803921568627451
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 824
@@ -7422,7 +10718,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 825
@@ -7431,7 +10731,11 @@ graph [
     polarity -0.9869281045751634
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 826
@@ -7440,7 +10744,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 827
@@ -7449,7 +10757,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 828
@@ -7458,7 +10770,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 829
@@ -7467,7 +10783,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 830
@@ -7476,7 +10796,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 831
@@ -7485,7 +10809,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 832
@@ -7494,7 +10822,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 833
@@ -7503,7 +10835,11 @@ graph [
     polarity -0.9875
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 834
@@ -7512,7 +10848,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 835
@@ -7521,7 +10861,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 836
@@ -7530,7 +10874,11 @@ graph [
     polarity -0.96875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 837
@@ -7539,7 +10887,11 @@ graph [
     polarity 0.6342857142857142
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 838
@@ -7548,7 +10900,11 @@ graph [
     polarity -0.975
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 839
@@ -7557,7 +10913,11 @@ graph [
     polarity -0.9389312977099237
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 840
@@ -7566,7 +10926,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 841
@@ -7575,7 +10939,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 842
@@ -7584,7 +10952,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 843
@@ -7593,7 +10965,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 844
@@ -7602,7 +10978,11 @@ graph [
     polarity 0.07692307692307693
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 845
@@ -7611,7 +10991,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 846
@@ -7620,7 +11004,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 847
@@ -7629,7 +11017,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 848
@@ -7638,7 +11030,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 849
@@ -7647,7 +11043,11 @@ graph [
     polarity -0.6
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 850
@@ -7656,7 +11056,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 851
@@ -7665,7 +11069,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 852
@@ -7674,7 +11082,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 853
@@ -7683,7 +11095,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 854
@@ -7692,7 +11108,11 @@ graph [
     polarity 0.25
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 855
@@ -7701,7 +11121,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 856
@@ -7710,7 +11134,11 @@ graph [
     polarity 0.6981132075471698
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 857
@@ -7719,7 +11147,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 858
@@ -7728,7 +11160,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 859
@@ -7737,7 +11173,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 860
@@ -7746,7 +11186,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 861
@@ -7755,7 +11199,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 862
@@ -7764,7 +11212,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 863
@@ -7773,7 +11225,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 864
@@ -7782,7 +11238,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 865
@@ -7791,7 +11251,11 @@ graph [
     polarity 0.40625
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 866
@@ -7800,7 +11264,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 867
@@ -7809,7 +11277,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 868
@@ -7818,7 +11290,11 @@ graph [
     polarity -0.971830985915493
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 869
@@ -7827,7 +11303,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 870
@@ -7836,7 +11316,11 @@ graph [
     polarity -0.6
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 871
@@ -7845,7 +11329,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 872
@@ -7854,7 +11342,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 873
@@ -7863,7 +11355,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 874
@@ -7872,7 +11368,11 @@ graph [
     polarity 0.9459459459459459
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 875
@@ -7881,7 +11381,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 876
@@ -7890,7 +11394,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 877
@@ -7899,7 +11407,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 878
@@ -7908,7 +11420,11 @@ graph [
     polarity -0.9854014598540146
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 879
@@ -7917,7 +11433,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 880
@@ -7926,7 +11446,11 @@ graph [
     polarity 0.42857142857142855
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 881
@@ -7935,7 +11459,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 882
@@ -7944,7 +11472,11 @@ graph [
     polarity -0.9354838709677419
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 883
@@ -7953,7 +11485,11 @@ graph [
     polarity -0.9936102236421726
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 884
@@ -7962,7 +11498,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 885
@@ -7971,7 +11511,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 886
@@ -7980,7 +11524,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 887
@@ -7989,7 +11537,11 @@ graph [
     polarity -0.9574468085106383
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 888
@@ -7998,7 +11550,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 889
@@ -8007,7 +11563,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 890
@@ -8016,7 +11576,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 891
@@ -8025,7 +11589,11 @@ graph [
     polarity 0.8333333333333334
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 892
@@ -8034,7 +11602,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 893
@@ -8043,7 +11615,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 894
@@ -8052,7 +11628,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 895
@@ -8061,7 +11641,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 896
@@ -8070,7 +11654,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 897
@@ -8079,7 +11667,11 @@ graph [
     polarity 0.6122448979591837
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 898
@@ -8088,7 +11680,11 @@ graph [
     polarity 0.25
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 899
@@ -8097,7 +11693,11 @@ graph [
     polarity -0.9090909090909091
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 900
@@ -8106,7 +11706,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 901
@@ -8115,7 +11719,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 902
@@ -8124,7 +11732,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 903
@@ -8133,7 +11745,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 904
@@ -8142,7 +11758,11 @@ graph [
     polarity 0.21428571428571427
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 905
@@ -8151,7 +11771,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 906
@@ -8160,7 +11784,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 907
@@ -8169,7 +11797,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 908
@@ -8178,7 +11810,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 909
@@ -8187,7 +11823,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 910
@@ -8196,7 +11836,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 911
@@ -8205,7 +11849,11 @@ graph [
     polarity 0.4444444444444444
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 912
@@ -8214,7 +11862,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 913
@@ -8223,7 +11875,11 @@ graph [
     polarity 0.6842105263157895
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 914
@@ -8232,7 +11888,11 @@ graph [
     polarity -0.9565217391304348
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 915
@@ -8241,7 +11901,11 @@ graph [
     polarity -0.875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 916
@@ -8250,7 +11914,11 @@ graph [
     polarity -0.9859154929577465
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 917
@@ -8259,7 +11927,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 918
@@ -8268,7 +11940,11 @@ graph [
     polarity 0.6086956521739131
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 919
@@ -8277,7 +11953,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 920
@@ -8286,7 +11966,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 921
@@ -8295,7 +11979,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 922
@@ -8304,7 +11992,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 923
@@ -8313,7 +12005,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 924
@@ -8322,7 +12018,11 @@ graph [
     polarity -0.971830985915493
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith -1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 925
@@ -8331,7 +12031,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 926
@@ -8340,7 +12044,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 927
@@ -8349,7 +12057,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 928
@@ -8358,7 +12070,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 929
@@ -8367,7 +12083,11 @@ graph [
     polarity -0.9692307692307692
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 930
@@ -8376,7 +12096,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 931
@@ -8385,7 +12109,11 @@ graph [
     polarity -0.983739837398374
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 932
@@ -8394,7 +12122,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 933
@@ -8403,7 +12135,11 @@ graph [
     polarity 0.8181818181818182
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 934
@@ -8412,7 +12148,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 935
@@ -8421,7 +12161,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 936
@@ -8430,7 +12174,11 @@ graph [
     polarity 0.75
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 937
@@ -8439,7 +12187,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 938
@@ -8448,7 +12200,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 939
@@ -8457,7 +12213,11 @@ graph [
     polarity 0.2222222222222222
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 940
@@ -8466,7 +12226,11 @@ graph [
     polarity -0.9904306220095693
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 941
@@ -8475,7 +12239,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 942
@@ -8484,7 +12252,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 943
@@ -8493,7 +12265,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 944
@@ -8502,7 +12278,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 945
@@ -8511,7 +12291,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 946
@@ -8520,7 +12304,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 947
@@ -8529,7 +12317,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 948
@@ -8538,7 +12330,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 949
@@ -8547,7 +12343,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 950
@@ -8556,7 +12356,11 @@ graph [
     polarity -0.9952830188679245
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 951
@@ -8565,7 +12369,11 @@ graph [
     polarity 0.75
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 952
@@ -8574,7 +12382,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 953
@@ -8583,7 +12395,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 954
@@ -8592,7 +12408,11 @@ graph [
     polarity 0.8857142857142857
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 955
@@ -8601,7 +12421,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 956
@@ -8610,7 +12434,11 @@ graph [
     polarity -0.9824561403508771
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 957
@@ -8619,7 +12447,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 958
@@ -8628,7 +12460,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 959
@@ -8637,7 +12473,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 960
@@ -8646,7 +12486,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 961
@@ -8655,7 +12499,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 962
@@ -8664,7 +12512,11 @@ graph [
     polarity 0.6470588235294118
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 963
@@ -8673,7 +12525,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 964
@@ -8682,7 +12538,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 965
@@ -8691,7 +12551,11 @@ graph [
     polarity -0.9726027397260274
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 966
@@ -8700,7 +12564,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 967
@@ -8709,7 +12577,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 968
@@ -8718,7 +12590,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 969
@@ -8727,7 +12603,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 970
@@ -8736,7 +12616,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 971
@@ -8745,7 +12629,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 972
@@ -8754,7 +12642,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 973
@@ -8763,7 +12655,11 @@ graph [
     polarity -0.974025974025974
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 974
@@ -8772,7 +12668,11 @@ graph [
     polarity -0.9722222222222222
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 975
@@ -8781,7 +12681,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 976
@@ -8790,7 +12694,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 977
@@ -8799,7 +12707,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 978
@@ -8808,7 +12720,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 979
@@ -8817,7 +12733,11 @@ graph [
     polarity -0.9814814814814815
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 980
@@ -8826,7 +12746,11 @@ graph [
     polarity 0.8260869565217391
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 981
@@ -8835,7 +12759,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 982
@@ -8844,7 +12772,11 @@ graph [
     polarity 0.8888888888888888
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 983
@@ -8853,7 +12785,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 984
@@ -8862,7 +12798,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 985
@@ -8871,7 +12811,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 986
@@ -8880,7 +12824,11 @@ graph [
     polarity -0.9896907216494846
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 987
@@ -8889,7 +12837,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 988
@@ -8898,7 +12850,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 989
@@ -8907,7 +12863,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 990
@@ -8916,7 +12876,11 @@ graph [
     polarity -0.9772727272727273
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 991
@@ -8925,7 +12889,11 @@ graph [
     polarity 0.1724137931034483
     polarity_label 2
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 992
@@ -8934,7 +12902,11 @@ graph [
     polarity -0.8888888888888888
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 993
@@ -8943,7 +12915,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 994
@@ -8952,7 +12928,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 995
@@ -8961,7 +12941,11 @@ graph [
     polarity -0.9770114942528736
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 996
@@ -8970,7 +12954,11 @@ graph [
     polarity -0.9882352941176471
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 997
@@ -8979,7 +12967,11 @@ graph [
     polarity -0.9649122807017544
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 998
@@ -8988,7 +12980,11 @@ graph [
     polarity -0.9743589743589743
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 999
@@ -8997,7 +12993,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1000
@@ -9006,7 +13006,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1001
@@ -9015,7 +13019,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1002
@@ -9024,7 +13032,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1003
@@ -9033,7 +13045,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1004
@@ -9042,7 +13058,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1005
@@ -9051,7 +13071,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1006
@@ -9060,7 +13084,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1007
@@ -9069,7 +13097,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1008
@@ -9078,7 +13110,11 @@ graph [
     polarity -0.9672131147540983
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1009
@@ -9087,7 +13123,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1010
@@ -9096,7 +13136,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1011
@@ -9105,7 +13149,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1012
@@ -9114,7 +13162,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1013
@@ -9123,7 +13175,11 @@ graph [
     polarity 0.6296296296296297
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1014
@@ -9132,7 +13188,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1015
@@ -9141,7 +13201,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1016
@@ -9150,7 +13214,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1017
@@ -9159,7 +13227,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1018
@@ -9168,7 +13240,11 @@ graph [
     polarity -0.9789473684210527
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1019
@@ -9177,7 +13253,11 @@ graph [
     polarity -0.9259259259259259
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1020
@@ -9186,7 +13266,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1021
@@ -9195,7 +13279,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1022
@@ -9204,7 +13292,11 @@ graph [
     polarity -0.986013986013986
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1023
@@ -9213,7 +13305,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1024
@@ -9222,7 +13318,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1025
@@ -9231,7 +13331,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1026
@@ -9240,7 +13344,11 @@ graph [
     polarity -0.9854545454545455
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1027
@@ -9249,7 +13357,11 @@ graph [
     polarity -0.9801980198019802
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1028
@@ -9258,7 +13370,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1029
@@ -9267,7 +13383,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1030
@@ -9276,7 +13396,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1031
@@ -9285,7 +13409,11 @@ graph [
     polarity -0.9854014598540146
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1032
@@ -9294,7 +13422,11 @@ graph [
     polarity -0.972027972027972
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1033
@@ -9303,7 +13435,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1034
@@ -9312,7 +13448,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1035
@@ -9321,7 +13461,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1036
@@ -9330,7 +13474,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1037
@@ -9339,7 +13487,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1038
@@ -9348,7 +13500,11 @@ graph [
     polarity -0.9957446808510638
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1039
@@ -9357,7 +13513,11 @@ graph [
     polarity -0.9748427672955975
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1040
@@ -9366,7 +13526,11 @@ graph [
     polarity 0.7037037037037037
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1041
@@ -9375,7 +13539,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1042
@@ -9384,7 +13552,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1043
@@ -9393,7 +13565,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1044
@@ -9402,7 +13578,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1045
@@ -9411,7 +13591,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1046
@@ -9420,7 +13604,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1047
@@ -9429,7 +13617,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1048
@@ -9438,7 +13630,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1049
@@ -9447,7 +13643,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1050
@@ -9456,7 +13656,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1051
@@ -9465,7 +13669,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1052
@@ -9474,7 +13682,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1053
@@ -9483,7 +13695,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1054
@@ -9492,7 +13708,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1055
@@ -9501,7 +13721,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1056
@@ -9510,7 +13734,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1057
@@ -9519,7 +13747,11 @@ graph [
     polarity 0.8666666666666667
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1058
@@ -9528,7 +13760,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1059
@@ -9537,7 +13773,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1060
@@ -9546,7 +13786,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1061
@@ -9555,7 +13799,11 @@ graph [
     polarity -0.98989898989899
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1062
@@ -9564,7 +13812,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1063
@@ -9573,7 +13825,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1064
@@ -9582,7 +13838,11 @@ graph [
     polarity -0.14285714285714285
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1065
@@ -9591,7 +13851,11 @@ graph [
     polarity 0.6923076923076923
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1066
@@ -9600,7 +13864,11 @@ graph [
     polarity -0.2
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1067
@@ -9609,7 +13877,11 @@ graph [
     polarity -0.9781818181818182
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1068
@@ -9618,7 +13890,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1069
@@ -9627,7 +13903,11 @@ graph [
     polarity 0.5314685314685315
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1070
@@ -9636,7 +13916,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1071
@@ -9645,7 +13929,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1072
@@ -9654,7 +13942,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1073
@@ -9663,7 +13955,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1074
@@ -9672,7 +13968,11 @@ graph [
     polarity -0.9622641509433962
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1075
@@ -9681,7 +13981,11 @@ graph [
     polarity 0.6610169491525424
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1076
@@ -9690,7 +13994,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1077
@@ -9699,7 +14007,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1078
@@ -9708,7 +14020,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1079
@@ -9717,7 +14033,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1080
@@ -9726,7 +14046,11 @@ graph [
     polarity -0.8571428571428571
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1081
@@ -9735,7 +14059,11 @@ graph [
     polarity 0.7272727272727273
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1082
@@ -9744,7 +14072,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1083
@@ -9753,7 +14085,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1084
@@ -9762,7 +14098,11 @@ graph [
     polarity -0.956989247311828
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1085
@@ -9771,7 +14111,11 @@ graph [
     polarity -0.9545454545454546
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1086
@@ -9780,7 +14124,11 @@ graph [
     polarity -0.9354838709677419
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1087
@@ -9789,7 +14137,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1088
@@ -9798,7 +14150,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1089
@@ -9807,7 +14163,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1090
@@ -9816,7 +14176,11 @@ graph [
     polarity -0.625
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1091
@@ -9825,7 +14189,11 @@ graph [
     polarity -0.8333333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1092
@@ -9834,7 +14202,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1093
@@ -9843,7 +14215,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1094
@@ -9852,7 +14228,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1095
@@ -9861,7 +14241,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1096
@@ -9870,7 +14254,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1097
@@ -9879,7 +14267,11 @@ graph [
     polarity 0.4
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1098
@@ -9888,7 +14280,11 @@ graph [
     polarity 0.4
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1099
@@ -9897,7 +14293,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1100
@@ -9906,7 +14306,11 @@ graph [
     polarity -0.9047619047619048
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1101
@@ -9915,7 +14319,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1102
@@ -9924,7 +14332,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1103
@@ -9933,7 +14345,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1104
@@ -9942,7 +14358,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1105
@@ -9951,7 +14371,11 @@ graph [
     polarity 0.3770491803278688
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1106
@@ -9960,7 +14384,11 @@ graph [
     polarity 0.782608695652174
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1107
@@ -9969,7 +14397,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1108
@@ -9978,7 +14410,11 @@ graph [
     polarity -0.9521531100478469
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1109
@@ -9987,7 +14423,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1110
@@ -9996,7 +14436,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1111
@@ -10005,7 +14449,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1112
@@ -10014,7 +14462,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1113
@@ -10023,7 +14475,11 @@ graph [
     polarity -0.9454545454545454
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1114
@@ -10032,7 +14488,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1115
@@ -10041,7 +14501,11 @@ graph [
     polarity -0.9310344827586207
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1116
@@ -10050,7 +14514,11 @@ graph [
     polarity -0.9743589743589743
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1117
@@ -10059,7 +14527,11 @@ graph [
     polarity -0.9545454545454546
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1118
@@ -10068,7 +14540,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1119
@@ -10077,7 +14553,11 @@ graph [
     polarity -0.7777777777777778
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1120
@@ -10086,7 +14566,11 @@ graph [
     polarity -0.99375
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1121
@@ -10095,7 +14579,11 @@ graph [
     polarity 0.765625
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1122
@@ -10104,7 +14592,11 @@ graph [
     polarity 0.6190476190476191
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1123
@@ -10113,7 +14605,11 @@ graph [
     polarity -0.8461538461538461
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1124
@@ -10122,7 +14618,11 @@ graph [
     polarity -0.9936808846761453
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1125
@@ -10131,7 +14631,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1126
@@ -10140,7 +14644,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1127
@@ -10149,7 +14657,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1128
@@ -10158,7 +14670,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1129
@@ -10167,7 +14683,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1130
@@ -10176,7 +14696,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1131
@@ -10185,7 +14709,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1132
@@ -10194,7 +14722,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1133
@@ -10203,7 +14735,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1134
@@ -10212,7 +14748,11 @@ graph [
     polarity 0.8333333333333334
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1135
@@ -10221,7 +14761,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1136
@@ -10230,7 +14774,11 @@ graph [
     polarity 0.42857142857142855
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1137
@@ -10239,7 +14787,11 @@ graph [
     polarity -0.9591836734693877
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1138
@@ -10248,7 +14800,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1139
@@ -10257,7 +14813,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1140
@@ -10266,7 +14826,11 @@ graph [
     polarity 0.6987951807228916
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1141
@@ -10275,7 +14839,11 @@ graph [
     polarity 0.8095238095238095
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1142
@@ -10284,7 +14852,11 @@ graph [
     polarity -0.9907834101382489
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1143
@@ -10293,7 +14865,11 @@ graph [
     polarity 0.6923076923076923
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1144
@@ -10302,7 +14878,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1145
@@ -10311,7 +14891,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1146
@@ -10320,7 +14904,11 @@ graph [
     polarity 0.8461538461538461
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1147
@@ -10329,7 +14917,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1148
@@ -10338,7 +14930,11 @@ graph [
     polarity -0.6923076923076923
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1149
@@ -10347,7 +14943,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1150
@@ -10356,7 +14956,11 @@ graph [
     polarity 0.8064516129032258
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1151
@@ -10365,7 +14969,11 @@ graph [
     polarity -0.8333333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1152
@@ -10374,7 +14982,11 @@ graph [
     polarity -0.9951690821256038
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1153
@@ -10383,7 +14995,11 @@ graph [
     polarity -0.9896013864818024
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1154
@@ -10392,7 +15008,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1155
@@ -10401,7 +15021,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1156
@@ -10410,7 +15034,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1157
@@ -10419,7 +15047,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1158
@@ -10428,7 +15060,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1159
@@ -10437,7 +15073,11 @@ graph [
     polarity -0.9924812030075187
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1160
@@ -10446,7 +15086,11 @@ graph [
     polarity -0.96875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1161
@@ -10455,7 +15099,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1162
@@ -10464,7 +15112,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1163
@@ -10473,7 +15125,11 @@ graph [
     polarity 0.2857142857142857
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1164
@@ -10482,7 +15138,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1165
@@ -10491,7 +15151,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1166
@@ -10500,7 +15164,11 @@ graph [
     polarity -0.863013698630137
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1167
@@ -10509,7 +15177,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1168
@@ -10518,7 +15190,11 @@ graph [
     polarity -0.9944444444444445
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1169
@@ -10527,7 +15203,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1170
@@ -10536,7 +15216,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1171
@@ -10545,7 +15229,11 @@ graph [
     polarity 0.5227272727272727
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1172
@@ -10554,7 +15242,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1173
@@ -10563,7 +15255,11 @@ graph [
     polarity -0.9655172413793104
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1174
@@ -10572,7 +15268,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1175
@@ -10581,7 +15281,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1176
@@ -10590,7 +15294,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1177
@@ -10599,7 +15307,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1178
@@ -10608,7 +15320,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1179
@@ -10617,7 +15333,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1180
@@ -10626,7 +15346,11 @@ graph [
     polarity -0.9736842105263158
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1181
@@ -10635,7 +15359,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1182
@@ -10644,7 +15372,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1183
@@ -10653,7 +15385,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1184
@@ -10662,7 +15398,11 @@ graph [
     polarity -0.96
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1185
@@ -10671,7 +15411,11 @@ graph [
     polarity -0.9912280701754386
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1186
@@ -10680,7 +15424,11 @@ graph [
     polarity -0.84
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1187
@@ -10689,7 +15437,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1188
@@ -10698,7 +15450,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1189
@@ -10707,7 +15463,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1190
@@ -10716,7 +15476,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1191
@@ -10725,7 +15489,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1192
@@ -10734,7 +15502,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1193
@@ -10743,7 +15515,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1194
@@ -10752,7 +15528,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1195
@@ -10761,7 +15541,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1196
@@ -10770,7 +15554,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1197
@@ -10779,7 +15567,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1198
@@ -10788,7 +15580,11 @@ graph [
     polarity -0.9724409448818898
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1199
@@ -10797,7 +15593,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1200
@@ -10806,7 +15606,11 @@ graph [
     polarity -0.9771428571428571
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1201
@@ -10815,7 +15619,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1202
@@ -10824,7 +15632,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1203
@@ -10833,7 +15645,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1204
@@ -10842,7 +15658,11 @@ graph [
     polarity 0.375
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1205
@@ -10851,7 +15671,11 @@ graph [
     polarity -0.9375
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1206
@@ -10860,7 +15684,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1207
@@ -10869,7 +15697,11 @@ graph [
     polarity 0.5151515151515151
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1208
@@ -10878,7 +15710,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1209
@@ -10887,7 +15723,11 @@ graph [
     polarity 0.1875
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1210
@@ -10896,7 +15736,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1211
@@ -10905,7 +15749,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1212
@@ -10914,7 +15762,11 @@ graph [
     polarity -0.95
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1213
@@ -10923,7 +15775,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1214
@@ -10932,7 +15788,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1215
@@ -10941,7 +15801,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1216
@@ -10950,7 +15814,11 @@ graph [
     polarity -0.9824561403508771
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1217
@@ -10959,7 +15827,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1218
@@ -10968,7 +15840,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1219
@@ -10977,7 +15853,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1220
@@ -10986,7 +15866,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1221
@@ -10995,7 +15879,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1222
@@ -11004,7 +15892,11 @@ graph [
     polarity 0.6732673267326733
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1223
@@ -11013,7 +15905,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1224
@@ -11022,7 +15918,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1225
@@ -11031,7 +15931,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1226
@@ -11040,7 +15944,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1227
@@ -11049,7 +15957,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1228
@@ -11058,7 +15970,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1229
@@ -11067,7 +15983,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1230
@@ -11076,7 +15996,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1231
@@ -11085,7 +16009,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1232
@@ -11094,7 +16022,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith -1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1233
@@ -11103,7 +16035,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1234
@@ -11112,7 +16048,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1235
@@ -11121,7 +16061,11 @@ graph [
     polarity -0.9767441860465116
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1236
@@ -11130,7 +16074,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1237
@@ -11139,7 +16087,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1238
@@ -11148,7 +16100,11 @@ graph [
     polarity 0.3939393939393939
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1239
@@ -11157,7 +16113,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1240
@@ -11166,7 +16126,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1241
@@ -11175,7 +16139,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1242
@@ -11184,7 +16152,11 @@ graph [
     polarity -0.9166666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1243
@@ -11193,7 +16165,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1244
@@ -11202,7 +16178,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1245
@@ -11211,7 +16191,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1246
@@ -11220,7 +16204,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1247
@@ -11229,7 +16217,11 @@ graph [
     polarity 0.8
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1248
@@ -11238,7 +16230,11 @@ graph [
     polarity -0.9512195121951219
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1249
@@ -11247,7 +16243,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1250
@@ -11256,7 +16256,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1251
@@ -11265,7 +16269,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1252
@@ -11274,7 +16282,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1253
@@ -11283,7 +16295,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1254
@@ -11292,7 +16308,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1255
@@ -11301,7 +16321,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1256
@@ -11310,7 +16334,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1257
@@ -11319,7 +16347,11 @@ graph [
     polarity -0.9878787878787879
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1258
@@ -11328,7 +16360,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1259
@@ -11337,7 +16373,11 @@ graph [
     polarity 0.85
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1260
@@ -11346,7 +16386,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1261
@@ -11355,7 +16399,11 @@ graph [
     polarity 0.75
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1262
@@ -11364,7 +16412,11 @@ graph [
     polarity -0.9646017699115044
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1263
@@ -11373,7 +16425,11 @@ graph [
     polarity 0.5737704918032787
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1264
@@ -11382,7 +16438,11 @@ graph [
     polarity 0.7049180327868853
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1265
@@ -11391,7 +16451,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1266
@@ -11400,7 +16464,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1267
@@ -11409,7 +16477,11 @@ graph [
     polarity -0.9583333333333334
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1268
@@ -11418,7 +16490,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1269
@@ -11427,7 +16503,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1270
@@ -11436,7 +16516,11 @@ graph [
     polarity -0.9890710382513661
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1271
@@ -11445,7 +16529,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1272
@@ -11454,7 +16542,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1273
@@ -11463,7 +16555,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1274
@@ -11472,7 +16568,11 @@ graph [
     polarity -0.971830985915493
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1275
@@ -11481,7 +16581,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1276
@@ -11490,7 +16594,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1277
@@ -11499,7 +16607,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1278
@@ -11508,7 +16620,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1279
@@ -11517,7 +16633,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1280
@@ -11526,7 +16646,11 @@ graph [
     polarity -0.9747899159663865
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1281
@@ -11535,7 +16659,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1282
@@ -11544,7 +16672,11 @@ graph [
     polarity -0.9900497512437811
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1283
@@ -11553,7 +16685,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1284
@@ -11562,7 +16698,11 @@ graph [
     polarity -0.38461538461538464
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1285
@@ -11571,7 +16711,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1286
@@ -11580,7 +16724,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1287
@@ -11589,7 +16737,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1288
@@ -11598,7 +16750,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1289
@@ -11607,7 +16763,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1290
@@ -11616,7 +16776,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1291
@@ -11625,7 +16789,11 @@ graph [
     polarity 0.25
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1292
@@ -11634,7 +16802,11 @@ graph [
     polarity -0.9914893617021276
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1293
@@ -11643,7 +16815,11 @@ graph [
     polarity -0.8181818181818182
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1294
@@ -11652,7 +16828,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1295
@@ -11661,7 +16841,11 @@ graph [
     polarity -0.9826086956521739
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1296
@@ -11670,7 +16854,11 @@ graph [
     polarity -0.9892183288409704
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1297
@@ -11679,7 +16867,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1298
@@ -11688,7 +16880,11 @@ graph [
     polarity 0.5384615384615384
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1299
@@ -11697,7 +16893,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1300
@@ -11706,7 +16906,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1301
@@ -11715,7 +16919,11 @@ graph [
     polarity -0.9888888888888889
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith -1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1302
@@ -11724,7 +16932,11 @@ graph [
     polarity -0.96
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1303
@@ -11733,7 +16945,11 @@ graph [
     polarity -0.9874213836477987
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1304
@@ -11742,7 +16958,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1305
@@ -11751,7 +16971,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1306
@@ -11760,7 +16984,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1307
@@ -11769,7 +16997,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1308
@@ -11778,7 +17010,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1309
@@ -11787,7 +17023,11 @@ graph [
     polarity -0.9925650557620818
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1310
@@ -11796,7 +17036,11 @@ graph [
     polarity 0.5905511811023622
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1311
@@ -11805,7 +17049,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1312
@@ -11814,7 +17062,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1313
@@ -11823,7 +17075,11 @@ graph [
     polarity -0.75
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1314
@@ -11832,7 +17088,11 @@ graph [
     polarity -0.972972972972973
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1315
@@ -11841,7 +17101,11 @@ graph [
     polarity -0.9897959183673469
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1316
@@ -11850,7 +17114,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1317
@@ -11859,7 +17127,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1318
@@ -11868,7 +17140,11 @@ graph [
     polarity -0.9859154929577465
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1319
@@ -11877,7 +17153,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1320
@@ -11886,7 +17166,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1321
@@ -11895,7 +17179,11 @@ graph [
     polarity -0.9941860465116279
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1322
@@ -11904,7 +17192,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1323
@@ -11913,7 +17205,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1324
@@ -11922,7 +17218,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1325
@@ -11931,7 +17231,11 @@ graph [
     polarity -0.8571428571428571
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1326
@@ -11940,7 +17244,11 @@ graph [
     polarity 0.5217391304347826
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1327
@@ -11949,7 +17257,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1328
@@ -11958,7 +17270,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1329
@@ -11967,7 +17283,11 @@ graph [
     polarity -0.7692307692307693
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1330
@@ -11976,7 +17296,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1331
@@ -11985,7 +17309,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1332
@@ -11994,7 +17322,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1333
@@ -12003,7 +17335,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1334
@@ -12012,7 +17348,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1335
@@ -12021,7 +17361,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1336
@@ -12030,7 +17374,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1337
@@ -12039,7 +17387,11 @@ graph [
     polarity -0.92
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1338
@@ -12048,7 +17400,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1339
@@ -12057,7 +17413,11 @@ graph [
     polarity -0.9853479853479854
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1340
@@ -12066,7 +17426,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1341
@@ -12075,7 +17439,11 @@ graph [
     polarity -0.9683794466403162
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1342
@@ -12084,7 +17452,11 @@ graph [
     polarity 0.9
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1343
@@ -12093,7 +17465,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1344
@@ -12102,7 +17478,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1345
@@ -12111,7 +17491,11 @@ graph [
     polarity -0.9885057471264368
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1346
@@ -12120,7 +17504,11 @@ graph [
     polarity -0.9972714870395635
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1347
@@ -12129,7 +17517,11 @@ graph [
     polarity -0.9428571428571428
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1348
@@ -12138,7 +17530,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1349
@@ -12147,7 +17543,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1350
@@ -12156,7 +17556,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1351
@@ -12165,7 +17569,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1352
@@ -12174,7 +17582,11 @@ graph [
     polarity -0.9166666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1353
@@ -12183,7 +17595,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1354
@@ -12192,7 +17608,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1355
@@ -12201,7 +17621,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1356
@@ -12210,7 +17634,11 @@ graph [
     polarity 0.7105263157894737
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1357
@@ -12219,7 +17647,11 @@ graph [
     polarity -0.9545454545454546
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1358
@@ -12228,7 +17660,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1359
@@ -12237,7 +17673,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1360
@@ -12246,7 +17686,11 @@ graph [
     polarity -0.7142857142857143
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1361
@@ -12255,7 +17699,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1362
@@ -12264,7 +17712,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1363
@@ -12273,7 +17725,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1364
@@ -12282,7 +17738,11 @@ graph [
     polarity -0.9111111111111111
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1365
@@ -12291,7 +17751,11 @@ graph [
     polarity -0.9916317991631799
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1366
@@ -12300,7 +17764,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1367
@@ -12309,7 +17777,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1368
@@ -12318,7 +17790,11 @@ graph [
     polarity 0.42857142857142855
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1369
@@ -12327,7 +17803,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1370
@@ -12336,7 +17816,11 @@ graph [
     polarity -0.9826086956521739
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1371
@@ -12345,7 +17829,11 @@ graph [
     polarity -0.14814814814814814
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1372
@@ -12354,7 +17842,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1373
@@ -12363,7 +17855,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1374
@@ -12372,7 +17868,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1375
@@ -12381,7 +17881,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1376
@@ -12390,7 +17894,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1377
@@ -12399,7 +17907,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1378
@@ -12408,7 +17920,11 @@ graph [
     polarity -0.9175257731958762
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1379
@@ -12417,7 +17933,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1380
@@ -12426,7 +17946,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1381
@@ -12435,7 +17959,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1382
@@ -12444,7 +17972,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1383
@@ -12453,7 +17985,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1384
@@ -12462,7 +17998,11 @@ graph [
     polarity -0.9876352395672334
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1385
@@ -12471,7 +18011,11 @@ graph [
     polarity -0.8888888888888888
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1386
@@ -12480,7 +18024,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1387
@@ -12489,7 +18037,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1388
@@ -12498,7 +18050,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1389
@@ -12507,7 +18063,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1390
@@ -12516,7 +18076,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1391
@@ -12525,7 +18089,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1392
@@ -12534,7 +18102,11 @@ graph [
     polarity -0.989247311827957
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1393
@@ -12543,7 +18115,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1394
@@ -12552,7 +18128,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1395
@@ -12561,7 +18141,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1396
@@ -12570,7 +18154,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1397
@@ -12579,7 +18167,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1398
@@ -12588,7 +18180,11 @@ graph [
     polarity -0.9512195121951219
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1399
@@ -12597,7 +18193,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1400
@@ -12606,7 +18206,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1401
@@ -12615,7 +18219,11 @@ graph [
     polarity -0.976
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1402
@@ -12624,7 +18232,11 @@ graph [
     polarity -0.8214285714285714
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1403
@@ -12633,7 +18245,11 @@ graph [
     polarity 0.7333333333333333
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1404
@@ -12642,7 +18258,11 @@ graph [
     polarity -0.9877300613496932
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1405
@@ -12651,7 +18271,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1406
@@ -12660,7 +18284,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1407
@@ -12669,7 +18297,11 @@ graph [
     polarity -0.9775280898876404
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1408
@@ -12678,7 +18310,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1409
@@ -12687,7 +18323,11 @@ graph [
     polarity 0.42857142857142855
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1410
@@ -12696,7 +18336,11 @@ graph [
     polarity -0.9797979797979798
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1411
@@ -12705,7 +18349,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1412
@@ -12714,7 +18362,11 @@ graph [
     polarity 0.5384615384615384
     polarity_label 3
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1413
@@ -12723,7 +18375,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1414
@@ -12732,7 +18388,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1415
@@ -12741,7 +18401,11 @@ graph [
     polarity -0.043478260869565216
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1416
@@ -12750,7 +18414,11 @@ graph [
     polarity -0.9810126582278481
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1417
@@ -12759,7 +18427,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1418
@@ -12768,7 +18440,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1419
@@ -12777,7 +18453,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1420
@@ -12786,7 +18466,11 @@ graph [
     polarity 0.7647058823529411
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1421
@@ -12795,7 +18479,11 @@ graph [
     polarity 0.8210116731517509
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1422
@@ -12804,7 +18492,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1423
@@ -12813,7 +18505,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1424
@@ -12822,7 +18518,11 @@ graph [
     polarity -0.9917695473251029
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1425
@@ -12831,7 +18531,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1426
@@ -12840,7 +18544,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1427
@@ -12849,7 +18557,11 @@ graph [
     polarity -0.9757575757575757
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1428
@@ -12858,7 +18570,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1429
@@ -12867,7 +18583,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1430
@@ -12876,7 +18596,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1431
@@ -12885,7 +18609,11 @@ graph [
     polarity 0.46875
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1432
@@ -12894,7 +18622,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1433
@@ -12903,7 +18635,11 @@ graph [
     polarity -0.9692307692307692
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1434
@@ -12912,7 +18648,11 @@ graph [
     polarity 0.8032786885245902
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1435
@@ -12921,7 +18661,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1436
@@ -12930,7 +18674,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1437
@@ -12939,7 +18687,11 @@ graph [
     polarity 0.45454545454545453
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1438
@@ -12948,7 +18700,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1439
@@ -12957,7 +18713,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1440
@@ -12966,7 +18726,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1441
@@ -12975,7 +18739,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1442
@@ -12984,7 +18752,11 @@ graph [
     polarity -0.9932356257046223
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1443
@@ -12993,7 +18765,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1444
@@ -13002,7 +18778,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1445
@@ -13011,7 +18791,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1446
@@ -13020,7 +18804,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1447
@@ -13029,7 +18817,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1448
@@ -13038,7 +18830,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1449
@@ -13047,7 +18843,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1450
@@ -13056,7 +18856,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1451
@@ -13065,7 +18869,11 @@ graph [
     polarity -0.8333333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1452
@@ -13074,7 +18882,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1453
@@ -13083,7 +18895,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1454
@@ -13092,7 +18908,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1455
@@ -13101,7 +18921,11 @@ graph [
     polarity -0.9926739926739927
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1456
@@ -13110,7 +18934,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1457
@@ -13119,7 +18947,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1458
@@ -13128,7 +18960,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1459
@@ -13137,7 +18973,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1460
@@ -13146,7 +18986,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1461
@@ -13155,7 +18999,11 @@ graph [
     polarity 0.8012048192771084
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1462
@@ -13164,7 +19012,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1463
@@ -13173,7 +19025,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1464
@@ -13182,7 +19038,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1465
@@ -13191,7 +19051,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1466
@@ -13200,7 +19064,11 @@ graph [
     polarity 0.5494505494505495
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1467
@@ -13209,7 +19077,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1468
@@ -13218,7 +19090,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1469
@@ -13227,7 +19103,11 @@ graph [
     polarity 0.391304347826087
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1470
@@ -13236,7 +19116,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1471
@@ -13245,7 +19129,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1472
@@ -13254,7 +19142,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1473
@@ -13263,7 +19155,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1474
@@ -13272,7 +19168,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1475
@@ -13281,7 +19181,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1476
@@ -13290,7 +19194,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1477
@@ -13299,7 +19207,11 @@ graph [
     polarity -0.8933333333333333
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1478
@@ -13308,7 +19220,11 @@ graph [
     polarity -0.9852941176470589
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1479
@@ -13317,7 +19233,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1480
@@ -13326,7 +19246,11 @@ graph [
     polarity -0.9760479041916168
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1481
@@ -13335,7 +19259,11 @@ graph [
     polarity 0.09090909090909091
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1482
@@ -13344,7 +19272,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1483
@@ -13353,7 +19285,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1484
@@ -13362,7 +19298,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1485
@@ -13371,7 +19311,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1486
@@ -13380,7 +19324,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1487
@@ -13389,7 +19337,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1488
@@ -13398,7 +19350,11 @@ graph [
     polarity 0.9130434782608695
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1489
@@ -13407,7 +19363,11 @@ graph [
     polarity -0.9757085020242915
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1490
@@ -13416,7 +19376,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1491
@@ -13425,7 +19389,11 @@ graph [
     polarity 0.5862068965517241
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1492
@@ -13434,7 +19402,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1493
@@ -13443,7 +19415,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1494
@@ -13452,7 +19428,11 @@ graph [
     polarity -0.9605911330049262
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1495
@@ -13461,7 +19441,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1496
@@ -13470,7 +19454,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1497
@@ -13479,7 +19467,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1498
@@ -13488,7 +19480,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1499
@@ -13497,7 +19493,11 @@ graph [
     polarity -0.9855855855855856
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1500
@@ -13506,7 +19506,11 @@ graph [
     polarity -0.9411764705882353
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1501
@@ -13515,7 +19519,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1502
@@ -13524,7 +19532,11 @@ graph [
     polarity -0.14285714285714285
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1503
@@ -13533,7 +19545,11 @@ graph [
     polarity 0.4666666666666667
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1504
@@ -13542,7 +19558,11 @@ graph [
     polarity 0.6190476190476191
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1505
@@ -13551,7 +19571,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1506
@@ -13560,7 +19584,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1507
@@ -13569,7 +19597,11 @@ graph [
     polarity 0.6071428571428571
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1508
@@ -13578,7 +19610,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1509
@@ -13587,7 +19623,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1510
@@ -13596,7 +19636,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1511
@@ -13605,7 +19649,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1512
@@ -13614,7 +19662,11 @@ graph [
     polarity -0.875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1513
@@ -13623,7 +19675,11 @@ graph [
     polarity -0.9760479041916168
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1514
@@ -13632,7 +19688,11 @@ graph [
     polarity -0.9900497512437811
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1515
@@ -13641,7 +19701,11 @@ graph [
     polarity -0.9354838709677419
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1516
@@ -13650,7 +19714,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1517
@@ -13659,7 +19727,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1518
@@ -13668,7 +19740,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1519
@@ -13677,7 +19753,11 @@ graph [
     polarity -0.9895652173913043
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1520
@@ -13686,7 +19766,11 @@ graph [
     polarity 0.6774193548387096
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1521
@@ -13695,7 +19779,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1522
@@ -13704,7 +19792,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1523
@@ -13713,7 +19805,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1524
@@ -13722,7 +19818,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1525
@@ -13731,7 +19831,11 @@ graph [
     polarity -0.9130434782608695
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1526
@@ -13740,7 +19844,11 @@ graph [
     polarity 0.45454545454545453
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1527
@@ -13749,7 +19857,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1528
@@ -13758,7 +19870,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1529
@@ -13767,7 +19883,11 @@ graph [
     polarity -0.9817351598173516
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1530
@@ -13776,7 +19896,11 @@ graph [
     polarity 0.36
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1531
@@ -13785,7 +19909,11 @@ graph [
     polarity 0.7037037037037037
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1532
@@ -13794,7 +19922,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1533
@@ -13803,7 +19935,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1534
@@ -13812,7 +19948,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1535
@@ -13821,7 +19961,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1536
@@ -13830,7 +19974,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1537
@@ -13839,7 +19987,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1538
@@ -13848,7 +20000,11 @@ graph [
     polarity -0.875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1539
@@ -13857,7 +20013,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1540
@@ -13866,7 +20026,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1541
@@ -13875,7 +20039,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1542
@@ -13884,7 +20052,11 @@ graph [
     polarity -0.9487179487179487
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1543
@@ -13893,7 +20065,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1544
@@ -13902,7 +20078,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1545
@@ -13911,7 +20091,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1546
@@ -13920,7 +20104,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1547
@@ -13929,7 +20117,11 @@ graph [
     polarity -0.8181818181818182
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1548
@@ -13938,7 +20130,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1549
@@ -13947,7 +20143,11 @@ graph [
     polarity -0.9555555555555556
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1550
@@ -13956,7 +20156,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1551
@@ -13965,7 +20169,11 @@ graph [
     polarity 0.646551724137931
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1552
@@ -13974,7 +20182,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1553
@@ -13983,7 +20195,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1554
@@ -13992,7 +20208,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1555
@@ -14001,7 +20221,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1556
@@ -14010,7 +20234,11 @@ graph [
     polarity -0.9369369369369369
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1557
@@ -14019,7 +20247,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1558
@@ -14028,7 +20260,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1559
@@ -14037,7 +20273,11 @@ graph [
     polarity -0.9583333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1560
@@ -14046,7 +20286,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1561
@@ -14055,7 +20299,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1562
@@ -14064,7 +20312,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1563
@@ -14073,7 +20325,11 @@ graph [
     polarity -0.9298245614035088
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1564
@@ -14082,7 +20338,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1565
@@ -14091,7 +20351,11 @@ graph [
     polarity -0.9555555555555556
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1566
@@ -14100,7 +20364,11 @@ graph [
     polarity 0.9
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1567
@@ -14109,7 +20377,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1568
@@ -14118,7 +20390,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1569
@@ -14127,7 +20403,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1570
@@ -14136,7 +20416,11 @@ graph [
     polarity -0.9900990099009901
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1571
@@ -14145,7 +20429,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1572
@@ -14154,7 +20442,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1573
@@ -14163,7 +20455,11 @@ graph [
     polarity -0.9887429643527205
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1574
@@ -14172,7 +20468,11 @@ graph [
     polarity 0.29411764705882354
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1575
@@ -14181,7 +20481,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1576
@@ -14190,7 +20494,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1577
@@ -14199,7 +20507,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1578
@@ -14208,7 +20520,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1579
@@ -14217,7 +20533,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1580
@@ -14226,7 +20546,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1581
@@ -14235,7 +20559,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1582
@@ -14244,7 +20572,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1583
@@ -14253,7 +20585,11 @@ graph [
     polarity -0.8867924528301887
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1584
@@ -14262,7 +20598,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1585
@@ -14271,7 +20611,11 @@ graph [
     polarity -0.9701492537313433
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1586
@@ -14280,7 +20624,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1587
@@ -14289,7 +20637,11 @@ graph [
     polarity 0.6296296296296297
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1588
@@ -14298,7 +20650,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1589
@@ -14307,7 +20663,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1590
@@ -14316,7 +20676,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1591
@@ -14325,7 +20689,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1592
@@ -14334,7 +20702,11 @@ graph [
     polarity -0.9773242630385488
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1593
@@ -14343,7 +20715,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1594
@@ -14352,7 +20728,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1595
@@ -14361,7 +20741,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1596
@@ -14370,7 +20754,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1597
@@ -14379,7 +20767,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1598
@@ -14388,7 +20780,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1599
@@ -14397,7 +20793,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1600
@@ -14406,7 +20806,11 @@ graph [
     polarity -0.9812206572769953
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1601
@@ -14415,7 +20819,11 @@ graph [
     polarity -0.7142857142857143
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1602
@@ -14424,7 +20832,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1603
@@ -14433,7 +20845,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1604
@@ -14442,7 +20858,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1605
@@ -14451,7 +20871,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1606
@@ -14460,7 +20884,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1607
@@ -14469,7 +20897,11 @@ graph [
     polarity -0.971830985915493
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1608
@@ -14478,7 +20910,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1609
@@ -14487,7 +20923,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1610
@@ -14496,7 +20936,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1611
@@ -14505,7 +20949,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1612
@@ -14514,7 +20962,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1613
@@ -14523,7 +20975,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1614
@@ -14532,7 +20988,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1615
@@ -14541,7 +21001,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1616
@@ -14550,7 +21014,11 @@ graph [
     polarity -0.950920245398773
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1617
@@ -14559,7 +21027,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1618
@@ -14568,7 +21040,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1619
@@ -14577,7 +21053,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1620
@@ -14586,7 +21066,11 @@ graph [
     polarity 0.8666666666666667
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1621
@@ -14595,7 +21079,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1622
@@ -14604,7 +21092,11 @@ graph [
     polarity 0.9047619047619048
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1623
@@ -14613,7 +21105,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1624
@@ -14622,7 +21118,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1625
@@ -14631,7 +21131,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1626
@@ -14640,7 +21144,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1627
@@ -14649,7 +21157,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1628
@@ -14658,7 +21170,11 @@ graph [
     polarity -0.9247311827956989
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1629
@@ -14667,7 +21183,11 @@ graph [
     polarity 0.14285714285714285
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1630
@@ -14676,7 +21196,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1631
@@ -14685,7 +21209,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1632
@@ -14694,7 +21222,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1633
@@ -14703,7 +21235,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1634
@@ -14712,7 +21248,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1635
@@ -14721,7 +21261,11 @@ graph [
     polarity -0.9139784946236559
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1636
@@ -14730,7 +21274,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1637
@@ -14739,7 +21287,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1638
@@ -14748,7 +21300,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1639
@@ -14757,7 +21313,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1640
@@ -14766,7 +21326,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1641
@@ -14775,7 +21339,11 @@ graph [
     polarity 0.5374149659863946
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1642
@@ -14784,7 +21352,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1643
@@ -14793,7 +21365,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1644
@@ -14802,7 +21378,11 @@ graph [
     polarity -0.9487179487179487
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1645
@@ -14811,7 +21391,11 @@ graph [
     polarity -0.9810126582278481
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1646
@@ -14820,7 +21404,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1647
@@ -14829,7 +21417,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1648
@@ -14838,7 +21430,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1649
@@ -14847,7 +21443,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1650
@@ -14856,7 +21456,11 @@ graph [
     polarity 0.494949494949495
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1651
@@ -14865,7 +21469,11 @@ graph [
     polarity -0.9941860465116279
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1652
@@ -14874,7 +21482,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1653
@@ -14883,7 +21495,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1654
@@ -14892,7 +21508,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1655
@@ -14901,7 +21521,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1656
@@ -14910,7 +21534,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1657
@@ -14919,7 +21547,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1658
@@ -14928,7 +21560,11 @@ graph [
     polarity -0.994413407821229
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1659
@@ -14937,7 +21573,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1660
@@ -14946,7 +21586,11 @@ graph [
     polarity 0.8372093023255814
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1661
@@ -14955,7 +21599,11 @@ graph [
     polarity 0.1111111111111111
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1662
@@ -14964,7 +21612,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1663
@@ -14973,7 +21625,11 @@ graph [
     polarity -0.9562043795620438
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1664
@@ -14982,7 +21638,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1665
@@ -14991,7 +21651,11 @@ graph [
     polarity -0.9285714285714286
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1666
@@ -15000,7 +21664,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1667
@@ -15009,7 +21677,11 @@ graph [
     polarity -0.7777777777777778
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1668
@@ -15018,7 +21690,11 @@ graph [
     polarity -0.9583333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1669
@@ -15027,7 +21703,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1670
@@ -15036,7 +21716,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1671
@@ -15045,7 +21729,11 @@ graph [
     polarity -0.9874213836477987
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1672
@@ -15054,7 +21742,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1673
@@ -15063,7 +21755,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1674
@@ -15072,7 +21768,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1675
@@ -15081,7 +21781,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1676
@@ -15090,7 +21794,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1677
@@ -15099,7 +21807,11 @@ graph [
     polarity -0.9402985074626866
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1678
@@ -15108,7 +21820,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1679
@@ -15117,7 +21833,11 @@ graph [
     polarity -0.9333333333333333
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1680
@@ -15126,7 +21846,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1681
@@ -15135,7 +21859,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1682
@@ -15144,7 +21872,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1683
@@ -15153,7 +21885,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1684
@@ -15162,7 +21898,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1685
@@ -15171,7 +21911,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1686
@@ -15180,7 +21924,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1687
@@ -15189,7 +21937,11 @@ graph [
     polarity -0.9595959595959596
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1688
@@ -15198,7 +21950,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1689
@@ -15207,7 +21963,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1690
@@ -15216,7 +21976,11 @@ graph [
     polarity 0.5384615384615384
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1691
@@ -15225,7 +21989,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1692
@@ -15234,7 +22002,11 @@ graph [
     polarity -0.9812382739212008
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1693
@@ -15243,7 +22015,11 @@ graph [
     polarity -0.978021978021978
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1694
@@ -15252,7 +22028,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1695
@@ -15261,7 +22041,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1696
@@ -15270,7 +22054,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1697
@@ -15279,7 +22067,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1698
@@ -15288,7 +22080,11 @@ graph [
     polarity -0.9583333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1699
@@ -15297,7 +22093,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1700
@@ -15306,7 +22106,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1701
@@ -15315,7 +22119,11 @@ graph [
     polarity 0.667262969588551
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1702
@@ -15324,7 +22132,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1703
@@ -15333,7 +22145,11 @@ graph [
     polarity -0.9885527391659853
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1704
@@ -15342,7 +22158,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1705
@@ -15351,7 +22171,11 @@ graph [
     polarity -0.9863945578231292
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1706
@@ -15360,7 +22184,11 @@ graph [
     polarity -0.9705882352941176
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1707
@@ -15369,7 +22197,11 @@ graph [
     polarity 0.6761904761904762
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1708
@@ -15378,7 +22210,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1709
@@ -15387,7 +22223,11 @@ graph [
     polarity -0.9705882352941176
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1710
@@ -15396,7 +22236,11 @@ graph [
     polarity -0.9259259259259259
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1711
@@ -15405,7 +22249,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1712
@@ -15414,7 +22262,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1713
@@ -15423,7 +22275,11 @@ graph [
     polarity -0.9636363636363636
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1714
@@ -15432,7 +22288,11 @@ graph [
     polarity -0.8888888888888888
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1715
@@ -15441,7 +22301,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1716
@@ -15450,7 +22314,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1717
@@ -15459,7 +22327,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1718
@@ -15468,7 +22340,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1719
@@ -15477,7 +22353,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1720
@@ -15486,7 +22366,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1721
@@ -15495,7 +22379,11 @@ graph [
     polarity -0.9024390243902439
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1722
@@ -15504,7 +22392,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1723
@@ -15513,7 +22405,11 @@ graph [
     polarity 0.7818181818181819
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1724
@@ -15522,7 +22418,11 @@ graph [
     polarity 0.7857142857142857
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1725
@@ -15531,7 +22431,11 @@ graph [
     polarity -0.6
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1726
@@ -15540,7 +22444,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1727
@@ -15549,7 +22457,11 @@ graph [
     polarity -0.9354838709677419
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1728
@@ -15558,7 +22470,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1729
@@ -15567,7 +22483,11 @@ graph [
     polarity -0.9949748743718593
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1730
@@ -15576,7 +22496,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1731
@@ -15585,7 +22509,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1732
@@ -15594,7 +22522,11 @@ graph [
     polarity 0.7391304347826086
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1733
@@ -15603,7 +22535,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1734
@@ -15612,7 +22548,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1735
@@ -15621,7 +22561,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1736
@@ -15630,7 +22574,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1737
@@ -15639,7 +22587,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1738
@@ -15648,7 +22600,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1739
@@ -15657,7 +22613,11 @@ graph [
     polarity -0.9444444444444444
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1740
@@ -15666,7 +22626,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1741
@@ -15675,7 +22639,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1742
@@ -15684,7 +22652,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1743
@@ -15693,7 +22665,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1744
@@ -15702,7 +22678,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1745
@@ -15711,7 +22691,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1746
@@ -15720,7 +22704,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1747
@@ -15729,7 +22717,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1748
@@ -15738,7 +22730,11 @@ graph [
     polarity 0.0847457627118644
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1749
@@ -15747,7 +22743,11 @@ graph [
     polarity -0.9692307692307692
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1750
@@ -15756,7 +22756,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1751
@@ -15765,7 +22769,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1752
@@ -15774,7 +22782,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1753
@@ -15783,7 +22795,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1754
@@ -15792,7 +22808,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1755
@@ -15801,7 +22821,11 @@ graph [
     polarity 0.6875
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1756
@@ -15810,7 +22834,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1757
@@ -15819,7 +22847,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1758
@@ -15828,7 +22860,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1759
@@ -15837,7 +22873,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1760
@@ -15846,7 +22886,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1761
@@ -15855,7 +22899,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1762
@@ -15864,7 +22912,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1763
@@ -15873,7 +22925,11 @@ graph [
     polarity -0.9753086419753086
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1764
@@ -15882,7 +22938,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1765
@@ -15891,7 +22951,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1766
@@ -15900,7 +22964,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1767
@@ -15909,7 +22977,11 @@ graph [
     polarity -0.9130434782608695
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1768
@@ -15918,7 +22990,11 @@ graph [
     polarity -0.96
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1769
@@ -15927,7 +23003,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1770
@@ -15936,7 +23016,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1771
@@ -15945,7 +23029,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1772
@@ -15954,7 +23042,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1773
@@ -15963,7 +23055,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1774
@@ -15972,7 +23068,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1775
@@ -15981,7 +23081,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1776
@@ -15990,7 +23094,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1777
@@ -15999,7 +23107,11 @@ graph [
     polarity -0.9393939393939394
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1778
@@ -16008,7 +23120,11 @@ graph [
     polarity -0.9828080229226361
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1779
@@ -16017,7 +23133,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1780
@@ -16026,7 +23146,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1781
@@ -16035,7 +23159,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1782
@@ -16044,7 +23172,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1783
@@ -16053,7 +23185,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1784
@@ -16062,7 +23198,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1785
@@ -16071,7 +23211,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1786
@@ -16080,7 +23224,11 @@ graph [
     polarity -0.875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1787
@@ -16089,7 +23237,11 @@ graph [
     polarity -0.9375
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1788
@@ -16098,7 +23250,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1789
@@ -16107,7 +23263,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1790
@@ -16116,7 +23276,11 @@ graph [
     polarity -0.8888888888888888
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1791
@@ -16125,7 +23289,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1792
@@ -16134,7 +23302,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1793
@@ -16143,7 +23315,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1794
@@ -16152,7 +23328,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1795
@@ -16161,7 +23341,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1796
@@ -16170,7 +23354,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1797
@@ -16179,7 +23367,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1798
@@ -16188,7 +23380,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1799
@@ -16197,7 +23393,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1800
@@ -16206,7 +23406,11 @@ graph [
     polarity 0.752
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1801
@@ -16215,7 +23419,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1802
@@ -16224,7 +23432,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1803
@@ -16233,7 +23445,11 @@ graph [
     polarity -0.9444444444444444
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1804
@@ -16242,7 +23458,11 @@ graph [
     polarity -0.9746835443037974
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1805
@@ -16251,7 +23471,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1806
@@ -16260,7 +23484,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1807
@@ -16269,7 +23497,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1808
@@ -16278,7 +23510,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1809
@@ -16287,7 +23523,11 @@ graph [
     polarity -0.9908675799086758
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1810
@@ -16296,7 +23536,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1811
@@ -16305,7 +23549,11 @@ graph [
     polarity -0.9701492537313433
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1812
@@ -16314,7 +23562,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1813
@@ -16323,7 +23575,11 @@ graph [
     polarity 0.7333333333333333
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1814
@@ -16332,7 +23588,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1815
@@ -16341,7 +23601,11 @@ graph [
     polarity -0.9805825242718447
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1816
@@ -16350,7 +23614,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1817
@@ -16359,7 +23627,11 @@ graph [
     polarity -0.9672131147540983
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1818
@@ -16368,7 +23640,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1819
@@ -16377,7 +23653,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1820
@@ -16386,7 +23666,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1821
@@ -16395,7 +23679,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1822
@@ -16404,7 +23692,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1823
@@ -16413,7 +23705,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1824
@@ -16422,7 +23718,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1825
@@ -16431,7 +23731,11 @@ graph [
     polarity -0.9285714285714286
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1826
@@ -16440,7 +23744,11 @@ graph [
     polarity 0.8461538461538461
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1827
@@ -16449,7 +23757,11 @@ graph [
     polarity -0.8947368421052632
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1828
@@ -16458,7 +23770,11 @@ graph [
     polarity -0.8461538461538461
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1829
@@ -16467,7 +23783,11 @@ graph [
     polarity 0.7931034482758621
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1830
@@ -16476,7 +23796,11 @@ graph [
     polarity 0.8181818181818182
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1831
@@ -16485,7 +23809,11 @@ graph [
     polarity -0.6
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1832
@@ -16494,7 +23822,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1833
@@ -16503,7 +23835,11 @@ graph [
     polarity -0.9868852459016394
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1834
@@ -16512,7 +23848,11 @@ graph [
     polarity -0.8888888888888888
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1835
@@ -16521,7 +23861,11 @@ graph [
     polarity -0.9333333333333333
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1836
@@ -16530,7 +23874,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1837
@@ -16539,7 +23887,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1838
@@ -16548,7 +23900,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1839
@@ -16557,7 +23913,11 @@ graph [
     polarity -0.9541984732824428
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1840
@@ -16566,7 +23926,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1841
@@ -16575,7 +23939,11 @@ graph [
     polarity 0.5748792270531401
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1842
@@ -16584,7 +23952,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1843
@@ -16593,7 +23965,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1844
@@ -16602,7 +23978,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1845
@@ -16611,7 +23991,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1846
@@ -16620,7 +24004,11 @@ graph [
     polarity 0.6934306569343066
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1847
@@ -16629,7 +24017,11 @@ graph [
     polarity 0.5526315789473685
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1848
@@ -16638,7 +24030,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1849
@@ -16647,7 +24043,11 @@ graph [
     polarity 0.25
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1850
@@ -16656,7 +24056,11 @@ graph [
     polarity -0.9682539682539683
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1851
@@ -16665,7 +24069,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1852
@@ -16674,7 +24082,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1853
@@ -16683,7 +24095,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1854
@@ -16692,7 +24108,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1855
@@ -16701,7 +24121,11 @@ graph [
     polarity -0.989010989010989
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1856
@@ -16710,7 +24134,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1857
@@ -16719,7 +24147,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1858
@@ -16728,7 +24160,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1859
@@ -16737,7 +24173,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1860
@@ -16746,7 +24186,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1861
@@ -16755,7 +24199,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1862
@@ -16764,7 +24212,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1863
@@ -16773,7 +24225,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1864
@@ -16782,7 +24238,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1865
@@ -16791,7 +24251,11 @@ graph [
     polarity -0.9791666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1866
@@ -16800,7 +24264,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1867
@@ -16809,7 +24277,11 @@ graph [
     polarity 0.7622739018087855
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1868
@@ -16818,7 +24290,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1869
@@ -16827,7 +24303,11 @@ graph [
     polarity 0.6031746031746031
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1870
@@ -16836,7 +24316,11 @@ graph [
     polarity -0.45454545454545453
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1871
@@ -16845,7 +24329,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1872
@@ -16854,7 +24342,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1873
@@ -16863,7 +24355,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1874
@@ -16872,7 +24368,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1875
@@ -16881,7 +24381,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1876
@@ -16890,7 +24394,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1877
@@ -16899,7 +24407,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1878
@@ -16908,7 +24420,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1879
@@ -16917,7 +24433,11 @@ graph [
     polarity -0.9389312977099237
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1880
@@ -16926,7 +24446,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1881
@@ -16935,7 +24459,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1882
@@ -16944,7 +24472,11 @@ graph [
     polarity -0.952755905511811
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1883
@@ -16953,7 +24485,11 @@ graph [
     polarity -0.9770114942528736
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1884
@@ -16962,7 +24498,11 @@ graph [
     polarity -0.9877300613496932
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1885
@@ -16971,7 +24511,11 @@ graph [
     polarity -0.9166666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1886
@@ -16980,7 +24524,11 @@ graph [
     polarity -0.2
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1887
@@ -16989,7 +24537,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1888
@@ -16998,7 +24550,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1889
@@ -17007,7 +24563,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1890
@@ -17016,7 +24576,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1891
@@ -17025,7 +24589,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1892
@@ -17034,7 +24602,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1893
@@ -17043,7 +24615,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1894
@@ -17052,7 +24628,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1895
@@ -17061,7 +24641,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1896
@@ -17070,7 +24654,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1897
@@ -17079,7 +24667,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1898
@@ -17088,7 +24680,11 @@ graph [
     polarity -0.984251968503937
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1899
@@ -17097,7 +24693,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1900
@@ -17106,7 +24706,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1901
@@ -17115,7 +24719,11 @@ graph [
     polarity -0.9808917197452229
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1902
@@ -17124,7 +24732,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1903
@@ -17133,7 +24745,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1904
@@ -17142,7 +24758,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1905
@@ -17151,7 +24771,11 @@ graph [
     polarity -0.9922779922779923
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1906
@@ -17160,7 +24784,11 @@ graph [
     polarity -0.984251968503937
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1907
@@ -17169,7 +24797,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1908
@@ -17178,7 +24810,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1909
@@ -17187,7 +24823,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1910
@@ -17196,7 +24836,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1911
@@ -17205,7 +24849,11 @@ graph [
     polarity -0.8974358974358975
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1912
@@ -17214,7 +24862,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1913
@@ -17223,7 +24875,11 @@ graph [
     polarity -0.9259259259259259
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1914
@@ -17232,7 +24888,11 @@ graph [
     polarity -0.8181818181818182
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1915
@@ -17241,7 +24901,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1916
@@ -17250,7 +24914,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1917
@@ -17259,7 +24927,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1918
@@ -17268,7 +24940,11 @@ graph [
     polarity -0.9838709677419355
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1919
@@ -17277,7 +24953,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1920
@@ -17286,7 +24966,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1921
@@ -17295,7 +24979,11 @@ graph [
     polarity 0.8715596330275229
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 1922
@@ -17304,7 +24992,11 @@ graph [
     polarity -0.8947368421052632
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1923
@@ -17313,7 +25005,11 @@ graph [
     polarity -0.96875
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1924
@@ -17322,7 +25018,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1925
@@ -17331,7 +25031,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1926
@@ -17340,7 +25044,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1927
@@ -17349,7 +25057,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1928
@@ -17358,7 +25070,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 1929
@@ -17367,7 +25083,11 @@ graph [
     polarity -0.9893617021276596
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1930
@@ -17376,7 +25096,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1931
@@ -17385,7 +25109,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1932
@@ -17394,7 +25122,11 @@ graph [
     polarity 0.4583333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1933
@@ -17403,7 +25135,11 @@ graph [
     polarity -0.9782608695652174
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1934
@@ -17412,7 +25148,11 @@ graph [
     polarity -0.9636363636363636
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1935
@@ -17421,7 +25161,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1936
@@ -17430,7 +25174,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1937
@@ -17439,7 +25187,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1938
@@ -17448,7 +25200,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1939
@@ -17457,7 +25213,11 @@ graph [
     polarity -0.9591836734693877
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1940
@@ -17466,7 +25226,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1941
@@ -17475,7 +25239,11 @@ graph [
     polarity -0.9686274509803922
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1942
@@ -17484,7 +25252,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1943
@@ -17493,7 +25265,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1944
@@ -17502,7 +25278,11 @@ graph [
     polarity 0.14285714285714285
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1945
@@ -17511,7 +25291,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1946
@@ -17520,7 +25304,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1947
@@ -17529,7 +25317,11 @@ graph [
     polarity -0.9912087912087912
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1948
@@ -17538,7 +25330,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1949
@@ -17547,7 +25343,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1950
@@ -17556,7 +25356,11 @@ graph [
     polarity -0.9649122807017544
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1951
@@ -17565,7 +25369,11 @@ graph [
     polarity -0.7333333333333333
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1952
@@ -17574,7 +25382,11 @@ graph [
     polarity 0.5757575757575758
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1953
@@ -17583,7 +25395,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1954
@@ -17592,7 +25408,11 @@ graph [
     polarity -0.9769452449567724
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1955
@@ -17601,7 +25421,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1956
@@ -17610,7 +25434,11 @@ graph [
     polarity -0.9901960784313726
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1957
@@ -17619,7 +25447,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1958
@@ -17628,7 +25460,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1959
@@ -17637,7 +25473,11 @@ graph [
     polarity 0.38461538461538464
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1960
@@ -17646,7 +25486,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1961
@@ -17655,7 +25499,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1962
@@ -17664,7 +25512,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1963
@@ -17673,7 +25525,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1964
@@ -17682,7 +25538,11 @@ graph [
     polarity -0.9850746268656716
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1965
@@ -17691,7 +25551,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1966
@@ -17700,7 +25564,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1967
@@ -17709,7 +25577,11 @@ graph [
     polarity -0.9736842105263158
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1968
@@ -17718,7 +25590,11 @@ graph [
     polarity -0.2
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1969
@@ -17727,7 +25603,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1970
@@ -17736,7 +25616,11 @@ graph [
     polarity -0.975609756097561
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1971
@@ -17745,7 +25629,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1972
@@ -17754,7 +25642,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1973
@@ -17763,7 +25655,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 1974
@@ -17772,7 +25668,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1975
@@ -17781,7 +25681,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 1976
@@ -17790,7 +25694,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1977
@@ -17799,7 +25707,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1978
@@ -17808,7 +25720,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1979
@@ -17817,7 +25733,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1980
@@ -17826,7 +25746,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1981
@@ -17835,7 +25759,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1982
@@ -17844,7 +25772,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1983
@@ -17853,7 +25785,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1984
@@ -17862,7 +25798,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1985
@@ -17871,7 +25811,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1986
@@ -17880,7 +25824,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1987
@@ -17889,7 +25837,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1988
@@ -17898,7 +25850,11 @@ graph [
     polarity -0.974025974025974
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1989
@@ -17907,7 +25863,11 @@ graph [
     polarity -0.9333333333333333
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1990
@@ -17916,7 +25876,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1991
@@ -17925,7 +25889,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1992
@@ -17934,7 +25902,11 @@ graph [
     polarity -0.9759036144578314
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1993
@@ -17943,7 +25915,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1994
@@ -17952,7 +25928,11 @@ graph [
     polarity 0.14285714285714285
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1995
@@ -17961,7 +25941,11 @@ graph [
     polarity 0.1111111111111111
     polarity_label 2
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 1996
@@ -17970,7 +25954,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1997
@@ -17979,7 +25967,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 1998
@@ -17988,7 +25980,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 1999
@@ -17997,7 +25993,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2000
@@ -18006,7 +26006,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2001
@@ -18015,7 +26019,11 @@ graph [
     polarity 0.59375
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2002
@@ -18024,7 +26032,11 @@ graph [
     polarity -0.971830985915493
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2003
@@ -18033,7 +26045,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2004
@@ -18042,7 +26058,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2005
@@ -18051,7 +26071,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2006
@@ -18060,7 +26084,11 @@ graph [
     polarity -0.9899244332493703
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2007
@@ -18069,7 +26097,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2008
@@ -18078,7 +26110,11 @@ graph [
     polarity -0.9775280898876404
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2009
@@ -18087,7 +26123,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2010
@@ -18096,7 +26136,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2011
@@ -18105,7 +26149,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2012
@@ -18114,7 +26162,11 @@ graph [
     polarity -0.9
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2013
@@ -18123,7 +26175,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2014
@@ -18132,7 +26188,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2015
@@ -18141,7 +26201,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2016
@@ -18150,7 +26214,11 @@ graph [
     polarity 0.4666666666666667
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2017
@@ -18159,7 +26227,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2018
@@ -18168,7 +26240,11 @@ graph [
     polarity 0.7272727272727273
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2019
@@ -18177,7 +26253,11 @@ graph [
     polarity -0.9826839826839827
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2020
@@ -18186,7 +26266,11 @@ graph [
     polarity 0.5714285714285714
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2021
@@ -18195,7 +26279,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2022
@@ -18204,7 +26292,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2023
@@ -18213,7 +26305,11 @@ graph [
     polarity -0.975
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2024
@@ -18222,7 +26318,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2025
@@ -18231,7 +26331,11 @@ graph [
     polarity -0.9712230215827338
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2026
@@ -18240,7 +26344,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2027
@@ -18249,7 +26357,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2028
@@ -18258,7 +26370,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2029
@@ -18267,7 +26383,11 @@ graph [
     polarity 0.45544554455445546
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2030
@@ -18276,7 +26396,11 @@ graph [
     polarity 0.3898305084745763
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2031
@@ -18285,7 +26409,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2032
@@ -18294,7 +26422,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2033
@@ -18303,7 +26435,11 @@ graph [
     polarity 0.8947368421052632
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2034
@@ -18312,7 +26448,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith -1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2035
@@ -18321,7 +26461,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2036
@@ -18330,7 +26474,11 @@ graph [
     polarity 0.7333333333333333
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2037
@@ -18339,7 +26487,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2038
@@ -18348,7 +26500,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2039
@@ -18357,7 +26513,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2040
@@ -18366,7 +26526,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2041
@@ -18375,7 +26539,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2042
@@ -18384,7 +26552,11 @@ graph [
     polarity -0.9941176470588236
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2043
@@ -18393,7 +26565,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2044
@@ -18402,7 +26578,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2045
@@ -18411,7 +26591,11 @@ graph [
     polarity 0.8181818181818182
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2046
@@ -18420,7 +26604,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2047
@@ -18429,7 +26617,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2048
@@ -18438,7 +26630,11 @@ graph [
     polarity -0.8333333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2049
@@ -18447,7 +26643,11 @@ graph [
     polarity -0.9840848806366048
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2050
@@ -18456,7 +26656,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2051
@@ -18465,7 +26669,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2052
@@ -18474,7 +26682,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2053
@@ -18483,7 +26695,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2054
@@ -18492,7 +26708,11 @@ graph [
     polarity -0.9867549668874173
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2055
@@ -18501,7 +26721,11 @@ graph [
     polarity -0.9694656488549618
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2056
@@ -18510,7 +26734,11 @@ graph [
     polarity 0.7863397548161121
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2057
@@ -18519,7 +26747,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2058
@@ -18528,7 +26760,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2059
@@ -18537,7 +26773,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2060
@@ -18546,7 +26786,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2061
@@ -18555,7 +26799,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2062
@@ -18564,7 +26812,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2063
@@ -18573,7 +26825,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2064
@@ -18582,7 +26838,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2065
@@ -18591,7 +26851,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2066
@@ -18600,7 +26864,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2067
@@ -18609,7 +26877,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2068
@@ -18618,7 +26890,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2069
@@ -18627,7 +26903,11 @@ graph [
     polarity -0.7142857142857143
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2070
@@ -18636,7 +26916,11 @@ graph [
     polarity 0.7575757575757576
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2071
@@ -18645,7 +26929,11 @@ graph [
     polarity 0.7297297297297297
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2072
@@ -18654,7 +26942,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2073
@@ -18663,7 +26955,11 @@ graph [
     polarity 0.6385542168674698
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2074
@@ -18672,7 +26968,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2075
@@ -18681,7 +26981,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2076
@@ -18690,7 +26994,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2077
@@ -18699,7 +27007,11 @@ graph [
     polarity 0.7167630057803468
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2078
@@ -18708,7 +27020,11 @@ graph [
     polarity -0.9487179487179487
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2079
@@ -18717,7 +27033,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2080
@@ -18726,7 +27046,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2081
@@ -18735,7 +27059,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2082
@@ -18744,7 +27072,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2083
@@ -18753,7 +27085,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2084
@@ -18762,7 +27098,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2085
@@ -18771,7 +27111,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2086
@@ -18780,7 +27124,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2087
@@ -18789,7 +27137,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2088
@@ -18798,7 +27150,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2089
@@ -18807,7 +27163,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2090
@@ -18816,7 +27176,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2091
@@ -18825,7 +27189,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2092
@@ -18834,7 +27202,11 @@ graph [
     polarity -0.9
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2093
@@ -18843,7 +27215,11 @@ graph [
     polarity -0.9512195121951219
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2094
@@ -18852,7 +27228,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2095
@@ -18861,7 +27241,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2096
@@ -18870,7 +27254,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2097
@@ -18879,7 +27267,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2098
@@ -18888,7 +27280,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2099
@@ -18897,7 +27293,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2100
@@ -18906,7 +27306,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2101
@@ -18915,7 +27319,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2102
@@ -18924,7 +27332,11 @@ graph [
     polarity -0.9809523809523809
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2103
@@ -18933,7 +27345,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2104
@@ -18942,7 +27358,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2105
@@ -18951,7 +27371,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2106
@@ -18960,7 +27384,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2107
@@ -18969,7 +27397,11 @@ graph [
     polarity 0.44
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2108
@@ -18978,7 +27410,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2109
@@ -18987,7 +27423,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2110
@@ -18996,7 +27436,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2111
@@ -19005,7 +27449,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2112
@@ -19014,7 +27462,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2113
@@ -19023,7 +27475,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2114
@@ -19032,7 +27488,11 @@ graph [
     polarity -0.9776119402985075
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2115
@@ -19041,7 +27501,11 @@ graph [
     polarity -0.9829059829059829
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2116
@@ -19050,7 +27514,11 @@ graph [
     polarity 0.7872340425531915
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2117
@@ -19059,7 +27527,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2118
@@ -19068,7 +27540,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2119
@@ -19077,7 +27553,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2120
@@ -19086,7 +27566,11 @@ graph [
     polarity 0.9245283018867925
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2121
@@ -19095,7 +27579,11 @@ graph [
     polarity 0.31645569620253167
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2122
@@ -19104,7 +27592,11 @@ graph [
     polarity -0.9980334316617503
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2123
@@ -19113,7 +27605,11 @@ graph [
     polarity -0.9858156028368794
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2124
@@ -19122,7 +27618,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2125
@@ -19131,7 +27631,11 @@ graph [
     polarity 0.4267515923566879
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2126
@@ -19140,7 +27644,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2127
@@ -19149,7 +27657,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2128
@@ -19158,7 +27670,11 @@ graph [
     polarity 0.45454545454545453
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2129
@@ -19167,7 +27683,11 @@ graph [
     polarity 0.8666666666666667
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2130
@@ -19176,7 +27696,11 @@ graph [
     polarity -0.8181818181818182
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2131
@@ -19185,7 +27709,11 @@ graph [
     polarity -0.8666666666666667
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2132
@@ -19194,7 +27722,11 @@ graph [
     polarity -0.9661016949152542
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2133
@@ -19203,7 +27735,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2134
@@ -19212,7 +27748,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2135
@@ -19221,7 +27761,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2136
@@ -19230,7 +27774,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2137
@@ -19239,7 +27787,11 @@ graph [
     polarity 0.5526315789473685
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2138
@@ -19248,7 +27800,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2139
@@ -19257,7 +27813,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2140
@@ -19266,7 +27826,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2141
@@ -19275,7 +27839,11 @@ graph [
     polarity -0.9411764705882353
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2142
@@ -19284,7 +27852,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2143
@@ -19293,7 +27865,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2144
@@ -19302,7 +27878,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2145
@@ -19311,7 +27891,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2146
@@ -19320,7 +27904,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2147
@@ -19329,7 +27917,11 @@ graph [
     polarity 0.4117647058823529
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2148
@@ -19338,7 +27930,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2149
@@ -19347,7 +27943,11 @@ graph [
     polarity -0.9518072289156626
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2150
@@ -19356,7 +27956,11 @@ graph [
     polarity -0.9951100244498777
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2151
@@ -19365,7 +27969,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2152
@@ -19374,7 +27982,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2153
@@ -19383,7 +27995,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2154
@@ -19392,7 +28008,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2155
@@ -19401,7 +28021,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2156
@@ -19410,7 +28034,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2157
@@ -19419,7 +28047,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2158
@@ -19428,7 +28060,11 @@ graph [
     polarity -0.96875
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2159
@@ -19437,7 +28073,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2160
@@ -19446,7 +28086,11 @@ graph [
     polarity 0.7872340425531915
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2161
@@ -19455,7 +28099,11 @@ graph [
     polarity -0.96
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2162
@@ -19464,7 +28112,11 @@ graph [
     polarity -0.9
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2163
@@ -19473,7 +28125,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2164
@@ -19482,7 +28138,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2165
@@ -19491,7 +28151,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2166
@@ -19500,7 +28164,11 @@ graph [
     polarity 0.5833333333333334
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2167
@@ -19509,7 +28177,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2168
@@ -19518,7 +28190,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2169
@@ -19527,7 +28203,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2170
@@ -19536,7 +28216,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2171
@@ -19545,7 +28229,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2172
@@ -19554,7 +28242,11 @@ graph [
     polarity 0.96
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2173
@@ -19563,7 +28255,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2174
@@ -19572,7 +28268,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2175
@@ -19581,7 +28281,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2176
@@ -19590,7 +28294,11 @@ graph [
     polarity -0.972972972972973
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2177
@@ -19599,7 +28307,11 @@ graph [
     polarity -0.9090909090909091
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2178
@@ -19608,7 +28320,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2179
@@ -19617,7 +28333,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2180
@@ -19626,7 +28346,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2181
@@ -19635,7 +28359,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2182
@@ -19644,7 +28372,11 @@ graph [
     polarity -0.9827160493827161
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2183
@@ -19653,7 +28385,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2184
@@ -19662,7 +28398,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2185
@@ -19671,7 +28411,11 @@ graph [
     polarity -0.9875776397515528
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2186
@@ -19680,7 +28424,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2187
@@ -19689,7 +28437,11 @@ graph [
     polarity -0.9586776859504132
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2188
@@ -19698,7 +28450,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2189
@@ -19707,7 +28463,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2190
@@ -19716,7 +28476,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2191
@@ -19725,7 +28489,11 @@ graph [
     polarity 0.7
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2192
@@ -19734,7 +28502,11 @@ graph [
     polarity -0.9859154929577465
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2193
@@ -19743,7 +28515,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2194
@@ -19752,7 +28528,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2195
@@ -19761,7 +28541,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2196
@@ -19770,7 +28554,11 @@ graph [
     polarity -0.9493670886075949
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2197
@@ -19779,7 +28567,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2198
@@ -19788,7 +28580,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2199
@@ -19797,7 +28593,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2200
@@ -19806,7 +28606,11 @@ graph [
     polarity -0.984375
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2201
@@ -19815,7 +28619,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2202
@@ -19824,7 +28632,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2203
@@ -19833,7 +28645,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2204
@@ -19842,7 +28658,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2205
@@ -19851,7 +28671,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2206
@@ -19860,7 +28684,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2207
@@ -19869,7 +28697,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2208
@@ -19878,7 +28710,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2209
@@ -19887,7 +28723,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2210
@@ -19896,7 +28736,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2211
@@ -19905,7 +28749,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2212
@@ -19914,7 +28762,11 @@ graph [
     polarity -0.9354838709677419
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2213
@@ -19923,7 +28775,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2214
@@ -19932,7 +28788,11 @@ graph [
     polarity -0.9870967741935484
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2215
@@ -19941,7 +28801,11 @@ graph [
     polarity 0.5087719298245614
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 2216
@@ -19950,7 +28814,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2217
@@ -19959,7 +28827,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2218
@@ -19968,7 +28840,11 @@ graph [
     polarity -0.9903961584633854
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2219
@@ -19977,7 +28853,11 @@ graph [
     polarity 0.15384615384615385
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2220
@@ -19986,7 +28866,11 @@ graph [
     polarity -0.9777158774373259
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2221
@@ -19995,7 +28879,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2222
@@ -20004,7 +28892,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2223
@@ -20013,7 +28905,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2224
@@ -20022,7 +28918,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2225
@@ -20031,7 +28931,11 @@ graph [
     polarity -0.9827586206896551
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2226
@@ -20040,7 +28944,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2227
@@ -20049,7 +28957,11 @@ graph [
     polarity -0.993660855784469
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2228
@@ -20058,7 +28970,11 @@ graph [
     polarity 0.9534883720930233
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2229
@@ -20067,7 +28983,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2230
@@ -20076,7 +28996,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2231
@@ -20085,7 +29009,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2232
@@ -20094,7 +29022,11 @@ graph [
     polarity -0.9375
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2233
@@ -20103,7 +29035,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2234
@@ -20112,7 +29048,11 @@ graph [
     polarity 0.6551724137931034
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2235
@@ -20121,7 +29061,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2236
@@ -20130,7 +29074,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2237
@@ -20139,7 +29087,11 @@ graph [
     polarity -0.9629629629629629
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2238
@@ -20148,7 +29100,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2239
@@ -20157,7 +29113,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2240
@@ -20166,7 +29126,11 @@ graph [
     polarity 0.07692307692307693
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2241
@@ -20175,7 +29139,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2242
@@ -20184,7 +29152,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2243
@@ -20193,7 +29165,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2244
@@ -20202,7 +29178,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2245
@@ -20211,7 +29191,11 @@ graph [
     polarity 0.05263157894736842
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2246
@@ -20220,7 +29204,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2247
@@ -20229,7 +29217,11 @@ graph [
     polarity -0.9827586206896551
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2248
@@ -20238,7 +29230,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2249
@@ -20247,7 +29243,11 @@ graph [
     polarity 0.6910994764397905
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2250
@@ -20256,7 +29256,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2251
@@ -20265,7 +29269,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2252
@@ -20274,7 +29282,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2253
@@ -20283,7 +29295,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2254
@@ -20292,7 +29308,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2255
@@ -20301,7 +29321,11 @@ graph [
     polarity -0.2
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2256
@@ -20310,7 +29334,11 @@ graph [
     polarity 0.2413793103448276
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2257
@@ -20319,7 +29347,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2258
@@ -20328,7 +29360,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2259
@@ -20337,7 +29373,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2260
@@ -20346,7 +29386,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2261
@@ -20355,7 +29399,11 @@ graph [
     polarity -0.9682539682539683
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2262
@@ -20364,7 +29412,11 @@ graph [
     polarity -0.9880239520958084
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2263
@@ -20373,7 +29425,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2264
@@ -20382,7 +29438,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2265
@@ -20391,7 +29451,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2266
@@ -20400,7 +29464,11 @@ graph [
     polarity -0.990521327014218
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2267
@@ -20409,7 +29477,11 @@ graph [
     polarity -0.9805825242718447
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2268
@@ -20418,7 +29490,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2269
@@ -20427,7 +29503,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2270
@@ -20436,7 +29516,11 @@ graph [
     polarity -0.9568965517241379
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2271
@@ -20445,7 +29529,11 @@ graph [
     polarity 0.8207282913165266
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2272
@@ -20454,7 +29542,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2273
@@ -20463,7 +29555,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2274
@@ -20472,7 +29568,11 @@ graph [
     polarity -0.9769452449567724
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2275
@@ -20481,7 +29581,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2276
@@ -20490,7 +29594,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2277
@@ -20499,7 +29607,11 @@ graph [
     polarity -0.98
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2278
@@ -20508,7 +29620,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2279
@@ -20517,7 +29633,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2280
@@ -20526,7 +29646,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2281
@@ -20535,7 +29659,11 @@ graph [
     polarity -0.9852941176470589
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2282
@@ -20544,7 +29672,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2283
@@ -20553,7 +29685,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2284
@@ -20562,7 +29698,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2285
@@ -20571,7 +29711,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2286
@@ -20580,7 +29724,11 @@ graph [
     polarity -0.9897959183673469
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2287
@@ -20589,7 +29737,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2288
@@ -20598,7 +29750,11 @@ graph [
     polarity 0.8064516129032258
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2289
@@ -20607,7 +29763,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2290
@@ -20616,7 +29776,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2291
@@ -20625,7 +29789,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2292
@@ -20634,7 +29802,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2293
@@ -20643,7 +29815,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2294
@@ -20652,7 +29828,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2295
@@ -20661,7 +29841,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2296
@@ -20670,7 +29854,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2297
@@ -20679,7 +29867,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2298
@@ -20688,7 +29880,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2299
@@ -20697,7 +29893,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2300
@@ -20706,7 +29906,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2301
@@ -20715,7 +29919,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2302
@@ -20724,7 +29932,11 @@ graph [
     polarity 0.6421052631578947
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2303
@@ -20733,7 +29945,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2304
@@ -20742,7 +29958,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2305
@@ -20751,7 +29971,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2306
@@ -20760,7 +29984,11 @@ graph [
     polarity -0.9961832061068703
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2307
@@ -20769,7 +29997,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2308
@@ -20778,7 +30010,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2309
@@ -20787,7 +30023,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2310
@@ -20796,7 +30036,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2311
@@ -20805,7 +30049,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2312
@@ -20814,7 +30062,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2313
@@ -20823,7 +30075,11 @@ graph [
     polarity 0.8518518518518519
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2314
@@ -20832,7 +30088,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2315
@@ -20841,7 +30101,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2316
@@ -20850,7 +30114,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2317
@@ -20859,7 +30127,11 @@ graph [
     polarity -0.8787878787878788
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2318
@@ -20868,7 +30140,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2319
@@ -20877,7 +30153,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2320
@@ -20886,7 +30166,11 @@ graph [
     polarity -0.9655172413793104
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2321
@@ -20895,7 +30179,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2322
@@ -20904,7 +30192,11 @@ graph [
     polarity 0.2727272727272727
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2323
@@ -20913,7 +30205,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2324
@@ -20922,7 +30218,11 @@ graph [
     polarity 0.23404255319148937
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2325
@@ -20931,7 +30231,11 @@ graph [
     polarity -0.9930191972076788
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2326
@@ -20940,7 +30244,11 @@ graph [
     polarity -0.9831932773109243
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2327
@@ -20949,7 +30257,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2328
@@ -20958,7 +30270,11 @@ graph [
     polarity -0.9622641509433962
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2329
@@ -20967,7 +30283,11 @@ graph [
     polarity -0.994413407821229
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2330
@@ -20976,7 +30296,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2331
@@ -20985,7 +30309,11 @@ graph [
     polarity -0.9591836734693877
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2332
@@ -20994,7 +30322,11 @@ graph [
     polarity -0.984251968503937
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2333
@@ -21003,7 +30335,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2334
@@ -21012,7 +30348,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2335
@@ -21021,7 +30361,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2336
@@ -21030,7 +30374,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2337
@@ -21039,7 +30387,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2338
@@ -21048,7 +30400,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2339
@@ -21057,7 +30413,11 @@ graph [
     polarity -0.9959677419354839
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2340
@@ -21066,7 +30426,11 @@ graph [
     polarity 0.6694214876033058
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2341
@@ -21075,7 +30439,11 @@ graph [
     polarity -0.9655172413793104
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2342
@@ -21084,7 +30452,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2343
@@ -21093,7 +30465,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2344
@@ -21102,7 +30478,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2345
@@ -21111,7 +30491,11 @@ graph [
     polarity -0.967741935483871
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2346
@@ -21120,7 +30504,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2347
@@ -21129,7 +30517,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2348
@@ -21138,7 +30530,11 @@ graph [
     polarity -0.9375
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2349
@@ -21147,7 +30543,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2350
@@ -21156,7 +30556,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2351
@@ -21165,7 +30569,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2352
@@ -21174,7 +30582,11 @@ graph [
     polarity -0.9701492537313433
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2353
@@ -21183,7 +30595,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2354
@@ -21192,7 +30608,11 @@ graph [
     polarity 0.5
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2355
@@ -21201,7 +30621,11 @@ graph [
     polarity -0.9775280898876404
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2356
@@ -21210,7 +30634,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2357
@@ -21219,7 +30647,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2358
@@ -21228,7 +30660,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2359
@@ -21237,7 +30673,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2360
@@ -21246,7 +30686,11 @@ graph [
     polarity -0.9636363636363636
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2361
@@ -21255,7 +30699,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2362
@@ -21264,7 +30712,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2363
@@ -21273,7 +30725,11 @@ graph [
     polarity -0.9333333333333333
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2364
@@ -21282,7 +30738,11 @@ graph [
     polarity -0.9333333333333333
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2365
@@ -21291,7 +30751,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2366
@@ -21300,7 +30764,11 @@ graph [
     polarity -0.9652173913043478
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2367
@@ -21309,7 +30777,11 @@ graph [
     polarity 0.7391304347826086
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2368
@@ -21318,7 +30790,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2369
@@ -21327,7 +30803,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2370
@@ -21336,7 +30816,11 @@ graph [
     polarity -0.9899497487437185
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2371
@@ -21345,7 +30829,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2372
@@ -21354,7 +30842,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2373
@@ -21363,7 +30855,11 @@ graph [
     polarity -0.9655172413793104
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2374
@@ -21372,7 +30868,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2375
@@ -21381,7 +30881,11 @@ graph [
     polarity -0.8823529411764706
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2376
@@ -21390,7 +30894,11 @@ graph [
     polarity -0.9724137931034482
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2377
@@ -21399,7 +30907,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2378
@@ -21408,7 +30920,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2379
@@ -21417,7 +30933,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2380
@@ -21426,7 +30946,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2381
@@ -21435,7 +30959,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2382
@@ -21444,7 +30972,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2383
@@ -21453,7 +30985,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2384
@@ -21462,7 +30998,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2385
@@ -21471,7 +31011,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2386
@@ -21480,7 +31024,11 @@ graph [
     polarity -0.9166666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2387
@@ -21489,7 +31037,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2388
@@ -21498,7 +31050,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2389
@@ -21507,7 +31063,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2390
@@ -21516,7 +31076,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2391
@@ -21525,7 +31089,11 @@ graph [
     polarity -0.9714285714285714
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2392
@@ -21534,7 +31102,11 @@ graph [
     polarity -0.9807692307692307
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2393
@@ -21543,7 +31115,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2394
@@ -21552,7 +31128,11 @@ graph [
     polarity -0.9322033898305084
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2395
@@ -21561,7 +31141,11 @@ graph [
     polarity -0.9844961240310077
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2396
@@ -21570,7 +31154,11 @@ graph [
     polarity -0.7894736842105263
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2397
@@ -21579,7 +31167,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2398
@@ -21588,7 +31180,11 @@ graph [
     polarity 0.7611940298507462
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2399
@@ -21597,7 +31193,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2400
@@ -21606,7 +31206,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2401
@@ -21615,7 +31219,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2402
@@ -21624,7 +31232,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2403
@@ -21633,7 +31245,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2404
@@ -21642,7 +31258,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2405
@@ -21651,7 +31271,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2406
@@ -21660,7 +31284,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2407
@@ -21669,7 +31297,11 @@ graph [
     polarity -0.9738562091503268
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2408
@@ -21678,7 +31310,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2409
@@ -21687,7 +31323,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2410
@@ -21696,7 +31336,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2411
@@ -21705,7 +31349,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2412
@@ -21714,7 +31362,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2413
@@ -21723,7 +31375,11 @@ graph [
     polarity 0.4782608695652174
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 2414
@@ -21732,7 +31388,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2415
@@ -21741,7 +31401,11 @@ graph [
     polarity -0.95
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2416
@@ -21750,7 +31414,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2417
@@ -21759,7 +31427,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2418
@@ -21768,7 +31440,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2419
@@ -21777,7 +31453,11 @@ graph [
     polarity 0.5757575757575758
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2420
@@ -21786,7 +31466,11 @@ graph [
     polarity 0.64
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2421
@@ -21795,7 +31479,11 @@ graph [
     polarity -0.9545454545454546
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2422
@@ -21804,7 +31492,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2423
@@ -21813,7 +31505,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2424
@@ -21822,7 +31518,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2425
@@ -21831,7 +31531,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2426
@@ -21840,7 +31544,11 @@ graph [
     polarity 0.7777777777777778
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2427
@@ -21849,7 +31557,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2428
@@ -21858,7 +31570,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2429
@@ -21867,7 +31583,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2430
@@ -21876,7 +31596,11 @@ graph [
     polarity 0.9393939393939394
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2431
@@ -21885,7 +31609,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2432
@@ -21894,7 +31622,11 @@ graph [
     polarity -0.9910664433277498
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2433
@@ -21903,7 +31635,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2434
@@ -21912,7 +31648,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2435
@@ -21921,7 +31661,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 2436
@@ -21930,7 +31674,11 @@ graph [
     polarity -0.9090909090909091
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2437
@@ -21939,7 +31687,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2438
@@ -21948,7 +31700,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2439
@@ -21957,7 +31713,11 @@ graph [
     polarity 0.14285714285714285
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2440
@@ -21966,7 +31726,11 @@ graph [
     polarity -0.9867549668874173
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2441
@@ -21975,7 +31739,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2442
@@ -21984,7 +31752,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2443
@@ -21993,7 +31765,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2444
@@ -22002,7 +31778,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2445
@@ -22011,7 +31791,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2446
@@ -22020,7 +31804,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2447
@@ -22029,7 +31817,11 @@ graph [
     polarity -0.9504132231404959
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2448
@@ -22038,7 +31830,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2449
@@ -22047,7 +31843,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2450
@@ -22056,7 +31856,11 @@ graph [
     polarity -0.9936102236421726
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2451
@@ -22065,7 +31869,11 @@ graph [
     polarity 0.8181818181818182
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2452
@@ -22074,7 +31882,11 @@ graph [
     polarity -0.8571428571428571
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2453
@@ -22083,7 +31895,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2454
@@ -22092,7 +31908,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2455
@@ -22101,7 +31921,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2456
@@ -22110,7 +31934,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2457
@@ -22119,7 +31947,11 @@ graph [
     polarity -0.9259259259259259
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2458
@@ -22128,7 +31960,11 @@ graph [
     polarity -0.9899244332493703
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2459
@@ -22137,7 +31973,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2460
@@ -22146,7 +31986,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2461
@@ -22155,7 +31999,11 @@ graph [
     polarity 0.058823529411764705
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2462
@@ -22164,7 +32012,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2463
@@ -22173,7 +32025,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2464
@@ -22182,7 +32038,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2465
@@ -22191,7 +32051,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2466
@@ -22200,7 +32064,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2467
@@ -22209,7 +32077,11 @@ graph [
     polarity 0.09090909090909091
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2468
@@ -22218,7 +32090,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2469
@@ -22227,7 +32103,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2470
@@ -22236,7 +32116,11 @@ graph [
     polarity -0.979381443298969
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2471
@@ -22245,7 +32129,11 @@ graph [
     polarity -0.9375
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2472
@@ -22254,7 +32142,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2473
@@ -22263,7 +32155,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2474
@@ -22272,7 +32168,11 @@ graph [
     polarity -0.9928057553956835
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2475
@@ -22281,7 +32181,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2476
@@ -22290,7 +32194,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2477
@@ -22299,7 +32207,11 @@ graph [
     polarity -0.9393939393939394
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2478
@@ -22308,7 +32220,11 @@ graph [
     polarity 0.75
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2479
@@ -22317,7 +32233,11 @@ graph [
     polarity 0.75
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2480
@@ -22326,7 +32246,11 @@ graph [
     polarity 0.8181818181818182
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2481
@@ -22335,7 +32259,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2482
@@ -22344,7 +32272,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2483
@@ -22353,7 +32285,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2484
@@ -22362,7 +32298,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2485
@@ -22371,7 +32311,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2486
@@ -22380,7 +32324,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2487
@@ -22389,7 +32337,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2488
@@ -22398,7 +32350,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2489
@@ -22407,7 +32363,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2490
@@ -22416,7 +32376,11 @@ graph [
     polarity 0.2857142857142857
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2491
@@ -22425,7 +32389,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2492
@@ -22434,7 +32402,11 @@ graph [
     polarity 0.6872964169381107
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 2493
@@ -22443,7 +32415,11 @@ graph [
     polarity 0.75
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2494
@@ -22452,7 +32428,11 @@ graph [
     polarity -0.96875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2495
@@ -22461,7 +32441,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2496
@@ -22470,7 +32454,11 @@ graph [
     polarity -0.9919678714859438
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2497
@@ -22479,7 +32467,11 @@ graph [
     polarity -0.8461538461538461
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2498
@@ -22488,7 +32480,11 @@ graph [
     polarity -0.9411764705882353
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2499
@@ -22497,7 +32493,11 @@ graph [
     polarity -0.9787234042553191
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2500
@@ -22506,7 +32506,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2501
@@ -22515,7 +32519,11 @@ graph [
     polarity -0.9973190348525469
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2502
@@ -22524,7 +32532,11 @@ graph [
     polarity 0.4782608695652174
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2503
@@ -22533,7 +32545,11 @@ graph [
     polarity -0.9130434782608695
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2504
@@ -22542,7 +32558,11 @@ graph [
     polarity -0.9868852459016394
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2505
@@ -22551,7 +32571,11 @@ graph [
     polarity 0.7058823529411765
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2506
@@ -22560,7 +32584,11 @@ graph [
     polarity -0.5
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2507
@@ -22569,7 +32597,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2508
@@ -22578,7 +32610,11 @@ graph [
     polarity 0.4
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2509
@@ -22587,7 +32623,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2510
@@ -22596,7 +32636,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2511
@@ -22605,7 +32649,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2512
@@ -22614,7 +32662,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2513
@@ -22623,7 +32675,11 @@ graph [
     polarity -0.9779005524861878
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2514
@@ -22632,7 +32688,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2515
@@ -22641,7 +32701,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2516
@@ -22650,7 +32714,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2517
@@ -22659,7 +32727,11 @@ graph [
     polarity 0.5525727069351231
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2518
@@ -22668,7 +32740,11 @@ graph [
     polarity 0.75
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2519
@@ -22677,7 +32753,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2520
@@ -22686,7 +32766,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2521
@@ -22695,7 +32779,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2522
@@ -22704,7 +32792,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2523
@@ -22713,7 +32805,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2524
@@ -22722,7 +32818,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2525
@@ -22731,7 +32831,11 @@ graph [
     polarity -0.9937694704049844
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2526
@@ -22740,7 +32844,11 @@ graph [
     polarity -0.9789473684210527
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2527
@@ -22749,7 +32857,11 @@ graph [
     polarity 0.8518518518518519
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 2528
@@ -22758,7 +32870,11 @@ graph [
     polarity 0.14285714285714285
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2529
@@ -22767,7 +32883,11 @@ graph [
     polarity -0.99
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2530
@@ -22776,7 +32896,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2531
@@ -22785,7 +32909,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2532
@@ -22794,7 +32922,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2533
@@ -22803,7 +32935,11 @@ graph [
     polarity 0.1
     polarity_label 2
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 2534
@@ -22812,7 +32948,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2535
@@ -22821,7 +32961,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2536
@@ -22830,7 +32974,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2537
@@ -22839,7 +32987,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2538
@@ -22848,7 +33000,11 @@ graph [
     polarity 0.8512396694214877
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2539
@@ -22857,7 +33013,11 @@ graph [
     polarity 0.75
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2540
@@ -22866,7 +33026,11 @@ graph [
     polarity 0.5294117647058824
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2541
@@ -22875,7 +33039,11 @@ graph [
     polarity -0.9966044142614601
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2542
@@ -22884,7 +33052,11 @@ graph [
     polarity -0.9731543624161074
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2543
@@ -22893,7 +33065,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2544
@@ -22902,7 +33078,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2545
@@ -22911,7 +33091,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2546
@@ -22920,7 +33104,11 @@ graph [
     polarity -0.9855072463768116
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2547
@@ -22929,7 +33117,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2548
@@ -22938,7 +33130,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2549
@@ -22947,7 +33143,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2550
@@ -22956,7 +33156,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2551
@@ -22965,7 +33169,11 @@ graph [
     polarity -0.6
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2552
@@ -22974,7 +33182,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2553
@@ -22983,7 +33195,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2554
@@ -22992,7 +33208,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2555
@@ -23001,7 +33221,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2556
@@ -23010,7 +33234,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2557
@@ -23019,7 +33247,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2558
@@ -23028,7 +33260,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2559
@@ -23037,7 +33273,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2560
@@ -23046,7 +33286,11 @@ graph [
     polarity -0.875
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2561
@@ -23055,7 +33299,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2562
@@ -23064,7 +33312,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2563
@@ -23073,7 +33325,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2564
@@ -23082,7 +33338,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2565
@@ -23091,7 +33351,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2566
@@ -23100,7 +33364,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2567
@@ -23109,7 +33377,11 @@ graph [
     polarity 0.375
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2568
@@ -23118,7 +33390,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2569
@@ -23127,7 +33403,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2570
@@ -23136,7 +33416,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2571
@@ -23145,7 +33429,11 @@ graph [
     polarity 0.5238095238095238
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2572
@@ -23154,7 +33442,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2573
@@ -23163,7 +33455,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2574
@@ -23172,7 +33468,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2575
@@ -23181,7 +33481,11 @@ graph [
     polarity -0.9803921568627451
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2576
@@ -23190,7 +33494,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2577
@@ -23199,7 +33507,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2578
@@ -23208,7 +33520,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2579
@@ -23217,7 +33533,11 @@ graph [
     polarity -0.9714285714285714
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2580
@@ -23226,7 +33546,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2581
@@ -23235,7 +33559,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2582
@@ -23244,7 +33572,11 @@ graph [
     polarity -0.9607843137254902
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2583
@@ -23253,7 +33585,11 @@ graph [
     polarity -0.9811320754716981
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2584
@@ -23262,7 +33598,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2585
@@ -23271,7 +33611,11 @@ graph [
     polarity -0.9615384615384616
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2586
@@ -23280,7 +33624,11 @@ graph [
     polarity -0.6363636363636364
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2587
@@ -23289,7 +33637,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2588
@@ -23298,7 +33650,11 @@ graph [
     polarity -0.36
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2589
@@ -23307,7 +33663,11 @@ graph [
     polarity -0.9947229551451188
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2590
@@ -23316,7 +33676,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2591
@@ -23325,7 +33689,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2592
@@ -23334,7 +33702,11 @@ graph [
     polarity -0.9917081260364843
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2593
@@ -23343,7 +33715,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2594
@@ -23352,7 +33728,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2595
@@ -23361,7 +33741,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2596
@@ -23370,7 +33754,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2597
@@ -23379,7 +33767,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2598
@@ -23388,7 +33780,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2599
@@ -23397,7 +33793,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2600
@@ -23406,7 +33806,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2601
@@ -23415,7 +33819,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2602
@@ -23424,7 +33832,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2603
@@ -23433,7 +33845,11 @@ graph [
     polarity 0.7948717948717948
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 2604
@@ -23442,7 +33858,11 @@ graph [
     polarity -0.8888888888888888
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2605
@@ -23451,7 +33871,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2606
@@ -23460,7 +33884,11 @@ graph [
     polarity -0.9473684210526315
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2607
@@ -23469,7 +33897,11 @@ graph [
     polarity -0.9903381642512077
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2608
@@ -23478,7 +33910,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2609
@@ -23487,7 +33923,11 @@ graph [
     polarity -0.9909502262443439
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2610
@@ -23496,7 +33936,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2611
@@ -23505,7 +33949,11 @@ graph [
     polarity -0.9851411589895989
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2612
@@ -23514,7 +33962,11 @@ graph [
     polarity -0.95
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2613
@@ -23523,7 +33975,11 @@ graph [
     polarity -0.9166666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2614
@@ -23532,7 +33988,11 @@ graph [
     polarity -0.9428571428571428
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2615
@@ -23541,7 +34001,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2616
@@ -23550,7 +34014,11 @@ graph [
     polarity -0.9789473684210527
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2617
@@ -23559,7 +34027,11 @@ graph [
     polarity -0.9789473684210527
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2618
@@ -23568,7 +34040,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2619
@@ -23577,7 +34053,11 @@ graph [
     polarity -0.9777777777777777
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2620
@@ -23586,7 +34066,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2621
@@ -23595,7 +34079,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2622
@@ -23604,7 +34092,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2623
@@ -23613,7 +34105,11 @@ graph [
     polarity -0.3333333333333333
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2624
@@ -23622,7 +34118,11 @@ graph [
     polarity 0.8
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2625
@@ -23631,7 +34131,11 @@ graph [
     polarity -0.8333333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2626
@@ -23640,7 +34144,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2627
@@ -23649,7 +34157,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2628
@@ -23658,7 +34170,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2629
@@ -23667,7 +34183,11 @@ graph [
     polarity -0.7777777777777778
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2630
@@ -23676,7 +34196,11 @@ graph [
     polarity -0.9344262295081968
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2631
@@ -23685,7 +34209,11 @@ graph [
     polarity -0.9463087248322147
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2632
@@ -23694,7 +34222,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2633
@@ -23703,7 +34235,11 @@ graph [
     polarity 0.8181818181818182
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2634
@@ -23712,7 +34248,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2635
@@ -23721,7 +34261,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2636
@@ -23730,7 +34274,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2637
@@ -23739,7 +34287,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2638
@@ -23748,7 +34300,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2639
@@ -23757,7 +34313,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2640
@@ -23766,7 +34326,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2641
@@ -23775,7 +34339,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2642
@@ -23784,7 +34352,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2643
@@ -23793,7 +34365,11 @@ graph [
     polarity -0.9809523809523809
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2644
@@ -23802,7 +34378,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2645
@@ -23811,7 +34391,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2646
@@ -23820,7 +34404,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2647
@@ -23829,7 +34417,11 @@ graph [
     polarity -0.8947368421052632
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2648
@@ -23838,7 +34430,11 @@ graph [
     polarity 0.43478260869565216
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2649
@@ -23847,7 +34443,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2650
@@ -23856,7 +34456,11 @@ graph [
     polarity -0.8461538461538461
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2651
@@ -23865,7 +34469,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2652
@@ -23874,7 +34482,11 @@ graph [
     polarity 0.5555555555555556
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2653
@@ -23883,7 +34495,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2654
@@ -23892,7 +34508,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2655
@@ -23901,7 +34521,11 @@ graph [
     polarity 0.4528301886792453
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2656
@@ -23910,7 +34534,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2657
@@ -23919,7 +34547,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2658
@@ -23928,7 +34560,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2659
@@ -23937,7 +34573,11 @@ graph [
     polarity -0.8888888888888888
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2660
@@ -23946,7 +34586,11 @@ graph [
     polarity -0.9655172413793104
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2661
@@ -23955,7 +34599,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2662
@@ -23964,7 +34612,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2663
@@ -23973,7 +34625,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2664
@@ -23982,7 +34638,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2665
@@ -23991,7 +34651,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2666
@@ -24000,7 +34664,11 @@ graph [
     polarity 0.7333333333333333
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2667
@@ -24009,7 +34677,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2668
@@ -24018,7 +34690,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2669
@@ -24027,7 +34703,11 @@ graph [
     polarity -0.969309462915601
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2670
@@ -24036,7 +34716,11 @@ graph [
     polarity -0.9929824561403509
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2671
@@ -24045,7 +34729,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2672
@@ -24054,7 +34742,11 @@ graph [
     polarity -0.9870967741935484
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2673
@@ -24063,7 +34755,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2674
@@ -24072,7 +34768,11 @@ graph [
     polarity -0.9911504424778761
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2675
@@ -24081,7 +34781,11 @@ graph [
     polarity 0.7368421052631579
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2676
@@ -24090,7 +34794,11 @@ graph [
     polarity 0.7291666666666666
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2677
@@ -24099,7 +34807,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2678
@@ -24108,7 +34820,11 @@ graph [
     polarity 0.6623376623376623
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2679
@@ -24117,7 +34833,11 @@ graph [
     polarity -0.9428571428571428
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2680
@@ -24126,7 +34846,11 @@ graph [
     polarity -0.8974358974358975
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2681
@@ -24135,7 +34859,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2682
@@ -24144,7 +34872,11 @@ graph [
     polarity -0.6666666666666666
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2683
@@ -24153,7 +34885,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2684
@@ -24162,7 +34898,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2685
@@ -24171,7 +34911,11 @@ graph [
     polarity -0.9565217391304348
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2686
@@ -24180,7 +34924,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2687
@@ -24189,7 +34937,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2688
@@ -24198,7 +34950,11 @@ graph [
     polarity 0.7323383084577114
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2689
@@ -24207,7 +34963,11 @@ graph [
     polarity -0.8857142857142857
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2690
@@ -24216,7 +34976,11 @@ graph [
     polarity -0.9459459459459459
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2691
@@ -24225,7 +34989,11 @@ graph [
     polarity 0.14285714285714285
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2692
@@ -24234,7 +35002,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2693
@@ -24243,7 +35015,11 @@ graph [
     polarity 0.712
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2694
@@ -24252,7 +35028,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2695
@@ -24261,7 +35041,11 @@ graph [
     polarity -0.9661016949152542
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2696
@@ -24270,7 +35054,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2697
@@ -24279,7 +35067,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2698
@@ -24288,7 +35080,11 @@ graph [
     polarity 0.5518207282913166
     polarity_label 3
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2699
@@ -24297,7 +35093,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2700
@@ -24306,7 +35106,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2701
@@ -24315,7 +35119,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2702
@@ -24324,7 +35132,11 @@ graph [
     polarity 0.5714285714285714
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2703
@@ -24333,7 +35145,11 @@ graph [
     polarity -0.9951456310679612
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2704
@@ -24342,7 +35158,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2705
@@ -24351,7 +35171,11 @@ graph [
     polarity 0.6
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2706
@@ -24360,7 +35184,11 @@ graph [
     polarity -0.983739837398374
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2707
@@ -24369,7 +35197,11 @@ graph [
     polarity 0.6666666666666666
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2708
@@ -24378,7 +35210,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2709
@@ -24387,7 +35223,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2710
@@ -24396,7 +35236,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2711
@@ -24405,7 +35249,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2712
@@ -24414,7 +35262,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2713
@@ -24423,7 +35275,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2714
@@ -24432,7 +35288,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2715
@@ -24441,7 +35301,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2716
@@ -24450,7 +35314,11 @@ graph [
     polarity -0.9710144927536232
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2717
@@ -24459,7 +35327,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2718
@@ -24468,7 +35340,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2719
@@ -24477,7 +35353,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2720
@@ -24486,7 +35366,11 @@ graph [
     polarity -0.9844810863239574
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2721
@@ -24495,7 +35379,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2722
@@ -24504,7 +35392,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2723
@@ -24513,7 +35405,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2724
@@ -24522,7 +35418,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2725
@@ -24531,7 +35431,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2726
@@ -24540,7 +35444,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2727
@@ -24549,7 +35457,11 @@ graph [
     polarity 0.46875
     polarity_label 3
     pads_cpp 0
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2728
@@ -24558,7 +35470,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2729
@@ -24567,7 +35483,11 @@ graph [
     polarity -0.9791666666666666
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2730
@@ -24576,7 +35496,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2731
@@ -24585,7 +35509,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2732
@@ -24594,7 +35522,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2733
@@ -24603,7 +35535,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2734
@@ -24612,7 +35548,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2735
@@ -24621,7 +35561,11 @@ graph [
     polarity -0.9770992366412213
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2736
@@ -24630,7 +35574,11 @@ graph [
     polarity -0.9746835443037974
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2737
@@ -24639,7 +35587,11 @@ graph [
     polarity -0.9666666666666667
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2738
@@ -24648,7 +35600,11 @@ graph [
     polarity -0.975
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2739
@@ -24657,7 +35613,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2740
@@ -24666,7 +35626,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2741
@@ -24675,7 +35639,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2742
@@ -24684,7 +35652,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2743
@@ -24693,7 +35665,11 @@ graph [
     polarity 0.8888888888888888
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2744
@@ -24702,7 +35678,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2745
@@ -24711,7 +35691,11 @@ graph [
     polarity -0.974025974025974
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2746
@@ -24720,7 +35704,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2747
@@ -24729,7 +35717,11 @@ graph [
     polarity 0.6721311475409836
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2748
@@ -24738,7 +35730,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2749
@@ -24747,7 +35743,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2750
@@ -24756,7 +35756,11 @@ graph [
     polarity -0.9722222222222222
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2751
@@ -24765,7 +35769,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2752
@@ -24774,7 +35782,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2753
@@ -24783,7 +35795,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2754
@@ -24792,7 +35808,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2755
@@ -24801,7 +35821,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2756
@@ -24810,7 +35834,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config 0
   ]
   node [
     id 2757
@@ -24819,7 +35847,11 @@ graph [
     polarity -0.980327868852459
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2758
@@ -24828,7 +35860,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2759
@@ -24837,7 +35873,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2760
@@ -24846,7 +35886,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2761
@@ -24855,7 +35899,11 @@ graph [
     polarity -0.968
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 1
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2762
@@ -24864,7 +35912,11 @@ graph [
     polarity 0.6203389830508474
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2763
@@ -24873,7 +35925,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2764
@@ -24882,7 +35938,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2765
@@ -24891,7 +35951,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2766
@@ -24900,7 +35964,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2767
@@ -24909,7 +35977,11 @@ graph [
     polarity 0.6266666666666667
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 1
   ]
   node [
     id 2768
@@ -24918,7 +35990,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2769
@@ -24927,7 +36003,11 @@ graph [
     polarity 0.26666666666666666
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2770
@@ -24936,7 +36016,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2771
@@ -24945,7 +36029,11 @@ graph [
     polarity -0.9523809523809523
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2772
@@ -24954,7 +36042,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2773
@@ -24963,7 +36055,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2774
@@ -24972,7 +36068,11 @@ graph [
     polarity -0.9473684210526315
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2775
@@ -24981,7 +36081,11 @@ graph [
     polarity -0.8
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2776
@@ -24990,7 +36094,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2777
@@ -24999,7 +36107,11 @@ graph [
     polarity -0.7142857142857143
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2778
@@ -25008,7 +36120,11 @@ graph [
     polarity 0.9090909090909091
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2779
@@ -25017,7 +36133,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2780
@@ -25026,7 +36146,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2781
@@ -25035,7 +36159,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2782
@@ -25044,7 +36172,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2783
@@ -25053,7 +36185,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2784
@@ -25062,7 +36198,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2785
@@ -25071,7 +36211,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2786
@@ -25080,7 +36224,11 @@ graph [
     polarity 0.7647058823529411
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2787
@@ -25089,7 +36237,11 @@ graph [
     polarity 0.16666666666666666
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2788
@@ -25098,7 +36250,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2789
@@ -25107,7 +36263,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2790
@@ -25116,7 +36276,11 @@ graph [
     polarity -0.9333333333333333
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2791
@@ -25125,7 +36289,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2792
@@ -25134,7 +36302,11 @@ graph [
     polarity -0.9655172413793104
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2793
@@ -25143,7 +36315,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2794
@@ -25152,7 +36328,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2795
@@ -25161,7 +36341,11 @@ graph [
     polarity -0.9682539682539683
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2796
@@ -25170,7 +36354,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2797
@@ -25179,7 +36367,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2798
@@ -25188,7 +36380,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2799
@@ -25197,7 +36393,11 @@ graph [
     polarity -0.28
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2800
@@ -25206,7 +36406,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2801
@@ -25215,7 +36419,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2802
@@ -25224,7 +36432,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2803
@@ -25233,7 +36445,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2804
@@ -25242,7 +36458,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2805
@@ -25251,7 +36471,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2806
@@ -25260,7 +36484,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2807
@@ -25269,7 +36497,11 @@ graph [
     polarity 0.8181818181818182
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2808
@@ -25278,7 +36510,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2809
@@ -25287,7 +36523,11 @@ graph [
     polarity -0.9943019943019943
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2810
@@ -25296,7 +36536,11 @@ graph [
     polarity -0.981651376146789
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2811
@@ -25305,7 +36549,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2812
@@ -25314,7 +36562,11 @@ graph [
     polarity -0.8461538461538461
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2813
@@ -25323,7 +36575,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2814
@@ -25332,7 +36588,11 @@ graph [
     polarity 0.17647058823529413
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2815
@@ -25341,7 +36601,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2816
@@ -25350,7 +36614,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2817
@@ -25359,7 +36627,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2818
@@ -25368,7 +36640,11 @@ graph [
     polarity 0.2727272727272727
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2819
@@ -25377,7 +36653,11 @@ graph [
     polarity 0.8518518518518519
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2820
@@ -25386,7 +36666,11 @@ graph [
     polarity -0.9823008849557522
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2821
@@ -25395,7 +36679,11 @@ graph [
     polarity 0.5714285714285714
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2822
@@ -25404,7 +36692,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2823
@@ -25413,7 +36705,11 @@ graph [
     polarity -0.9836808703535811
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2824
@@ -25422,7 +36718,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2825
@@ -25431,7 +36731,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2826
@@ -25440,7 +36744,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2827
@@ -25449,7 +36757,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2828
@@ -25458,7 +36770,11 @@ graph [
     polarity 0.6842105263157895
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2829
@@ -25467,7 +36783,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2830
@@ -25476,7 +36796,11 @@ graph [
     polarity -0.981651376146789
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2831
@@ -25485,7 +36809,11 @@ graph [
     polarity -0.8333333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2832
@@ -25494,7 +36822,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2833
@@ -25503,7 +36835,11 @@ graph [
     polarity 0.3333333333333333
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2834
@@ -25512,7 +36848,11 @@ graph [
     polarity -0.5
     polarity_label 1
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2835
@@ -25521,7 +36861,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2836
@@ -25530,7 +36874,11 @@ graph [
     polarity 0.7142857142857143
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2837
@@ -25539,7 +36887,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2838
@@ -25548,7 +36900,11 @@ graph [
     polarity 0.7446808510638298
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2839
@@ -25557,7 +36913,11 @@ graph [
     polarity 0.0
     polarity_label 2
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2840
@@ -25566,7 +36926,11 @@ graph [
     polarity -0.9834710743801653
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2841
@@ -25575,7 +36939,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2842
@@ -25584,7 +36952,11 @@ graph [
     polarity -0.9733333333333334
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2843
@@ -25593,7 +36965,11 @@ graph [
     polarity -0.5
     polarity_label 1
     pads_cpp 0
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2844
@@ -25602,7 +36978,11 @@ graph [
     polarity -0.9869281045751634
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2845
@@ -25611,7 +36991,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2846
@@ -25620,7 +37004,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2847
@@ -25629,7 +37017,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2848
@@ -25638,7 +37030,11 @@ graph [
     polarity -0.9846153846153847
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2849
@@ -25647,7 +37043,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2850
@@ -25656,7 +37056,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2851
@@ -25665,7 +37069,11 @@ graph [
     polarity -0.9880952380952381
     polarity_label 0
     pads_cpp -1
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2852
@@ -25674,7 +37082,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2853
@@ -25683,7 +37095,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2854
@@ -25692,7 +37108,11 @@ graph [
     polarity 0.76
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2855
@@ -25701,7 +37121,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2856
@@ -25710,7 +37134,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2857
@@ -25719,7 +37147,11 @@ graph [
     polarity 0.7021276595744681
     polarity_label 4
     pads_cpp 1
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2858
@@ -25728,7 +37160,11 @@ graph [
     polarity 0.2
     polarity_label 3
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2859
@@ -25737,7 +37173,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2860
@@ -25746,7 +37186,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2861
@@ -25755,7 +37199,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2862
@@ -25764,7 +37212,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2863
@@ -25773,7 +37225,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2864
@@ -25782,7 +37238,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2865
@@ -25791,7 +37251,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2866
@@ -25800,7 +37264,11 @@ graph [
     polarity -0.9844961240310077
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2867
@@ -25809,7 +37277,11 @@ graph [
     polarity -0.9666666666666667
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2868
@@ -25818,7 +37290,11 @@ graph [
     polarity -0.9961759082217974
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2869
@@ -25827,7 +37303,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2870
@@ -25836,7 +37316,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2871
@@ -25845,7 +37329,11 @@ graph [
     polarity -0.9888268156424581
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2872
@@ -25854,7 +37342,11 @@ graph [
     polarity -0.9907834101382489
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2873
@@ -25863,7 +37355,11 @@ graph [
     polarity -0.9869281045751634
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2874
@@ -25872,7 +37368,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2875
@@ -25881,7 +37381,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2876
@@ -25890,7 +37394,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2877
@@ -25899,7 +37407,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2878
@@ -25908,7 +37420,11 @@ graph [
     polarity -0.9884726224783862
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2879
@@ -25917,7 +37433,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2880
@@ -25926,7 +37446,11 @@ graph [
     polarity 1.0
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2881
@@ -25935,7 +37459,11 @@ graph [
     polarity 0.6363636363636364
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2882
@@ -25944,7 +37472,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2883
@@ -25953,7 +37485,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2884
@@ -25962,7 +37498,11 @@ graph [
     polarity 0.8181818181818182
     polarity_label 4
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 1
   ]
   node [
     id 2885
@@ -25971,7 +37511,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2886
@@ -25980,7 +37524,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp -1
-    high_degree -1
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp -1
+    surprise_python -1
+    km_config -1
   ]
   node [
     id 2887
@@ -25989,7 +37537,11 @@ graph [
     polarity -0.9310344827586207
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2888
@@ -25998,7 +37550,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config -1
   ]
   node [
     id 2889
@@ -26007,7 +37563,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign -1
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2890
@@ -26016,7 +37576,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2891
@@ -26025,7 +37589,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   node [
     id 2892
@@ -26034,7 +37602,11 @@ graph [
     polarity 0.6571428571428571
     polarity_label 4
     pads_cpp 1
-    high_degree 1
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 1
+    surprise_python 1
+    km_config 0
   ]
   node [
     id 2893
@@ -26043,7 +37615,11 @@ graph [
     polarity -1.0
     polarity_label 0
     pads_cpp 0
-    high_degree 0
+    dith 0
+    eigensign 0
+    maxflow_cpp_udsp 0
+    surprise_python 0
+    km_config 0
   ]
   edge [
     source 0

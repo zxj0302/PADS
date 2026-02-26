@@ -1,3 +1,5 @@
+<img align="left" width="300" height="300" src="icons/icon.png" alt="icon">
+
 # On Echo Chamber Cores and Their Detection
 
 This is code repo for the paper "On Echo Chamber Cores and Their Detection". The abstract for the paper is as follows:
@@ -8,6 +10,8 @@ We propose a new method for ECC detection by modeling them as *Purity-Aware Dens
 
 1. *density* — capturing the high connectivity among core users, and  
 2. *purity* — reflecting the homogeneity of their opinions and polarizations.  
+
+![ECC-EC-opt](icons/ECC-EC-opt.png)
 
 We prove that this problem is NP-hard. To address this challenge, we develop an efficient greedy algorithm that jointly optimizes for density and purity. To evaluate the nature and impact of ECCs, we conduct experiments on real-world social media datasets. Our results demonstrate that the detected ECCs are densely connected, highly homophilic, and strongly polarized, validating the effectiveness of our detection framework and offering new insights into the structural and semantic properties of echo chambers.
 

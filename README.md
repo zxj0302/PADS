@@ -1,4 +1,4 @@
-<img align="left" width="300" height="300" src="icons/icon.png" alt="icon">
+<img align="left" width="150" height="150" src="icons/icon.png" alt="icon">
 
 # On Echo Chamber Cores and Their Detection
 

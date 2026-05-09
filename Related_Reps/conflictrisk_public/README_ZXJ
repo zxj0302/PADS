@@ -1,0 +1,8 @@
+Note that this is not the original rep of the paper.
+1. The original rep is in matlab, and I move the files into matlab_original.
+2. This is the conversion from matlab to python implementation with the help of LLM.
+3. Some little changes was made to make sure the positive definite, for example, the post-process of the X_value before feed it into the cholesky. We use MOSEK/CVXOPT instead of SCS because the latter always causes non-positive definite because of inaccuracy. And in the SDP relaxation, we make a tighter constrain by use a minimum eigenvalue constraint: X - min_eig * I >> 0 to make the 'non-positive definite' less frequent.
+4. Also changed the code to solve the bug in the original code that the wcr and acr has different length(wcr does not have the value for the last iteration).
+5. Need to mention the drawbacks of this algorithm, which is always get non-positive definite result even we set the X >= 0 as constrains. And we have tried many solutions, like post-process to make sure its positive-definite, or use X - min_eig * I >> 0, or other methods.
+6. Note that this algorithm always automatically uses many cores/threads, need to constain the cores uses if we want to have fair comparison.
+7. We have made two new files: demo.m and WCROpt.m, which increase the robustness by using MOSEK instead of SDPT3, and checks postive-definite and post-process

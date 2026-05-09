@@ -1,0 +1,9 @@
+This is not the original code rep, we make the following changes:
+For ROV:
+1. Remove redundant code that are not used
+2. Change the loop in function update_rwc to avoid copy everytime, thus improve the efficiency by about 2 times.
+3. Change the logic of adding repeat edges in variable candidates.
+
+For RePBubLik:
+1. Optimize the logic
+2. Remove redundant logics that don't help the obtaining of final edge set

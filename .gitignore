@@ -1,6 +1,13 @@
 .idea
 output
-Related_Reps
+Related_Reps/case-study
+Related_Reps/Cascade_Stance_Generator
+Related_Reps/controversy-detection-master
+Related_Reps/dataverse_files
+Related_Reps/ECS
+Related_Reps/rebalancing-social-feed
+*.exe
+*build
 test*
 temp*
 __pycache__

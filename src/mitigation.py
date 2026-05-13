@@ -6,12 +6,11 @@ import json
 import time
 from Related_Reps.ged.modules.ps import ge
 from Related_Reps.RePBubLik.RepBublik.RWC import RWC_reduction,compute_rwc
+from Related_Reps.MHT.mitigation_adapter import compute_mht_candidate_edges
 from Related_Reps.conflictrisk_public.WCR import WCR
-from Related_Reps.RePBubLik.RepBublik.RePBubLik import RePBubLik
-from Related_Reps.minimizing_polarization.CD import CD
 
 class MitigationComparison:
-    def __init__(self, G=None, graph_file=None, dataset='Referendum', strategies=None, num_edges=1000, random_seed=42):
+    def __init__(self, G=None, graph_file=None, dataset='Referendum', strategies=None, num_edges=1000, random_seed=20010302):
         # Set random seed for reproducibility
         random.seed(random_seed)
         np.random.seed(random_seed)
@@ -72,6 +71,7 @@ class MitigationComparison:
             'A_ROV': {'color': "#7DAEE0", 'marker': '*', 'nodes': None, 'description': 'Add edges computed by ROV'},
             'A_RL+': {'color': "#7DAEE0", 'marker': '*', 'nodes': None, 'description': 'Add edges computed by RePBubLik+'},
             'A_CD': {'color': "#7DAEE0", 'marker': '*', 'nodes': None, 'description': 'Add edges computed by CD'},
+            'A_MHT': {'color': "#D4A373", 'marker': 'P', 'nodes': None, 'description': 'Add edges computed by MHT using the RWC partition'},
             'A_R': {'color': "#7DAEE0", 'marker': '*', 'nodes': None, 'description': 'Add non-existing edges with random endpoints'},
             'A_H': {'color': "#B395BD", 'marker': 'D', 'nodes': None, 'description': 'Add non-existing edges with high degree opposing endpoints'},
             'A_P': {'color': "#299D8F", 'marker': '^', 'nodes': None, 'description': 'Add non-existing edges with two endpoints in the opposing PADS group'},
@@ -254,9 +254,15 @@ class MitigationStrategy:
                 perc_rb = kwargs.get('perc_rb', 0.2)
                 new_edges = RWC_reduction(self.G, unweighted=True, k=num_edges, ratio=ratio, perc_rb=perc_rb)
             elif strategy == 'A_RL+':
+                from Related_Reps.RePBubLik.RepBublik.RePBubLik import RePBubLik
+
                 new_edges = RePBubLik(self.G, unweighted=True, maxedges=num_edges)
             elif strategy == 'A_CD':
+                from Related_Reps.minimizing_polarization.CD import CD
+
                 _, new_edges = CD(self.G, k=num_edges).coordinate_descent()
+            elif strategy == 'A_MHT':
+                new_edges = compute_mht_candidate_edges(self.G, num_edges=num_edges)
             elif strategy in ['AW_P', 'AW_MU', 'AW_MW', 'AW_G']:
                 new_edges = self.compute_weighted_edges(attr, num_edges)
             else:

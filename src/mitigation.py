@@ -173,7 +173,7 @@ class MitigationStrategy:
             new_weights = {}
             time_start = time.time()
             if strategy == 'R_WCR':
-                new_weights = WCR(self.G).run(args={'num_edges': num_edges*2})
+                new_weights = WCR(self.G).run(args={'k': num_edges*2})
             elif strategy in ['RD_MU', 'RD_MW', 'RD_G', 'RD_P']:
                 for edge in self.G.edges():
                     if (self.G.nodes[edge[0]][attr] != 0 and self.G.nodes[edge[1]][attr] == 0) or (self.G.nodes[edge[0]][attr] == 0 and self.G.nodes[edge[1]][attr] != 0):

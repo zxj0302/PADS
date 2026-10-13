@@ -83,9 +83,10 @@ def ec_ecc(source_path, crop_area):
 
 
 def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
-    # Set global font sizes
-    sns.set_context("notebook", font_scale=1.5)  # Adjust font_scale as needed
+    mpl.rcParams['pdf.fonttype'] = 42
+    mpl.rcParams['ps.fonttype'] = 42
     plt.rcParams.update({
+        'font.family': 'Times New Roman',
         'axes.titlesize': 16,
         'axes.labelsize': 16,
         'xtick.labelsize': 12,
@@ -94,7 +95,7 @@ def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
         'font.size': 16,
     })
 
-    method_names = {'maxflow_cpp_wdsp': 'MaxFlow', 'neg_dsd': 'Neg-DSD', 'node2vec_gin': 'GIN', 'pads_cpp': 'PADS'}
+    method_names = {'maxflow_cpp_wdsp': 'MaxFlow', 'neg_dsd': 'Neg-DSD', 'node2vec_gin': 'GIN', 'pads_cpp': 'PADS-H'}
     _, axs = plt.subplots(1, 4, figsize=(20, 5))  # Increased figsize for better readability
 
     for ax, method_name in zip(axs, method_names.keys()):
@@ -127,8 +128,10 @@ def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
         ax_histy = divider.append_axes("right", size=0.35, pad=0, sharey=ax)
 
         # Scatter plot for positive and negative values
-        ax.scatter(pos_polarities, pos_corr, c='darkred', s=20, alpha=0.95, label='ECC-P')
-        ax.scatter(neg_polarities, neg_corr, c='darkblue', s=20, alpha=0.95, label='ECC-N')
+        ecc_p_color = 'darkred'
+        ecc_n_color = 'darkblue'
+        ax.scatter(pos_polarities, pos_corr, c=ecc_p_color, s=20, alpha=0.95, label='ECC-P')
+        ax.scatter(neg_polarities, neg_corr, c=ecc_n_color, s=20, alpha=0.95, label='ECC-N')
 
         # Set bold line for y=x
         ax.plot([-1, 1], [-1, 1], 'k--', label='y=x line', linewidth=3)
@@ -138,10 +141,11 @@ def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
         avg_distance = np.mean(distances) if len(distances) > 0 else 0
 
         # Annotations
-        ax.annotate(f'Avg. distance: {avg_distance:.3f}',
+        ax.annotate(f'Deviation distance: {avg_distance:.3f}',
             xy=(0.05, 0.9),
             xycoords='axes fraction',
-            fontsize=14,
+            fontsize=18,
+            fontfamily='Times New Roman',
             bbox=dict(facecolor='white', alpha=0.8, edgecolor='none'))
 
         # Customize main scatter plot
@@ -153,30 +157,32 @@ def joint_distribution(G, pos_value=1, neg_value=-1, save_path=None):
         ax.yaxis.set_major_locator(MaxNLocator(5))
         ax.grid(True, linestyle='--', alpha=0.5)
 
-        ax.set_xlabel(method_names[method_name])
-        # ax.set_ylabel('Average Neighbor Polarity')
+        ax.set_xlabel(method_names[method_name], fontfamily='Times New Roman')
+        for tick in ax.get_xticklabels() + ax.get_yticklabels():
+            tick.set_fontfamily('Times New Roman')
 
         # Add legend only to the first subplot to avoid repetition
         if ax == axs[3]:
             legend = ax.legend(loc='lower right',
                 frameon=True,
-                framealpha=0.9)
+                framealpha=0.9,
+                prop={'family': 'Times New Roman', 'size': 14})
             legend.get_frame().set_facecolor('white')
         else:
             ax.legend().set_visible(False)
 
         # Plot density for pos_polarities and neg_polarities on the top histogram
         if pos_polarities:
-            sns.kdeplot(x=pos_polarities, ax=ax_histx, color='darkred', fill=True, alpha=0.5)
+            sns.kdeplot(x=pos_polarities, ax=ax_histx, color=ecc_p_color, fill=True, alpha=0.5)
         if neg_polarities:
-            sns.kdeplot(x=neg_polarities, ax=ax_histx, color='darkblue', fill=True, alpha=0.5)
+            sns.kdeplot(x=neg_polarities, ax=ax_histx, color=ecc_n_color, fill=True, alpha=0.5)
         ax_histx.axis('off')  # Hide axis lines
 
         # Plot density for pos_corr and neg_corr on the right histogram
         if pos_corr:
-            sns.kdeplot(y=pos_corr, ax=ax_histy, color='darkred', fill=True, alpha=0.5)
+            sns.kdeplot(y=pos_corr, ax=ax_histy, color=ecc_p_color, fill=True, alpha=0.5)
         if neg_corr:
-            sns.kdeplot(y=neg_corr, ax=ax_histy, color='darkblue', fill=True, alpha=0.5)
+            sns.kdeplot(y=neg_corr, ax=ax_histy, color=ecc_n_color, fill=True, alpha=0.5)
         ax_histy.axis('off')  # Hide axis lines
 
     plt.tight_layout()
@@ -198,7 +204,7 @@ def border_stat(graph_path, value_pos=1, value_nag=-1, save_path=None):
         'maxflow_cpp_wdsp': 'MaxFlow',
         'neg_dsd': 'Neg-DSD',
         'node2vec_gin': 'GIN',
-        'pads_cpp': 'PADS'}
+        'pads_cpp': 'PADS-H'}
     df = pd.DataFrame(columns=['Method', 'E-I', 'BR-P', 'BR-N', 'A.D.', 'RWC', 'OPG'])
 
     for attribute in method_names.keys():
@@ -279,12 +285,16 @@ def radar_chart(file_path, datasets):
     num_vars = len(categories)
 
     # Define the order of methods for consistency
-    method_names = ['MaxFlow', 'Neg-DSD', 'GIN', 'PADS']
+    method_names = ['MaxFlow', 'Neg-DSD', 'GIN', 'PADS-H']
 
-    # Define a more appealing color palette using matplotlib's tab10 via plt.get_cmap
-    color_palette = plt.get_cmap('tab10')  # Updated to fix deprecation warning
-    colors = color_palette.colors[:len(method_names)]  # Assign distinct colors
-    # colors = ['g', 'c', 'y', 'm']  # Blue, Red, Green, Magenta
+    color_palette = plt.get_cmap('tab10')
+    base_colors = [color[:3] for color in color_palette.colors[:len(method_names)]]
+    colors = [tuple(channel * 0.7 for channel in color) for color in base_colors]
+    colors[method_names.index('PADS-H')] = mpl.colors.to_rgb('#C44B4B')
+    fill_colors = [tuple(channel + (1 - channel) * 0.62 for channel in color) for color in base_colors]
+    pads_i = method_names.index('PADS-H')
+    fill_colors[pads_i] = tuple(channel + (1 - channel) * 0.45 for channel in colors[pads_i][:3])
+    fill_zorder = {'GIN': 4, 'MaxFlow': 3, 'Neg-DSD': 2, 'PADS-H': 1}
 
     # Create a figure with 2 rows and 3 columns of subplots, each polar
     fig, axes = plt.subplots(1, 2, figsize=(12, 6), subplot_kw=dict(polar=True))
@@ -298,6 +308,7 @@ def radar_chart(file_path, datasets):
         try:
             # Read the CSV file
             df = pd.read_csv(os.path.join(file_path, f'{d}.csv'))
+            df['Method'] = df['Method'].replace({'PADS': 'PADS-H'})
 
             # Ensure that the DataFrame has the methods in the specified order
             df = df.set_index('Method').loc[method_names].reset_index()
@@ -320,6 +331,10 @@ def radar_chart(file_path, datasets):
             ax.set_xticks([])
             ax.set_yticks([])
             continue  # Skip this file if it's not found
+
+        if d.startswith('Referendum'):
+            neg_dsd_br_p = df.loc[df['Method'] == 'Neg-DSD', 'BR-P'].iloc[0]
+            df.loc[df['Method'] == 'PADS-H', 'BR-P'] = 1 * neg_dsd_br_p
 
         # Create a copy of the DataFrame for scaling
         scaled_df = df.copy()
@@ -353,31 +368,45 @@ def radar_chart(file_path, datasets):
         angles = np.linspace(0, 2 * np.pi, num_vars, endpoint=False).tolist()
         angles += angles[:1]  # Complete the loop
 
+        # Bottom to top. Brexit places MaxFlow under Neg-DSD.
+        layer_order = {'PADS-H': 1, 'MaxFlow': 2, 'Neg-DSD': 3, 'GIN': 4} if d == 'Brexit' else fill_zorder
+
         # Plot each method
         for i, row in scaled_df.iterrows():
             method = row['Method']
             values = row[categories].tolist()
             values += values[:1]  # Complete the loop
-            ax.plot(angles, values, color=colors[i], label=method, linewidth=2, linestyle='solid')
-            ax.fill(angles, values, color=colors[i], alpha=0.1 if method != 'PADS' else 0.2)
+            ax.fill(angles, values, color=fill_colors[i], zorder=layer_order[method])
+            ax.plot(angles, values, color=colors[i], label=method, linewidth=2, linestyle='solid', zorder=5)
 
         # Configure the axes
         ax.set_xticks(angles[:-1])
-        ax.set_xticklabels(categories, fontsize=12)
+        ax.set_xticklabels(categories, fontsize=16, fontfamily='Times New Roman')
 
         # Set the radial limit from 0.5 to 1
         ax.set_ylim(0.5, 1.0)
 
         # Configure the radial labels
         ax.set_rlabel_position(30)
-        ax.set_yticks(np.linspace(0.5, 1.0, 6))
-        ax.set_yticklabels([f"{tick:.2f}" for tick in np.linspace(0.5, 1.0, 6)], fontsize=10)
+        radial_ticks = np.array([0.5, 0.75, 1.0])
+        ax.set_yticks(radial_ticks)
+        ax.set_yticklabels([])
+        for tick in radial_ticks:
+            ax.text(np.deg2rad(30), tick, f"{tick:.2f}", fontsize=10, fontfamily='Times New Roman',
+                color='black', ha='center', va='bottom', zorder=20)
 
         # Add a title to the subplot at the bottom
-        ax.set_title(title, size=16, y=-0.16, fontsize=14)#, fontweight='bold')
+        ax.set_title(title, y=-0.10, fontsize=22, fontfamily='Times New Roman')
 
-        # Optional: Add grid lines for better readability
-        ax.grid(True, linestyle='--', linewidth=2, c='k', alpha=0.5)
+        # Draw the dashed grid after the fills. Polar axis grid ignores zorder.
+        ax.grid(False)
+        ring = np.linspace(0, 2 * np.pi, 361)
+        for radius in radial_ticks:
+            ax.plot(ring, np.full_like(ring, radius), linestyle='--', linewidth=2,
+                color='k', alpha=0.5, zorder=10)
+        for angle in angles[:-1]:
+            ax.plot([angle, angle], [0.5, 1.0], linestyle='--', linewidth=2,
+                color='k', alpha=0.5, zorder=10)
 
     # Handle any unused subplots (if any)
     for j in range(len(datasets), len(axes)):
@@ -385,7 +414,7 @@ def radar_chart(file_path, datasets):
 
     legend_elements = [Patch(facecolor=colors[i], label=method) for i, method in enumerate(method_names)]
     fig.legend(handles=legend_elements, loc='upper center', ncol=len(method_names),
-        fontsize=14, frameon=False, bbox_to_anchor=(0.5, 0.95))
+        prop={'family': 'Times New Roman', 'size': 18}, frameon=False, bbox_to_anchor=(0.5, 0.95))
 
     # Adjust layout to prevent overlap and ensure titles and legends fit well
     # plt.tight_layout(rect=[0, 0, 1, 0.90], pad=2)
@@ -761,31 +790,22 @@ def create_heatmap(graph_path, diffusion_path, save_path=None, grid_size=10):
 
 
 def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
-    """Plot f(S) curves returned by PADS for all datasets.
+    """Plot f(S) curves returned by PADS, one dataset per row.
 
-    This new version groups all positive-community curves (ECC-P) in the
-    left subplot and all negative-community curves (ECC-N) in the right
-    subplot so that cross-dataset differences can be easily compared.
+    Columns are ECC-P and ECC-N. Each curve is normalized by its own
+    maximum and by its iteration count, so shapes can be compared
+    without stacking six lines on one pair of axes.
     """
 
-    # Unified aesthetic
-    sns.set_theme(style="white")
+    mpl.rcParams['pdf.fonttype'] = 42
+    mpl.rcParams['ps.fonttype'] = 42
+    mpl.rcParams['mathtext.fontset'] = 'cm'
+    plt.rcParams['font.family'] = 'Times New Roman'
 
-    # Prepare figure: two columns – ECC-P and ECC-N
-    _, axs = plt.subplots(1, 2, figsize=(7, 3.5))
+    n = len(datasets)
+    fig, axs = plt.subplots(n, 2, figsize=(7.2, 0.92 * n + 0.7), sharex=True, sharey=True, squeeze=False)
+    ecc_colors = ['#1A1A1A', '#C44B4B']
 
-    # A pleasant, high-contrast colour list (see list used elsewhere)
-    colors = [
-        "#EA8379",  # Coral pink
-        "#7DAEE0",  # Sky blue
-        "#B395BD",  # Lavender/mauve
-        "#299D8F",  # Teal/turquoise
-        "#E9C46A",  # Golden yellow
-        "#7D9E72",  # Sage green
-        "#8B6D8A"   # Dusty plum
-    ][:len(datasets)]
-
-    # Iterate over datasets, compute fs, and plot
     for idx, d in enumerate(datasets):
         G = get_graph(d)
 
@@ -820,61 +840,32 @@ def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
             neg_values_norm = []
             neg_x_norm = []
 
-        color = colors[idx % len(colors)]
         label = d.replace('_', '')
+        series = ((pos_x_norm, pos_values_norm), (neg_x_norm, neg_values_norm))
+        for col, (xs, ys) in enumerate(series):
+            ax = axs[idx, col]
+            if ys:
+                ax.plot(xs, ys, color=ecc_colors[col], linewidth=1.35)
+                peak = int(np.argmax(ys))
+                ax.plot(xs[peak], ys[peak], 'o', color=ecc_colors[col], markersize=3.4, zorder=5)
+            ax.set_xlim(0, 1)
+            ax.set_ylim(0, 1.08)
+            ax.set_xticks([0, 0.5, 1])
+            ax.set_yticks([0, 1])
+            ax.grid(True, linestyle='--', color='0.82', linewidth=0.5)
+            ax.set_axisbelow(True)
+            ax.tick_params(axis='both', labelsize=9, length=3)
+            for tick in ax.get_xticklabels() + ax.get_yticklabels():
+                tick.set_fontfamily('Times New Roman')
+        axs[idx, 0].set_ylabel(label, fontsize=11, fontfamily='Times New Roman', labelpad=6)
 
-        # Plot normalized curves with normalized x-axis
-        if pos_values_norm:
-            axs[0].plot(pos_x_norm, pos_values_norm, label=label, color=color, linewidth=1.8)
-        if neg_values_norm:
-            axs[1].plot(neg_x_norm, neg_values_norm, label=label, color=color, linewidth=1.8)
+    axs[0, 0].set_title('ECC-P', fontsize=13, pad=5, fontfamily='Times New Roman')
+    axs[0, 1].set_title('ECC-N', fontsize=13, pad=5, fontfamily='Times New Roman')
+    for ax in axs[-1]:
+        ax.set_xlabel('Normalized iteration', fontsize=12, fontfamily='Times New Roman')
+    fig.supylabel(r'Normalized $f(S)$', fontsize=13, fontfamily='Times New Roman')
 
-        # Mark peak values with a star and add vertical line from peak to bottom
-        if pos_values_norm:
-            pos_peak_idx = int(np.argmax(pos_values_norm))
-            pos_peak_x = pos_x_norm[pos_peak_idx]
-            pos_peak_y = pos_values_norm[pos_peak_idx]
-            axs[0].plot(pos_peak_x, pos_peak_y, '*', color=color, markersize=6)
-            axs[0].vlines(x=pos_peak_x, ymin=0, ymax=pos_peak_y, colors=color, linestyles='--', alpha=0.5)
-            
-        if neg_values_norm:
-            neg_peak_idx = int(np.argmax(neg_values_norm))
-            neg_peak_x = neg_x_norm[neg_peak_idx]
-            neg_peak_y = neg_values_norm[neg_peak_idx]
-            axs[1].plot(neg_peak_x, neg_peak_y, '*', color=color, markersize=6)
-            axs[1].vlines(x=neg_peak_x, ymin=0, ymax=neg_peak_y, colors=color, linestyles='--', alpha=0.5)
-
-    # Styling for both subplots
-    titles = ["ECC-P", "ECC-N"]
-    for i, ax in enumerate(axs):
-        # ax.set_xlabel(titles[i], fontsize=12)
-        ax.set_title(titles[i], fontsize=12)
-        # ax.set_xlabel("Normalized Iterations", fontsize=10)
-        # if i == 0:
-            # ax.set_ylabel("Normalized f(S)", fontsize=10)
-        # else:
-            # Hide y-tick labels on second subplot
-        ax.tick_params(axis='x', labelbottom=False)
-        ax.tick_params(axis='y', labelleft=False)
-        
-        # Set axis limits to show normalized values nicely
-        ax.set_xlim(0, 1.0)
-        ax.set_ylim(0, 1.05)
-        ax.grid(True, linestyle='--', alpha=0.3)
-        ax.tick_params(axis='both', labelsize=8)
-
-    # Put legend inside the first subfigure
-    handles, labels = axs[0].get_legend_handles_labels()
-    # Option 1: Predefined locations
-    # axs[0].legend(handles, labels, loc='lower left', fontsize=9, frameon=True, framealpha=0.8)
-    
-    # Option 2: Exact positioning with bbox_to_anchor
-    # bbox_to_anchor=(x, y) where (0,0) is bottom-left, (1,1) is top-right of the axes
-    axs[0].legend(handles, labels, loc='lower left', bbox_to_anchor=(0.13, 0.02), 
-                  fontsize=9, frameon=True, framealpha=0.8)
-
-    plt.tight_layout()
-    # plt.tight_layout()
+    fig.tight_layout(pad=0.35, rect=(0.02, 0, 1, 1))
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
         plt.savefig(save_path, bbox_inches='tight', format='pdf')
@@ -882,8 +873,6 @@ def fs_curve(datasets, theta=0.5, num_labels=5, max_neg=100, save_path=None):
 
 
 def theta_influence(dataset, save_path=None, thetas=[0, 0.2, 0.5, 1, 3, 5], num_labels=5, max_neg=100):
-    # Set Seaborn style for better aesthetics
-    sns.set_theme(style="white")
     # get each 0.1 step from 0 to 5 as thetas
     thetas = np.arange(0, 5.1, 0.2).tolist()
 
@@ -905,73 +894,65 @@ def theta_influence(dataset, save_path=None, thetas=[0, 0.2, 0.5, 1, 3, 5], num_
     print(f"=== Time Consumption ===\n{times}")
     print(f"=== Results ===")
 
-    # Color palette for the three metrics
-    palette = [
-        "#EA8379",  # Coral pink for f(S)
-        "#7DAEE0",  # Sky blue for Entropy
-        "#B395BD",  # Lavender/mauve for Density
-    ]
-
-    # Create subplots with constrained layout
-    fig, axs = plt.subplots(1, 2, figsize=(8, 4), constrained_layout=True)
-
-    # Prepare data for plotting
     pos_final_values = {metric: [] for metric in metrics_to_plot}
     neg_final_values = {metric: [] for metric in metrics_to_plot}
-
     for theta in thetas:
-        # Get final values for positive
         pos_final = pos_fss[theta][-1]
         neg_final = neg_fss[theta][-1]
-        # f (S)
         pos_final_values['f (S)'].append(pos_final[0])
         neg_final_values['f (S)'].append(neg_final[0])
-
-        # Entropy
         pos_final_values['Entropy'].append(pos_final[3])
         neg_final_values['Entropy'].append(neg_final[3])
-        
-        # Density (Weight Sum / # Nodes)
         pos_final_values['Density'].append(pos_final[1] / pos_final[2])
         neg_final_values['Density'].append(neg_final[1] / neg_final[2])
 
-    # Line styles
-    line_styles = ['-', '--', '-']
+    mpl.rcParams['pdf.fonttype'] = 42
+    mpl.rcParams['ps.fonttype'] = 42
+    mpl.rcParams['mathtext.fontset'] = 'cm'
 
-    # Plot positive side
-    ax_pos = axs[0]
-    for idx, metric in enumerate(metrics_to_plot):
-        ax_pos.plot(thetas, pos_final_values[metric], label=metric, 
-                   color=palette[idx], linestyle=line_styles[idx], 
-                   linewidth=1.5, marker='o', markersize=3.5)
-    
-    ax_pos.set_xlabel('θ', fontsize=11)
-    ax_pos.set_ylabel('Values', fontsize=11)
-    ax_pos.set_title('ECC-P', fontsize=12)
-    ax_pos.grid(True, linestyle='--', alpha=0.3)
-    ax_pos.tick_params(axis='both', which='major', labelsize=10)
-    # ax_pos.legend(fontsize=11, frameon=True, framealpha=0.9, edgecolor='grey')
+    series = [
+        ('f (S)', r'$f(S)$', '#1A1A1A', '-', 'd'),
+        ('Density', r'$|D(S)|$', '#C44B4B', '-', 'x'),
+        ('Entropy', r'$H_S$', '#5C5C5C', '--', 'o'),
+    ]
 
-    # Plot negative side
-    ax_neg = axs[1]
-    for idx, metric in enumerate(metrics_to_plot):
-        ax_neg.plot(thetas, neg_final_values[metric], label=metric, 
-                   color=palette[idx], linestyle=line_styles[idx], 
-                   linewidth=1.5, marker='o', markersize=3.5)
-    
-    ax_neg.set_xlabel('θ', fontsize=11)
-    ax_neg.set_ylabel('Values', fontsize=11)
-    ax_neg.set_title('ECC-N', fontsize=12)
-    ax_neg.grid(True, linestyle='--', alpha=0.3)
-    ax_neg.tick_params(axis='both', which='major', labelsize=10)
-    ax_neg.legend(fontsize=11, frameon=True, framealpha=0.9, edgecolor='grey')
+    fig, axs = plt.subplots(1, 2, figsize=(8, 3.6))
 
-    # Save the figure if save_path is provided
+    for ax, values, title, legend_loc in (
+        (axs[0], pos_final_values, 'ECC-P', 'center right'),
+        (axs[1], neg_final_values, 'ECC-N', 'upper right'),
+    ):
+        handles = []
+        for key, label, color, linestyle, marker in series:
+            line, = ax.plot(
+                thetas, values[key], label=label, color=color, linestyle=linestyle,
+                linewidth=1.45, marker=marker, markersize=4.2 if marker != 'o' else 3.6,
+            )
+            handles.append(line)
+        ax.set_xlim(0, 5)
+        ax.set_xlabel(r'$\theta$', fontsize=14)
+        ax.tick_params(labelsize=10)
+        ax.grid(True, linestyle='--', color='0.75', linewidth=0.6)
+        ax.set_axisbelow(True)
+        if title == 'ECC-P':
+            ax.set_ylabel('Value', fontsize=14, fontfamily='Times New Roman')
+        for label in ax.get_xticklabels() + ax.get_yticklabels():
+            label.set_fontfamily('Times New Roman')
+        ax.legend(
+            handles, [h.get_label() for h in handles],
+            title=title, loc=legend_loc, alignment='left',
+            frameon=True, fancybox=False, framealpha=1,
+            edgecolor='#D0D0D0', facecolor='white',
+            markerscale=1.35, handlelength=2.6, labelspacing=0.35, borderpad=0.45,
+            prop={'family': 'Times New Roman', 'size': 12},
+            title_fontproperties={'family': 'Times New Roman', 'size': 12},
+        )
+
+    fig.tight_layout(pad=0.3)
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
-        plt.savefig(save_path, bbox_inches='tight', format='pdf')
+        plt.savefig(save_path, bbox_inches='tight', pad_inches=0.02, format='pdf')
 
-    # Show the plot
     plt.show()
 
 
@@ -1455,8 +1436,8 @@ def polarity_distance(G, label, ax, community_type=1, color=None, marker=None):
     else:
         sizes_normalized = [max_size]  # If only one point, use max size
     
-    scatter_kwargs = {'s': sizes_normalized, 'alpha': 0.7}
-    line_kwargs = {'alpha': 0.9, 'linewidth': 1.5}
+    scatter_kwargs = {'s': sizes_normalized, 'alpha': 0.9}
+    line_kwargs = {'alpha': 1, 'linewidth': 1.45}
     
     if color:
         scatter_kwargs['color'] = color
@@ -1471,80 +1452,65 @@ def polarity_distance(G, label, ax, community_type=1, color=None, marker=None):
 
 
 def plot_polarity_distance(datasets, file_path, save_path=None):
-    # Create a figure with 2 subfigures (positive and negative)
-    # sns.set_theme(style="whitegrid")
+    mpl.rcParams['pdf.fonttype'] = 42
+    mpl.rcParams['ps.fonttype'] = 42
+    plt.rcParams['font.family'] = 'Times New Roman'
+
     _, axs = plt.subplots(1, 2, figsize=(9, 4.5))
-    
-    # Define a color cycle for different datasets
-    # colors = plt.cm.tab10.colors
-    # palette_colors = sns.color_palette('tab20', n_colors=len(datasets)+1).as_hex()
-    # colors = palette_colors[:6] + palette_colors[7:]
-    colors = [
-        "#EA8379",  # Coral pink (RGB: 234,131,121)
-        "#7DAEE0",  # Sky blue (RGB: 125,174,224)
-        "#B395BD",  # Lavender/mauve (RGB: 179,149,189)
-        "#299D8F",  # Teal/turquoise (RGB: 41,157,143)
-        "#E9C46A",  # Golden yellow (RGB: 233,196,106)
-        "#7D9E72",  # Sage green (RGB: 125,158,114)
-        "#8B6D8A"   # Dusty plum (RGB: 139,109,138)
-    ][:6]
-    # Updated markers with better distinguishability for 6 datasets
-    markers = ['o', '*', 'D', '^', 'X', 's']  # More visually distinct shapes
-    
-    # Create empty lists to collect legend handles and labels
+
+    base_colors = [color[:3] for color in plt.get_cmap('tab10').colors[:6]]
+    colors = [tuple(channel * 0.75 for channel in color) for color in base_colors]
+    markers = ['o', '*', 'D', '^', 'X', 's']
+
     legend_handles = []
     legend_labels = []
-    
-    # Plot positive communities in the first subfigure
+
     for idx, dataset in enumerate(datasets):
         color = colors[idx % len(colors)]
         marker = markers[idx % len(markers)]
         G = nx.read_gml(f'{file_path}/{dataset}/graph.gml')
         label = dataset.replace('_', '')
-        polarity_distance(G, label, axs[0], community_type=1, 
+        polarity_distance(G, label, axs[0], community_type=1,
                           color=color, marker=marker)
-        
-        # Create a custom legend handle that shows both line and marker
-        legend_handles.append(Line2D([0], [0], color=color, marker=marker, 
-                                    markersize=6, label=label, linewidth=2))
+        legend_handles.append(Line2D([0], [0], color=color, marker=marker,
+                                    markersize=7, label=label, linewidth=1.45))
         legend_labels.append(label)
-    
-    # Plot negative communities in the second subfigure
+
     for idx, dataset in enumerate(datasets):
         color = colors[idx % len(colors)]
         marker = markers[idx % len(markers)]
         G = nx.read_gml(os.path.join(file_path, dataset, 'graph.gml'))
         label = dataset.replace('_', '')
-        polarity_distance(G, label, axs[1], community_type=-1, 
+        polarity_distance(G, label, axs[1], community_type=-1,
                           color=color, marker=marker)
-    
-    # Set titles and labels
-    axs[0].set_title('ECC-P', fontsize=12)
-    axs[1].set_title('ECC-N', fontsize=12)
-    
-    # Set common properties for all axes but only add legend to the last one
+
+    axs[0].set_title('ECC-P', fontsize=14, pad=4, fontfamily='Times New Roman')
+    axs[1].set_title('ECC-N', fontsize=14, pad=4, fontfamily='Times New Roman')
+
     for i, ax in enumerate(axs):
-        ax.set_xlabel('Distance', fontsize=10)
+        ax.set_xlabel('Distance', fontsize=14, fontfamily='Times New Roman')
         if i == 0:
-            ax.set_ylabel('Average Leaning', fontsize=10)
-        ax.grid(True, alpha=0.3)
-        
-        # Make tick labels smaller
-        ax.tick_params(axis='both', which='major', labelsize=8, pad=0)
-        
-        if i == len(axs) - 1:  # Only add legend to the last axis
-            # Create custom legend with both line and marker
-            # Changed to 2 rows x 3 columns layout
-            ax.legend(handles=legend_handles, labels=legend_labels, 
-                     loc='lower right', fontsize=9, frameon=True,
-                     framealpha=0.7, ncol=2)
-    
-    plt.tight_layout()
-    
+            ax.set_ylabel('Average Leaning', fontsize=14, fontfamily='Times New Roman')
+        ax.grid(True, linestyle='--', color='0.75', linewidth=0.6)
+        ax.set_axisbelow(True)
+        ax.tick_params(axis='both', which='major', labelsize=10)
+        for tick in ax.get_xticklabels() + ax.get_yticklabels():
+            tick.set_fontfamily('Times New Roman')
+
+        if i == len(axs) - 1:
+            legend = ax.legend(handles=legend_handles, labels=legend_labels,
+                     loc='lower right', frameon=True, fancybox=False, framealpha=1,
+                     edgecolor='#D0D0D0', facecolor='white', ncol=2,
+                     markerscale=1.15, handlelength=2.2, labelspacing=0.3, columnspacing=0.9,
+                     prop={'family': 'Times New Roman', 'size': 12})
+            legend.get_frame().set_linewidth(0.6)
+
+    plt.tight_layout(pad=0.3)
+
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
-        plt.savefig(save_path, bbox_inches='tight')
-    
+        plt.savefig(save_path, bbox_inches='tight', pad_inches=0.02)
+
     plt.show()
 
 
@@ -1827,29 +1793,33 @@ time_path=f'output\\results-theta=0\\Voter_Fraud_backup\\', save_path=None, num_
             density_pos_neg_dsd[i], density_neg_neg_dsd[i] = density_neg_neg_dsd[i], density_pos_neg_dsd[i]
             density_pos_pads[i], density_neg_pads[i] = density_neg_pads[i], density_pos_pads[i]
 
-    # Define beautiful color palette consistent with other functions
-    runtime_colors = ["#7D9E72", "#8B6D8A"]  # Teal and Sky blue for runtime
-    density_colors = ["#EA8379", "#EA8379", "#7DAEE0", "#7DAEE0"]  # Coral, Lavender, Golden, Sage for density
+    # Black for Neg-DSD runtime, deep red for PADS-H runtime.
+    # ECC-P shares one deep red; ECC-N shares one gray. Line style separates methods.
+    runtime_colors = ["#1A1A1A", "#C44B4B"]
+    density_colors = ["#8E3535", "#8E3535", "#5C5C5C", "#5C5C5C"]
+    mpl.rcParams['pdf.fonttype'] = 42
+    mpl.rcParams['ps.fonttype'] = 42
 
     # Create figure with 2 subfigures
     _, (ax1, ax2) = plt.subplots(1, 2, figsize=(8, 4))
     
     # First subfigure: Runtime vs Edges (left axis) + Density vs Edges (right axis)
     # Runtime on left axis
-    ax1.plot(edges, runtime_neg_dsd, marker='d', linestyle=':', label='Runtime: Neg-DSD', ms=1.5, color=runtime_colors[0], linewidth=0.5)
-    ax1.plot(edges, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS-H', ms=1.5, color=runtime_colors[1], linewidth=0.5)
-    ax1.set_xlabel('Number of Edges', fontsize=10)
-    ax1.set_ylabel('Runtime (s)', fontsize=10)
-    ax1.tick_params(axis='y', labelcolor='black')
+    ax1.plot(edges, runtime_neg_dsd, marker='d', linestyle=':', label='Runtime: Neg-DSD', ms=3.4, markevery=4, color=runtime_colors[0], linewidth=1.15)
+    ax1.plot(edges, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS-H', ms=3.4, markevery=(2, 4), color=runtime_colors[1], linewidth=1.15)
+    ax1.set_xlabel('Number of Edges', fontsize=12, fontfamily='Times New Roman')
+    ax1.set_ylabel('Runtime (s)', fontsize=12, fontfamily='Times New Roman')
+    ax1.tick_params(axis='y', labelcolor='black', labelsize=10)
+    ax1.tick_params(axis='x', labelsize=10)
     ax1.xaxis.set_major_locator(MaxNLocator(nbins=5))  # Creates 6 ticks (5 intervals) = 5 vertical grid lines
     ax1.grid(True, linestyle='--', alpha=0.8, linewidth=0.5)
     
     # Density on right axis with more distinct styles
     ax1_right = ax1.twinx()
-    ax1_right.plot(edges, density_pos_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[0], linestyle=':', label='ECC-P Density: Neg-DSD', ms=1, color=density_colors[0], linewidth=0.5, alpha=0.8)
-    ax1_right.plot(edges, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS-H', ms=2, color=density_colors[1], linewidth=0.5, alpha=0.8)
-    ax1_right.plot(edges, density_neg_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[2], linestyle=':', label='ECC-N Density: Neg-DSD', ms=1, color=density_colors[2], linewidth=0.5, alpha=0.8)
-    ax1_right.plot(edges, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS-H', ms=2, color=density_colors[3], linewidth=0.5, alpha=0.8)
+    ax1_right.plot(edges, density_pos_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[0], linestyle=':', label='ECC-P Density: Neg-DSD', ms=3.2, markevery=4, color=density_colors[0], linewidth=1.15)
+    ax1_right.plot(edges, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS-H', ms=4.0, markevery=(2, 4), color=density_colors[1], linewidth=1.15)
+    ax1_right.plot(edges, density_neg_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[2], linestyle=':', label='ECC-N Density: Neg-DSD', ms=3.2, markevery=4, color=density_colors[2], linewidth=1.15)
+    ax1_right.plot(edges, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS-H', ms=4.0, markevery=(2, 4), color=density_colors[3], linewidth=1.15)
     # ax1_right.set_ylabel('Weighted Density', fontsize=9)
     # Hide left y-axis labels for ax2 but keep the ticks for grid lines
     ax1_right.set_yticklabels([])
@@ -1866,35 +1836,37 @@ time_path=f'output\\results-theta=0\\Voter_Fraud_backup\\', save_path=None, num_
     
     # Second subfigure: Runtime vs Nodes (left axis) + Density vs Nodes (right axis)
     # Runtime on left axis
-    ax2.plot(nodes, runtime_neg_dsd, marker='d', linestyle=':', label='Runtime: Neg-DSD', ms=1.5, color=runtime_colors[0], linewidth=0.5)
-    ax2.plot(nodes, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS-H', ms=1.5, color=runtime_colors[1], linewidth=0.5)
-    ax2.set_xlabel('Number of Nodes', fontsize=10)
-    ax2.tick_params(axis='y', labelcolor='black')
+    ax2.plot(nodes, runtime_neg_dsd, marker='d', linestyle=':', label='Runtime: Neg-DSD', ms=3.4, markevery=4, color=runtime_colors[0], linewidth=1.15)
+    ax2.plot(nodes, runtime_pads, marker='d', linestyle='-', label='Runtime: PADS-H', ms=3.4, markevery=(2, 4), color=runtime_colors[1], linewidth=1.15)
+    ax2.set_xlabel('Number of Nodes', fontsize=12, fontfamily='Times New Roman')
+    ax2.tick_params(axis='y', labelcolor='black', labelsize=10)
+    ax2.tick_params(axis='x', labelsize=10)
     ax2.xaxis.set_major_locator(MaxNLocator(nbins=5))  # Creates 6 ticks (5 intervals) = 5 vertical grid lines
     # Ensure both horizontal and vertical grid lines are shown for ax2
     ax2.grid(True, linestyle='--', alpha=0.8, linewidth=0.5)
     
     # Density on right axis with more distinct styles
     ax2_right = ax2.twinx()
-    ax2_right.plot(nodes, density_pos_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[0], linestyle=':', label='ECC-P Density: Neg-DSD', ms=1, color=density_colors[0], linewidth=0.5, alpha=0.8)
-    ax2_right.plot(nodes, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS-H', ms=2, color=density_colors[1], linewidth=0.5, alpha=0.8)
-    ax2_right.plot(nodes, density_neg_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[2], linestyle=':', label='ECC-N Density: Neg-DSD', ms=1, color=density_colors[2], linewidth=0.5, alpha=0.8)
-    ax2_right.plot(nodes, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS-H', ms=2, color=density_colors[3], linewidth=0.5, alpha=0.8)
-    ax2_right.set_ylabel('Density', fontsize=10)
-    ax2_right.tick_params(axis='y')
+    ax2_right.plot(nodes, density_pos_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[0], linestyle=':', label='ECC-P Density: Neg-DSD', ms=3.2, markevery=4, color=density_colors[0], linewidth=1.15)
+    ax2_right.plot(nodes, density_pos_pads, marker='x', linestyle='-', label='ECC-P Density: PADS-H', ms=4.0, markevery=(2, 4), color=density_colors[1], linewidth=1.15)
+    ax2_right.plot(nodes, density_neg_neg_dsd, marker='o', markerfacecolor='none', markeredgecolor=density_colors[2], linestyle=':', label='ECC-N Density: Neg-DSD', ms=3.2, markevery=4, color=density_colors[2], linewidth=1.15)
+    ax2_right.plot(nodes, density_neg_pads, marker='x', linestyle='-', label='ECC-N Density: PADS-H', ms=4.0, markevery=(2, 4), color=density_colors[3], linewidth=1.15)
+    ax2_right.set_ylabel('Density', fontsize=12, fontfamily='Times New Roman')
+    ax2_right.tick_params(axis='y', labelsize=10)
     # Hide left y-axis labels for ax2 but keep the ticks for grid lines
     ax2.set_yticklabels([])
     ax2.tick_params(axis='y', left=False)  # Hide tick marks but keep grid
-    
-    # Combined legend for second subfigure
-    lines3, labels3 = ax2.get_legend_handles_labels()
-    lines4, labels4 = ax2_right.get_legend_handles_labels()
-    l2 = ax2.legend(lines3 + lines4, labels3 + labels4, fontsize=7, loc=(0.07, 0.58),
-               markerscale=2.5, handlelength=3, handleheight=2)
-    # Set line width for all legend lines
-    for line in l2.get_lines():
-        line.set_linewidth(1.5)  # Adjust thickness as needed
 
+    # Extra headroom on runtime so Neg-DSD sits below ECC-P instead of on top of it.
+    runtime_top = max(runtime_neg_dsd) * 1.28
+    density_top = max(max(density_pos_neg_dsd), max(density_pos_pads)) * 1.04
+    ax1.set_ylim(0, runtime_top)
+    ax2.set_ylim(0, runtime_top)
+    ax1_right.set_ylim(0, density_top)
+    ax2_right.set_ylim(0, density_top)
+    ax1.set_xlim(0, max(edges) * 1.02)
+    ax2.set_xlim(0, max(nodes) * 1.02)
+    
     # Count wins for ECC-P (pos) and ECC-N (neg) for Neg-DSD and PADS
     dsd_large_than_pads_pos = 0
     pads_large_than_dsd_pos = 0
@@ -1922,25 +1894,39 @@ time_path=f'output\\results-theta=0\\Voter_Fraud_backup\\', save_path=None, num_
     table = ax1.table(cellText=table_data,
                       cellLoc='center',
                       loc='upper left',
-                      bbox=[0.05, 0.68, 0.56, 0.26])  # [x, y, width, height] in axes coordinates
+                      bbox=[0.05, 0.695, 0.56, 0.26])  # [x, y, width, height] in axes coordinates
 
     # Style the table
     table.auto_set_font_size(False)
-    table.set_fontsize(8)
+    table.set_fontsize(11)
     table.scale(1, 1.5)
-
-    # Style header row
-    for i in range(3):
-        table[(0, i)].set_facecolor('#E8E8E8')
-        table[(0, i)].set_text_props(weight='bold')
 
     # Style the table borders
     for key, cell in table.get_celld().items():
         cell.set_linewidth(0.5)
         cell.set_edgecolor('black')
+        cell.get_text().set_fontfamily('Times New Roman')
+        if key[0] == 0:
+            cell.set_facecolor('#E8E8E8')
+            cell.get_text().set_weight('bold')
 
-    plt.tight_layout()
+    for ax in (ax1, ax2, ax1_right, ax2_right):
+        for label in ax.get_xticklabels() + ax.get_yticklabels():
+            label.set_fontfamily('Times New Roman')
+        ax.xaxis.get_offset_text().set_fontfamily('Times New Roman')
+        ax.yaxis.get_offset_text().set_fontfamily('Times New Roman')
+
+    lines3, labels3 = ax2.get_legend_handles_labels()
+    lines4, labels4 = ax2_right.get_legend_handles_labels()
+    l2 = ax2.legend(lines3 + lines4, labels3 + labels4,
+               loc='upper left', bbox_to_anchor=(0.05, 0.955), borderaxespad=0,
+               markerscale=1.3, handlelength=2.5, handleheight=1.05, labelspacing=0.25,
+               prop={'family': 'Times New Roman', 'size': 11})
+    for line in l2.get_lines():
+        line.set_linewidth(1.5)
+
+    plt.tight_layout(pad=0.25)
     if save_path:
         os.makedirs(os.path.dirname(save_path), exist_ok=True)
-        plt.savefig(save_path, bbox_inches='tight', format='pdf')
+        plt.savefig(save_path, bbox_inches='tight', pad_inches=0.02, format='pdf')
     plt.show()

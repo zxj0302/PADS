@@ -125,11 +125,11 @@ class MitigationMeasurement:
     def rwc(self, perc_rb=0.2, add_edges=[]):
         return compute_rwc(self.G, perc_rb=perc_rb, add_edges=add_edges)
     
-    def ged(self):
+    def ged(self, sparse=False):
         # Use opinion values if they are provided
         src = {i: self.op[i] for i in range(len(self.op)) if self.op[i] > 0}
         trg = {i: self.op[i] for i in range(len(self.op)) if self.op[i] <= 0}
-        return ge(src, trg, self.G)
+        return ge(src, trg, self.G, sparse=sparse)
 
 
 class MitigationStrategy:

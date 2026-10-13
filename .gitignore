@@ -28,3 +28,4 @@ others
 *.json
 output/*/Voter_Fraud
 *.zip
+/*.mat

@@ -40,10 +40,6 @@ class WCR:
         matlab_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'matlab_original')
         eng.addpath(matlab_dir, nargout=0, stdout=stdout_stream, stderr=stderr_stream)
         
-        # Set default output directory if not provided
-        if output_dir is None:
-            output_dir = os.getcwd()
-        
         # Create a temporary file to store the adjacency matrix
         with tempfile.NamedTemporaryFile(suffix='.mat', delete=False) as tmp:
             temp_file = tmp.name
@@ -83,6 +79,11 @@ class WCR:
                 
             except Exception as e:
                 print(f"Error calling WCROpt directly: {e}")
+                # Re-raise the exception so we don't continue and reference
+                # uninitialized variables (opt_a, acr, etc.). This surfaces
+                # the original error to the caller instead of causing an
+                # UnboundLocalError later when those names are used.
+                raise
 
             print("\n----- MATLAB EXECUTION COMPLETED -----\n")
             print(f"Results retrieved: OptA shape={np.array(opt_a).shape}, acr length={len(np.array(acr))}")
